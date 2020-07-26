@@ -18,13 +18,13 @@ if (argv.help) {
 
   console.log(`
   Description
-    Verifies your Quasar App's icons and splashscreens
+    Verifies your Efuzy App's icons and splashscreens
     for all installed modes.
 
   Usage
     $ icongenie verify [options]
 
-    # verify all Quasar modes
+    # verify all Efuzy modes
     $ icongenie verify
 
     # verify specific mode
@@ -40,7 +40,7 @@ if (argv.help) {
     $ icongenie verify -p ./folder-containing-profile-files
 
   Options
-    --mode, -m      For which Quasar mode(s) to verify the assets;
+    --mode, -m      For which Efuzy mode(s) to verify the assets;
                     Default: all
                       [all|${modes}]
                     Multiple can be specified, separated by ",":

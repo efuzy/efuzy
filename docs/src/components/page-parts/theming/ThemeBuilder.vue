@@ -35,7 +35,7 @@
               q-btn(flat, dense, round, :icon="mdiMenu")
 
             q-toolbar(inset)
-              q-toolbar-title Quasar
+              q-toolbar-title Efuzy
 
           .q-px-md.q-py-lg(:class="pageClass")
             .row.q-col-gutter-md
@@ -76,7 +76,7 @@
           q-tab(name="sass", no-caps, label="Sass")
           q-tab(name="scss", no-caps, label="SCSS")
           q-tab(name="styl", no-caps, label="Stylus")
-          q-tab(name="quasar-cli", no-caps, label="Quasar CLI")
+          q-tab(name="efuzy-cli", no-caps, label="Efuzy CLI")
           q-tab(name="umd", no-caps, label="UMD")
           q-tab(name="vue-cli", no-caps, label="Vue CLI")
 
@@ -92,8 +92,8 @@
           q-tab-panel.q-pa-none(name="styl")
             doc-code(copy) {{ stylusExport }}
 
-          q-tab-panel.q-pa-none(name="quasar-cli")
-            doc-code(copy) {{ quasarCliExport }}
+          q-tab-panel.q-pa-none(name="efuzy-cli")
+            doc-code(copy) {{ efuzyCliExport }}
 
           q-tab-panel.q-pa-none(name="umd")
             doc-code(copy) {{ umdExport }}
@@ -108,15 +108,15 @@
 </template>
 
 <script>
-import { colors } from 'quasar'
+import { colors } from 'efuzy'
 
 import {
   fasSquare, fasCircle, fasPlay
-} from '@quasar/extras/fontawesome-v5'
+} from '@efuzy/extras/fontawesome-v5'
 
 import {
   mdiArrowLeft, mdiMagnify, mdiMenu, mdiMapMarkerRadius
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 const { setBrand, luminosity } = colors
 
@@ -209,7 +209,7 @@ export default {
     },
 
     sassExport () {
-      return `// src/css/quasar.variables.sass\n\n` +
+      return `// src/css/efuzy.variables.sass\n\n` +
         `$primary   : ${this.colors.primary}\n` +
         `$secondary : ${this.colors.secondary}\n` +
         `$accent    : ${this.colors.accent}\n\n` +
@@ -221,7 +221,7 @@ export default {
     },
 
     scssExport () {
-      return `// src/css/quasar.variables.scss\n\n` +
+      return `// src/css/efuzy.variables.scss\n\n` +
         `$primary   : ${this.colors.primary};\n` +
         `$secondary : ${this.colors.secondary};\n` +
         `$accent    : ${this.colors.accent};\n\n` +
@@ -233,7 +233,7 @@ export default {
     },
 
     stylusExport () {
-      return `// src/css/quasar.variables.styl\n\n` +
+      return `// src/css/efuzy.variables.styl\n\n` +
         `$primary   = ${this.colors.primary}\n` +
         `$secondary = ${this.colors.secondary}\n` +
         `$accent    = ${this.colors.accent}\n\n` +
@@ -244,8 +244,8 @@ export default {
         `$warning   = ${this.colors.warning}`
     },
 
-    quasarCliExport () {
-      return `// quasar.conf.js
+    efuzyCliExport () {
+      return `// efuzy.conf.js
 // (will not work for IE11)
 
 return {
@@ -269,10 +269,10 @@ return {
     },
 
     umdExport () {
-      return `// place before including Quasar UMD script
+      return `// place before including Efuzy UMD script
 // (will not work for IE11)
 
-window.quasarConfig = {
+window.efuzyConfig = {
   brand: {
     primary: '${this.colors.primary}',
     secondary: '${this.colors.secondary}',
@@ -292,7 +292,7 @@ window.quasarConfig = {
       return `// main.js
 // (will not work for IE11)
 
-Vue.use(Quasar, {
+Vue.use(Efuzy, {
   config: {
     brand: {
       primary: '${this.colors.primary}',

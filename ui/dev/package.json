@@ -1,8 +1,8 @@
 {
   "name": "dev-app",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "A Efuzy Framework app",
+  "productName": "Efuzy App",
   "author": "Razvan Stoenescu <razvan.stoenescu@gmail.com>",
   "private": true,
   "scripts": {

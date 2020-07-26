@@ -1,12 +1,12 @@
 ---
 title: CSS Positioning Classes
-desc: The list of CSS classes supplied by Quasar to simplify the positioning of a DOM element.
+desc: The list of CSS classes supplied by Efuzy to simplify the positioning of a DOM element.
 related:
   - /style/typography
   - /style/visibility
   - /style/spacing
 ---
-There are CSS classes supplied by Quasar to help you position a DOM element easily:
+There are CSS classes supplied by Efuzy to help you position a DOM element easily:
 
 | Class Name | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ There are CSS classes supplied by Quasar to help you position a DOM element easi
 | `on-right` | Sets a small margin to the left; commonly used for icon elements with other siblings |
 
 ::: tip
-Instead of using `float-left` or `float-right` we recommend that you read on the Quasar Grid System.
+Instead of using `float-left` or `float-right` we recommend that you read on the Efuzy Grid System.
 :::
 
 Vertical alignment:

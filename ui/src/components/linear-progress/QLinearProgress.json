@@ -2,7 +2,7 @@
   "mixins": [ "mixins/size" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/linear-progress"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/linear-progress"
   },
 
   "behavior": {
@@ -31,7 +31,7 @@
 
     "track-color": {
       "extends": "color",
-      "desc": "Color name for component's track from the Quasar Color Palette"
+      "desc": "Color name for component's track from the Efuzy Color Palette"
     },
 
     "dark": {

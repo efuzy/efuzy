@@ -6,7 +6,7 @@
 
 <script>
 import TutorialLink from './TutorialLink.vue'
-import quasarTutorials from './quasar-tutorials.js'
+import efuzyTutorials from './efuzy-tutorials.js'
 import vueTutorials from './vue-tutorials.js'
 
 export default {
@@ -21,8 +21,8 @@ export default {
   },
 
   created () {
-    this.tutorials = this.which === 'quasar'
-      ? quasarTutorials
+    this.tutorials = this.which === 'efuzy'
+      ? efuzyTutorials
       : vueTutorials
   }
 }

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/tree"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/tree"
   },
 
   "props": {
@@ -50,7 +50,7 @@
 
     "control-color": {
       "extends": "color",
-      "desc": "Color name for controls (like checkboxes) from the Quasar Color Palette",
+      "desc": "Color name for controls (like checkboxes) from the Efuzy Color Palette",
       "category": "style"
     },
 
@@ -60,7 +60,7 @@
 
     "selected-color": {
       "extends": "color",
-      "desc": "Color name for selected nodes (from the Quasar Color Palette)"
+      "desc": "Color name for selected nodes (from the Efuzy Color Palette)"
     },
 
     "dark": {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/chat"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/chat"
   },
 
   "behavior": {
@@ -23,13 +23,13 @@
 
     "bg-color": {
       "extends": "color",
-      "desc": "Color name (from the Quasar Color Palette) for chat bubble background",
+      "desc": "Color name (from the Efuzy Color Palette) for chat bubble background",
       "category": "style"
     },
 
     "text-color": {
       "extends": "text-color",
-      "desc": "Color name (from the Quasar Color Palette) for chat bubble text",
+      "desc": "Color name (from the Efuzy Color Palette) for chat bubble text",
       "category": "style"
     },
 

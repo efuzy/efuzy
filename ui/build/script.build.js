@@ -17,7 +17,7 @@ if (!type) {
   require('./script.clean.js')
 }
 
-console.log(` 📦 Building Quasar ${green('v' + require('../package.json').version)}...\n`)
+console.log(` 📦 Building Efuzy ${green('v' + require('../package.json').version)}...\n`)
 
 createFolder('dist')
 

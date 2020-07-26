@@ -34,7 +34,7 @@ const builds = [
         input: resolve(`src/index.esm.js`)
       },
       output: {
-        file: resolve(`dist/quasar.esm.js`),
+        file: resolve(`dist/efuzy.esm.js`),
         format: 'es'
       }
     },
@@ -50,7 +50,7 @@ const builds = [
         input: resolve(`src/index.common.js`)
       },
       output: {
-        file: resolve(`dist/quasar.common.js`),
+        file: resolve(`dist/efuzy.common.js`),
         format: 'cjs'
       }
     },
@@ -66,7 +66,7 @@ const builds = [
         input: resolve('src/ie-compat/ie.js')
       },
       output: {
-        file: resolve('dist/quasar.ie.polyfills.js'),
+        file: resolve('dist/efuzy.ie.polyfills.js'),
         format: 'es'
       }
     },
@@ -81,7 +81,7 @@ const builds = [
         input: resolve('src/ie-compat/ie.js')
       },
       output: {
-        file: resolve('dist/quasar.ie.polyfills.umd.js'),
+        file: resolve('dist/efuzy.ie.polyfills.umd.js'),
         format: 'umd'
       }
     },
@@ -95,7 +95,7 @@ const builds = [
         input: resolve(`src/index.umd.js`)
       },
       output: {
-        file: resolve(`dist/quasar.umd.js`),
+        file: resolve(`dist/efuzy.umd.js`),
         format: 'umd'
       }
     },
@@ -110,7 +110,7 @@ const builds = [
         input: resolve(`src/index.umd.js`)
       },
       output: {
-        file: resolve(`dist/quasar.umd.modern.js`),
+        file: resolve(`dist/efuzy.umd.modern.js`),
         format: 'umd'
       }
     },
@@ -137,7 +137,7 @@ function addAssets (builds, type, injectName) {
           output: {
             file: addExtension(resolve(`dist/${type}/${file}`), 'umd'),
             format: 'umd',
-            name: `Quasar.${injectName}.${name}`
+            name: `Efuzy.${injectName}.${name}`
           }
         },
         build: {
@@ -162,7 +162,7 @@ function genConfig (opts) {
   opts.rollup.input.external.push('vue')
 
   opts.rollup.output.banner = buildConf.banner
-  opts.rollup.output.name = opts.rollup.output.name || 'Quasar'
+  opts.rollup.output.name = opts.rollup.output.name || 'Efuzy'
 
   opts.rollup.output.globals = opts.rollup.output.globals || {}
   opts.rollup.output.globals.vue = 'Vue'
@@ -183,7 +183,7 @@ function injectVueRequirement (code) {
   }
 
   const checkMe = ` if (Vue === void 0) {
-    console.error('[ Quasar ] Vue is required to run. Please add a script tag for it before loading Quasar.')
+    console.error('[ Efuzy ] Vue is required to run. Please add a script tag for it before loading Efuzy.')
     return
   }
   `

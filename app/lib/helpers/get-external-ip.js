@@ -17,7 +17,7 @@ module.exports = async function () {
   const answer = await require('inquirer').prompt([{
     type: 'list',
     name: 'address',
-    message: 'What external IP should Quasar use?',
+    message: 'What external IP should Efuzy use?',
     choices: interfaces.map(intf => intf.address)
   }])
 

@@ -23,7 +23,7 @@
         navigation-icon="radio_button_unchecked"
         class="shadow-1 rounded-borders"
       >
-        <q-carousel-slide :name="0" img-src="https://cdn.quasar.dev/img/parallax2.jpg" class="text-white">
+        <q-carousel-slide :name="0" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" class="text-white">
           <q-scroll-area class="fit">
             <div class="column no-wrap flex-center test-scroll-container">
               <q-icon name="style" size="56px" />
@@ -48,7 +48,7 @@
             </div>
           </q-scroll-area>
         </q-carousel-slide>
-        <q-carousel-slide name="x" img-src="https://cdn.quasar.dev/img/parallax2.jpg" class="text-white scroll text-center">
+        <q-carousel-slide name="x" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" class="text-white scroll text-center">
           <div class="test-scroll-container">
             <q-icon name="style" size="56px" />
             <div class="q-mt-md text-center">
@@ -105,7 +105,7 @@
       navigation-icon="radio_button_unchecked"
       class="shadow-1 rounded-borders q-mt-lg"
     >
-      <q-carousel-slide :name="0" img-src="https://cdn.quasar.dev/img/parallax2.jpg" class="text-white q-pa-none">
+      <q-carousel-slide :name="0" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" class="text-white q-pa-none">
         <q-scroll-area class="fit">
           <div class="column no-wrap flex-center test-scroll-container q-carousel--padding">
             <q-icon name="style" size="56px" />
@@ -130,7 +130,7 @@
           </div>
         </q-scroll-area>
       </q-carousel-slide>
-      <q-carousel-slide name="x" img-src="https://cdn.quasar.dev/img/parallax2.jpg" class="text-white scroll text-center">
+      <q-carousel-slide name="x" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" class="text-white scroll text-center">
         <div class="test-scroll-container">
           <q-icon name="style" size="56px" />
           <div class="q-mt-md text-center">
@@ -214,7 +214,7 @@
       v-model="slide4"
       height="400px"
     >
-      <q-carousel-slide name="first" img-src="https://cdn.quasar.dev/img/mountains.jpg">
+      <q-carousel-slide name="first" img-src="https://cdn.efuzy.dev/img/mountains.jpg">
         <div class="absolute-bottom custom-caption">
           <div class="text-h2">
             First stop
@@ -224,7 +224,7 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="second" img-src="https://cdn.quasar.dev/img/parallax1.jpg">
+      <q-carousel-slide name="second" img-src="https://cdn.efuzy.dev/img/parallax1.jpg">
         <div class="absolute-bottom custom-caption">
           <div class="text-h2">
             Second stop
@@ -234,7 +234,7 @@
           </div>
         </div>
       </q-carousel-slide>
-      <q-carousel-slide name="third" img-src="https://cdn.quasar.dev/img/parallax2.jpg">
+      <q-carousel-slide name="third" img-src="https://cdn.efuzy.dev/img/parallax2.jpg">
         <div class="absolute-bottom custom-caption">
           <div class="text-h2">
             Third stop
@@ -258,10 +258,10 @@
       navigation
       infinite
     >
-      <q-carousel-slide :name="0" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+      <q-carousel-slide :name="0" img-src="https://cdn.efuzy.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="1" img-src="https://cdn.efuzy.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="2" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="3" img-src="https://cdn.efuzy.dev/img/efuzy.jpg" />
 
       <q-carousel-control
         slot="control"
@@ -287,10 +287,10 @@
       infinite
       :fullscreen.sync="full"
     >
-      <q-carousel-slide :name="0" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+      <q-carousel-slide :name="0" img-src="https://cdn.efuzy.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="1" img-src="https://cdn.efuzy.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="2" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="3" img-src="https://cdn.efuzy.dev/img/efuzy.jpg" />
 
       <template v-slot:control>
         <q-carousel-control
@@ -318,18 +318,18 @@
       control-color="amber"
       v-model="slide2"
     >
-      <q-carousel-slide :name="0" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="5" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="6" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="7" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
-      <q-carousel-slide :name="8" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="9" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="10" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="11" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+      <q-carousel-slide :name="0" img-src="https://cdn.efuzy.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="1" img-src="https://cdn.efuzy.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="2" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="3" img-src="https://cdn.efuzy.dev/img/efuzy.jpg" />
+      <q-carousel-slide :name="4" img-src="https://cdn.efuzy.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="5" img-src="https://cdn.efuzy.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="6" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="7" img-src="https://cdn.efuzy.dev/img/efuzy.jpg" />
+      <q-carousel-slide :name="8" img-src="https://cdn.efuzy.dev/img/mountains.jpg" />
+      <q-carousel-slide :name="9" img-src="https://cdn.efuzy.dev/img/parallax1.jpg" />
+      <q-carousel-slide :name="10" img-src="https://cdn.efuzy.dev/img/parallax2.jpg" />
+      <q-carousel-slide :name="11" img-src="https://cdn.efuzy.dev/img/efuzy.jpg" />
 
       <q-carousel-control slot="control" position="bottom" :offset="[0, 0]">
         <q-linear-progress :value="(slide2 - 1) / 11" height="6px" stripe color="amber" />

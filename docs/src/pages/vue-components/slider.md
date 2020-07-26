@@ -76,7 +76,7 @@ The example below is better highlighting how QSlider handles label positioning s
 
 ### Native form submit <q-badge align="top" label="v1.9+" />
 
-When dealing with a native form which has an `action` and a `method` (eg. when using Quasar with ASP.NET controllers), you need to specify the `name` property on QSlider, otherwise formData will not contain it (if it should):
+When dealing with a native form which has an `action` and a `method` (eg. when using Efuzy with ASP.NET controllers), you need to specify the `name` property on QSlider, otherwise formData will not contain it (if it should):
 
 <doc-example title="Native form" file="QSlider/NativeForm" />
 

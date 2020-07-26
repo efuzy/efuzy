@@ -1,25 +1,25 @@
 ---
-title: Quasar UMD - CDN install
-desc: How to use the Unified Module Definition form of Quasar.
+title: Efuzy UMD - CDN install
+desc: How to use the Unified Module Definition form of Efuzy.
 components:
   - umd/UmdTags
 ---
 
-If you want to embed Quasar into your existing website project, integrating it in a progressive manner, then go for the UMD/Standalone (Unified Module Definition) version.
+If you want to embed Efuzy into your existing website project, integrating it in a progressive manner, then go for the UMD/Standalone (Unified Module Definition) version.
 
 ## Installation
-UMD is all about adding Quasar style and javascript tags. Please select what you will be using and check out the output below it.
+UMD is all about adding Efuzy style and javascript tags. Please select what you will be using and check out the output below it.
 
 <umd-tags />
 
 ::: warning
 * Please notice the `<!DOCTYPE html>` at the beginning of the document. Do not forget to add it, or else some browsers (notably Safari) will use some compatibility mode that breaks flex.
-* If you are using an RTL Quasar language pack (eg. Hebrew) then toggle the "RTL CSS support" above too!
+* If you are using an RTL Efuzy language pack (eg. Hebrew) then toggle the "RTL CSS support" above too!
 * Do NOT use self-closing tags, like `<q-icon ... />`. Instead, go with `<q-icon ...></q-icon>`.
 :::
 
 ::: tip
-All components, directives and Quasar plugins are ready to be used out of the box. There is no need for additional code to install them. Just make sure that you will NOT be using self-closing tags.
+All components, directives and Efuzy plugins are ready to be used out of the box. There is no need for additional code to install them. Just make sure that you will NOT be using self-closing tags.
 :::
 
 ## JsFiddle / Codepen
@@ -27,26 +27,26 @@ You can fork and use these links for reporting issues on GitHub too:
 
 | Supplier | URL |
 | --- | --- |
-| jsFiddle | [https://jsfiddle.quasar.dev](https://jsfiddle.quasar.dev) |
-| Codepen | [https://codepen.quasar.dev](https://codepen.quasar.dev) |
+| jsFiddle | [https://jsfiddle.efuzy.dev](https://jsfiddle.efuzy.dev) |
+| Codepen | [https://codepen.efuzy.dev](https://codepen.efuzy.dev) |
 
-These links (obviously) use the Quasar UMD version.
+These links (obviously) use the Efuzy UMD version.
 
-## Quasar Global Object
-When you embed Quasar UMD into a webpage you'll get a `Quasar` global Object injected:
+## Efuzy Global Object
+When you embed Efuzy UMD into a webpage you'll get a `Efuzy` global Object injected:
 
 ```js
-Quasar = {
-  version, // Quasar version
+Efuzy = {
+  version, // Efuzy version
 
-  plugins, // Quasar plugins
-  utils, // Quasar utils
+  plugins, // Efuzy plugins
+  utils, // Efuzy utils
 
-  // if you want to extend Quasar's components or directives
+  // if you want to extend Efuzy's components or directives
   components,
   directives,
 
-  // if you want to change current icon set or Quasar Language pack
+  // if you want to change current icon set or Efuzy Language pack
   // (must include CDN links so they are available first!)
   lang,
   iconSet
@@ -54,38 +54,38 @@ Quasar = {
 ```
 
 ## Init Configuration
-There are some configuration options for Quasar & Quasar plugins. For the Quasar UMD version you can define the following before including the Quasar script tag:
+There are some configuration options for Efuzy & Efuzy plugins. For the Efuzy UMD version you can define the following before including the Efuzy script tag:
 
 ```html
 <script>
   // optional
-  window.quasarConfig = {
+  window.efuzyConfig = {
     brand: { // this will NOT work on IE 11
       primary: '#e46262',
       // ... or all other brand colors
     },
-    notify: {...}, // default set of options for Notify Quasar plugin
-    loading: {...}, // default set of options for Loading Quasar plugin
-    loadingBar: { ... }, // settings for LoadingBar Quasar plugin
+    notify: {...}, // default set of options for Notify Efuzy plugin
+    loading: {...}, // default set of options for Loading Efuzy plugin
+    loadingBar: { ... }, // settings for LoadingBar Efuzy plugin
     // ..and many more
   }
 </script>
 ```
 
 ## Usage
-So, after you figured out the CDN links that you need to embed into your webpages (hopefully you've inspected the project folder created by UMD demo kit), now it's time to use Quasar.
+So, after you figured out the CDN links that you need to embed into your webpages (hopefully you've inspected the project folder created by UMD demo kit), now it's time to use Efuzy.
 
 ::: tip
-You'll notice that all the Quasar Components, Quasar Directives and Quasar Plugins have an installation section at the top of their pages.
+You'll notice that all the Efuzy Components, Efuzy Directives and Efuzy Plugins have an installation section at the top of their pages.
 :::
 
-By using the UMD version, you'll have all of the components, directives and Quasar plugins already installed for you. You just need to start using them.
+By using the UMD version, you'll have all of the components, directives and Efuzy plugins already installed for you. You just need to start using them.
 
 **Do not use self-closing tags with the UMD version:**
 You will notice that you won't be able to use the self-closing tag form of any of the components. You must close all components tags.
 
 ```html
-<!-- In docs, but for Quasar CLI usage -->
+<!-- In docs, but for Efuzy CLI usage -->
 <q-btn label="My Button" />
 <!-- ^^^ can't use it like this on UMD -->
 
@@ -93,52 +93,52 @@ You will notice that you won't be able to use the self-closing tag form of any o
 <q-btn label="My Button"></q-btn>
 ```
 
-### Quasar Components
+### Efuzy Components
 An example. No need to install any component in UMD version.
 
 ```html
 <q-btn label="My Button"></q-btn>
 ```
 
-### Quasar Directives
+### Efuzy Directives
 An example. No need to install any directives in UMD version.
 ```html
 <div v-ripple>...</div>
 ```
 
-### Quasar Plugins
+### Efuzy Plugins
 An example. No need to install any plugins in UMD version.
 
 ```js
-Quasar.plugins.bottomSheet.create({...})
+Efuzy.plugins.bottomSheet.create({...})
 ```
 
-### Quasar Utils
+### Efuzy Utils
 An example.
 
 ```js
-Quasar.utils.openURL('https://quasar.dev')
+Efuzy.utils.openURL('https://efuzy.dev')
 ```
 
-### Changing Quasar Icon Set
-Assuming you have already included the CDN link to your favorite Quasar Icon Set (unless you're using Material Icons which is used by default), you can then tell Quasar to use it:
+### Changing Efuzy Icon Set
+Assuming you have already included the CDN link to your favorite Efuzy Icon Set (unless you're using Material Icons which is used by default), you can then tell Efuzy to use it:
 
 ```js
-Quasar.iconSet.set(Quasar.iconSet.fontawesomeV5)
+Efuzy.iconSet.set(Efuzy.iconSet.fontawesomeV5)
 ```
 
-The list of available [Quasar Icon Sets](/options/quasar-icon-sets) can be found on [GitHub](https://github.com/quasarframework/quasar/tree/dev/ui/icon-set).
+The list of available [Efuzy Icon Sets](/options/efuzy-icon-sets) can be found on [GitHub](https://github.com/efuzy/efuzy/tree/dev/ui/icon-set).
 
-### Changing Quasar Language Pack
-Assuming you have already included the CDN link to your desired Quasar I18n Language (unless you want "en-us" language pack which is used by default), you can then tell Quasar to use it:
+### Changing Efuzy Language Pack
+Assuming you have already included the CDN link to your desired Efuzy I18n Language (unless you want "en-us" language pack which is used by default), you can then tell Efuzy to use it:
 
 ```js
 // example setting German language,
 // using ISO 2 letter code:
-Quasar.lang.set(Quasar.lang.de)
+Efuzy.lang.set(Efuzy.lang.de)
 
 // example setting Portuguese (Brazil) language:
-Quasar.lang.set(Quasar.lang.ptBr)
+Efuzy.lang.set(Efuzy.lang.ptBr)
 ```
 
-The list of available languages can be found on [GitHub](https://github.com/quasarframework/quasar/tree/dev/ui/lang). **If your desired language pack is not available yet, you can help by providing a PR.** We welcome any languages!
+The list of available languages can be found on [GitHub](https://github.com/efuzy/efuzy/tree/dev/ui/lang). **If your desired language pack is not available yet, you can help by providing a PR.** We welcome any languages!

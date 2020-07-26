@@ -1,4 +1,4 @@
-export type QuasarCordovaTargets =
+export type EfuzyCordovaTargets =
   | "android"
   | "ios"
   | "blackberry10"
@@ -8,7 +8,7 @@ export type QuasarCordovaTargets =
   | "webos"
   | "windows";
 
-export interface QuasarCordovaConfiguration {
+export interface EfuzyCordovaConfiguration {
   /** If not present, will look for `package.json > cordovaId` */
   id?: string;
   /** If not present, will look for `package.json > version` */

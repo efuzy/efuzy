@@ -1,6 +1,6 @@
 ---
 title: Grid Column
-desc: How to use the Quasar grid for columns.
+desc: How to use the Efuzy grid for columns.
 related:
   - /layout/grid/introduction-to-flexbox
   - /layout/grid/row

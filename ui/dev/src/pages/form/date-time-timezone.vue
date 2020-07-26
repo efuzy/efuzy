@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import { date as qDate } from 'quasar'
+import { date as qDate } from 'efuzy'
 
 export default {
   data () {

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/quasar-plugins/loading-bar"
+    "docsUrl": "https://v1.efuzy.dev/efuzy-plugins/loading-bar"
   },
 
   "injection": "$q.loadingBar",
 
-  "quasarConfOptions": {
+  "efuzyConfOptions": {
     "propName": "loadingBar",
     "definition": {
       "...props": {

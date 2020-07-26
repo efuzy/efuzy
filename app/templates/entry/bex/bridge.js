@@ -4,7 +4,7 @@
  **/
 
 import { EventEmitter } from 'events'
-import { uid } from 'quasar'
+import { uid } from 'efuzy'
 
 const
   typeSizes = {

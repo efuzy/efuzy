@@ -62,8 +62,8 @@ menu.forEach(node => {
 })
 
 const redirects = [
-  { from: '/quasar-cli/supporting-ie', to: '/quasar-cli/browser-compatibility' },
-  { from: '/quasar-cli/modern-build', to: '/quasar-cli/browser-compatibility' }
+  { from: '/efuzy-cli/supporting-ie', to: '/efuzy-cli/browser-compatibility' },
+  { from: '/efuzy-cli/modern-build', to: '/efuzy-cli/browser-compatibility' }
 ]
 
 const routes = [
@@ -78,7 +78,7 @@ const routes = [
   },
   {
     path: '/start',
-    redirect: '/start/pick-quasar-flavour'
+    redirect: '/start/pick-efuzy-flavour'
   },
   {
     path: '/',

@@ -106,19 +106,19 @@ module.exports = class Extension {
     if (name.charAt(0) === '@') {
       const slashIndex = name.indexOf('/')
       if (slashIndex === -1) {
-        fatal(`Invalid Quasar App Extension name: "${name}"`)
+        fatal(`Invalid Efuzy App Extension name: "${name}"`)
       }
 
       this.packageFullName = name.substring(0, slashIndex + 1) +
-        'quasar-app-extension-' +
+        'efuzy-app-extension-' +
         name.substring(slashIndex + 1)
 
       this.packageName = '@' + this.__stripVersion(this.packageFullName.substring(1))
       this.extId = '@' + this.__stripVersion(name.substring(1))
     }
     else {
-      this.packageFullName = 'quasar-app-extension-' + name
-      this.packageName = this.__stripVersion('quasar-app-extension-' + name)
+      this.packageFullName = 'efuzy-app-extension-' + name
+      this.packageName = this.__stripVersion('efuzy-app-extension-' + name)
       this.extId = this.__stripVersion(name)
     }
   }
@@ -137,16 +137,16 @@ module.exports = class Extension {
   }
 
   async install (skipPkgInstall) {
-    if (/quasar-app-extension-/.test(this.extId)) {
-      this.extId = this.extId.replace('quasar-app-extension-', '')
+    if (/efuzy-app-extension-/.test(this.extId)) {
+      this.extId = this.extId.replace('efuzy-app-extension-', '')
       log(
-        `When using an extension, "quasar-app-extension-" is added automatically. Just run "quasar ext add ${
+        `When using an extension, "efuzy-app-extension-" is added automatically. Just run "efuzy ext add ${
           this.extId
         }"`
       )
     }
 
-    log(`${skipPkgInstall ? 'Invoking' : 'Installing'} "${this.extId}" Quasar App Extension`)
+    log(`${skipPkgInstall ? 'Invoking' : 'Installing'} "${this.extId}" Efuzy App Extension`)
     log()
 
     const isInstalled = this.isInstalled()
@@ -181,7 +181,7 @@ module.exports = class Extension {
     // run extension install
     const hooks = await this.__runInstallScript(prompts)
 
-    log(`Quasar App Extension "${this.extId}" successfully installed.`)
+    log(`Efuzy App Extension "${this.extId}" successfully installed.`)
     log()
 
     if (hooks && hooks.exitLog.length > 0) {
@@ -193,7 +193,7 @@ module.exports = class Extension {
   }
 
   async uninstall (skipPkgUninstall) {
-    log(`${skipPkgUninstall ? 'Uninvoking' : 'Uninstalling'} "${this.extId}" Quasar App Extension`)
+    log(`${skipPkgUninstall ? 'Uninvoking' : 'Uninstalling'} "${this.extId}" Efuzy App Extension`)
     log()
 
     const isInstalled = this.isInstalled()
@@ -205,7 +205,7 @@ module.exports = class Extension {
       }
     }
     else if (!isInstalled) {
-      warn(`Quasar App Extension "${this.packageName}" is not installed...`)
+      warn(`Efuzy App Extension "${this.packageName}" is not installed...`)
       return
     }
 
@@ -217,7 +217,7 @@ module.exports = class Extension {
     // yarn/npm uninstall
     skipPkgUninstall !== true && this.__uninstallPackage()
 
-    log(`Quasar App Extension "${this.extId}" successfully removed.`)
+    log(`Efuzy App Extension "${this.extId}" successfully removed.`)
     log()
 
     if (hooks && hooks.exitLog.length > 0) {
@@ -230,7 +230,7 @@ module.exports = class Extension {
 
   async run (ctx) {
     if (!this.isInstalled()) {
-      warn(`Quasar App Extension "${this.extId}" is missing...`)
+      warn(`Efuzy App Extension "${this.extId}" is missing...`)
       process.exit(1, 'ext-missing')
     }
 
@@ -243,7 +243,7 @@ module.exports = class Extension {
       ctx
     })
 
-    log(`Running "${this.extId}" Quasar App Extension...`)
+    log(`Running "${this.extId}" Efuzy App Extension...`)
     await script(api)
 
     return api.__getHooks()

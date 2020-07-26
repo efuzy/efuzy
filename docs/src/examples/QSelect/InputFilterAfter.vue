@@ -84,7 +84,7 @@ export default {
             }
           },
 
-          // next function is available in Quasar v1.7.4+;
+          // next function is available in Efuzy v1.7.4+;
           // "ref" is the Vue reference to the QSelect
           ref => {
             if (val !== '' && ref.options.length > 0) {
@@ -111,7 +111,7 @@ export default {
             }
           },
 
-          // next function is available in Quasar v1.7.4+;
+          // next function is available in Efuzy v1.7.4+;
           // "ref" is the Vue reference to the QSelect
           ref => {
             if (val !== '' && ref.options.length > 0 && ref.optionIndex === -1) {

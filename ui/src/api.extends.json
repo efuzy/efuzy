@@ -14,14 +14,14 @@
 
     "color": {
       "type": "String",
-      "desc": "Color name for component from the Quasar Color Palette",
+      "desc": "Color name for component from the Efuzy Color Palette",
       "examples": [ "primary", "teal-10" ],
       "category": "style"
     },
 
     "text-color": {
       "type": "String",
-      "desc": "Overrides text color (if needed); Color name from the Quasar Color Palette",
+      "desc": "Overrides text color (if needed); Color name from the Efuzy Color Palette",
       "examples": [ "primary", "teal-10" ],
       "category": "style"
     },
@@ -47,11 +47,11 @@
 
     "icon": {
       "type": "String",
-      "desc": "Icon name following Quasar convention; Make sure you have the icon library installed unless you are using 'img:' prefix",
+      "desc": "Icon name following Efuzy convention; Make sure you have the icon library installed unless you are using 'img:' prefix",
       "examples": [
         "map",
         "ion-add",
-        "img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg",
+        "img:https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg",
         "img:statics/path/to/some_image.png"
       ],
       "category": "content"
@@ -90,7 +90,7 @@
 
     "transition": {
       "type": "String",
-      "desc": "One of Quasar's embedded transitions",
+      "desc": "One of Efuzy's embedded transitions",
       "examples": [ "fade", "slide-down" ],
       "category": "behavior"
     },

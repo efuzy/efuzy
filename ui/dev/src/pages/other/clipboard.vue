@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import { copyToClipboard } from 'quasar'
+import { copyToClipboard } from 'efuzy'
 
 export default {
   data () {

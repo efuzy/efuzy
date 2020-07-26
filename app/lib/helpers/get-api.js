@@ -4,7 +4,7 @@ const { fatal } = require('./logger')
 module.exports = async function getApi(item) {
   try {
     const api = require(
-      require.resolve(`quasar/dist/api/${item}.json`, {
+      require.resolve(`efuzy/dist/api/${item}.json`, {
         paths: [appPaths.appDir]
       })
     )

@@ -20,7 +20,7 @@ const validateProfileObject = require('../utils/validate-profile-object')
 function printBanner (assetsOf, params) {
   console.log(` Generating files with the following options:
  ==========================
- Quasar project folder..... ${green(appDir)}
+ Efuzy project folder..... ${green(appDir)}
  ${green(`Quality level............. ${params.quality}/12`)}
  Icon source file.......... ${green(params.icon)}
  Icon trimming............. ${params.skipTrim ? 'no' : green('yes')}
@@ -109,7 +109,7 @@ async function generateFromProfile (profile) {
   }
 
   if (uniqueFiles.length === 0) {
-    warn(`No assets to generate! No mode/include specified, filter too specific or the respective Quasar mode(s) are not installed`)
+    warn(`No assets to generate! No mode/include specified, filter too specific or the respective Efuzy mode(s) are not installed`)
     return Promise.resolve(0)
   }
 

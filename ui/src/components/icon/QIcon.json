@@ -2,7 +2,7 @@
   "mixins": [ "mixins/size", "mixins/tag" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/icon"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/icon"
   },
 
   "behavior": {
@@ -19,7 +19,7 @@
 
     "name": {
       "type": "String",
-      "desc": "Name of the icon, following Quasar convention",
+      "desc": "Name of the icon, following Efuzy convention",
       "examples": [ "map", "ion-add" ],
       "category": "model"
     },

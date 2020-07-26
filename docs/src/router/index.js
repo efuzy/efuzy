@@ -20,8 +20,8 @@ export default function () {
       return savedPosition || { x: 0, y: 0 }
     },
 
-    // Leave these as is and change from quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
+    // Leave these as is and change from efuzy.conf.js instead!
+    // efuzy.conf.js -> build -> vueRouterMode
     mode: process.env.VUE_ROUTER_MODE,
     base: process.env.VUE_ROUTER_BASE
   })

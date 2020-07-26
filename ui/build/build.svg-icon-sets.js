@@ -136,7 +136,7 @@ module.exports.generate = function () {
 
       const importString = Object.keys(importList)
         .filter(listName => importList[listName].length > 0)
-        .map(listName => `import {\n  ` + importList[listName].join(',\n  ') + `\n} from '@quasar/extras/${listName}'`)
+        .map(listName => `import {\n  ` + importList[listName].join(',\n  ') + `\n} from '@efuzy/extras/${listName}'`)
         .join('\n\n')
 
       const content = [

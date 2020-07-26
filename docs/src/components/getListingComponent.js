@@ -1,6 +1,6 @@
-import { QIcon } from 'quasar'
+import { QIcon } from 'efuzy'
 
-import { farFileAlt, fasFolderOpen } from '@quasar/extras/fontawesome-v5'
+import { farFileAlt, fasFolderOpen } from '@efuzy/extras/fontawesome-v5'
 
 import DocPage from './DocPage.vue'
 import DocLink from './DocLink.vue'
@@ -15,7 +15,7 @@ export default function (title, links) {
       title: `${title} listing`,
 
       meta: getMeta(
-        `${title} | Quasar Framework`,
+        `${title} | Efuzy Framework`,
         `List of pages under the '${title}' section`
       )
     },

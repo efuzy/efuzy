@@ -10,7 +10,7 @@
       />
       <q-chat-message
         name="Vladimir"
-        avatar="https://cdn.quasar.dev/img/blueish.jpg"
+        avatar="https://cdn.efuzy.dev/img/blueish.jpg"
       >
         <q-spinner-dots size="2rem" />
       </q-chat-message>
@@ -52,7 +52,7 @@ export default {
       {
         name: 'Vladimir',
         text: ['How are you?'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
@@ -61,33 +61,33 @@ export default {
         sent: true,
         textColor: 'white',
         bgColor: 'black',
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:50'
       },
       {
         name: 'Jane',
         text: ['And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? And you? '],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:51'
       },
       {
         name: '<strong class="text-uppercase">Trusted Vladimir</strong>',
         text: ['I\'m also fine, thank you. <span class="text-primary">But I feel like writing a very long text here too test the avatar.</span>'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
         name: '<strong class="text-uppercase">Untrusted Vladimir</strong>',
         text: ['I\'m also fine, thank you. <span class="text-primary">But I feel like writing a very long text here too test the avatar.</span>'],
         textSanitize: true,
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
         name: 'Vladimir',
         text: ['I\'m also fine, thank you. <span class="text-primary">But I feel like writing a very long text here too test the avatar.</span>'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
@@ -98,7 +98,7 @@ export default {
         bgColor: 'amber',
         textColor: 'white',
         text: ['Fine. Nice weather today, right?', 'Hmm...'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: '13:55'
       },
 
@@ -108,21 +108,21 @@ export default {
       {
         name: 'Vladimir',
         text: ['How are you?'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
         name: 'Jane',
         text: ['I\'m good, thank you!', 'And you?'],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:50'
       },
       {
         name: 'Jane',
         text: ['And you?'],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:51'
       },
       {
@@ -131,7 +131,7 @@ export default {
       {
         name: 'Vladimir',
         text: ['Fine. Nice weather today, right?', 'Hmm...'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: '13:55'
       },
 
@@ -141,21 +141,21 @@ export default {
       {
         name: 'Vladimir',
         text: ['How are you?'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
         name: 'Jane',
         text: ['I\'m good, thank you!', 'And you?'],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:50'
       },
       {
         name: 'Jane',
         text: ['And you?'],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:51'
       },
       {
@@ -164,7 +164,7 @@ export default {
       {
         name: 'Vladimir',
         text: ['Fine. Nice weather today, right?', 'Hmm...'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: '13:55'
       },
 
@@ -174,21 +174,21 @@ export default {
       {
         name: 'Vladimir',
         text: ['How are you?'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: 'Yesterday 13:34'
       },
       {
         name: 'Jane',
         text: ['I\'m good, thank you!', 'And you?'],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:50'
       },
       {
         name: 'Jane',
         text: ['And you?'],
         sent: true,
-        avatar: 'https://cdn.quasar.dev/img/linux-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/linux-avatar.png',
         stamp: 'Yesterday at 13:51'
       },
       {
@@ -197,7 +197,7 @@ export default {
       {
         name: 'Vladimir',
         text: ['Fine. Nice weather today, right?', 'Hmm...'],
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         stamp: '13:55'
       }
     ]

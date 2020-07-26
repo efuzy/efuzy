@@ -1,7 +1,7 @@
 ---
 title: Intersection
 badge: v1.4+
-desc: The QIntersection vue component, a wrapper over Quasar's Intersection directive.
+desc: The QIntersection vue component, a wrapper over Efuzy's Intersection directive.
 related:
   - /vue-directives/intersection
   - /options/transitions
@@ -38,7 +38,7 @@ If using the `transition` prop, it is required that the content be wrapped in on
 
 ### With transition
 
-In the example below we used a Quasar transition. For a full list, please head to [Transitions](/options/transitions) page.
+In the example below we used a Efuzy transition. For a full list, please head to [Transitions](/options/transitions) page.
 
 <doc-example title="With transition" file="QIntersection/Transition" scrollable />
 

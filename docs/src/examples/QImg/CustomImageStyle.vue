@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-img
-      src="https://cdn.quasar.dev/img/parallax2.jpg"
+      src="https://cdn.efuzy.dev/img/parallax2.jpg"
       spinner-color="white"
       style="height: 170px; max-width: 300px"
       img-class="my-custom-image"

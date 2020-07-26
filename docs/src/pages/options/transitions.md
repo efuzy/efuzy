@@ -1,11 +1,11 @@
 ---
-title: Quasar Components Transitions
-desc: Out of the box CSS transitions for Quasar components.
+title: Efuzy Components Transitions
+desc: Out of the box CSS transitions for Efuzy components.
 components:
   - transitions/TransitionList
 ---
 
-There are a few Quasar components that mention about transitions through `transition-show`/`transition-hide` or `transition-prev`/`transition-next` or simply `transition` props. We're going to showcase these transitions here.
+There are a few Efuzy components that mention about transitions through `transition-show`/`transition-hide` or `transition-prev`/`transition-next` or simply `transition` props. We're going to showcase these transitions here.
 
 <transition-list />
 

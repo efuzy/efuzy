@@ -2,9 +2,9 @@
 title: Ajax Bar
 desc: The QAjaxBar Vue component displays a loading bar whenever an Ajax call is in progress.
 related:
-  - /quasar-plugins/loading
-  - /quasar-plugins/loading-bar
-  - /quasar-cli/ajax-requests
+  - /efuzy-plugins/loading
+  - /efuzy-plugins/loading-bar
+  - /efuzy-cli/ajax-requests
 ---
 
 In most mobile apps and even some desktop apps, you will most likely have some API communication to a server via an [Ajax call](https://en.wikipedia.org/wiki/Ajax_(programming)). Since these calls can take more than a second or two, it is good UX to offer the user feedback, when such an API call is being made. Which is where QAjaxBar comes into helping you out.
@@ -12,7 +12,7 @@ In most mobile apps and even some desktop apps, you will most likely have some A
 QAjaxBar is a component which displays a loading bar (like Youtube) whenever an Ajax call (regardless of Ajax library used) is in progress. It can be manually triggered as well.
 
 ::: tip
-If you'd like **a simpler and more convenient way** to offer an Ajax Bar to your users, have a look at the [Loading Bar Plugin](/quasar-plugins/loading-bar), which is actually **the recommended way**.
+If you'd like **a simpler and more convenient way** to offer an Ajax Bar to your users, have a look at the [Loading Bar Plugin](/efuzy-plugins/loading-bar), which is actually **the recommended way**.
 :::
 
 ## Installation

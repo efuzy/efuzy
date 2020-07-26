@@ -1,7 +1,7 @@
 const appPaths = require('../app-paths')
 
 module.exports = function (pkgName, folder = appPaths.appDir) {
-  if (pkgName === '@quasar/app') {
+  if (pkgName === '@efuzy/app') {
     return require('../../package.json')
   }
 

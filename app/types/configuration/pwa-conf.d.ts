@@ -73,7 +73,7 @@ interface PwaMetaVariablesEntry {
  * [Workbox](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)’s
  * behavior and also tweak your `manifest.json`.
  */
-export interface QuasarPwaConfiguration {
+export interface EfuzyPwaConfiguration {
   workboxPluginMode?: "GenerateSW" | "InjectManifest";
   /**
    * Full option list can be found

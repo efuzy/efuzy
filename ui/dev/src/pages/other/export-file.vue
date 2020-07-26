@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { exportFile } from 'quasar'
+import { exportFile } from 'efuzy'
 
 export default {
   data () {

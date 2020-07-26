@@ -1,19 +1,19 @@
 ---
 title: App Internationalization (I18n)
-desc: How to use vue-i18n in a Quasar app.
+desc: How to use vue-i18n in a Efuzy app.
 related:
   - /options/rtl-support
-  - /options/quasar-language-packs
+  - /options/efuzy-language-packs
 ---
 Internationalization is a design process that ensures a product (a website or application) can be adapted to various languages and regions without requiring engineering changes to the source code. Think of internationalization as readiness for localization.
 
 ::: tip
-The recommended package for handling website/app is [vue-i18n](https://github.com/kazupon/vue-i18n). This package should be added through a [Boot File](/quasar-cli/boot-files). On the Boot File documentation page you can see a specific example for plugging in vue-i18n.
+The recommended package for handling website/app is [vue-i18n](https://github.com/kazupon/vue-i18n). This package should be added through a [Boot File](/efuzy-cli/boot-files). On the Boot File documentation page you can see a specific example for plugging in vue-i18n.
 :::
 
 ## Setup manually
 
-If you missed enabling i18n during `quasar create` wizard, here is how you can set it up manually.
+If you missed enabling i18n during `efuzy create` wizard, here is how you can set it up manually.
 
 1. Install the `vue-i18n` dependency into your app.
 
@@ -49,12 +49,12 @@ export default ({ app }) => {
 export { i18n }
 ```
 
-3. Create a folder (/src/i18n/) in your app which will hold the definitions for each language that you'll support. Example: [src/i18n](https://github.com/quasarframework/quasar-starter-kit/tree/master/template/src/i18n). Notice the "import messages from 'src/i18n'" from step 2. This is step where you write the content that gets imported.
+3. Create a folder (/src/i18n/) in your app which will hold the definitions for each language that you'll support. Example: [src/i18n](https://github.com/efuzy/efuzy-starter-kit/tree/master/template/src/i18n). Notice the "import messages from 'src/i18n'" from step 2. This is step where you write the content that gets imported.
 
-4. Now reference this file in `quasar.config.js` in the `boot` section:
+4. Now reference this file in `efuzy.config.js` in the `boot` section:
 
 ```js
-// quasar.conf.js
+// efuzy.conf.js
 return {
   boot: [
     // ...
@@ -68,10 +68,10 @@ return {
 Now you are ready to use it in your pages.
 
 ## Setting up Translation Blocks in your SFCs
-To use embedded `<i18n>` template components in your vue files with **vue-i18n-loader** you must ensure that the `@intlify/vue-i18n-loader` and `yaml-loader` dependencies are added to your project using your package manager of choice. Then in your `quasar.conf.js` file change the webpack build options. In this case the translations are stored in yaml format in the block.
+To use embedded `<i18n>` template components in your vue files with **vue-i18n-loader** you must ensure that the `@intlify/vue-i18n-loader` and `yaml-loader` dependencies are added to your project using your package manager of choice. Then in your `efuzy.conf.js` file change the webpack build options. In this case the translations are stored in yaml format in the block.
 
 ```js
-// quasar.conf.js
+// efuzy.conf.js
 build: {
   // OR use the equivalent chainWebpack()
   // with its own chain statements (CLI v0.16.2+)
@@ -144,7 +144,7 @@ export default {
   <q-select
     v-model="lang"
     :options="langOptions"
-    label="Quasar Language"
+    label="Efuzy Language"
     dense
     borderless
     emit-value
@@ -184,21 +184,21 @@ QBtn component will use the CSS `text-transform: uppercase` rule to automaticall
 2. use the prop `no-caps` in your label and rewrite the string with [toLocaleUpperCase](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLocaleUpperCase) by using the locale as detected by `this.$q.lang.getLocale()`
 
 ## Detecting Locale
-There's also a method to determine user locale which is supplied by Quasar out of the box:
+There's also a method to determine user locale which is supplied by Efuzy out of the box:
 ```js
 // outside of a Vue file
 
-// for when you don't specify quasar.conf > framework: 'all'
-import { Quasar } from 'quasar'
+// for when you don't specify efuzy.conf > framework: 'all'
+import { Efuzy } from 'efuzy'
 // OTHERWISE:
-import Quasar from 'quasar'
+import Efuzy from 'efuzy'
 
-Quasar.lang.getLocale() // returns a string
+Efuzy.lang.getLocale() // returns a string
 
 // inside of a Vue file
 this.$q.lang.getLocale() // returns a string
 ```
 
 ::: warning
-If you use Quasar's set method (`this.$q.lang.set()`), this will not be reflected by Quasar's getLocale above. The reason for this is that `getLocale()` will always return the *users* locale (based on browser settings). The `set()` method refers to Quasars internal locale setting which is used to determine which language file to use. If you would like to see which language has been set using `set()` you can use `this.$q.lang.isoName`.
+If you use Efuzy's set method (`this.$q.lang.set()`), this will not be reflected by Efuzy's getLocale above. The reason for this is that `getLocale()` will always return the *users* locale (based on browser settings). The `set()` method refers to Efuzys internal locale setting which is used to determine which language file to use. If you would like to see which language has been set using `set()` you can use `this.$q.lang.isoName`.
 :::

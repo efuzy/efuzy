@@ -13,7 +13,7 @@
 
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
           Layout Builder
         </q-toolbar-title>
@@ -335,10 +335,10 @@
         </div>
       </q-scroll-area>
 
-      <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 204px">
+      <q-img class="absolute-top" src="https://cdn.efuzy.dev/img/material.png" style="height: 204px">
         <div class="absolute-bottom bg-transparent">
           <q-avatar size="56px" class="q-mb-sm">
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           <div class="text-weight-bold">Razvan Stoenescu</div>
           <div>@rstoenescu</div>
@@ -357,7 +357,7 @@
       <q-toolbar>
         <q-btn v-if="pick.left" dense flat round :icon="mdiMenu" @click="play.left = !play.left" />
 
-        <q-toolbar-title>Quasar</q-toolbar-title>
+        <q-toolbar-title>Efuzy</q-toolbar-title>
 
         <q-btn v-if="pick.right" dense flat round :icon="mdiMenu" @click="play.right = !play.right" />
       </q-toolbar>
@@ -368,7 +368,7 @@
 <script>
 import {
   mdiMenu, mdiViewDashboard, mdiCog, mdiPlayCircleOutline
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 import getMeta from 'assets/get-meta.js'
 
@@ -396,8 +396,8 @@ export default {
     title: 'Layout Builder',
 
     meta: getMeta(
-      'Layout Builder | Quasar Framework',
-      'Tool to build Quasar layouts. Configure the layout parts then export the code.'
+      'Layout Builder | Efuzy Framework',
+      'Tool to build Efuzy layouts. Configure the layout parts then export the code.'
     )
   },
 
@@ -500,7 +500,7 @@ export default {
 ` : ''}
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
           Title
         </q-toolbar-title>${this.pick.right ? `
@@ -545,7 +545,7 @@ export default {
       <q-toolbar>
         <q-toolbar-title>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
           Title
         </q-toolbar-title>

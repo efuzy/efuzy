@@ -71,7 +71,7 @@ import {
   matCloudUpload,
   matClearAll,
   matDoneAll
-} from '@quasar/extras/material-icons'
+} from '@efuzy/extras/material-icons'
 
 export default {
   name: 'svg-material-icons',

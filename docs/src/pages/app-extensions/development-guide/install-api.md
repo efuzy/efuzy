@@ -1,6 +1,6 @@
 ---
 title: App Extension Install API
-desc: The API for the install script of a Quasar App Extension. Initializes the app space by rendering or changing files and more.
+desc: The API for the install script of a Efuzy App Extension. Initializes the app space by rendering or changing files and more.
 ---
 
 This page refers to `src/install.js` file which is executed on the installation of the App Extension only. Not all App Extensions will need an install -- this is an optional step.
@@ -50,7 +50,7 @@ Contains the full path (String) to the root of the app on which this App Extensi
 
 Ensure the App Extension is compatible with a package installed in the host app through a semver condition.
 
-If the semver condition is not met, then @quasar/app errors out and halts execution.
+If the semver condition is not met, then @efuzy/app errors out and halts execution.
 
 Example of semver condition: `'1.x || >=2.5.0 || 5.0.0 - 7.2.3'`.
 
@@ -59,7 +59,7 @@ Example of semver condition: `'1.x || >=2.5.0 || 5.0.0 - 7.2.3'`.
  * @param {string} packageName
  * @param {string} semverCondition
  */
-api.compatibleWith('@quasar/app', '1.x')
+api.compatibleWith('@efuzy/app', '1.x')
 ```
 
 ## api.hasPackage
@@ -77,13 +77,13 @@ Example of semver condition: `'1.x || >=2.5.0 || 5.0.0 - 7.2.3'`.
 if (api.hasPackage('vuelidate')) {
   // hey, this app has it (any version of it)
 }
-if (api.hasPackage('quasar', '^1.0.0')) {
+if (api.hasPackage('efuzy', '^1.0.0')) {
   // hey, this app has v1 installed
 }
 ```
 
 ## api.hasExtension
-Check if another app extension is npm installed and Quasar CLI has invoked it.
+Check if another app extension is npm installed and Efuzy CLI has invoked it.
 
 ```js
 /**
@@ -121,7 +121,7 @@ Helper method to extend package.json with new props. If specifying existing prop
  */
 api.extendPackageJson({
   scripts: {
-    'electron': 'quasar dev -m electron'
+    'electron': 'efuzy dev -m electron'
   }
 })
 ```
@@ -215,7 +215,7 @@ const message = 'This is content when we don\'t have "Feature X"'
 
 Possibilities are limited only by your imagination.
 
-## api.renderFile <q-badge align="top" label="@quasar/app v2+" />
+## api.renderFile <q-badge align="top" label="@efuzy/app v2+" />
 
 Similar with api.render() with the difference that this method renders a single file.
 

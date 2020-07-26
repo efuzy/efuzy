@@ -79,7 +79,7 @@ As a helper, you can use `clearable` prop so user can reset model to `null` thro
 The following QInputs make use of the `type` prop in order to render native equivalent `<input type="...">` inside of them.
 
 ::: warning
-Support and behavior is the subject entirely of the browser rendering the page and not Quasar's core code.
+Support and behavior is the subject entirely of the browser rendering the page and not Efuzy's core code.
 :::
 
 <doc-example title="Input types" file="QInput/InputTypes" />
@@ -170,7 +170,7 @@ Below are mask tokens:
 | `X` | Alphanumeric, transformed to uppercase for letters |
 | `x` | Alphanumeric, transformed to lowercase for letters |
 
-There are **helpers** for QInput `mask` prop: [full list](https://github.com/quasarframework/quasar/blob/dev/ui/src/mixins/mask.js#L2). You can use these for convenience (examples: "phone", "card") or write the string specifying your custom needs.
+There are **helpers** for QInput `mask` prop: [full list](https://github.com/efuzy/efuzy/blob/dev/ui/src/mixins/mask.js#L2). You can use these for convenience (examples: "phone", "card") or write the string specifying your custom needs.
 
 <doc-example title="Basic" file="QInput/MaskBasic" />
 
@@ -277,7 +277,7 @@ value => value.includes('Hello') || 'Field must contain word Hello'
 
 You can reset the validation by calling `resetValidation()` method on the QInput.
 
-There are **helpers** for QInput `rules` prop: [full list](https://github.com/quasarframework/quasar/blob/dev/ui/src/utils/patterns.js). You can use these for convenience (examples: "date", "time", "hexColor", "rgbOrRgbaColor", "anyColor") or write the string specifying your custom needs.
+There are **helpers** for QInput `rules` prop: [full list](https://github.com/efuzy/efuzy/blob/dev/ui/src/utils/patterns.js). You can use these for convenience (examples: "date", "time", "hexColor", "rgbOrRgbaColor", "anyColor") or write the string specifying your custom needs.
 
 <doc-example title="Basic" file="QInput/ValidationRequired" />
 
@@ -314,7 +314,7 @@ You can also customize the slot for error message:
 
 ## Native form submit <q-badge align="top" label="v1.9+" />
 
-When dealing with a native form which has an `action` and a `method` (eg. when using Quasar with ASP.NET controllers), you need to specify the `name` property on QInput, otherwise formData will not contain it (if it should):
+When dealing with a native form which has an `action` and a `method` (eg. when using Efuzy with ASP.NET controllers), you need to specify the `name` property on QInput, otherwise formData will not contain it (if it should):
 
 <doc-example title="Native form" file="QInput/NativeForm" />
 

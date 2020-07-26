@@ -71,7 +71,7 @@ import {
   outlinedCloudUpload,
   outlinedClearAll,
   outlinedDoneAll
-} from '@quasar/extras/material-icons-outlined'
+} from '@efuzy/extras/material-icons-outlined'
 
 export default {
   name: 'svg-material-icons-outlined',

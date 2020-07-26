@@ -3,17 +3,17 @@
  * DO NOT EDIT.
  *
  * You are probably looking on adding startup/initialization code.
- * Use "quasar new boot <name>" and add it there.
- * One boot file per concern. Then reference the file(s) in quasar.conf.js > boot:
+ * Use "efuzy new boot <name>" and add it there.
+ * One boot file per concern. Then reference the file(s) in efuzy.conf.js > boot:
  * boot: ['file', ...] // do not add ".js" extension to it.
  *
  * Boot files are your "main.js"
  **/
 import Vue from 'vue'
-import './import-quasar.js'
+import './import-efuzy.js'
 
 <% if (ctx.mode.ssr) { %>
-import <%= framework.importStrategy === 'all' ? 'Quasar' : '{ Quasar }' %> from 'quasar'
+import <%= framework.importStrategy === 'all' ? 'Efuzy' : '{ Efuzy }' %> from 'efuzy'
 <% if (ctx.mode.pwa) { %>
 import { isRunningOnPWA } from './ssr-pwa'
 <% } %>
@@ -75,10 +75,10 @@ export default async function (<%= ctx.mode.ssr ? 'ssrContext' : '' %>) {
     app.el = '#q-app'
   }
   else {
-    Quasar.ssrUpdate({ app, ssr: ssrContext })
+    Efuzy.ssrUpdate({ app, ssr: ssrContext })
   }
     <% } else { %>
-  Quasar.ssrUpdate({ app, ssr: ssrContext })
+  Efuzy.ssrUpdate({ app, ssr: ssrContext })
     <% } %>
   <% } else { %>
   app.el = '#q-app'

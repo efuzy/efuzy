@@ -1,11 +1,11 @@
 ---
 title: Global Event Bus
-desc: How to use a global event bus in a Quasar app.
+desc: How to use a global event bus in a Efuzy app.
 ---
 Sometimes you need an event bus or a publish/subscribe channel. Vue already has an event bus for each component. For convenience, you can use the root Vue component for this through `this.$root` to register and listen for events.
 
 ::: danger
-Not to be confused with events supported by Quasar Components. Those are Vue events emitted by the respective components and don't interfere with the global event bus.
+Not to be confused with events supported by Efuzy Components. Those are Vue events emitted by the respective components and don't interfere with the global event bus.
 :::
 
 ::: tip
@@ -71,7 +71,7 @@ methods: {
 
 ### Usage with QDialog and QMenu
 
-These components use Quasar Portals so that content can be rendered at the end of the `<body>` tag in order to:
+These components use Efuzy Portals so that content can be rendered at the end of the `<body>` tag in order to:
 1. avoid css pollution
 2. avoid z-index issues
 3. avoid possible parent CSS overflow

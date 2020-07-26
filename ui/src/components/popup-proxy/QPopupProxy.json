@@ -2,7 +2,7 @@
   "mixins": [ "mixins/anchor" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/popup-proxy"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/popup-proxy"
   },
 
   "props": {

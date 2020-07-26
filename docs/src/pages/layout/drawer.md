@@ -1,6 +1,6 @@
 ---
 title: Layout Drawer
-desc: How to use the QDrawer component. The sidebars of your Quasar app.
+desc: How to use the QDrawer component. The sidebars of your Efuzy app.
 related:
   - /layout/layout
   - /vue-components/list-and-list-items
@@ -81,7 +81,7 @@ Consider using QItems with routing props (like `to`) below. For demoing purposes
 <doc-example title="Mini-mode with click trigger" file="QDrawer/MiniClickEvent" />
 
 #### Slots
-By default, when in "mini" mode, Quasar CSS hides a few DOM elements to provide a neat narrow drawer. But there may certainly be use-cases where you need a deep tweak. You can use the "mini" Vue slot of QLayoutDrawer just for that. The content of this slot will replace your drawer's default content when in "mini" mode.
+By default, when in "mini" mode, Efuzy CSS hides a few DOM elements to provide a neat narrow drawer. But there may certainly be use-cases where you need a deep tweak. You can use the "mini" Vue slot of QLayoutDrawer just for that. The content of this slot will replace your drawer's default content when in "mini" mode.
 
 <doc-example title="Mini-mode with slot" file="QDrawer/MiniSlot" />
 

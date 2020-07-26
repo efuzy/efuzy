@@ -32,7 +32,7 @@ export default {
           this.asyncContent = {
             sent: this.sent,
             name: this.sent === true ? 'me' : 'Someone else',
-            avatar: this.sent === true ? 'https://cdn.quasar.dev/img/avatar4.jpg' : 'https://cdn.quasar.dev/img/avatar3.jpg',
+            avatar: this.sent === true ? 'https://cdn.efuzy.dev/img/avatar4.jpg' : 'https://cdn.efuzy.dev/img/avatar3.jpg',
             stamp: `${Math.floor(this.index / 1000)} minutes ago`,
             text: [ `Message with id ${this.index}` ]
           }

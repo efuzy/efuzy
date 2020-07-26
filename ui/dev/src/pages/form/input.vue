@@ -256,7 +256,7 @@
       <q-input v-bind="props" standout v-model="text" label="Label">
         <q-icon slot="prepend" name="event" />
         <q-avatar slot="append">
-          <img src="https://cdn.quasar.dev/img/quasar-logo.png">
+          <img src="https://cdn.efuzy.dev/img/efuzy-logo.png">
         </q-avatar>
       </q-input>
 
@@ -474,7 +474,7 @@
 </template>
 
 <script>
-import { event } from 'quasar'
+import { event } from 'efuzy'
 
 const { stopAndPrevent } = event
 

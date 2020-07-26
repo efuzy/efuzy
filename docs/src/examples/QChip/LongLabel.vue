@@ -39,7 +39,7 @@
         text-color="white"
       >
         <q-avatar>
-          <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+          <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
         </q-avatar>
         <div class="ellipsis">
           {{ cookiesLabel }}

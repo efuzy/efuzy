@@ -1,6 +1,6 @@
 ---
 title: Typography
-desc: The typography of a Quasar app and its helper CSS classes.
+desc: The typography of a Efuzy app and its helper CSS classes.
 components:
   - typography/TypographyHeadings
   - typography/TypographyWeights
@@ -9,7 +9,7 @@ related:
   - /style/positioning
   - /style/spacing
 ---
-We'll handle the typography supplied by Quasar in the sections below.
+We'll handle the typography supplied by Efuzy in the sections below.
 
 ## Headings
 <typography-headings />
@@ -40,7 +40,7 @@ Roboto comes with 5 different font weights you can use: 100, 300, 400, 500, 700.
 This is where Roboto font comes embedded by default, if you are looking to remove it:
 
 ```js
-// file: /quasar.conf.js
+// file: /efuzy.conf.js
 extras: [
   'roboto-font'
 ]

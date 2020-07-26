@@ -4,20 +4,20 @@ const compileTemplate = require('lodash.template')
 
 const { log } = require('./helpers/logger')
 const appPaths = require('./app-paths')
-const quasarFolder = appPaths.resolve.app('.quasar')
+const efuzyFolder = appPaths.resolve.app('.efuzy')
 
 class Generator {
-  constructor (quasarConfig) {
-    const { ctx } = quasarConfig.getBuildConfig()
+  constructor (efuzyConfig) {
+    const { ctx } = efuzyConfig.getBuildConfig()
 
     this.alreadyGenerated = false
-    this.quasarConfig = quasarConfig
+    this.efuzyConfig = efuzyConfig
 
     const paths = [
       'app.js',
       'client-entry.js',
       'client-prefetch.js',
-      'import-quasar.js'
+      'import-efuzy.js'
     ]
 
     if (ctx.mode.ssr) {
@@ -37,7 +37,7 @@ class Generator {
 
       return {
         filename,
-        dest: path.join(quasarFolder, filename),
+        dest: path.join(efuzyFolder, filename),
         template: compileTemplate(content)
       }
     })
@@ -47,11 +47,11 @@ class Generator {
 
       this.files.push({
         filename: 'ssr.js',
-        dest: path.join(quasarFolder, 'ssr-config.js'),
+        dest: path.join(efuzyFolder, 'ssr-config.js'),
         template: compileTemplate(fs.readFileSync(ssrFile, 'utf-8')),
-        dataFn: quasarConfig => ({
-          opts: quasarConfig.ssr.__templateOpts,
-          flags: quasarConfig.ssr.__templateFlags
+        dataFn: efuzyConfig => ({
+          opts: efuzyConfig.ssr.__templateOpts,
+          flags: efuzyConfig.ssr.__templateFlags
         })
       })
     }
@@ -59,16 +59,16 @@ class Generator {
 
   build () {
     log(`Generating Webpack entry point`)
-    const data = this.quasarConfig.getBuildConfig()
+    const data = this.efuzyConfig.getBuildConfig()
 
-    // ensure .quasar folder
-    if (!fs.existsSync(quasarFolder)) {
-      fs.mkdirSync(quasarFolder)
+    // ensure .efuzy folder
+    if (!fs.existsSync(efuzyFolder)) {
+      fs.mkdirSync(efuzyFolder)
     }
-    else if (!fs.lstatSync(quasarFolder).isDirectory()) {
+    else if (!fs.lstatSync(efuzyFolder).isDirectory()) {
       const { removeSync } = require('fs-extra')
-      removeSync(quasarFolder)
-      fs.mkdirSync(quasarFolder)
+      removeSync(efuzyFolder)
+      fs.mkdirSync(efuzyFolder)
     }
 
     this.files.forEach(file => {

@@ -96,16 +96,16 @@ function injectRule (chain, pref, lang, test, loader, loaderOptions) {
         })
 
       if (loader === 'stylus-loader') {
-        rule.use('quasar-stylus-variables-loader')
+        rule.use('efuzy-stylus-variables-loader')
           .loader(cssVariables.loaders.styl)
       }
       else if (loader === 'sass-loader') {
         if (loaderOptions && loaderOptions.sassOptions && loaderOptions.sassOptions.indentedSyntax) {
-          rule.use('quasar-sass-variables-loader')
+          rule.use('efuzy-sass-variables-loader')
             .loader(cssVariables.loaders.sass)
         }
         else {
-          rule.use('quasar-scss-variables-loader')
+          rule.use('efuzy-scss-variables-loader')
             .loader(cssVariables.loaders.scss)
         }
       }

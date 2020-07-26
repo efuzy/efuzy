@@ -26,7 +26,7 @@
 
     .q-gutter-xs(v-if="!hasEnded" :class="paddingClass")
       .row.items-center(:class="alignClass")
-        .text-bold Quasar.Conf
+        .text-bold Efuzy.Conf
         .q-ml-xs launches in...
       q-badge.text-bold(v-if="days > 0" :color="color" :text-color="textColor") {{ days }} Days
       q-badge.text-bold(v-if="hours > 0" :color="color" :text-color="textColor") {{ hours }} Hours
@@ -34,7 +34,7 @@
 </template>
 
 <script>
-import { mdiYoutube } from '@quasar/extras/mdi-v5'
+import { mdiYoutube } from '@efuzy/extras/mdi-v5'
 
 // July 5, 2020 15:00:00 GMT
 const confDate = 1593961200000
@@ -67,11 +67,11 @@ export default {
       return this.hasEnded === true
         ? {
           href: 'https://www.youtube.com/watch?v=6ZKBZ3k4Ebk&feature=youtu.be',
-          label: 'View Quasar.Conf on YouTube!',
+          label: 'View Efuzy.Conf on YouTube!',
           icon: mdiYoutube
         }
         : {
-          href: 'https://dev.to/quasar/introducing-quasar-conf-52gg',
+          href: 'https://dev.to/efuzy/introducing-efuzy-conf-52gg',
           label: 'About'
         }
     }

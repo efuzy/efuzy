@@ -14,7 +14,7 @@ module.exports = function (cfg) {
 
   if (content.indexOf('<base href') > -1) {
     warn(`Please remove the <base> tag from /src/index.template.html
-   This is taken care of by Quasar automatically.
+   This is taken care of by Efuzy automatically.
   `)
     error = true
   }
@@ -23,7 +23,7 @@ module.exports = function (cfg) {
   content = fs.readFileSync(file, 'utf-8')
   if (content.indexOf('q-app') === -1) {
     console.log()
-    warn(`Quasar requires a minor change to the root component:
+    warn(`Efuzy requires a minor change to the root component:
    ${file}
 
   Please add: id="q-app" (or write #q-app if using Pug)

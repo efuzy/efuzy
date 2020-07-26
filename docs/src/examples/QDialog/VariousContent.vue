@@ -47,7 +47,7 @@
 
     <q-dialog v-model="card">
       <q-card class="my-card">
-        <q-img src="https://cdn.quasar.dev/img/chicken-salad.jpg" />
+        <q-img src="https://cdn.efuzy.dev/img/chicken-salad.jpg" />
 
         <q-card-section>
           <q-btn

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/pull-to-refresh"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/pull-to-refresh"
   },
 
   "behavior": {
@@ -9,12 +9,12 @@
 
   "props": {
     "color": {
-      "desc": "Color name for the icon from the Quasar Color Palette",
+      "desc": "Color name for the icon from the Efuzy Color Palette",
       "extends": "color"
     },
 
     "bg-color": {
-      "desc": "Color name for background of the icon container from the Quasar Color Palette",
+      "desc": "Color name for background of the icon container from the Efuzy Color Palette",
       "extends": "color",
       "addedIn": "v1.9.5"
     },

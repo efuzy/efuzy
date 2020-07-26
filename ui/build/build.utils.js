@@ -35,7 +35,7 @@ process.on('exit', code => {
     })
 
     console.log()
-    console.log(` Summary of Quasar v${version}:`)
+    console.log(` Summary of Efuzy v${version}:`)
     console.log(output)
   }
 })
@@ -64,7 +64,7 @@ function getDestinationInfo (dest) {
     return {
       banner: green('[js]  '),
       tableEntryType: green('js'),
-      toTable: dest.indexOf('dist/quasar') > -1
+      toTable: dest.indexOf('dist/efuzy') > -1
     }
   }
 
@@ -137,12 +137,12 @@ function logError (err) {
 
 module.exports.logError = logError
 
-module.exports.rollupQuasarUMD = function (config = {}) {
+module.exports.rollupEfuzyUMD = function (config = {}) {
   return {
-    name: 'quasar-umd',
+    name: 'efuzy-umd',
     transform (code) {
       return {
-        code: `Quasar.${config.type}.set(${code.replace('export default ', '')})`
+        code: `Efuzy.${config.type}.set(${code.replace('export default ', '')})`
       }
     }
   }

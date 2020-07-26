@@ -80,7 +80,7 @@ import {
   mdiCloudUpload,
   mdiNotificationClearAll,
   mdiCheckAll
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 export default {
   name: 'svg-mdi-v5',

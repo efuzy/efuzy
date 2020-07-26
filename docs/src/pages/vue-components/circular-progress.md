@@ -6,8 +6,8 @@ related:
   - /vue-components/inner-loading
   - /vue-components/spinners
   - /vue-components/skeleton
-  - /quasar-plugins/loading
-  - /quasar-plugins/loading-bar
+  - /efuzy-plugins/loading
+  - /efuzy-plugins/loading-bar
 ---
 
 The QCircularProgress component displays a colored circular progress. The bar can either have a determinate progress, or an indeterminate animation. It should be used to inform the user that an action is occurring in the background.

@@ -44,11 +44,11 @@ export default {
 </script>
 ```
 
-Please note that by default the method called is not debounced. For that you have to do it yourself, by wrapping your method with Quasar's debounce util like below.
+Please note that by default the method called is not debounced. For that you have to do it yourself, by wrapping your method with Efuzy's debounce util like below.
 As per the example below, you need to use `function (position) {}` or `position => {}.bind(this)` to be able to access the Vue component inside the debounce function.
 
 ``` js
-import { debounce } from 'quasar'
+import { debounce } from 'efuzy'
 
 export default {
   ...,
@@ -66,7 +66,7 @@ export default {
 ```
 
 ### Determining Scrolling Container
-Please read [here](/vue-components/scroll-observer#Determining-Scrolling-Container) about how Quasar determines the container to attach scrolling events to.
+Please read [here](/vue-components/scroll-observer#Determining-Scrolling-Container) about how Efuzy determines the container to attach scrolling events to.
 
 ## Scroll API
 <doc-api file="Scroll" />

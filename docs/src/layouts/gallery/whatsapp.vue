@@ -62,7 +62,7 @@
       >
         <q-toolbar class="bg-grey-3">
           <q-avatar class="cursor-pointer">
-            <img src="https://cdn.quasar.dev/app-icons/icon-128x128.png" />
+            <img src="https://cdn.efuzy.dev/app-icons/icon-128x128.png" />
           </q-avatar>
 
           <q-space />
@@ -176,32 +176,32 @@ export default {
         {
           id: 1,
           person: 'Razvan Stoenescu',
-          avatar: 'https://cdn.quasar.dev/team/razvan_stoenescu.jpeg',
-          caption: 'I\'m working on Quasar!',
+          avatar: 'https://cdn.efuzy.dev/team/razvan_stoenescu.jpeg',
+          caption: 'I\'m working on Efuzy!',
           time: '15:00',
           sent: true
         },
         {
           id: 2,
           person: 'Dan Popescu',
-          avatar: 'https://cdn.quasar.dev/team/dan_popescu.jpg',
-          caption: 'I\'m working on Quasar!',
+          avatar: 'https://cdn.efuzy.dev/team/dan_popescu.jpg',
+          caption: 'I\'m working on Efuzy!',
           time: '16:00',
           sent: true
         },
         {
           id: 3,
           person: 'Jeff Galbraith',
-          avatar: 'https://cdn.quasar.dev/team/jeff_galbraith.jpg',
-          caption: 'I\'m working on Quasar!',
+          avatar: 'https://cdn.efuzy.dev/team/jeff_galbraith.jpg',
+          caption: 'I\'m working on Efuzy!',
           time: '18:00',
           sent: true
         },
         {
           id: 4,
           person: 'Allan Gaunt',
-          avatar: 'https://cdn.quasar.dev/team/allan_gaunt.png',
-          caption: 'I\'m working on Quasar!',
+          avatar: 'https://cdn.efuzy.dev/team/allan_gaunt.png',
+          caption: 'I\'m working on Efuzy!',
           time: '17:00',
           sent: true
         }

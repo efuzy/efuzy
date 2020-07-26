@@ -46,7 +46,7 @@ Please take notice of the Boolean `keep-alive` prop for QStepper, if you need th
 
 ::: tip
 You can also connect `contracted` prop to `$q.screen` to make a responsive behavior, like `:contracted="$q.screen.lt.md`.
-More info: [Quasar Screen Plugin](/options/screen-plugin).
+More info: [Efuzy Screen Plugin](/options/screen-plugin).
 :::
 
 <doc-example title="Contracted" file="QStepper/Contracted" />
@@ -63,7 +63,7 @@ You can also use `prefix` prop (max 2 characters) instead of an icon for each st
 
 <doc-example title="Dark" file="QStepper/Dark" />
 
-Starting with Quasar v1.9.13+, you can use the `header-class` prop to apply any CSS class(es) to the header. In the example below, we are applying bolded text:
+Starting with Efuzy v1.9.13+, you can use the `header-class` prop to apply any CSS class(es) to the header. In the example below, we are applying bolded text:
 
 <doc-example title="Header Class" file="QStepper/HeaderClass" />
 

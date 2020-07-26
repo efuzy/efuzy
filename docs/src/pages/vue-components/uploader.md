@@ -5,7 +5,7 @@ related:
   - /vue-components/file-picker
 ---
 
-Quasar supplies a way for you to upload files through the QUploader component.
+Efuzy supplies a way for you to upload files through the QUploader component.
 
 :::tip
 If all you want is an input file, you might want to consider using [QFile](/vue-components/file-picker) picker component instead.
@@ -267,18 +267,18 @@ Below is an example with the API that you need to supply. **You'll be creating a
 Basically, QUploader is QUploaderBase + the xhr mixin. Your component will be QUploaderBase + your service mixin.
 
 ::: tip
-For the default XHR implementation, check out [source code](https://github.com/quasarframework/quasar/blob/dev/ui/src/components/uploader/uploader-xhr-mixin.js).
+For the default XHR implementation, check out [source code](https://github.com/efuzy/efuzy/blob/dev/ui/src/components/uploader/uploader-xhr-mixin.js).
 :::
 
 ::: warning Help appreciated
 We'd be more than happy to accept PRs on supporting other upload services as well, so others can benefit.
 :::
 
-For the UMD version, you can extend `Quasar.components.QUploaderBase`.
+For the UMD version, you can extend `Efuzy.components.QUploaderBase`.
 
 ```js
 // MyUploader.js
-import { QUploaderBase } from 'quasar'
+import { QUploaderBase } from 'efuzy'
 
 export default {
   name: 'MyUploader',

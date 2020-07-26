@@ -22,7 +22,7 @@ import {
   mdiNumeric6Box,
   mdiNumeric7Box,
   mdiFormatFont
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 export default {
   name: 'themify',

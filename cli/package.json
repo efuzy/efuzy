@@ -1,9 +1,9 @@
 {
-  "name": "@quasar/cli",
+  "name": "@efuzy/cli",
   "version": "1.1.0",
-  "description": "Quasar Framework global CLI",
+  "description": "Efuzy Framework global CLI",
   "bin": {
-    "quasar": "./bin/quasar"
+    "efuzy": "./bin/efuzy"
   },
   "files": [
     "assets",
@@ -11,7 +11,7 @@
     "lib"
   ],
   "keywords": [
-    "quasar",
+    "efuzy",
     "cli",
     "web",
     "spa",
@@ -24,18 +24,18 @@
   "author": {
     "name": "Razvan Stoenescu",
     "email": "razvan.stoenescu@gmail.com",
-    "url": "https://github.com/quasarframework"
+    "url": "https://github.com/efuzy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/quasarframework/quasar"
+    "url": "https://github.com/efuzy/efuzy"
   },
   "license": "MIT",
-  "bugs": "https://github.com/quasarframework/quasar/issues",
-  "homepage": "https://quasar.dev",
+  "bugs": "https://github.com/efuzy/efuzy/issues",
+  "homepage": "https://efuzy.dev",
   "funding": {
     "type": "github",
-    "url": "https://donate.quasar.dev"
+    "url": "https://donate.efuzy.dev"
   },
   "engines": {
     "node": ">= 10.0.0",

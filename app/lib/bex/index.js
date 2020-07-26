@@ -9,10 +9,10 @@ class BexRunner {
 
   init () {}
 
-  async run (quasarConfig) {
+  async run (efuzyConfig) {
     this.stop()
 
-    const compiler = webpack(quasarConfig.getWebpackConfig().main)
+    const compiler = webpack(efuzyConfig.getWebpackConfig().main)
 
     return new Promise(resolve => {
       log(`Building background process...`)

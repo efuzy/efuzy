@@ -1,6 +1,6 @@
 ---
 title: Flex Grid Playground
-desc: Interactively play with Quasar Flex Grid
+desc: Interactively play with Efuzy Flex Grid
 related:
   - /layout/grid/introduction-to-flexbox
   - /layout/grid/row

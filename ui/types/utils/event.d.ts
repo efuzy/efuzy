@@ -1,6 +1,6 @@
 // Allow using `passive` and `notPassive` with `removeEventListener`
 // See https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener#Matching_event_listeners_for_removal
-// See https://github.com/quasarframework/quasar/pull/5729#issuecomment-559588257
+// See https://github.com/efuzy/efuzy/pull/5729#issuecomment-559588257
 interface RemoveEventListenerFix {
   capture: undefined;
 }

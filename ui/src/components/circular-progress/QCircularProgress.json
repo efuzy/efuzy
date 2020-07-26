@@ -2,7 +2,7 @@
   "mixins": [ "mixins/size" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/circular-progress"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/circular-progress"
   },
 
   "behavior": {
@@ -36,17 +36,17 @@
 
     "color": {
       "extends": "color",
-      "desc": "Color name for the arc progress from the Quasar Color Palette"
+      "desc": "Color name for the arc progress from the Efuzy Color Palette"
     },
 
     "center-color": {
       "extends": "color",
-      "desc": "Color name for the center part of the component from the Quasar Color Palette"
+      "desc": "Color name for the center part of the component from the Efuzy Color Palette"
     },
 
     "track-color": {
       "extends": "color",
-      "desc": "Color name for the track of the component from the Quasar Color Palette"
+      "desc": "Color name for the track of the component from the Efuzy Color Palette"
     },
 
     "font-size": {

@@ -7,9 +7,9 @@
     <meta name="msapplication-tap-highlight" content="no">
     <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1,width=device-width">
 
-    <title>Quasar UMD test</title>
+    <title>Efuzy UMD test</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" rel="stylesheet" type="text/css">
-    <link href="dist/quasar.css" rel="stylesheet" type="text/css">
+    <link href="dist/efuzy.css" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div id="q-app">
@@ -19,10 +19,10 @@
             <q-btn flat round dense @click="drawerState = !drawerState" icon="menu"></q-btn>
 
             <q-toolbar-title>
-              Quasar App
+              Efuzy App
             </q-toolbar-title>
 
-            <div>Quasar v{{ $q.version }}</div>
+            <div>Efuzy v{{ $q.version }}</div>
           </q-toolbar>
         </q-header>
 
@@ -34,49 +34,49 @@
         >
           <q-list>
             <q-item-label header>Essential Links</q-item-label>
-            <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
+            <q-item clickable tag="a" target="_blank" href="https://efuzy.dev">
               <q-item-section avatar>
                 <q-icon name="school"></q-icon>
               </q-item-section>
               <q-item-section>
                 <q-item-label>Docs</q-item-label>
-                <q-item-label caption>quasar.dev</q-item-label>
+                <q-item-label caption>efuzy.dev</q-item-label>
               </q-item-section>
             </q-item>
-            <q-item clickable tag="a" target="_blank" href="https://github.com/quasarframework/">
+            <q-item clickable tag="a" target="_blank" href="https://github.com/efuzy/">
               <q-item-section avatar>
                 <q-icon name="code"></q-icon>
               </q-item-section>
               <q-item-section>
                 <q-item-label>GitHub</q-item-label>
-                <q-item-label caption>github.com/quasarframework</q-item-label>
+                <q-item-label caption>github.com/efuzy</q-item-label>
               </q-item-section>
             </q-item>
-            <q-item clickable tag="a" target="_blank" href="https://chat.quasar.dev">
+            <q-item clickable tag="a" target="_blank" href="https://chat.efuzy.dev">
               <q-item-section avatar>
                 <q-icon name="chat"></q-icon>
               </q-item-section>
               <q-item-section>
                 <q-item-label>Discord Chat Channel</q-item-label>
-                <q-item-label caption>chat.quasar.dev</q-item-label>
+                <q-item-label caption>chat.efuzy.dev</q-item-label>
               </q-item-section>
             </q-item>
-            <q-item clickable tag="a" target="_blank" href="https://forum.quasar.dev">
+            <q-item clickable tag="a" target="_blank" href="https://forum.efuzy.dev">
               <q-item-section avatar>
                 <q-icon name="forum"></q-icon>
               </q-item-section>
               <q-item-section>
                 <q-item-label>Forum</q-item-label>
-                <q-item-label caption>forum.quasar.dev</q-item-label>
+                <q-item-label caption>forum.efuzy.dev</q-item-label>
               </q-item-section>
             </q-item>
-            <q-item clickable tag="a" target="_blank" href="https://twitter.com/quasarframework">
+            <q-item clickable tag="a" target="_blank" href="https://twitter.com/efuzy">
               <q-item-section avatar>
                 <q-icon name="rss_feed"></q-icon>
               </q-item-section>
               <q-item-section>
                 <q-item-label>Twitter</q-item-label>
-                <q-item-label caption>@quasarframework</q-item-label>
+                <q-item-label caption>@efuzy</q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
@@ -92,7 +92,7 @@
                   <span class="text-subtitle1">"yarn dev:umd"</span>
                   <q-rating class="q-ml-md" v-model="stars" size="24px"></q-rating>
                 </div>
-                <div class="text-caption">You need to build & refresh page on each change on Quasar</div>
+                <div class="text-caption">You need to build & refresh page on each change on Efuzy</div>
                 <div class="text-caption">Do not include index.umd.html in your commits</div>
               </q-card-section>
 
@@ -110,42 +110,42 @@
       </q-layout>
     </div>
 
-    <script src="dist/quasar.ie.polyfills.umd.min.js"></script>
+    <script src="dist/efuzy.ie.polyfills.umd.min.js"></script>
     <script src="https://unpkg.com/vue/dist/vue.min.js"></script>
     <script>
       // optional
-      window.quasarConfig = {
+      window.efuzyConfig = {
         brand: {
           primary: '#ff0000'
         }
       }
     </script>
-    <script src="dist/quasar.umd.js"></script>
+    <script src="dist/efuzy.umd.js"></script>
     <script src="dist/lang/es.umd.min.js"></script>
     <script src="dist/icon-set/fontawesome-v5.umd.min.js"></script>
     <script src="dist/icon-set/svg-fontawesome-v5.umd.min.js"></script>
 
     <script>
-      Quasar.lang.set(Quasar.lang.es)
-      Quasar.iconSet.set(Quasar.iconSet.svgFontawesomeV5)
+      Efuzy.lang.set(Efuzy.lang.es)
+      Efuzy.iconSet.set(Efuzy.iconSet.svgFontawesomeV5)
 
-      console.log('fontawesome-v5 set', Quasar.iconSet.fontawesomeV5)
-      console.log('svg-fontawesome-v5 set', Quasar.iconSet.svgFontawesomeV5)
+      console.log('fontawesome-v5 set', Efuzy.iconSet.fontawesomeV5)
+      console.log('svg-fontawesome-v5 set', Efuzy.iconSet.svgFontawesomeV5)
 
-      Quasar.plugins.Notify.create('Startup notification')
+      Efuzy.plugins.Notify.create('Startup notification')
 
       new Vue({
         el: '#q-app',
         data: function () {
           return {
-            version: Quasar.version,
+            version: Efuzy.version,
             stars: 5,
             drawerState: false
           }
         },
         methods: {
           launch: function (url) {
-            Quasar.utils.openURL(url)
+            Efuzy.utils.openURL(url)
           },
           onRefreshClick: function () {
             window.location.reload()

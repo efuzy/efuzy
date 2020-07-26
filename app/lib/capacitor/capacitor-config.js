@@ -106,7 +106,7 @@ class CapacitorConfig {
   __updateCapJson (cfg, originalCapCfg) {
     const capJson = { ...originalCapCfg }
 
-    capJson.appName = cfg.capacitor.appName || this.pkg.productName || 'Quasar App'
+    capJson.appName = cfg.capacitor.appName || this.pkg.productName || 'Efuzy App'
     capJson.bundledWebRuntime = false
 
     if (cfg.ctx.dev) {
@@ -152,9 +152,9 @@ class CapacitorConfig {
     const file = appPaths.resolve.capacitor('node_modules/@capacitor/ios/ios/Capacitor/Capacitor/CAPBridgeViewController.swift')
     const needle = 'public func getWebView() -> WKWebView {'
     const content = `
-  // The following part was dynamically added by Quasar.
+  // The following part was dynamically added by Efuzy.
   // This should NOT be part of the app when building for production,
-  // and it will be removed by Quasar automatically on "quasar build":
+  // and it will be removed by Efuzy automatically on "efuzy build":
   public func webView(_ webView: WKWebView, didReceive challenge: URLAuthenticationChallenge, completionHandler: @escaping (URLSession.AuthChallengeDisposition, URLCredential?) -> Void) {
     let cred = URLCredential(trust: challenge.protectionSpace.serverTrust!)
     completionHandler(.useCredential, cred)
@@ -180,7 +180,7 @@ class CapacitorConfig {
       warn()
       warn(`${shortFilename} not found or content is unrecognized.`)
       warn(`Your App will revoke the devserver's SSL certificate.`)
-      warn(`Please disable HTTPS from quasar.conf.js > devServer > https`)
+      warn(`Please disable HTTPS from efuzy.conf.js > devServer > https`)
       warn()
       warn()
       warn()

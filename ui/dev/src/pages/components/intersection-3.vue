@@ -19,7 +19,7 @@
           class="int-example-item"
         >
           <q-card class="q-ma-sm">
-            <img src="https://cdn.quasar.dev/img/mountains.jpg">
+            <img src="https://cdn.efuzy.dev/img/mountains.jpg">
 
             <q-card-section>
               <div class="text-h6">

@@ -225,26 +225,26 @@ function addToExtraInterfaces (def, required) {
   }
 }
 
-function writeQuasarPluginProps (contents, nameName, props, isLast) {
+function writeEfuzyPluginProps (contents, nameName, props, isLast) {
   writeLine(contents, `${nameName}: {`, 1)
   props.forEach(prop => writeLines(contents, prop, 2))
   writeLine(contents, `}${isLast ? '' : ','}`, 1)
 }
 
-function addQuasarPluginOptions (contents, components, directives, plugins) {
-  writeLine(contents, `import { GlobalQuasarLanguage, GlobalQuasarIconSet } from './globals'`)
-  writeLine(contents, `export interface QuasarPluginOptions {`)
-  writeLine(contents, `lang: GlobalQuasarLanguage,`, 1)
+function addEfuzyPluginOptions (contents, components, directives, plugins) {
+  writeLine(contents, `import { GlobalEfuzyLanguage, GlobalEfuzyIconSet } from './globals'`)
+  writeLine(contents, `export interface EfuzyPluginOptions {`)
+  writeLine(contents, `lang: GlobalEfuzyLanguage,`, 1)
   writeLine(contents, `config: any,`, 1)
-  writeLine(contents, `iconSet: GlobalQuasarIconSet,`, 1)
-  writeQuasarPluginProps(contents, 'components', components)
-  writeQuasarPluginProps(contents, 'directives', directives)
-  writeQuasarPluginProps(contents, 'plugins', plugins, true)
+  writeLine(contents, `iconSet: GlobalEfuzyIconSet,`, 1)
+  writeEfuzyPluginProps(contents, 'components', components)
+  writeEfuzyPluginProps(contents, 'directives', directives)
+  writeEfuzyPluginProps(contents, 'plugins', plugins, true)
   writeLine(contents, `}`)
   writeLine(contents)
 }
 
-function addQuasarLangCodes (contents) {
+function addEfuzyLangCodes (contents) {
   // We are able to read this file only because
   //  it's been generated before type generation take place
   const langJson = require('../lang/index.json')
@@ -252,7 +252,7 @@ function addQuasarLangCodes (contents) {
   // Assure we are doing a module augmentation instead of a module overwrite
   writeLine(contents, `import './lang'`)
   writeLine(contents, `declare module './lang' {`)
-  writeLine(contents, `export interface QuasarLanguageCodesHolder {`, 2)
+  writeLine(contents, `export interface EfuzyLanguageCodesHolder {`, 2)
   langJson.forEach(({ isoName }) => writeLine(contents, `'${isoName}': true`, 3))
   writeLine(contents, `}`, 2)
   writeLine(contents, `}`)
@@ -260,32 +260,32 @@ function addQuasarLangCodes (contents) {
 
 function writeIndexDTS (apis) {
   var contents = []
-  var quasarTypeContents = []
+  var efuzyTypeContents = []
   var components = []
   var directives = []
   var plugins = []
 
-  addQuasarLangCodes(quasarTypeContents)
+  addEfuzyLangCodes(efuzyTypeContents)
 
   // This line must be BEFORE ANY TS INSTRUCTION,
   //  or it won't be interpreted as a TS compiler directive
   //  but as a normal comment
-  // On Vue CLI projects `@quasar/app` isn't available,
+  // On Vue CLI projects `@efuzy/app` isn't available,
   //  we ignore the "missing package" error because it's the intended behaviour
   writeLine(contents, `// @ts-ignore`)
-  writeLine(contents, `/// <reference types="@quasar/app" />`)
+  writeLine(contents, `/// <reference types="@efuzy/app" />`)
   writeLine(contents, `import Vue, { VueConstructor, PluginObject } from 'vue'`)
   writeLine(contents, `import { LooseDictionary } from './ts-helpers'`)
   writeLine(contents)
-  writeLine(quasarTypeContents, 'export as namespace quasar')
-  // We expose `ts-helpers` because they are needed by `@quasar/app` augmentations
-  writeLine(quasarTypeContents, `export * from './ts-helpers'`)
-  writeLine(quasarTypeContents, `export * from './utils'`)
-  writeLine(quasarTypeContents, `export * from './feature-flag'`)
-  writeLine(quasarTypeContents, `export * from './globals'`)
-  writeLine(quasarTypeContents, `export * from './extras'`)
-  writeLine(quasarTypeContents, `export * from './lang'`)
-  writeLine(quasarTypeContents, `export * from './api'`)
+  writeLine(efuzyTypeContents, 'export as namespace efuzy')
+  // We expose `ts-helpers` because they are needed by `@efuzy/app` augmentations
+  writeLine(efuzyTypeContents, `export * from './ts-helpers'`)
+  writeLine(efuzyTypeContents, `export * from './utils'`)
+  writeLine(efuzyTypeContents, `export * from './feature-flag'`)
+  writeLine(efuzyTypeContents, `export * from './globals'`)
+  writeLine(efuzyTypeContents, `export * from './extras'`)
+  writeLine(efuzyTypeContents, `export * from './lang'`)
+  writeLine(efuzyTypeContents, `export * from './api'`)
 
   const injections = {}
 
@@ -308,7 +308,7 @@ function writeIndexDTS (apis) {
     }
 
     // Declare class
-    writeLine(quasarTypeContents, `export const ${typeName}: ${extendsVue ? `VueConstructor<${typeName}>` : typeName}`)
+    writeLine(efuzyTypeContents, `export const ${typeName}: ${extendsVue ? `VueConstructor<${typeName}>` : typeName}`)
     writeLine(contents, `export interface ${typeName} ${extendsVue ? 'extends Vue ' : ''}{`)
 
     // Write Props
@@ -344,7 +344,7 @@ function writeIndexDTS (apis) {
 
   Object.keys(extraInterfaces).forEach(name => {
     if (extraInterfaces[name] === void 0) {
-      // If we find the symbol as part of the generated Quasar API,
+      // If we find the symbol as part of the generated Efuzy API,
       //  we don't need to import it from custom TS API patches
       if (apis.some(definition => definition.name === name)) {
         return
@@ -391,11 +391,11 @@ function writeIndexDTS (apis) {
     writeLine(contents, '}')
   }
 
-  addQuasarPluginOptions(contents, components, directives, plugins)
+  addEfuzyPluginOptions(contents, components, directives, plugins)
 
-  quasarTypeContents.forEach(line => write(contents, line))
+  efuzyTypeContents.forEach(line => write(contents, line))
 
-  writeLine(contents, `export const Quasar: PluginObject<Partial<QuasarPluginOptions>>`)
+  writeLine(contents, `export const Efuzy: PluginObject<Partial<EfuzyPluginOptions>>`)
   writeLine(contents)
 
   // These imports force TS compiler to evaluate contained declarations

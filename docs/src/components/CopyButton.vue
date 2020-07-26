@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import { copyToClipboard } from 'quasar'
-import { mdiContentCopy } from '@quasar/extras/mdi-v5'
+import { copyToClipboard } from 'efuzy'
+import { mdiContentCopy } from '@efuzy/extras/mdi-v5'
 
 export default {
   props: {

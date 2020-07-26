@@ -7,7 +7,7 @@
           <q-tab name="sass" no-caps label="Sass" />
           <q-tab name="scss" no-caps label="SCSS" />
           <q-tab name="styl" no-caps label="Stylus" />
-          <q-tab name="quasar-cli" no-caps label="Quasar CLI" />
+          <q-tab name="efuzy-cli" no-caps label="Efuzy CLI" />
           <q-tab name="umd" no-caps label="UMD" />
           <q-tab name="vue-cli" no-caps label="Vue CLI" />
         </q-tabs>
@@ -27,8 +27,8 @@
             <pre>{{ stylusExport }}</pre>
           </q-tab-panel>
 
-          <q-tab-panel class="q-pa-none" name="quasar-cli">
-            <pre>{{ quasarCliExport }}</pre>
+          <q-tab-panel class="q-pa-none" name="efuzy-cli">
+            <pre>{{ efuzyCliExport }}</pre>
           </q-tab-panel>
 
           <q-tab-panel class="q-pa-none" name="umd">
@@ -51,7 +51,7 @@
 </template>
 
 <script>
-import { colors } from 'quasar'
+import { colors } from 'efuzy'
 const { setBrand, luminosity } = colors
 
 export default {
@@ -132,7 +132,7 @@ export default {
     },
 
     sassExport () {
-      return `// src/css/quasar.variables.sass\n\n` +
+      return `// src/css/efuzy.variables.sass\n\n` +
         `$primary   : ${this.colors.primary}\n` +
         `$secondary : ${this.colors.secondary}\n` +
         `$accent    : ${this.colors.accent}\n\n` +
@@ -144,7 +144,7 @@ export default {
     },
 
     scssExport () {
-      return `// src/css/quasar.variables.scss\n\n` +
+      return `// src/css/efuzy.variables.scss\n\n` +
         `$primary   : ${this.colors.primary};\n` +
         `$secondary : ${this.colors.secondary};\n` +
         `$accent    : ${this.colors.accent};\n\n` +
@@ -156,7 +156,7 @@ export default {
     },
 
     stylusExport () {
-      return `// src/css/quasar.variables.styl\n\n` +
+      return `// src/css/efuzy.variables.styl\n\n` +
         `$primary   = ${this.colors.primary}\n` +
         `$secondary = ${this.colors.secondary}\n` +
         `$accent    = ${this.colors.accent}\n\n` +
@@ -167,8 +167,8 @@ export default {
         `$warning   = ${this.colors.warning}`
     },
 
-    quasarCliExport () {
-      return `// quasar.conf.js
+    efuzyCliExport () {
+      return `// efuzy.conf.js
 // (will not work for IE11)
 
 return {
@@ -192,10 +192,10 @@ return {
     },
 
     umdExport () {
-      return `// place before including Quasar UMD script
+      return `// place before including Efuzy UMD script
 // (will not work for IE11)
 
-window.quasarConfig = {
+window.efuzyConfig = {
   brand: {
     primary: '${this.colors.primary}',
     secondary: '${this.colors.secondary}',
@@ -215,7 +215,7 @@ window.quasarConfig = {
       return `// main.js
 // (will not work for IE11)
 
-Vue.use(Quasar, {
+Vue.use(Efuzy, {
   config: {
     brand: {
       primary: '${this.colors.primary}',

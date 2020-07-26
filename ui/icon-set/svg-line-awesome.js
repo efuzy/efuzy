@@ -66,7 +66,7 @@ import {
   laUploadSolid,
   laStreamSolid,
   laClipboardCheckSolid
-} from '@quasar/extras/line-awesome'
+} from '@efuzy/extras/line-awesome'
 
 export default {
   name: 'svg-line-awesome',

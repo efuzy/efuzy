@@ -28,9 +28,9 @@ Full list of props that you can write for the `params` object:
 
 | Prop name | Type | Description | Examples |
 | --- | --- | --- | --- |
-| include | Array | Include Icon Genie hardcoded sets of assets for specific Quasar modes | `[ "spa", "pwa" ]` / `[ "all" ]` |
-| icon | String | Path to source file for icon; can be absolute or relative to the root of the Quasar project folder | `my-icon.png` |
-| background | String | Path to optional background source file (for splash screens); can be absolute or relative to the root of the Quasar project folder | `my-bg.png` |
+| include | Array | Include Icon Genie hardcoded sets of assets for specific Efuzy modes | `[ "spa", "pwa" ]` / `[ "all" ]` |
+| icon | String | Path to source file for icon; can be absolute or relative to the root of the Efuzy project folder | `my-icon.png` |
+| background | String | Path to optional background source file (for splash screens); can be absolute or relative to the root of the Efuzy project folder | `my-bg.png` |
 | filter | String | Optionally filter the assets by generators; when used, it can generate only one type of asset instead of all | `ico` |
 | quality | Number [1-12] | Quality of the generated files; higher quality means bigger filesize, slower; lower quality means smaller filesize, faster | `12` |
 | padding | Array [Number] | (v2.1+) Apply fixed padding to the icon image after trimming it; Syntax: [ <horiz_px>, <vert_px> ]; Default is: [0, 0] | `[10, 0]` / `[5,5]` |

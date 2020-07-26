@@ -26,7 +26,7 @@
 </template>
 
 <script>
-import { clone, uid } from 'quasar'
+import { clone, uid } from 'efuzy'
 
 export default {
   data () {

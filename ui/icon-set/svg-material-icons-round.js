@@ -71,7 +71,7 @@ import {
   roundCloudUpload,
   roundClearAll,
   roundDoneAll
-} from '@quasar/extras/material-icons-round'
+} from '@efuzy/extras/material-icons-round'
 
 export default {
   name: 'svg-material-icons-round',

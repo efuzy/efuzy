@@ -15,16 +15,16 @@ form(
 </template>
 
 <script>
-import Quasar from 'quasar'
+import Efuzy from 'efuzy'
 
 const cssResources = [
   'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons',
-  `https://cdn.jsdelivr.net/npm/quasar@${Quasar.version}/dist/quasar.min.css`
+  `https://cdn.jsdelivr.net/npm/efuzy@${Efuzy.version}/dist/efuzy.min.css`
 ].join(';')
 
 const jsResources = [
   'https://cdn.jsdelivr.net/npm/vue/dist/vue.js',
-  `https://cdn.jsdelivr.net/npm/quasar@${Quasar.version}/dist/quasar.umd.min.js`
+  `https://cdn.jsdelivr.net/npm/efuzy@${Efuzy.version}/dist/efuzy.umd.min.js`
 ].join(';')
 
 export default {
@@ -52,7 +52,7 @@ export default {
     },
 
     js () {
-      const importsQ = /import\s+{([^}'\n]+)}\s+from\s+'quasar'/g
+      const importsQ = /import\s+{([^}'\n]+)}\s+from\s+'efuzy'/g
       const imports = /import ([^'\n]*) from ([^\n]*)/g
       let component = /export default {([\s\S]*)}/g.exec(this.parts.script || '')
       component = ((component && component[1]) || '').trim()
@@ -78,10 +78,10 @@ export default {
 
           const text = []
           if (parts.c.length > 0) {
-            text.push('const { ' + parts.c.join(', ') + ' } = Quasar.components')
+            text.push('const { ' + parts.c.join(', ') + ' } = Efuzy.components')
           }
           if (parts.u.length > 0) {
-            text.push('const { ' + parts.u.join(', ') + ' } = Quasar')
+            text.push('const { ' + parts.u.join(', ') + ' } = Efuzy')
           }
           return text.join('\n')
         })
@@ -118,7 +118,7 @@ export default {
     computedTitle () {
       return (this.page ? this.page + ': ' : '') +
         (this.title ? this.title + ' - ' : '') +
-        'Quasar Playground'
+        'Efuzy Playground'
     },
 
     page () {

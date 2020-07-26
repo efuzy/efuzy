@@ -19,7 +19,7 @@ module.exports = class IndexAPI {
     this.appDir = appPaths.appDir
 
     this.__hooks = {
-      extendQuasarConf: [],
+      extendEfuzyConf: [],
       extendWebpack: [],
       chainWebpackMainElectronProcess: [],
       extendWebpackMainElectronProcess: [],
@@ -74,7 +74,7 @@ module.exports = class IndexAPI {
    * semver condition.
    *
    * If the semver condition is not met, then
-   * @quasar/app errors out and halts execution
+   * @efuzy/app errors out and halts execution
    *
    * Example of semver condition:
    *   '1.x || >=2.5.0 || 5.0.0 - 7.2.3'
@@ -142,13 +142,13 @@ module.exports = class IndexAPI {
   }
 
   /**
-   * Extend quasar.conf
+   * Extend efuzy.conf
    *
    * @param {function} fn
    *   (cfg: Object, ctx: Object) => undefined
    */
-  extendQuasarConf (fn) {
-    this.__addHook('extendQuasarConf', fn)
+  extendEfuzyConf (fn) {
+    this.__addHook('extendEfuzyConf', fn)
   }
 
   /**
@@ -213,7 +213,7 @@ module.exports = class IndexAPI {
 
   /**
    * Register a command that will become available as
-   * `quasar run <ext-id> <cmd> [args]` and `quasar <ext-id> <cmd> [args]`
+   * `efuzy run <ext-id> <cmd> [args]` and `efuzy <ext-id> <cmd> [args]`
    *
    * @param {string} commandName
    * @param {function} fn
@@ -224,7 +224,7 @@ module.exports = class IndexAPI {
   }
 
   /**
-   * Register an API file for "quasar describe" command
+   * Register an API file for "efuzy describe" command
    *
    * @param {string} name
    * @param {string} relativePath (or node_modules reference if it starts with "~")
@@ -243,56 +243,56 @@ module.exports = class IndexAPI {
    * Prepare external services before dev command runs.
    *
    * @param {function} fn
-   *   (api, { quasarConf }) => ?Promise
+   *   (api, { efuzyConf }) => ?Promise
    */
   beforeDev (fn) {
     this.__addHook('beforeDev', fn)
   }
 
   /**
-   * Run hook after Quasar dev server is started ($ quasar dev).
+   * Run hook after Efuzy dev server is started ($ efuzy dev).
    * At this point, the dev server has been started and is available
    * should you wish to do something with it.
    *
    * @param {function} fn
-   *   (api, { quasarConf }) => ?Promise
+   *   (api, { efuzyConf }) => ?Promise
    */
   afterDev(fn) {
     this.__addHook('afterDev', fn)
   }
 
   /**
-   * Run hook before Quasar builds app for production ($ quasar build).
+   * Run hook before Efuzy builds app for production ($ efuzy build).
    * At this point, the distributables folder hasn't been created yet.
    *
    * @param {function} fn
-   *   (api, { quasarConf }) => ?Promise
+   *   (api, { efuzyConf }) => ?Promise
    */
   beforeBuild (fn) {
     this.__addHook('beforeBuild', fn)
   }
 
   /**
-   * Run hook after Quasar built app for production ($ quasar build).
+   * Run hook after Efuzy built app for production ($ efuzy build).
    * At this point, the distributables folder has been created and is available
    * should you wish to do something with it.
    *
    * @param {function} fn
-   *   (api, { quasarConf }) => ?Promise
+   *   (api, { efuzyConf }) => ?Promise
    */
   afterBuild (fn) {
     this.__addHook('afterBuild', fn)
   }
 
   /**
-   * Run hook if publishing was requested ("$ quasar build -P"),
-   * after Quasar built app for production and the afterBuild
+   * Run hook if publishing was requested ("$ efuzy build -P"),
+   * after Efuzy built app for production and the afterBuild
    * hook (if specified) was executed.
    *
    * @param {function} fn
    *   ({ arg, ...}) => ?Promise
    *      * arg - argument supplied to "--publish"/"-P" parameter
-   *      * quasarConf - quasar.conf config object
+   *      * efuzyConf - efuzy.conf config object
    *      * distDir - folder where distributables were built
    */
   onPublish (fn) {

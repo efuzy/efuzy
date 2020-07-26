@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/quasar-plugins/cookies"
+    "docsUrl": "https://v1.efuzy.dev/efuzy-plugins/cookies"
   },
 
   "injection": "$q.cookies",
@@ -87,7 +87,7 @@
             },
             "other": {
               "type": "String",
-              "desc": "Raw string for other cookie options; To be used as a last resort for possible newer props that are currently not yet implemented in Quasar",
+              "desc": "Raw string for other cookie options; To be used as a last resort for possible newer props that are currently not yet implemented in Efuzy",
               "examples": [ "SomeNewCookieProp" ],
               "addedIn": "v1.1.1"
             }

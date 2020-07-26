@@ -15,17 +15,17 @@ module.exports = function (chain, cfg) {
     noErrorOnMissing: true
   }]
 
-  // Copy our entry BEX files to the .quasar/bex folder.
-  fse.copySync(appPaths.resolve.cli('templates/entry/bex'), appPaths.resolve.app('.quasar/bex'))
+  // Copy our entry BEX files to the .efuzy/bex folder.
+  fse.copySync(appPaths.resolve.cli('templates/entry/bex'), appPaths.resolve.app('.efuzy/bex'))
 
   chain.output
     .path(outputPath) // Output to our src-bex/www folder or dist/bex/unpacked/www.
 
   // Bundle our bex files for inclusion via the manifest.json
   chain.entry('bex-init')
-    .add(appPaths.resolve.app('.quasar/bex/init/index.js'))
+    .add(appPaths.resolve.app('.efuzy/bex/init/index.js'))
 
-  // We shouldn't minify BEX code. This option is disabled by default for BEX mode in quasar-conf.js.
+  // We shouldn't minify BEX code. This option is disabled by default for BEX mode in efuzy-conf.js.
   // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/Source_Code_Submission#Provide_your_extension_source_code
   chain.optimization.minimize(cfg.build.minify)
 

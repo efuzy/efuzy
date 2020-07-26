@@ -2,7 +2,7 @@
 title: Dialog
 desc: The QDialog component provides a UI for modals with functionalities like positioning, styling, maximizing and more.
 related:
-  - /quasar-plugins/dialog
+  - /efuzy-plugins/dialog
   - /vue-directives/close-popup
   - /vue-components/card
   - /vue-components/popup-proxy
@@ -13,11 +13,11 @@ The QDialog component is a great way to offer the user the ability to choose a s
 From a UI perspective, you can think of Dialogs as a type of floating modal, which covers only a portion of the screen. This means Dialogs should only be used for quick user actions, like verifying a password, getting a short App notification or selecting an option or options quickly.
 
 ::: tip
-Dialogs can also be used as a globally available method for more basic use cases, like the native JS alert(), prompt(), etc. For the latter behaviour, go to [Dialog Plugin](/quasar-plugins/dialog) page.
+Dialogs can also be used as a globally available method for more basic use cases, like the native JS alert(), prompt(), etc. For the latter behaviour, go to [Dialog Plugin](/efuzy-plugins/dialog) page.
 :::
 
 ::: warning Masterclass TIP
-Rather than cluttering your .vue templates with QDialogs, it's best if you write a component for your dialog and use the [Dialog Plugin](/quasar-plugins/dialog#Invoking-custom-component) to invoke it from anywhere in your app.
+Rather than cluttering your .vue templates with QDialogs, it's best if you write a component for your dialog and use the [Dialog Plugin](/efuzy-plugins/dialog#Invoking-custom-component) to invoke it from anywhere in your app.
 :::
 
 ## Installation
@@ -80,12 +80,12 @@ You are able to customize the size of the Dialogs. Notice we either tamper with 
 <doc-example title="Sizing examples" file="QDialog/Sizing" />
 
 ## Cordova/Capacitor back button
-Quasar handles the back button for you by default so it can hide any opened Dialogs instead of the default behavior which is to return to the previous page (which is not a nice user experience).
+Efuzy handles the back button for you by default so it can hide any opened Dialogs instead of the default behavior which is to return to the previous page (which is not a nice user experience).
 
-However, should you wish to disable this behavior, edit your /quasar.conf.js file:
+However, should you wish to disable this behavior, edit your /efuzy.conf.js file:
 
 ```js
-// quasar.conf.js;
+// efuzy.conf.js;
 // for Cordova (only!):
 return {
   framework: {
@@ -97,9 +97,9 @@ return {
   }
 }
 
-// quasar.conf.js;
+// efuzy.conf.js;
 // for Capacitor (only!)
-// and Quasar v1.9.3+:
+// and Efuzy v1.9.3+:
 return {
   framework: {
     config: {

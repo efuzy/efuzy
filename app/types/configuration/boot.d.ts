@@ -4,4 +4,4 @@ interface BootConfigurationItem {
   client?: false;
 }
 
-export type QuasarBootConfiguration = (string | BootConfigurationItem)[];
+export type EfuzyBootConfiguration = (string | BootConfigurationItem)[];

@@ -4,7 +4,7 @@ desc: The QSpace Vue component fills all the available space inside of a flexbox
 ---
 The purpose of QSpace (has no props) is to simply fill all available space inside of a flexbox DOM element.
 
-As a sidenote, all Quasar components use flexbox. So what this means, for example (there are numerous examples, just mentioning one), is that you can use QSpace in a QToolbar.
+As a sidenote, all Efuzy components use flexbox. So what this means, for example (there are numerous examples, just mentioning one), is that you can use QSpace in a QToolbar.
 
 ## Installation
 <doc-installation components="QSpace" />

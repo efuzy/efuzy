@@ -1,0 +1,51 @@
+#!/usr/bin/env node
+
+console.log()
+console.log(
+  require('fs').readFileSync(
+    require('path').join(__dirname, '../assets/logo.art'),
+    'utf8'
+  )
+)
+
+if (process.env.EFUZY_CLI_VERSION) {
+  console.log('  Running @efuzy/cli v' + process.env.EFUZY_CLI_VERSION)
+}
+console.log('  Running @efuzy/app v' + require('../package.json').version)
+
+console.log(`
+  Example usage
+    $ efuzy <command> <options>
+
+  Help for a command
+    $ efuzy <command> --help
+    $ efuzy <command> -h
+
+  Options
+    --version, -v Print Efuzy App CLI version
+
+  Commands
+    dev, d        Start a dev server for your App
+    build, b      Build your app for production
+    clean, c      Clean all build artifacts
+    new, n        Quickly scaffold page/layout/component/... vue file
+    mode, m       Add/remove Efuzy Modes for your App
+    inspect       Inspect generated Webpack config
+    ext, e        Manage Efuzy App Extensions
+    run, r        Run specific command provided by an installed
+                    Efuzy App Extension
+    describe      Describe a Efuzy API (component)
+    test, t       Run @efuzy/testing App Extension command
+                    - requires @efuzy/testing App Extension to be installed
+                    - this is an alias command for convenience purposes
+    info, i       Display info about your machine and your App
+    help, h       Displays this message
+
+  If the specified command is not found, then "efuzy run"
+  will be executed with the provided arguments.
+`)
+
+if (global.efuzyCli) {
+  console.log(`  Commands supplied by @efuzy/cli global installation:`)
+  console.log(global.efuzyCli.help)
+}

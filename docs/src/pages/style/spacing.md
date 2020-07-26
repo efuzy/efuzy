@@ -1,13 +1,13 @@
 ---
 title: CSS Spacing Classes
-desc: The list of CSS classes supplied by Quasar to simplify the specification of responsive paddings and margins.
+desc: The list of CSS classes supplied by Efuzy to simplify the specification of responsive paddings and margins.
 related:
   - /style/typography
   - /style/positioning
   - /style/visibility
   - /style/breakpoints
 ---
-There are CSS classes supplied by Quasar to help you with spacing for DOM elements or components. All options are
+There are CSS classes supplied by Efuzy to help you with spacing for DOM elements or components. All options are
 prefixed with `q-` and then broken down into type (T), direction (D), and size (S). See the table below
 for all possible permutations.
 
@@ -46,7 +46,7 @@ S - size
 ```
 
 ## Flex Addons
-When enabled (through `quasar.conf.js > framework > cssAddon: true`) it provides breakpoint aware versions for all spacing related CSS classes.
+When enabled (through `efuzy.conf.js > framework > cssAddon: true`) it provides breakpoint aware versions for all spacing related CSS classes.
 
 > Note that there will be a noticeable bump in CSS footprint when enabling it. So only do it if you really need it.
 

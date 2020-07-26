@@ -1,6 +1,6 @@
 ---
 title: Other CSS Helper Classes
-desc: The list of CSS helper classes for mouse, size, orientation and border that are supplied by Quasar.
+desc: The list of CSS helper classes for mouse, size, orientation and border that are supplied by Efuzy.
 ---
 There are a lot of CSS classes that you can use while writing your Vue templates. Very handy to ease the complexity of your VueModels and templates.
 

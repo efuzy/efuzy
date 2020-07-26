@@ -1,17 +1,17 @@
 import {
-  QuasarIconSets,
-  QuasarLanguageCodes,
+  EfuzyIconSets,
+  EfuzyLanguageCodes,
   DeepPartial,
-  QuasarPluginOptions,
-} from "quasar";
+  EfuzyPluginOptions,
+} from "efuzy";
 import Vue from "vue";
 
-interface QuasarMobileFrameworkInnerConfiguration {
+interface EfuzyMobileFrameworkInnerConfiguration {
   iosStatusBarPadding: boolean;
   backButtonExit: boolean | "*" | string[];
 }
 
-interface QuasarFrameworkInnerConfiguration {
+interface efuzyInnerConfiguration {
   brand: {
     primary: string;
     secondary: string;
@@ -22,8 +22,8 @@ interface QuasarFrameworkInnerConfiguration {
     info: string;
     warning: string;
   };
-  capacitor: QuasarMobileFrameworkInnerConfiguration;
-  cordova: QuasarMobileFrameworkInnerConfiguration;
+  capacitor: EfuzyMobileFrameworkInnerConfiguration;
+  cordova: EfuzyMobileFrameworkInnerConfiguration;
   dark: boolean | "auto";
   loading: {
     delay: number;
@@ -44,29 +44,29 @@ interface QuasarFrameworkInnerConfiguration {
   };
 }
 
-interface QuasarBaseFrameworkObjectConfiguration {
-  plugins?: (keyof QuasarPluginOptions["plugins"])[];
-  config?: DeepPartial<QuasarFrameworkInnerConfiguration>;
-  iconSet?: QuasarIconSets;
-  lang?: QuasarLanguageCodes;
+interface EfuzyBaseFrameworkObjectConfiguration {
+  plugins?: (keyof EfuzyPluginOptions["plugins"])[];
+  config?: DeepPartial<efuzyInnerConfiguration>;
+  iconSet?: EfuzyIconSets;
+  lang?: EfuzyLanguageCodes;
   cssAddon?: boolean;
 }
 
-interface QuasarAutoFrameworkObjectConfiguration
-  extends QuasarBaseFrameworkObjectConfiguration {
+interface EfuzyAutoFrameworkObjectConfiguration
+  extends EfuzyBaseFrameworkObjectConfiguration {
   importStrategy: "auto";
   /** @default 'kebab' */
   autoImportComponentCase?: "kebab" | "pascal" | "combined";
-  components?: (keyof QuasarPluginOptions["components"])[];
-  directives?: (keyof QuasarPluginOptions["directives"])[];
+  components?: (keyof EfuzyPluginOptions["components"])[];
+  directives?: (keyof EfuzyPluginOptions["directives"])[];
 }
 
-interface QuasarAllFrameworkObjectConfiguration
-  extends QuasarBaseFrameworkObjectConfiguration {
+interface EfuzyAllFrameworkObjectConfiguration
+  extends EfuzyBaseFrameworkObjectConfiguration {
   importStrategy: "all";
 }
 
-export type QuasarFrameworkConfiguration =
+export type efuzyConfiguration =
   | "all" // Equal to `{ importStrategy: 'all' }`
-  | QuasarAutoFrameworkObjectConfiguration
-  | QuasarAllFrameworkObjectConfiguration;
+  | EfuzyAutoFrameworkObjectConfiguration
+  | EfuzyAllFrameworkObjectConfiguration;

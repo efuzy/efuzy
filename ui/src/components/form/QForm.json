@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/form"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/form"
   },
 
   "behavior": {
@@ -50,11 +50,11 @@
     },
 
     "validation-success": {
-      "desc": "Emitted after a validation was triggered and all inner Quasar components models are valid"
+      "desc": "Emitted after a validation was triggered and all inner Efuzy components models are valid"
     },
 
     "validation-error": {
-      "desc": "Emitted after a validation was triggered and at least one of the inner Quasar components models are NOT valid",
+      "desc": "Emitted after a validation was triggered and at least one of the inner Efuzy components models are NOT valid",
       "params": {
         "ref": {
           "type": "Object",
@@ -72,7 +72,7 @@
     },
 
     "validate": {
-      "desc": "Triggers a validation on all applicable inner Quasar components",
+      "desc": "Triggers a validation on all applicable inner Efuzy components",
       "params": {
         "shouldFocus": {
           "type": "Boolean",
@@ -89,7 +89,7 @@
     },
 
     "resetValidation": {
-      "desc": "Resets the validation on all applicable inner Quasar components"
+      "desc": "Resets the validation on all applicable inner Efuzy components"
     },
 
     "submit": {
@@ -118,7 +118,7 @@
       "desc": "Get array of children vue components that support validation",
       "returns": {
         "type": "Array",
-        "desc": "Vue components that support Quasar validation API",
+        "desc": "Vue components that support Efuzy validation API",
         "__exemption": [ "examples" ]
       },
       "addedIn": "v1.10.0"

@@ -59,7 +59,7 @@
 </template>
 
 <script>
-import { fabApple } from '@quasar/extras/fontawesome-v5'
+import { fabApple } from '@efuzy/extras/fontawesome-v5'
 
 export default {
   created () {

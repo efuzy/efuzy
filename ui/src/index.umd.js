@@ -14,7 +14,7 @@ Vue.use({ install }, {
   components,
   directives,
   plugins,
-  config: window.quasarConfig || {}
+  config: window.efuzyConfig || {}
 })
 
 export default {

@@ -17,7 +17,7 @@ QResponsive is a component which forces the content to maintain an aspect ratio 
 :::
 
 ::: warning
-Do not use it on Quasar components that already have a `ratio` property, like QImg or QVideo, or on components that have a forced height.
+Do not use it on Efuzy components that already have a `ratio` property, like QImg or QVideo, or on components that have a forced height.
 :::
 
 ### Basic

@@ -228,7 +228,7 @@ If you are using virtual scroll with QTable, you should know that starting with 
 ## Pagination <q-badge align="top" label="enhanced on v1.12+" />
 
 ::: warning
-On Quasar <= v1.11, the `pagination` prop usage required the ".sync" modifier. With v1.12+ this is not longer mandatory, but if you want to control the Table’s pagination from your own components, then it is still a must-do. Example: `pagination.sync="pagination"`.
+On Efuzy <= v1.11, the `pagination` prop usage required the ".sync" modifier. With v1.12+ this is not longer mandatory, but if you want to control the Table’s pagination from your own components, then it is still a must-do. Example: `pagination.sync="pagination"`.
 :::
 
 ::: tip
@@ -255,7 +255,7 @@ For learning purposes, we will customize the pagination controls with the defaul
 
 <doc-example title="Default loading" file="QTable/Loading" />
 
-The example below requires Quasar v1.8+:
+The example below requires Efuzy v1.8+:
 
 <doc-example title="Custom loading state" file="QTable/CustomLoading" />
 
@@ -319,7 +319,7 @@ First example below uses `$q.screen.lt.md` (for enabling dense mode) and the sec
 
 <doc-example title="Using grid prop" file="QTable/ResponsiveGrid" />
 
-The example above is essentially mimicking the earlier Quasar versions of the table behavior.
+The example above is essentially mimicking the earlier Efuzy versions of the table behavior.
 
 ## Server side pagination, filter and sorting
 
@@ -339,7 +339,7 @@ In the example below, steps have been taken to emulate an ajax call to a server.
 
 ## Exporting data
 
-Below is an example of a naive csv encoding and then exporting table data by using the [exportFile](/quasar-utils/other-utils#Export-file) Quasar util. The browser should trigger a file download. For a more professional approach in regards to encoding we do recommend using [csv-parse](https://csv.js.org/parse/) and [csv-stringify](https://csv.js.org/stringify/) packages.
+Below is an example of a naive csv encoding and then exporting table data by using the [exportFile](/efuzy-utils/other-utils#Export-file) Efuzy util. The browser should trigger a file download. For a more professional approach in regards to encoding we do recommend using [csv-parse](https://csv.js.org/parse/) and [csv-stringify](https://csv.js.org/stringify/) packages.
 
 <doc-example title="Export to csv" file="QTable/ExportCsv" />
 

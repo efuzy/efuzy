@@ -2,8 +2,8 @@ const { green, grey, underline } = require('chalk')
 
 const { getBrowsersBanner } = require('./browsers-support')
 const getPackageJson = require('./get-package-json')
-const quasarVersion = getPackageJson('quasar').version
-const cliAppVersion = getPackageJson('@quasar/app').version
+const efuzyVersion = getPackageJson('efuzy').version
+const cliAppVersion = getPackageJson('@efuzy/app').version
 
 function getPackager (argv, cmd) {
   if (argv.ide || (argv.mode === 'capacitor' && cmd === 'dev')) {
@@ -28,8 +28,8 @@ module.exports = function (argv, cmd, details) {
 
   banner += `
  ${cmd === 'dev' ? 'Dev mode..........' : 'Build mode........'} ${green(argv.mode)}
- Pkg quasar........ ${green('v' + quasarVersion)}
- Pkg @quasar/app... ${green('v' + cliAppVersion)}
+ Pkg efuzy........ ${green('v' + efuzyVersion)}
+ Pkg @efuzy/app... ${green('v' + cliAppVersion)}
  Debugging......... ${cmd === 'dev' || argv.debug ? green('enabled') : grey('no')}`
 
   if (cmd === 'build') {
@@ -68,24 +68,24 @@ module.exports = function (argv, cmd, details) {
       banner += `
 
  Tip: "src-cordova" is a Cordova project folder, so everything you know
-      about Cordova applies to it. Quasar CLI only generates UI the content
+      about Cordova applies to it. Efuzy CLI only generates UI the content
       for "src-cordova/www" folder and then Cordova takes over and builds
       the final packaged file.
 
  Tip: Feel free to use Cordova CLI ("cordova <params>") or change any files
-      in "src-cordova", except for "www" folder which must be built by Quasar CLI.`
+      in "src-cordova", except for "www" folder which must be built by Efuzy CLI.`
     }
     else if (argv.mode === 'capacitor') {
       banner += `
 
  Tip: "src-capacitor" is a Capacitor project folder, so everything you know
-      about Capacitor applies to it. Quasar CLI generates the UI content
+      about Capacitor applies to it. Efuzy CLI generates the UI content
       for "src-capacitor/www" folder and then either opens the IDE or calls
       the platform's build commands to generate the final packaged file.
 
  Tip: Feel free to use Capacitor CLI ("yarn capacitor <params>" or
       "npx capacitor <params>") or change any files in "src-capacitor", except
-      for the "www" folder which must be built by Quasar CLI.`
+      for the "www" folder which must be built by Efuzy CLI.`
     }
     else if (['spa', 'pwa'].includes(argv.mode)) {
       banner += `
@@ -93,12 +93,12 @@ module.exports = function (argv, cmd, details) {
  Tip: Built files are meant to be served over an HTTP server
       Opening index.html over file:// won't work
 
- Tip: You can use "$ quasar serve" command to create a web server,
-      both for testing or production. Type "$ quasar serve -h" for
+ Tip: You can use "$ efuzy serve" command to create a web server,
+      both for testing or production. Type "$ efuzy serve -h" for
       parameters. Also, an npm script (usually named "start") can
       be added for deployment environments.
       If you're using Vue Router "history" mode, don't forget to
-      specify the "--history" parameter: "$ quasar serve --history"`
+      specify the "--history" parameter: "$ efuzy serve --history"`
     }
   }
 
@@ -113,8 +113,8 @@ module.exports.devCompilationSuccess = function (ctx, url, appDir, transpileBann
   return `App dir........... ${green(appDir)}
     App URL........... ${green(url)}
     Dev mode.......... ${green(ctx.modeName + (ctx.mode.ssr && ctx.mode.pwa ? ' + pwa' : ''))}
-    Pkg quasar........ ${green('v' + quasarVersion)}
-    Pkg @quasar/app... ${green('v' + cliAppVersion)}
+    Pkg efuzy........ ${green('v' + efuzyVersion)}
+    Pkg @efuzy/app... ${green('v' + cliAppVersion)}
     Transpiled JS..... ${transpileBanner}
   `
 }

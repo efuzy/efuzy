@@ -28,7 +28,7 @@ module.exports.getVueComponent = function (rendered, data, toc) {
     <script>
     import { copyHeading } from 'assets/page-utils'
     ${data.components !== void 0 ? getComponentsImport(data.components) : ''}
-    ${data.desc !== void 0 ? `const title = \`${data.title} | Quasar Framework\`, desc = \`${data.desc}\`` : ''}
+    ${data.desc !== void 0 ? `const title = \`${data.title} | Efuzy Framework\`, desc = \`${data.desc}\`` : ''}
     export default {
       meta: {
         title: \`${data.title}\`${data.desc !== void 0 ? `,

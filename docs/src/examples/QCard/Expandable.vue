@@ -2,7 +2,7 @@
   <div class="q-pa-md row items-start q-gutter-md">
     <q-card class="my-card" flat bordered>
       <q-img
-        src="https://cdn.quasar.dev/img/parallax2.jpg"
+        src="https://cdn.efuzy.dev/img/parallax2.jpg"
       />
 
       <q-card-section>

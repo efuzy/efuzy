@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { LoadingBar } from 'quasar'
+import { LoadingBar } from 'efuzy'
 
 export default {
   methods: {

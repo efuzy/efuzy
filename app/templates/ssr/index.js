@@ -14,7 +14,7 @@
 const express = require('express')
 const compression = require('compression')
 
-const ssr = require('quasar-ssr')
+const ssr = require('efuzy-ssr')
 const extension = require('./extension')
 const app = express()
 const port = process.env.PORT || 3000

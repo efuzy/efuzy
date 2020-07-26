@@ -10,7 +10,7 @@
         </q-toolbar>
         <q-toolbar inset>
           <q-toolbar-title>
-            <strong>Quasar</strong> Framework
+            <strong>Efuzy</strong> Framework
           </q-toolbar-title>
         </q-toolbar>
       </q-header>

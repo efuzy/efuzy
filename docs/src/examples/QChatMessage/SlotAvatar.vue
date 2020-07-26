@@ -4,7 +4,7 @@
       <q-chat-message
         name="me"
         stamp="7 minutes ago"
-        :text="['Have you seen Quasar?']"
+        :text="['Have you seen Efuzy?']"
         sent
         text-color="white"
         bg-color="primary"
@@ -12,7 +12,7 @@
         <template v-slot:avatar>
           <img
             class="q-message-avatar q-message-avatar--sent"
-            src="https://cdn.quasar.dev/img/avatar4.jpg"
+            src="https://cdn.efuzy.dev/img/avatar4.jpg"
           >
         </template>
       </q-chat-message>
@@ -25,7 +25,7 @@
         <template v-slot:avatar>
           <img
             class="q-message-avatar q-message-avatar--received"
-            src="https://cdn.quasar.dev/img/avatar2.jpg"
+            src="https://cdn.efuzy.dev/img/avatar2.jpg"
           >
         </template>
 

@@ -1,7 +1,7 @@
 /**
  * Keeps track of enabled features through interface declaration merging capabilities.
  */
-export interface QuasarFeatureFlags {
+export interface EfuzyFeatureFlags {
   [index: string]: boolean;
 }
 
@@ -12,12 +12,12 @@ export interface QuasarFeatureFlags {
  *
  * ```typescript
  * // This import enable module augmentation instead of module overwrite
- * import 'quasar';
+ * import 'efuzy';
  *
- * declare module 'quasar' {
+ * declare module 'efuzy' {
  *   // This will be merged with other definitions
  *   //  thanks to interface declaration merging
- *   interface QuasarFeatureFlags {
+ *   interface EfuzyFeatureFlags {
  *     ssr: true; // The object key is the feature flag name
  *   }
  * }
@@ -45,7 +45,7 @@ export type IsFeatureEnabled<
   O extends string,
   T,
   U = {}
-> = QuasarFeatureFlags[O] extends true ? T : U;
+> = EfuzyFeatureFlags[O] extends true ? T : U;
 
 export type HasSsr<T, U = {}> = IsFeatureEnabled<"ssr", T, U>;
 export type HasStore<T, U = {}> = IsFeatureEnabled<"store", T, U>;

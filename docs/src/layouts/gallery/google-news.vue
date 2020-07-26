@@ -13,7 +13,7 @@
         />
 
         <q-toolbar-title v-if="$q.screen.gt.xs" shrink class="row items-center no-wrap">
-          <img src="https://cdn.quasar.dev/img/layout-gallery/logo-google.svg">
+          <img src="https://cdn.efuzy.dev/img/layout-gallery/logo-google.svg">
           <span class="q-ml-sm">News</span>
         </q-toolbar-title>
 
@@ -92,7 +92,7 @@
           </q-btn>
           <q-btn round flat>
             <q-avatar size="26px">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
             <q-tooltip>Account</q-tooltip>
           </q-btn>
@@ -157,7 +157,7 @@
 </template>
 
 <script>
-import { fasGlobeAmericas, fasFlask } from '@quasar/extras/fontawesome-v5'
+import { fasGlobeAmericas, fasFlask } from '@efuzy/extras/fontawesome-v5'
 
 export default {
   name: 'GoogleNewsLayout',

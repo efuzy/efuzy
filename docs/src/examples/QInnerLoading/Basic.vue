@@ -30,7 +30,7 @@
 
 <script>
 // Don't forget to specify which animations
-// you are using in quasar.conf.js > animations.
+// you are using in efuzy.conf.js > animations.
 // Alternatively, if using UMD, load animate.css from CDN.
 export default {
   data () {

@@ -1,9 +1,9 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-directives/material-ripple"
+    "docsUrl": "https://v1.efuzy.dev/vue-directives/material-ripple"
   },
 
-  "quasarConfOptions": {
+  "efuzyConfOptions": {
     "propName": "ripple",
     "definition": {
       "early": {
@@ -23,7 +23,7 @@
 
       "color": {
         "type": "String",
-        "desc": "Color name from Quasar Color Palette; Overrides default dynamic color",
+        "desc": "Color name from Efuzy Color Palette; Overrides default dynamic color",
         "examples": [ "orange-5" ]
       },
 
@@ -58,7 +58,7 @@
 
       "color": {
         "type": "String",
-        "desc": "Color name from Quasar Color Palette; Overrides default dynamic color",
+        "desc": "Color name from Efuzy Color Palette; Overrides default dynamic color",
         "examples": [ "orange-5" ]
       },
 
@@ -76,7 +76,7 @@
 
   "arg": {
     "type": "String",
-    "desc": "Color name from Quasar Color Palette; Overrides default dynamic color",
+    "desc": "Color name from Efuzy Color Palette; Overrides default dynamic color",
     "examples": [
       "v-ripple:orange-5"
     ]

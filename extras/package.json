@@ -1,28 +1,28 @@
 {
-  "name": "@quasar/extras",
+  "name": "@efuzy/extras",
   "version": "1.9.0",
-  "description": "Quasar Framework fonts, icons and animations",
+  "description": "Efuzy Framework fonts, icons and animations",
   "scripts": {
     "build": "node build/index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasarframework/quasar.git"
+    "url": "git+https://github.com/efuzy/efuzy.git"
   },
   "keywords": [
-    "quasar",
+    "efuzy",
     "framework"
   ],
   "author": "Razvan Stoenescu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/quasarframework/quasar/issues"
+    "url": "https://github.com/efuzy/efuzy/issues"
   },
   "funding": {
     "type": "github",
-    "url": "https://donate.quasar.dev"
+    "url": "https://donate.efuzy.dev"
   },
-  "homepage": "https://quasar.dev",
+  "homepage": "https://efuzy.dev",
   "publishConfig": {
     "access": "public"
   },

@@ -1,6 +1,6 @@
 ---
 title: Introduction to Flexbox
-desc: What the flexbox CSS is and how it can be used in a Quasar App.
+desc: What the flexbox CSS is and how it can be used in a Efuzy App.
 related:
   - /style/spacing
   - /style/visibility
@@ -9,26 +9,26 @@ related:
   - /layout/grid/flex-playground
 ---
 
-Quasar provides lots of CSS classes to help you build your UI easily with the help of [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Think of it like operating with rows and columns with many options at hand.
+Efuzy provides lots of CSS classes to help you build your UI easily with the help of [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/). Think of it like operating with rows and columns with many options at hand.
 
-Flexbox (upon which Quasar Flex CSS classes are based) module aims to provide a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
+Flexbox (upon which Efuzy Flex CSS classes are based) module aims to provide a more efficient way to lay out, align and distribute space among items in a container, even when their size is unknown and/or dynamic (thus the word “flex”).
 
 ::: tip
-This page covers the basic theory of Quasar Flex CSS classes and prepares you for the in-depth pages on [Grid Row](/layout/grid/row), [Grid Column](/layout/grid/column) and [Grid Gutter](/layout/grid/gutter).
+This page covers the basic theory of Efuzy Flex CSS classes and prepares you for the in-depth pages on [Grid Row](/layout/grid/row), [Grid Column](/layout/grid/column) and [Grid Gutter](/layout/grid/gutter).
 :::
 
 ## Key concept
-Quasar Flex CSS classes apply to either the Container (Parent) or the Container's items (Children).
+Efuzy Flex CSS classes apply to either the Container (Parent) or the Container's items (Children).
 
-![Flexbox Container](https://cdn.quasar.dev/img/flexbox-container.svg)
-![Flexbox Items](https://cdn.quasar.dev/img/flexbox-items.svg)
+![Flexbox Container](https://cdn.efuzy.dev/img/flexbox-container.svg)
+![Flexbox Items](https://cdn.efuzy.dev/img/flexbox-items.svg)
 
 ## Managing Parent
 
 ### Setting Direction
 One of the following CSS classes is mandatory for the parent in order for ones on the children (described in next sections) to have any effect.
 
-![Flexbox Direction](https://cdn.quasar.dev/img/flexbox-direction.svg)
+![Flexbox Direction](https://cdn.efuzy.dev/img/flexbox-direction.svg)
 
 | Class Name | Description |
 | --- | --- |
@@ -51,7 +51,7 @@ Example:
 ### Wrapping by default
 By default, all rows and columns wrap their content.
 
-![Flexbox Direction](https://cdn.quasar.dev/img/flexbox-wrap.svg)
+![Flexbox Direction](https://cdn.efuzy.dev/img/flexbox-wrap.svg)
 
 However if you explicitly do not want to wrap and by so doing you want to fit all content into one line, then add `no-wrap` CSS helper class.
 
@@ -67,20 +67,20 @@ Also, if you want to wrap in reverse order, then `reverse-wrap` is available.
 
 **For alignment along the main axis**, use classes below. It helps distribute left over free space when either all the flex items on a line are inflexible, or are flexible but have reached their maximum size. It also exerts some control over the alignment of items when they overflow the line.
 
-![Flexbox Justify Content](https://cdn.quasar.dev/img/flexbox-main-axis-align---2.svg)
+![Flexbox Justify Content](https://cdn.efuzy.dev/img/flexbox-main-axis-align---2.svg)
 
 **For alignment perpendicular to the main axis**, use classes below. This defines the default behavior for how flex items are laid out along the cross axis on the current line. Think of it as the horizontal-* version for the cross-axis (perpendicular to the main-axis).
 
-![Flexbox Items Align](https://cdn.quasar.dev/img/flexbox-cross-axis-align.svg)
+![Flexbox Items Align](https://cdn.efuzy.dev/img/flexbox-cross-axis-align.svg)
 
 The next classes **align a flex container's lines** within when there is extra space in the cross-axis, similar to how horizontal-* aligns individual items within the main-axis.
 
-![Flexbox Content Align](https://cdn.quasar.dev/img/flexbox-content-align.svg)
+![Flexbox Content Align](https://cdn.efuzy.dev/img/flexbox-content-align.svg)
 
 ## Managing Children
 
 ### Distribution of Size
-Quasar uses a 12 point column system for distributing the size of row children. Here are some examples of the available CSS helper classes:
+Efuzy uses a 12 point column system for distributing the size of row children. Here are some examples of the available CSS helper classes:
 
 
 ``` html
@@ -119,7 +119,7 @@ Another example with a visual representation below it:
   <div class="col-3">1</div>
 </div>
 ```
-![Flexbox Grow](https://cdn.quasar.dev/img/flexbox-grow.svg)
+![Flexbox Grow](https://cdn.efuzy.dev/img/flexbox-grow.svg)
 
 It is also possible to offset a cell. For example: `offset-4` offsets a third of space (4/12 = 1/3 = 33%).
 
@@ -152,7 +152,7 @@ This allows you, among other things, to dynamically stack rows vertically on sma
 ### Self Alignment
 **An item can override the aligned specified on parent**. This allows alignment to be overridden for individual flex items. Please see the "Alignment" explanation from "Managing Parent" to understand the available values (`self-start`, `self-center`, `self-baseline`, `self-end`, `self-stretch`).
 
-![Flexbox Self](https://cdn.quasar.dev/img/flexbox-self.svg)
+![Flexbox Self](https://cdn.efuzy.dev/img/flexbox-self.svg)
 
 ### Order
 **You can set the order** of child elements by using `order-first` and `order-last` CSS helper classes.
@@ -170,10 +170,10 @@ Example:
 
 Here is how the CSS `order` property works:
 
-![Flexbox Order](https://cdn.quasar.dev/img/flexbox-order.svg)
+![Flexbox Order](https://cdn.efuzy.dev/img/flexbox-order.svg)
 
 ## Responsive Design
-Quasar Flex CSS classes can be applied based on the width of the screen, to help you in making a responsive UI. The 12 points grid is inspired by Bootstrap's, so there are a lot of similarities.
+Efuzy Flex CSS classes can be applied based on the width of the screen, to help you in making a responsive UI. The 12 points grid is inspired by Bootstrap's, so there are a lot of similarities.
 
 What we've learned so far is that, for example, we can size the columns regardless of window width. If we are to create a responsive UI, we need to dynamically change the sizing while taking window width into account. First, let's learn about some tokens that you can inject in middle of `col-*`, `offset-*` and `col-auto` helper classes (look at table below for tokens).
 
@@ -222,7 +222,7 @@ Also check [Visibility](/style/visibility#Window-Width-Related) Style page to se
 
 ## Flex Addons
 
-When enabled (through `quasar.conf > framework > cssAddon: true`) it provides breakpoint aware versions for all flex (and display) related CSS classes.
+When enabled (through `efuzy.conf > framework > cssAddon: true`) it provides breakpoint aware versions for all flex (and display) related CSS classes.
 
 ::: warning
 Note that there will be a noticeable bump in CSS footprint when enabling it. So only do it if you really need it.

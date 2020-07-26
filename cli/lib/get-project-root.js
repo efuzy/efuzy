@@ -5,7 +5,7 @@ module.exports = function () {
   let dir = process.cwd()
 
   while (dir.length && dir[dir.length - 1] !== sep) {
-    if (existsSync(join(dir, 'quasar.conf.js'))) {
+    if (existsSync(join(dir, 'efuzy.conf.js'))) {
       return dir
     }
 

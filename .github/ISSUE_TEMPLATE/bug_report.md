@@ -1,6 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve Quasar
+about: Create a report to help us improve Efuzy
 title: ''
 labels: bug
 assignees: ''
@@ -10,7 +10,7 @@ assignees: ''
 A clear and concise description of what the bug is.
 
 **Codepen/jsFiddle/Codesandbox (required)**
-Fork a Codepen (https://codepen.quasar.dev) or a jsFiddle (https://jsfiddle.quasar.dev) or a Codesandbox (https://codesandbox.quasar.dev) and hit save then copy-paste link here.
+Fork a Codepen (https://codepen.efuzy.dev) or a jsFiddle (https://jsfiddle.efuzy.dev) or a Codesandbox (https://codesandbox.efuzy.dev) and hit save then copy-paste link here.
 
 **To Reproduce**
 Steps to reproduce the behavior:

@@ -11,13 +11,13 @@
 
     <div class="row no-wrap items-center q-mt-md q-pa-sm bg-grey-3 rounded-borders">
       <q-avatar>
-        <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+        <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
       </q-avatar>
 
       <q-space />
 
       <div>
-        Quasar <q-badge>v{{ $q.version }}</q-badge>
+        Efuzy <q-badge>v{{ $q.version }}</q-badge>
       </div>
     </div>
   </div>

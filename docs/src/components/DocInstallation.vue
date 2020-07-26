@@ -2,7 +2,7 @@
 q-card.doc-installation.q-my-lg(flat, bordered)
   q-tabs.text-grey-7.bg-white(v-model="currentTab", align="left", indicator-color="primary", dense, :breakpoint="0")
     q-tab(
-      v-for="tab in ['Quasar CLI', 'UMD', 'Vue CLI']"
+      v-for="tab in ['Efuzy CLI', 'UMD', 'Vue CLI']"
       :key="`installation-${tab}`"
       :name="tab"
       :label="tab"
@@ -11,8 +11,8 @@ q-card.doc-installation.q-my-lg(flat, bordered)
   q-separator
 
   q-tab-panels.bg-code(v-model="currentTab", animated)
-    q-tab-panel.q-pa-none(name="Quasar CLI")
-      doc-code {{ QuasarCli }}
+    q-tab-panel.q-pa-none(name="Efuzy CLI")
+      doc-code {{ EfuzyCli }}
 
     q-tab-panel.q-pa-none(name="UMD")
       doc-code {{ UMD }}
@@ -40,7 +40,7 @@ export default {
 
   data () {
     return {
-      currentTab: 'Quasar CLI'
+      currentTab: 'Efuzy CLI'
     }
   },
 
@@ -57,17 +57,17 @@ export default {
   },
 
   computed: {
-    quasarConf () {
+    efuzyConf () {
       return this.config !== void 0
-        ? `${this.config}: { /* look at QUASARCONFOPTIONS from the API card (bottom of page) */ }`
+        ? `${this.config}: { /* look at EFUZYCONFOPTIONS from the API card (bottom of page) */ }`
         : void 0
     },
 
-    QuasarCli () {
-      if (this.plugins === void 0 && this.quasarConf === void 0) {
+    EfuzyCli () {
+      if (this.plugins === void 0 && this.efuzyConf === void 0) {
         return `/*
  * No installation step is necessary.
- * It gets installed by default by @quasar/app v2+.
+ * It gets installed by default by @efuzy/app v2+.
  */`
       }
 
@@ -79,13 +79,13 @@ export default {
     ]`)
       }
 
-      if (this.quasarConf !== void 0) {
+      if (this.efuzyConf !== void 0) {
         parts.push(`config: {
-      ${this.quasarConf}
+      ${this.efuzyConf}
     }`)
       }
 
-      return `// quasar.conf.js
+      return `// efuzy.conf.js
 
 return {
   framework: {
@@ -95,13 +95,13 @@ return {
     },
 
     UMD () {
-      const config = this.quasarConf !== void 0
+      const config = this.efuzyConf !== void 0
         ? `
 
 // Optional;
-// Place the global quasarConfig Object in a script tag BEFORE your Quasar script tag
-window.quasarConfig = {
-  ${this.quasarConf}
+// Place the global efuzyConfig Object in a script tag BEFORE your Efuzy script tag
+window.efuzyConfig = {
+  ${this.efuzyConf}
 }`
         : ''
 
@@ -125,23 +125,23 @@ window.quasarConfig = {
         }
       })
 
-      if (this.quasarConf !== void 0) {
+      if (this.efuzyConf !== void 0) {
         types.push(`config: {
-    ${this.quasarConf}
+    ${this.efuzyConf}
   }`)
       }
 
       return `// main.js
 
-// This is needed ONLY if NOT chosen to import everything from Quasar
-// when you installed vue-cli-plugin-quasar.
+// This is needed ONLY if NOT chosen to import everything from Efuzy
+// when you installed vue-cli-plugin-efuzy.
 
 import {
-  Quasar,
+  Efuzy,
   ${imports.join(',\n  ')}
-} from 'quasar'
+} from 'efuzy'
 
-Vue.use(Quasar, {
+Vue.use(Efuzy, {
   ${types.join(',\n  ')}
 })`
     }

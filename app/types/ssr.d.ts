@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { HasSsr } from "quasar";
+import { HasSsr } from "efuzy";
 
 interface QSsrContext {
   req: Request;

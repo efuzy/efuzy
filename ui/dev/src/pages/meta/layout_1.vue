@@ -5,7 +5,7 @@
         <q-toolbar-title>
           First Layout
           <div slot="subtitle">
-            Running on Quasar v{{ $q.version }}
+            Running on Efuzy v{{ $q.version }}
           </div>
         </q-toolbar-title>
       </q-toolbar>

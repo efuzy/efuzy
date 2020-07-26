@@ -12,7 +12,7 @@
       <q-file standout v-model="model">
         <template v-slot:append>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
         </template>
       </q-file>
@@ -48,7 +48,7 @@
       <q-file filled bottom-slots v-model="model" label="Label" counter max-files="12">
         <template v-slot:before>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/avatar5.jpg">
+            <img src="https://cdn.efuzy.dev/img/avatar5.jpg">
           </q-avatar>
         </template>
 

@@ -18,19 +18,19 @@ module.exports = function (chain, cfg) {
   chain.optimization.splitChunks(void 0)
 
   if (cfg.ctx.prod) {
-    // We shouldn't minify BEX code. This option is disabled by default for BEX mode in quasar-conf.js.
+    // We shouldn't minify BEX code. This option is disabled by default for BEX mode in efuzy-conf.js.
     // https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/Source_Code_Submission#Provide_your_extension_source_code
     chain.optimization.minimize(cfg.build.minify)
   }
 
   chain.entry('bex-background')
-    .add(appPaths.resolve.app('.quasar/bex/background/background.js'))
+    .add(appPaths.resolve.app('.efuzy/bex/background/background.js'))
 
   chain.entry('bex-content-script')
-    .add(appPaths.resolve.app('.quasar/bex/content/content-script.js'))
+    .add(appPaths.resolve.app('.efuzy/bex/content/content-script.js'))
 
   chain.entry('bex-dom')
-    .add(appPaths.resolve.app('.quasar/bex/content/dom-script.js'))
+    .add(appPaths.resolve.app('.efuzy/bex/content/dom-script.js'))
 
   chain.output
     .path(outputPath)

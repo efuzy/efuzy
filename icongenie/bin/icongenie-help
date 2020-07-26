@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log('  Running @quasar/icongenie v' + require('../package.json').version)
+console.log('  Running @efuzy/icongenie v' + require('../package.json').version)
 
 console.log(`
   Example usage
@@ -11,11 +11,11 @@ console.log(`
     $ icongenie <command> -h
 
   Options
-    --version, -v Print Quasar Icon Genie CLI version
+    --version, -v Print Efuzy Icon Genie CLI version
 
   Commands
     generate, g   Generate App icons & splashscreens
-    verify, v     Verify your Quasar app's icons &
+    verify, v     Verify your Efuzy app's icons &
                     splashscreens
     profile, p    Create Icon Genie profile files
     help, h       Display this message

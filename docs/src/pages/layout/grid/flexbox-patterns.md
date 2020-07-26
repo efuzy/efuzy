@@ -1,6 +1,6 @@
 ---
 title: Flexbox Patterns
-desc: Common recipes for working with flexbox CSS is and how it can be used in a Quasar App.
+desc: Common recipes for working with flexbox CSS is and how it can be used in a Efuzy App.
 related:
   - /layout/grid/introduction-to-flexbox
   - /layout/grid/row

@@ -3,7 +3,7 @@ title: Icon Genie CLI Command List
 desc: Command list for Icon Genie CLI.
 ---
 
-Familiarize yourself with the list of available Icon Genie CLI commands inside a Quasar project folder:
+Familiarize yourself with the list of available Icon Genie CLI commands inside a Efuzy project folder:
 
 ```bash
 $ icongenie
@@ -16,11 +16,11 @@ $ icongenie
     $ icongenie <command> -h
 
   Options
-    --version, -v Print Quasar Icon Genie CLI version
+    --version, -v Print Efuzy Icon Genie CLI version
 
   Commands
     generate, g   Generate App icons & splash screens
-    verify, v     Verify your Quasar app's icons &
+    verify, v     Verify your Efuzy app's icons &
                     splash screens
     profile, p    Create Icon Genie profile files
     help, h       Display this message
@@ -51,7 +51,7 @@ $ icongenie generate -h
   Usage
     $ icongenie generate [options]
 
-    # generate icons for all installed Quasar modes
+    # generate icons for all installed Efuzy modes
     $ icongenie generate -i /path/to/icon.png
     $ icongenie g -i /path/to/icon.png
 
@@ -78,7 +78,7 @@ $ icongenie generate -h
                           Image will be trimmed automatically
                             (also see "skip-trim" and "padding" param)
                           Path can be absolute, or relative to the root of the
-                            Quasar project folder
+                            Efuzy project folder
                           Recommended min size: 1024x1024 px
 
     --background, -b      Path to optional background source file (for splash screens);
@@ -88,10 +88,10 @@ $ icongenie generate -h
                             - transparency is optional (but recommended if you
                               combine with the splashscreen-color param)
                           Path can be absolute, or relative to the root of the
-                            Quasar project folder
+                            Efuzy project folder
                           Recommended min size: 1024x1024 px
 
-    --mode, -m            For which Quasar mode(s) to generate the assets;
+    --mode, -m            For which Efuzy mode(s) to generate the assets;
                           Default: all
                             [all|spa|pwa|ssr|bex|cordova|capacitor|electron]
                           Multiple can be specified, separated by ",":
@@ -170,13 +170,13 @@ The `verify` command confirms that you have all required app icons and splash sc
 $ icongenie -h
 
   Description
-    Verifies your Quasar App's icons and splash screens
+    Verifies your Efuzy App's icons and splash screens
     for all installed modes.
 
   Usage
     $ icongenie verify [options]
 
-    # verify all Quasar modes
+    # verify all Efuzy modes
     $ icongenie verify
 
     # verify specific mode
@@ -192,7 +192,7 @@ $ icongenie -h
     $ icongenie verify -p ./folder-containing-profile-files
 
   Options
-    --mode, -m      For which Quasar mode(s) to verify the assets;
+    --mode, -m      For which Efuzy mode(s) to verify the assets;
                     Default: all
                       [all|spa|pwa|ssr|bex|cordova|capacitor|electron]
                     Multiple can be specified, separated by ",":
@@ -266,7 +266,7 @@ $ icongenie profile -h
                           Image will be trimmed automatically
                             (also see "skip-trim" and "padding" param)
                           Path can be absolute, or relative to the root of the
-                            Quasar project folder
+                            Efuzy project folder
                           Recommended min size: 1024x1024 px
 
     --background, -b      Path to optional background source file (for splash screens);
@@ -276,7 +276,7 @@ $ icongenie profile -h
                             - transparency is optional (but recommended if you
                               combine with the splashscreen-color param)
                           Path can be absolute, or relative to the root of the
-                            Quasar project folder
+                            Efuzy project folder
                           Recommended min size: 1024x1024 px
 
     --include             Prefill the params.include property;

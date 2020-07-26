@@ -15,7 +15,7 @@ module.exports = function regenerateTypesFeatureFlags(buildConfig) {
   //    because boot and configure wrappers functions files will
   //    provide autocomplete based on them also to JS users
   // Flags files should be copied over, for every enabled mode,
-  //    every time `quasar dev` and `quasar build` are run:
+  //    every time `efuzy dev` and `efuzy build` are run:
   //    this automatize the upgrade for existing codebases
   for (const feature of [
     'pwa',

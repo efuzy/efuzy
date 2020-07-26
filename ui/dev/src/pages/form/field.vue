@@ -245,7 +245,7 @@ export default {
       props: [
         {
           label: 'Satisfied customers',
-          avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+          avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
           children: [
             {
               label: 'Good food',

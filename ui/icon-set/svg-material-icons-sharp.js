@@ -71,7 +71,7 @@ import {
   sharpCloudUpload,
   sharpClearAll,
   sharpDoneAll
-} from '@quasar/extras/material-icons-sharp'
+} from '@efuzy/extras/material-icons-sharp'
 
 export default {
   name: 'svg-material-icons-sharp',

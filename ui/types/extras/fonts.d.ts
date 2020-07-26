@@ -1,1 +1,1 @@
-export type QuasarFonts = "roboto-font" | "roboto-font-latin-ext";
+export type EfuzyFonts = "roboto-font" | "roboto-font-latin-ext";

@@ -18,7 +18,7 @@ export default {
   },
 
   // for when cherry-picking
-  Quasar: VuePlugin,
+  Efuzy: VuePlugin,
 
   ...components,
   ...directives,

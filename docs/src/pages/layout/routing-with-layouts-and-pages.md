@@ -1,8 +1,8 @@
 ---
 title: Routing with Layouts and Pages
-desc: How to connect the Vue Router with your Quasar layouts and pages.
+desc: How to connect the Vue Router with your Efuzy layouts and pages.
 ---
-You can benefit from Vue Router's capabilities while structuring your routes with a Quasar Layout. The information below is just a recommendation and not mandatory to follow. Quasar allows you full freedom. Take the lines below only as an example.
+You can benefit from Vue Router's capabilities while structuring your routes with a Efuzy Layout. The information below is just a recommendation and not mandatory to follow. Efuzy allows you full freedom. Take the lines below only as an example.
 
 [QLayout](/layout/layout) is the component used to encapsulate pages, so that multiple pages will share the same header, drawers and so on. However, you can also configure per page header/footer/drawers, but they all must be children of the QLayout component. In order to understand how this works, you need a little bit of reading on [Vue Router nested routes](http://router.vuejs.org/en/essentials/nested-routes.html).
 
@@ -10,16 +10,16 @@ To make it more clear, let's take an example. We have one layout ('user') and tw
 
 ## Creating Files
 
-**Quasar does not enforce a specific folder structure**. The following is just an example. You can put layouts and pages together in a folder, or put pages in your specific folder structure of choice, or create your own layout and page folders. It doesn't matter for Quasar. All that matters is that you reference them correctly in `/src/router/routes.js`.
+**Efuzy does not enforce a specific folder structure**. The following is just an example. You can put layouts and pages together in a folder, or put pages in your specific folder structure of choice, or create your own layout and page folders. It doesn't matter for Efuzy. All that matters is that you reference them correctly in `/src/router/routes.js`.
 
-Let's create the layout and page files. You can use a helper command of Quasar CLI or simply create them yourself.
+Let's create the layout and page files. You can use a helper command of Efuzy CLI or simply create them yourself.
 
 ```bash
-$ quasar new layout User
+$ efuzy new layout User
  app:new Generated layout: src/layouts/User.vue +0ms
  app:new Make sure to reference it in src/router/routes.js +2ms
 
-$ quasar new page Profile Posts
+$ efuzy new page Profile Posts
  app:new Generated page: src/pages/Profile.vue +0ms
  app:new Make sure to reference it in src/router/routes.js +2ms
 
@@ -71,7 +71,7 @@ export default routes
 ```
 
 ::: tip
-More in-depth analysis of [Lazy loading / code-splitting](/quasar-cli/lazy-loading).
+More in-depth analysis of [Lazy loading / code-splitting](/efuzy-cli/lazy-loading).
 :::
 
 ::: tip
@@ -206,7 +206,7 @@ Please notice a few things:
     ]
   ]
   ```
-* Quasar provides some out of the box Webpack aliases ('layouts' which points to '/src/layouts' and 'pages' which points to '/src/pages'), which are used in the above examples.
+* Efuzy provides some out of the box Webpack aliases ('layouts' which points to '/src/layouts' and 'pages' which points to '/src/pages'), which are used in the above examples.
 * Pages of a Layout are declared as children of it in the Vue Router configuration so that `<router-view/>` will know what page component to inject. Remember to always use this Vue component whenever your Layout has pages attached to it.
 
   ```html

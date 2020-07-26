@@ -7,7 +7,7 @@
 
     <q-btn round>
       <q-avatar size="42px">
-        <img src="https://cdn.quasar.dev/img/avatar2.jpg">
+        <img src="https://cdn.efuzy.dev/img/avatar2.jpg">
       </q-avatar>
     </q-btn>
 

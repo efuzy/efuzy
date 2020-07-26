@@ -66,7 +66,7 @@ import {
   fasUpload,
   fasStream,
   fasClipboardCheck
-} from '@quasar/extras/fontawesome-v5'
+} from '@efuzy/extras/fontawesome-v5'
 
 export default {
   name: 'svg-fontawesome-v5',

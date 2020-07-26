@@ -1,64 +1,64 @@
 ---
 title: Upgrade Guide
-desc: How to upgrade Quasar from older versions to the latest one.
+desc: How to upgrade Efuzy from older versions to the latest one.
 ---
 
 :::tip
-Quasar's v1 version is now on a stable API.
+Efuzy's v1 version is now on a stable API.
 :::
 
 ## Upgrading from older v1 to latest v1
 
 ### With UMD
-Simply replace the version string in all the CSS and JS tags that refer to Quasar to the newer version.
+Simply replace the version string in all the CSS and JS tags that refer to Efuzy to the newer version.
 
-### With Quasar CLI
+### With Efuzy CLI
 
 ```bash
 # run these commands inside
-# of a Quasar v1 project
+# of a Efuzy v1 project
 
 # check for upgradable packages
-$ quasar upgrade
+$ efuzy upgrade
 
 # do the actual upgrade
-$ quasar upgrade --install
+$ efuzy upgrade --install
 ```
 
 ::: warning Note for code editor terminals
-If you're using a code editor terminal instead of the real one, you run `quasar upgrade` and get an error *Command not found* or *@quasar/cli* version appears to be *undefined*, you will need to go to the settings of your code editor terminal and untick the option (or its equivalent) *Add 'node_modules/.bin' from the project root to %PATH%* then restart your code editor.
+If you're using a code editor terminal instead of the real one, you run `efuzy upgrade` and get an error *Command not found* or *@efuzy/cli* version appears to be *undefined*, you will need to go to the settings of your code editor terminal and untick the option (or its equivalent) *Add 'node_modules/.bin' from the project root to %PATH%* then restart your code editor.
 :::
 
 ### With Vue CLI
 ```bash
-$ yarn upgrade quasar@latest
+$ yarn upgrade efuzy@latest
 ```
 
-You may also want to make sure you have the latest of `@quasar/extras` package too:
+You may also want to make sure you have the latest of `@efuzy/extras` package too:
 
 ```bash
-$ yarn add @quasar/extras@latest
+$ yarn add @efuzy/extras@latest
 ```
 
 ## Upgrading from 0.x to v1
 
-Before you start down this journey of upgrading Quasar Legacy to Quasar v1 you should know a few things:
+Before you start down this journey of upgrading Efuzy Legacy to Efuzy v1 you should know a few things:
 1) Read the documentation before asking questions on Discord server or forums.
 2) Prepare a CodePen so staff can help you.
-3) Dig into the Quasar source code (it'll help you understand the framework as well as teach you best practices for programming with Vue).
+3) Dig into the Efuzy source code (it'll help you understand the framework as well as teach you best practices for programming with Vue).
 4) Don't use framework components as mixins unless absolutely necessary (wrap them if you need).
 5) Don't target inner component stuff with CSS selectors unless absolutely necessary.
 6) We recommend `yarn` whenever possible because of its speed and efficient use. However, when using globals, we still recommend using `npm`, especially if you use `nvm` (Node Version Manager).
 7) Use `git` for repository management and make regular commits, it is like taking notes on the process and lets you revert to a previous state in case you get stuck.
-8) Use Quasar boot files for any pre-mounting app routines.
-9) Be very cautious when using other libraries - Quasar can't ensure they will be fully compatible
-10) Finally, become a [backer/sponsor](https://donate.quasar.dev) and get access to the special Discord support chat room for priority support.
+8) Use Efuzy boot files for any pre-mounting app routines.
+9) Be very cautious when using other libraries - Efuzy can't ensure they will be fully compatible
+10) Finally, become a [backer/sponsor](https://donate.efuzy.dev) and get access to the special Discord support chat room for priority support.
 
 ### Introduction to Upgrading
 
-While upgrading Legacy Quasar projects appears like a reasonable choice, it may not always present itself as the best solution. Just be aware that there are alternative measures that may be faster and more efficient. For instance, sometimes it is best to create a new project and port your old project. In this manner, if you do it slowly and methodologically you can see issues and resolve them quickly. This is the opposite of upgrading a project in-place, which can break everything simultaneously. Should you go with the upgrade, we have assembled the steps needed below. However, you will still need to update any Quasar components that went through a revision to get to v1.
+While upgrading Legacy Efuzy projects appears like a reasonable choice, it may not always present itself as the best solution. Just be aware that there are alternative measures that may be faster and more efficient. For instance, sometimes it is best to create a new project and port your old project. In this manner, if you do it slowly and methodologically you can see issues and resolve them quickly. This is the opposite of upgrading a project in-place, which can break everything simultaneously. Should you go with the upgrade, we have assembled the steps needed below. However, you will still need to update any Efuzy components that went through a revision to get to v1.
 
-In either case, when you build out your project as you go through this process, you may get a build error that gives no valid information and you will have no idea what might be causing it. Should this happen to you, we recommend running `quasar build` instead of `quasar dev` as the production build will sometimes give different information (from webpack) than the dev build.
+In either case, when you build out your project as you go through this process, you may get a build error that gives no valid information and you will have no idea what might be causing it. Should this happen to you, we recommend running `efuzy build` instead of `efuzy dev` as the production build will sometimes give different information (from webpack) than the dev build.
 
 If you get stuck, check out the forums and visit Discord server for help. Not just from staff, but from the community as well.
 
@@ -72,33 +72,33 @@ It should be noted that we have tried our hardest to make sure everything in the
 
 The best way to start upgrading your project is to follow these steps:
 
-1) First, **verify** your current info with `quasar info`:
+1) First, **verify** your current info with `efuzy info`:
   ```bash
   Global packages
-    quasar-cli                    0.17.23
+    efuzy-cli                    0.17.23
 
   Important local packages
-    quasar-cli                    0.17.23 (Quasar Framework CLI)
-    quasar-framework              0.17.19 (Build responsive SPA, SSR, PWA, Hybrid Mobile Apps and Electron apps, all simultaneously using the same codebase)
-    quasar-extras                 2.0.9   (Quasar Framework fonts, icons and animations)
+    efuzy-cli                    0.17.23 (Efuzy Framework CLI)
+    efuzy-framework              0.17.19 (Build responsive SPA, SSR, PWA, Hybrid Mobile Apps and Electron apps, all simultaneously using the same codebase)
+    efuzy-extras                 2.0.9   (Efuzy Framework fonts, icons and animations)
   ```
-  This shows the Legacy Quasar versions (we'll do this again at end of the steps to verify upgrade)
+  This shows the Legacy Efuzy versions (we'll do this again at end of the steps to verify upgrade)
 
-2) **Remove** local `quasar-cli` package
+2) **Remove** local `efuzy-cli` package
   ```bash
-  $ yarn remove quasar-cli
-  ```
-
-3) **Remove** folders `.quasar`, `node_modules` and `package-lock.json` or `yarn.lock` file
-
-4) **Install**: `quasar` and `@quasar/extras` as dependency
-  ```bash
-  $ yarn add quasar @quasar/extras
+  $ yarn remove efuzy-cli
   ```
 
-5) **Install**: `@quasar/app` as development dependency
+3) **Remove** folders `.efuzy`, `node_modules` and `package-lock.json` or `yarn.lock` file
+
+4) **Install**: `efuzy` and `@efuzy/extras` as dependency
   ```bash
-  $ yarn add --dev @quasar/app
+  $ yarn add efuzy @efuzy/extras
+  ```
+
+5) **Install**: `@efuzy/app` as development dependency
+  ```bash
+  $ yarn add --dev @efuzy/app
   ```
 
 6) **Re-install** all the npm packages
@@ -115,14 +115,14 @@ The best way to start upgrading your project is to follow these steps:
   ```js
   module.exports = {
     presets: [
-      '@quasar/babel-preset-app'
+      '@efuzy/babel-preset-app'
     ]
   }
   ```
 
 8) **Rename** the folder `src/plugins` to `src/boot`
 
-9) In `quasar.conf.js`: **rename** the key section `plugins` to `boot`
+9) In `efuzy.conf.js`: **rename** the key section `plugins` to `boot`
 
   ```js
   module.exports = function (ctx) {
@@ -144,10 +144,10 @@ The best way to start upgrading your project is to follow these steps:
 
   ```
 
-  Do not get the Quasar plugins mixed up. _Do not_ change this:
+  Do not get the Efuzy plugins mixed up. _Do not_ change this:
 
   ```js
-  // Quasar plugins
+  // Efuzy plugins
   framework: {
     plugins: [ // do NOT edit here
       'Notify'
@@ -155,27 +155,27 @@ The best way to start upgrading your project is to follow these steps:
   }
   ```
 
-10) In `quasar.conf.js`: **rename** the value `fontawesome` to `fontawesome-v5`, `mdi` to `mdi-v5` and `ionicons` to `ionicons-v4` inside the `extras` section, if you use them. Even if you don't use them it is still good practice to rename them in case you do use them in the future.
+10) In `efuzy.conf.js`: **rename** the value `fontawesome` to `fontawesome-v5`, `mdi` to `mdi-v5` and `ionicons` to `ionicons-v4` inside the `extras` section, if you use them. Even if you don't use them it is still good practice to rename them in case you do use them in the future.
 
-11) In `quasar.conf.js` > `framework` > `iconSet` do same **rename** replacements as above to its value (`fontawesome` to `fontawesome-v5`, `mdi` to `mdi-v5` and `ionicons` to `ionicons-v4`)
+11) In `efuzy.conf.js` > `framework` > `iconSet` do same **rename** replacements as above to its value (`fontawesome` to `fontawesome-v5`, `mdi` to `mdi-v5` and `ionicons` to `ionicons-v4`)
 
-12) In `quasar.conf.js`: **rename** in `framework` > `i18n` to `lang`
+12) In `efuzy.conf.js`: **rename** in `framework` > `i18n` to `lang`
 
-13) In `quasar.conf.js`: **remove** all references to `ctx.theme`
+13) In `efuzy.conf.js`: **remove** all references to `ctx.theme`
 
-14) **Create** the file `quasar.variables.styl` (or .sass, .scss -- recommended!) in the folder `~/src/css`, if does not already exist. Add the following to it (or move the contents from `~/src/css/themes/common.variables.styl`):
+14) **Create** the file `efuzy.variables.styl` (or .sass, .scss -- recommended!) in the folder `~/src/css`, if does not already exist. Add the following to it (or move the contents from `~/src/css/themes/common.variables.styl`):
 
   ```stylus
-  // Quasar Stylus Variables
+  // Efuzy Stylus Variables
   // --------------------------------------------------
   // To customize the look and feel of this app, you can override
-  // the Stylus variables found in Quasar's source Stylus files.
+  // the Stylus variables found in Efuzy's source Stylus files.
 
-  // Check documentation for full list of Quasar variables
+  // Check documentation for full list of Efuzy variables
 
   // It's highly recommended to change the default colors
   // to match your app's branding.
-  // Tip: Use the "Theme Builder" on Quasar's documentation website.
+  // Tip: Use the "Theme Builder" on Efuzy's documentation website.
 
   $primary   = #027BE3
   $secondary = #26A69A
@@ -189,22 +189,22 @@ The best way to start upgrading your project is to follow these steps:
 
 15) In the folder `~/src/css`, **remove** the `themes` folder.
 
-16) **Remove** the global Legacy Quasar `quasar-cli` and **install** the new `@quasar/cli`. (You will still be able to run legacy 0.17 projects with it)
+16) **Remove** the global Legacy Efuzy `efuzy-cli` and **install** the new `@efuzy/cli`. (You will still be able to run legacy 0.17 projects with it)
 
-**Remove** global Quasar CLI (use Yarn or NPM, depending with which you've installed it in the first place):
+**Remove** global Efuzy CLI (use Yarn or NPM, depending with which you've installed it in the first place):
 
 ```bash
-$ yarn global remove quasar-cli
+$ yarn global remove efuzy-cli
 # or (depending on what you've installed it with)
-$ npm remove -g quasar-cli
+$ npm remove -g efuzy-cli
 ```
 
-**Install** global Quasar CLI
+**Install** global Efuzy CLI
 
 ```bash
-$ yarn global add @quasar/cli
+$ yarn global add @efuzy/cli
 # or
-$ npm install -g @quasar/cli
+$ npm install -g @efuzy/cli
 ```
 
 ::: tip
@@ -216,16 +216,16 @@ export PATH="$(yarn global bin):$PATH"
 ```
 :::
 
-17) Last, but not least, do a sanity check with `quasar info`:
+17) Last, but not least, do a sanity check with `efuzy info`:
 
   ```bash
   Global packages
-    @quasar/cli - 1.0.5
+    @efuzy/cli - 1.0.5
 
   Important local packages
-    quasar - 1.9.0 -- High performance, Material Design 2, full front end stack with Vue.js -- build SPA, SSR, PWA, Hybrid Mobile Apps and Electron apps, all simultaneously using the same codebase
-    @quasar/app - 1.5.4 -- Quasar Framework App CLI
-    @quasar/extras - 1.5.1 -- Quasar Framework fonts, icons and animations
+    efuzy - 1.9.0 -- High performance, Material Design 2, full front end stack with Vue.js -- build SPA, SSR, PWA, Hybrid Mobile Apps and Electron apps, all simultaneously using the same codebase
+    @efuzy/app - 1.5.4 -- Efuzy Framework App CLI
+    @efuzy/extras - 1.5.1 -- Efuzy Framework fonts, icons and animations
   ```
 
   Notice the versions that are different from step 1.
@@ -240,16 +240,16 @@ The information below can be used as a reference.
 The iOS theme is no longer available, BUT as you will see, it's also not necessary anymore:
 * There are examples in the docs of how to make different components look and feel like iOS
 * You can hook into `$q.platform.is.ios` to help you in setting component props differently
-* The new components are very easy to customize (much easier than in Legacy Quasar)
+* The new components are very easy to customize (much easier than in Legacy Efuzy)
 
-### Quasar CLI
+### Efuzy CLI
 
-- To create a new project use `quasar create` instead of `quasar init`
+- To create a new project use `efuzy create` instead of `efuzy init`
 - The `--theme, -t` option is no longer available as a build option.
-- `quasar describe` was added for command-line help with Quasar components, etc.
-- `quasar inspect` is a new option to see generated Webpack config.
-- `quasar ext` is a new option for management of Quasar App Extensions.
-- `quasar new plugin ...` is now `quasar new boot ...`
+- `efuzy describe` was added for command-line help with Efuzy components, etc.
+- `efuzy inspect` is a new option to see generated Webpack config.
+- `efuzy ext` is a new option for management of Efuzy App Extensions.
+- `efuzy new plugin ...` is now `efuzy new boot ...`
 
 ### Build Output
 
@@ -257,20 +257,20 @@ The dist folder now strips out the `-mat` and `-ios` suffixes because there's on
 
 ### Animation
 
-- The JS and CSS animations were removed for v1. If you need them, you can add them manually to your quasar project by pulling them directly out of the v0.17 repository and adding them to your project.
-- [motion.styl](https://github.com/quasarframework/quasar/blob/v0.17/src/css/core/motion.styl)
-- [animate.js](https://github.com/quasarframework/quasar/blob/v0.17/src/utils/animate.js)
+- The JS and CSS animations were removed for v1. If you need them, you can add them manually to your efuzy project by pulling them directly out of the v0.17 repository and adding them to your project.
+- [motion.styl](https://github.com/efuzy/efuzy/blob/v0.17/src/css/core/motion.styl)
+- [animate.js](https://github.com/efuzy/efuzy/blob/v0.17/src/utils/animate.js)
 
 ### Misc
 
 - `this.$q.i18n` was changed to `this.$q.lang`
-- ```import('quasar-framework/i18n/' + lang)``` was changed to ```import('quasar/lang/' + lang)``` where `lang` would be `en-us` etc.
+- ```import('efuzy-framework/i18n/' + lang)``` was changed to ```import('efuzy/lang/' + lang)``` where `lang` would be `en-us` etc.
 - The language pack `en-uk` was changed to `en-gb`
 - `this.$q.icons` was changed to `this.$q.iconSet`
 - In previous versions you would access an imported language packs isoName with:
 
 ```js
- import('quasar/lang/' + locale).then(lang => {
+ import('efuzy/lang/' + locale).then(lang => {
    // Access the isoName with - lang.default.lang
  })
 ```
@@ -278,7 +278,7 @@ The dist folder now strips out the `-mat` and `-ios` suffixes because there's on
 This now needs changing to
 
 ```js
- import('quasar/lang/' + locale).then(lang => {
+ import('efuzy/lang/' + locale).then(lang => {
    // Access the isoName with - lang.default.isoName
  })
 ```
@@ -505,7 +505,7 @@ If you are using the new [QMenu](/vue-components/menu) component, you can altern
 
 #### Action Sheet
 
-- renamed to [**Bottom Sheet**](/quasar-plugins/bottom-sheet)
+- renamed to [**Bottom Sheet**](/efuzy-plugins/bottom-sheet)
 
 #### Local/Session Storage
 
@@ -530,7 +530,7 @@ The structure looks the same, but some functions have been renamed.
 
 #### QActionSheet
 
-- **was dropped** in favor of [BottomSheet](/quasar-plugins/bottom-sheet) (from code) or using a [QDialog](/vue-components/dialog) with `position="bottom"` (from the template).
+- **was dropped** in favor of [BottomSheet](/efuzy-plugins/bottom-sheet) (from code) or using a [QDialog](/vue-components/dialog) with `position="bottom"` (from the template).
 
 #### QAlert
 

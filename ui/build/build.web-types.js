@@ -31,7 +31,7 @@ module.exports.generate = function (data) {
     const webtypes = JSON.stringify({
       $schema: '',
       framework: 'vue',
-      name: 'quasar',
+      name: 'efuzy',
       version: process.env.VERSION || require('../package.json').version,
       contributions: {
         html: {
@@ -43,7 +43,7 @@ module.exports.generate = function (data) {
                 slotTypes.push({
                   name,
                   description: getDescription(slotApi),
-                  'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                  'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
                 })
               })
             }
@@ -56,10 +56,10 @@ module.exports.generate = function (data) {
                     name,
                     type: resolveType(api),
                     description: getDescription(api),
-                    'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                    'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
                   })),
                   description: getDescription(slotApi),
-                  'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                  'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
                 })
               })
             }
@@ -67,7 +67,7 @@ module.exports.generate = function (data) {
             const result = {
               name,
               source: {
-                module: 'quasar',
+                module: 'efuzy',
                 symbol: name
               },
               attributes: props && Object.entries(props).map(([name, propApi]) => {
@@ -78,7 +78,7 @@ module.exports.generate = function (data) {
                     type: resolveType(propApi)
                   },
                   description: getDescription(propApi),
-                  'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                  'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
                 }
                 if (propApi.required) {
                   result.required = true
@@ -98,14 +98,14 @@ module.exports.generate = function (data) {
                   name: paramName,
                   type: resolveType(paramApi),
                   description: getDescription(paramApi),
-                  'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                  'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
                 })),
                 description: getDescription(eventApi),
-                'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
               })),
               slots: slotTypes,
-              description: `${name} - Quasar component`,
-              'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+              description: `${name} - Efuzy component`,
+              'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
             }
             if (props && props.value && ((events && events.input) || props.value.category === 'model')) {
               result['vue-model'] = {
@@ -126,18 +126,18 @@ module.exports.generate = function (data) {
             let result = {
               name: 'v-' + kebabCase(name),
               source: {
-                module: 'quasar',
+                module: 'efuzy',
                 symbol: name
               },
               required: false, // Directive is never required
-              description: `${name} - Quasar directive`,
-              'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+              description: `${name} - Efuzy directive`,
+              'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
             }
             if (modifiers) {
               result['vue-modifiers'] = Object.entries(modifiers).map(([name, api]) => ({
                 name,
                 description: getDescription(api),
-                'doc-url': meta.docsUrl || 'https://v1.quasar.dev'
+                'doc-url': meta.docsUrl || 'https://v1.efuzy.dev'
               }))
             }
             if (valueType !== 'Boolean') {

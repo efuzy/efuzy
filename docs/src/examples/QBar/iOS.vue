@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import { fasSignal, fasWifi, fasBatteryFull } from '@quasar/extras/fontawesome-v5'
+import { fasSignal, fasWifi, fasBatteryFull } from '@efuzy/extras/fontawesome-v5'
 
 export default {
   created () {

@@ -1,4 +1,4 @@
-import { QBadge } from 'quasar'
+import { QBadge } from 'efuzy'
 import './ApiRows.sass'
 
 function getEventParams (event) {
@@ -463,7 +463,7 @@ export default {
       ]
     },
 
-    quasarConfOptions (h, conf) {
+    efuzyConfOptions (h, conf) {
       const child = []
 
       for (const def in conf.definition) {

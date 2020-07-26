@@ -2,7 +2,7 @@
 title: Bar
 desc: The QBar Vue component is used to create the top bar on different platforms.
 related:
-  - /quasar-cli/developing-electron-apps/frameless-electron-window
+  - /efuzy-cli/developing-electron-apps/frameless-electron-window
 ---
 
 The QBar is a small component for creating the top bar on different types of mobile or desktop websites/apps. For instance, in desktop apps QBar will have things like the close, minimize or maximize buttons and other menu controls for your application.
@@ -15,7 +15,7 @@ QBar is especially useful for frame-less Electron apps where you integrate it in
 ## Usage
 
 ::: tip
-For responsiveness, use [Visibility](/style/visibility#Window-Width-Related) Quasar CSS Classes. For finer tuning you can go write your own CSS media breakpoints or even go with [QResizeObserver](/vue-components/resize-observer).
+For responsiveness, use [Visibility](/style/visibility#Window-Width-Related) Efuzy CSS Classes. For finer tuning you can go write your own CSS media breakpoints or even go with [QResizeObserver](/vue-components/resize-observer).
 :::
 
 ### Styling
@@ -39,7 +39,7 @@ For responsiveness, use [Visibility](/style/visibility#Window-Width-Related) Qua
 ### Frameless Electron Window
 QBar component can come in really handy when developing Electron apps, especially if you choose to use a frameless window.
 
-Read more on [Frameless Electron Window](/quasar-cli/developing-electron-apps/frameless-electron-window) page.
+Read more on [Frameless Electron Window](/efuzy-cli/developing-electron-apps/frameless-electron-window) page.
 
 ## QBar API
 <doc-api file="QBar" />

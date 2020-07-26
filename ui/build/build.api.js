@@ -36,9 +36,9 @@ function getMixedInAPI (api, mainFile) {
 }
 
 const topSections = {
-  plugin: [ 'meta', 'injection', 'quasarConfOptions', 'addedIn', 'props', 'methods' ],
-  component: [ 'meta', 'behavior', 'quasarConfOptions', 'addedIn', 'props', 'slots', 'scopedSlots', 'events', 'methods' ],
-  directive: [ 'meta', 'quasarConfOptions', 'addedIn', 'value', 'arg', 'modifiers' ]
+  plugin: [ 'meta', 'injection', 'efuzyConfOptions', 'addedIn', 'props', 'methods' ],
+  component: [ 'meta', 'behavior', 'efuzyConfOptions', 'addedIn', 'props', 'slots', 'scopedSlots', 'events', 'methods' ],
+  directive: [ 'meta', 'efuzyConfOptions', 'addedIn', 'value', 'arg', 'modifiers' ]
 }
 
 const objectTypes = {
@@ -167,7 +167,7 @@ const objectTypes = {
     isObject: [ 'params', 'returns' ]
   },
 
-  quasarConfOptions: {
+  efuzyConfOptions: {
     props: [ 'propName', 'definition', 'link', 'addedIn' ],
     required: [ 'propName', 'definition' ]
   }
@@ -399,14 +399,14 @@ function parseAPI (file, apiType) {
       continue
     }
 
-    if (['value', 'arg', 'quasarConfOptions', 'meta'].includes(type)) {
+    if (['value', 'arg', 'efuzyConfOptions', 'meta'].includes(type)) {
       if (Object(api[type]) !== api[type]) {
         logError(`${banner} "${type}"/"${type}" is not an object`)
         process.exit(1)
       }
     }
 
-    if (['meta', 'quasarConfOptions'].includes(type)) {
+    if (['meta', 'efuzyConfOptions'].includes(type)) {
       parseObject({
         banner: `${banner} "${type}"`,
         api,

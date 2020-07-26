@@ -11,7 +11,7 @@ interface PreFetchOptions<TStore> extends HasSsrParam, HasStoreParam<TStore> {
   publicPath: string;
 }
 
-// https://github.com/quasarframework/quasar/issues/6576#issuecomment-603787603
+// https://github.com/efuzy/efuzy/issues/6576#issuecomment-603787603
 // Promise<{}> allow nearly any type of Promise to be used
 export type PrefetchCallback<TStore = any> = (
   options: PreFetchOptions<TStore>

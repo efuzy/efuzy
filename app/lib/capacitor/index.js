@@ -28,8 +28,8 @@ class CapacitorRunner {
     }
   }
 
-  async run (quasarConfig) {
-    const cfg = quasarConfig.getBuildConfig()
+  async run (efuzyConfig) {
+    const cfg = efuzyConfig.getBuildConfig()
     const url = cfg.build.APP_URL
 
     if (this.url === url) {
@@ -50,8 +50,8 @@ class CapacitorRunner {
     await openIde('capacitor', cfg.bin, this.target, true)
   }
 
-  async build (quasarConfig, argv) {
-    const cfg = quasarConfig.getBuildConfig()
+  async build (efuzyConfig, argv) {
+    const cfg = efuzyConfig.getBuildConfig()
 
     this.capacitorConfig.prepare(cfg)
 

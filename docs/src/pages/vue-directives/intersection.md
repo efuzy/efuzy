@@ -9,7 +9,7 @@ related:
   - /options/transitions
 ---
 
-"Intersection" is a Quasar directive that enables a method to be called when the user scrolls and the DOM element (or component) that it is applied to comes into or out of the viewport.
+"Intersection" is a Efuzy directive that enables a method to be called when the user scrolls and the DOM element (or component) that it is applied to comes into or out of the viewport.
 
 Under the covers, it uses the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API).
 
@@ -77,7 +77,7 @@ In the example below, we show multiple cards, but only the visible ones get rend
 <doc-example title="Scrolling Cards" file="Intersection/ScrollingCards" scrollable />
 
 ::: tip
-In the example above we used a Quasar transition. For a full list, please head to [Transitions](/options/transitions) page.
+In the example above we used a Efuzy transition. For a full list, please head to [Transitions](/options/transitions) page.
 :::
 
 ## Intersection API

@@ -11,6 +11,6 @@ module.exports = async function (mode, target) {
     return
   }
 
-  warn(`Quasar ${mode.toUpperCase()} is missing. Installing it...`)
+  warn(`Efuzy ${mode.toUpperCase()} is missing. Installing it...`)
   await Mode.add(target)
 }

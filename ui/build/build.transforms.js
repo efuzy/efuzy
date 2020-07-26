@@ -1,5 +1,5 @@
 // Partly used with babel-plugin-transform-imports
-// and by @quasar/app auto-import feature
+// and by @efuzy/app auto-import feature
 
 const
   glob = require('glob'),
@@ -84,9 +84,9 @@ function getImportsFile (map) {
 
 module.exports = function (importName) {
   if (typeof map[importName] === 'undefined') {
-    throw new Error('Unknown import from Quasar: ' + importName)
+    throw new Error('Unknown import from Efuzy: ' + importName)
   }
-  return 'quasar/' + map[importName]
+  return 'efuzy/' + map[importName]
 }
 `
 }
@@ -110,7 +110,7 @@ function getAutoImportFile (autoImport) {
 
 module.exports.generate = function () {
   const map = {
-    Quasar: relative(resolvePath('src/vue-plugin.js'))
+    Efuzy: relative(resolvePath('src/vue-plugin.js'))
   }
   const autoImport = {
     kebabComponents: [],

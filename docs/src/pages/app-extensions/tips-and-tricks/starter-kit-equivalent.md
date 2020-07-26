@@ -1,22 +1,22 @@
 ---
 title: Starter kit equivalent
-desc: Tips and tricks on how to use a Quasar App Extension to create the equivalent of a starter kit.
+desc: Tips and tricks on how to use a Efuzy App Extension to create the equivalent of a starter kit.
 ---
 
-This guide is for when you want to create what essentially is a "starter kit" that adds stuff (/quasar.conf.js configuration, folders, files, CLI hooks) on top of the official starter kit. This allows you to have multiple projects sharing a common structure/logic (and only one package to manage them rather than having to change all projects individually to match your common pattern), and also allows you to share all this with the community.
+This guide is for when you want to create what essentially is a "starter kit" that adds stuff (/efuzy.conf.js configuration, folders, files, CLI hooks) on top of the official starter kit. This allows you to have multiple projects sharing a common structure/logic (and only one package to manage them rather than having to change all projects individually to match your common pattern), and also allows you to share all this with the community.
 
 ::: tip
 In order for creating an App Extension project folder, please first read the [Development Guide > Introduction](/app-extensions/development-guide/introduction).
 :::
 
 ::: tip Full Example
-To see an example of what we will build, head over to [MyStarterKit full example](https://github.com/quasarframework/app-extension-examples/tree/master/my-starter-kit), which is a github repo with this App Extension.
+To see an example of what we will build, head over to [MyStarterKit full example](https://github.com/efuzy/app-extension-examples/tree/master/my-starter-kit), which is a github repo with this App Extension.
 :::
 
 We'll be creating an example App Extension which does the following:
 * it prompts the user what features it wants this App Extension to install
 * renders (copies) files into the hosting folder, according to the answers he gave
-* it extends /quasar.conf.js
+* it extends /efuzy.conf.js
 * it extends the Webpack configuration
 * it uses an App Extension hook (onPublish)
 * it removes the added files when the App Extension gets uninstalled
@@ -61,11 +61,11 @@ The install script below is only rendering files into the hosted app. Notice the
 
 module.exports = function (api) {
   // (Optional!)
-  // Quasar compatibility check; you may need
-  // hard dependencies, as in a minimum version of the "quasar"
-  // package or a minimum version of "@quasar/app" CLI
-  api.compatibleWith('quasar', '^1.0.0')
-  api.compatibleWith('@quasar/app', '^1.0.0')
+  // Efuzy compatibility check; you may need
+  // hard dependencies, as in a minimum version of the "efuzy"
+  // package or a minimum version of "@efuzy/app" CLI
+  api.compatibleWith('efuzy', '^1.0.0')
+  api.compatibleWith('@efuzy/app', '^1.0.0')
 
   // We render some files into the hosting project
 
@@ -90,22 +90,22 @@ Notice that we use the prompts to decide what to render into the hosting project
 
 ## The index script
 
-We do a few things in the index script, like extending /quasar.conf.js, hooking into one of the many Index API hooks (onPublish in this case), and chaining the Webpack configuration:
+We do a few things in the index script, like extending /efuzy.conf.js, hooking into one of the many Index API hooks (onPublish in this case), and chaining the Webpack configuration:
 
 ```js
 // src/index.js
 
 module.exports = function (api) {
   // (Optional!)
-  // Quasar compatibility check; you may need
-  // hard dependencies, as in a minimum version of the "quasar"
-  // package or a minimum version of "@quasar/app" CLI
-  api.compatibleWith('quasar', '^1.0.0')
-  api.compatibleWith('@quasar/app', '^1.0.0')
+  // Efuzy compatibility check; you may need
+  // hard dependencies, as in a minimum version of the "efuzy"
+  // package or a minimum version of "@efuzy/app" CLI
+  api.compatibleWith('efuzy', '^1.0.0')
+  api.compatibleWith('@efuzy/app', '^1.0.0')
 
-  // Here we extend /quasar.conf.js;
-  // (extendQuasarConf() will be defined later in this tutorial, continue reading)
-  api.extendQuasarConf(extendQuasarConf)
+  // Here we extend /efuzy.conf.js;
+  // (extendEfuzyConf() will be defined later in this tutorial, continue reading)
+  api.extendEfuzyConf(extendEfuzyConf)
 
   // Here we register the onPublish hook,
   // only if user answered that he wants the publishing service
@@ -122,10 +122,10 @@ module.exports = function (api) {
 }
 ```
 
-Here's an example of `extendQuasarConf` definition:
+Here's an example of `extendEfuzyConf` definition:
 
 ```js
-function extendQuasarConf (conf) {
+function extendEfuzyConf (conf) {
   conf.extras.push('ionicons-v4')
   conf.framework.iconSet = 'ionicons-v4'
 
@@ -135,10 +135,10 @@ function extendQuasarConf (conf) {
   //
 
   // make sure my-ext boot file is registered
-  conf.boot.push('~quasar-app-extension-my-starter-kit/src/boot/my-starter-kit-boot.js')
+  conf.boot.push('~efuzy-app-extension-my-starter-kit/src/boot/my-starter-kit-boot.js')
 
   // make sure boot file get transpiled
-  conf.build.transpileDependencies.push(/quasar-app-extension-my-starter-kit[\\/]src/)
+  conf.build.transpileDependencies.push(/efuzy-app-extension-my-starter-kit[\\/]src/)
 }
 ```
 
@@ -146,7 +146,7 @@ The `onPublish` function:
 
 ```js
 function onPublish (api, { arg, distDir }) {
-  // this hook is called when "quasar build --publish" is called
+  // this hook is called when "efuzy build --publish" is called
 
   // your publish logic here...
   console.log('We should publish now. But maybe later? :)')

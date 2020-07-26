@@ -1,17 +1,17 @@
 ---
 title: How To Use Vue
-desc: Quick tutorial about Vue principles and how to use it with Quasar.
+desc: Quick tutorial about Vue principles and how to use it with Efuzy.
 ---
-Before you begin with Quasar, it is a good idea to get acquainted with ES6 and have a fairly good knowledge about how Vue works. ([Quick overview of ES6](https://github.com/lukehoban/es6features) and [ES6 complete list of features](http://es6-features.org/#Constants) -- don't worry, you don't need to understand ALL of ES6). For devs experienced with reactive UIs, the [Vue documentation](https://vuejs.org/v2/guide/) itself takes a half-day at most to read top-to-bottom and will help you understand how Quasar components can be used and configured.
+Before you begin with Efuzy, it is a good idea to get acquainted with ES6 and have a fairly good knowledge about how Vue works. ([Quick overview of ES6](https://github.com/lukehoban/es6features) and [ES6 complete list of features](http://es6-features.org/#Constants) -- don't worry, you don't need to understand ALL of ES6). For devs experienced with reactive UIs, the [Vue documentation](https://vuejs.org/v2/guide/) itself takes a half-day at most to read top-to-bottom and will help you understand how Efuzy components can be used and configured.
 
 ::: tip
-If you are a total beginner to Vue and reactive UI libraries and want a good tutorial, we recommend you take a look at [Vue and Quasar video tutorials](/video-tutorials).
+If you are a total beginner to Vue and reactive UI libraries and want a good tutorial, we recommend you take a look at [Vue and Efuzy video tutorials](/video-tutorials).
 :::
 
-After reading the Vue documentation, let's clear up some of the most frequently asked questions, like *"How can I use Quasar components, Vue properties, methods and events"*.
+After reading the Vue documentation, let's clear up some of the most frequently asked questions, like *"How can I use Efuzy components, Vue properties, methods and events"*.
 
 ## Vue Single File Components (SFC)
-You'll be building your Quasar app using `*.vue` files which contain multiple sections: `template` (HTML), `script` (Javascript) and `style` (CSS/Stylus/SASS/SCSS/Less) all in the same file.
+You'll be building your Efuzy app using `*.vue` files which contain multiple sections: `template` (HTML), `script` (Javascript) and `style` (CSS/Stylus/SASS/SCSS/Less) all in the same file.
 
 ```vue
 <template>
@@ -60,17 +60,17 @@ You can specify you want your chosen preprocessor to handle the CSS code you're 
 </style>
 ```
 
-## Using Quasar Directives
-Quasar comes with a few custom [Vue Directives](https://vuejs.org/v2/guide/custom-directive.html). These directives can be applied on almost any DOM element or Component.
+## Using Efuzy Directives
+Efuzy comes with a few custom [Vue Directives](https://vuejs.org/v2/guide/custom-directive.html). These directives can be applied on almost any DOM element or Component.
 
-Example of a Quasar directive:
+Example of a Efuzy directive:
 ```html
 <div v-ripple>Click Me</div>
 ```
 
 > Notice how Ripple is used in the HTML template as `v-ripple`. Vue directives are prefixed with `v-`.
 
-In order for you to use any of the directives that Quasar supplies, you first need to tell Quasar you want it embedded. Open `/quasar.conf.js` file and add the following reference:
+In order for you to use any of the directives that Efuzy supplies, you first need to tell Efuzy you want it embedded. Open `/efuzy.conf.js` file and add the following reference:
 
 ```js
 framework: {
@@ -78,7 +78,7 @@ framework: {
 }
 ```
 
-Let's take another example. We now also want TouchPan and TouchSwipe directives, so we add them too in `/quasar.conf.js`:
+Let's take another example. We now also want TouchPan and TouchSwipe directives, so we add them too in `/efuzy.conf.js`:
 ```js
 framework: {
   directives: ['Ripple', 'TouchPan', 'TouchSwipe']
@@ -93,8 +93,8 @@ Now we can write in your Vue files template:
 <div v-ripple>Click me. I got ripples.</div>
 ```
 
-## Using Quasar Components
-Quasar components have names beginning with "Q" like "QBtn" or "QElementResizeObserver". In order to use them, you need to add a reference to them in `/quasar.conf.js`.
+## Using Efuzy Components
+Efuzy components have names beginning with "Q" like "QBtn" or "QElementResizeObserver". In order to use them, you need to add a reference to them in `/efuzy.conf.js`.
 
 Let's take the following example with a QBtn and QIcon and then we'll see how to embed these components in our app:
 ```html
@@ -106,17 +106,17 @@ Let's take the following example with a QBtn and QIcon and then we'll see how to
 
 > Notice how QBtn is used in the Vue HTML template as `<q-btn>`. If we'd import QElementResizeObserver, then we'd use it in template as `<q-element-resize-observer>`.
 
-Now on `/quasar.conf.js`, you would add:
+Now on `/efuzy.conf.js`, you would add:
 ```js
 framework: {
   components: ['QBtn', 'QIcon']
 }
 ```
 
-## Using Quasar Plugins
-Quasar Plugins are features that you can use both in your Vue files as well as outside of them, like Notify, BottomSheet, AppVisibility and so on.
+## Using Efuzy Plugins
+Efuzy Plugins are features that you can use both in your Vue files as well as outside of them, like Notify, BottomSheet, AppVisibility and so on.
 
-In order to use them, you need to add a reference to them in `/quasar.conf.js`:
+In order to use them, you need to add a reference to them in `/efuzy.conf.js`:
 ```js
 framework: {
   plugins: ['Notify', 'BottomSheet']
@@ -156,14 +156,14 @@ export default {
 
 Now let's see an example of Notify being used outside of a Vue file:
 ```js
-import { Notify } from 'quasar'
+import { Notify } from 'efuzy'
 
 // ...
 Notify.create('My message')
 ```
 
 ### Importing All Components and Directives for Quick Test
-Referencing all Quasar Components, Directives and Plugins can be tiresome when you just want to do a quick test. In this case, you can tell Quasar to import them all by editing `/quasar.conf.js` like this:
+Referencing all Efuzy Components, Directives and Plugins can be tiresome when you just want to do a quick test. In this case, you can tell Efuzy to import them all by editing `/efuzy.conf.js` like this:
 
 ```js
 framework: 'all'
@@ -176,10 +176,10 @@ This **will not** take advantage of tree shaking, causing your bundle to become 
 ### Self-Closing Tags
 
 ::: danger
-Do NOT use self-closing tag form when you are using **Quasar UMD version**. Your browser is interpreting the HTML before Vue parses your DOM elements, so your HTML syntax must be correct. Unknown tags (like Vue components) cannot be self-closing because your browser will interpret those as if you are opening a tag but never closing it.
+Do NOT use self-closing tag form when you are using **Efuzy UMD version**. Your browser is interpreting the HTML before Vue parses your DOM elements, so your HTML syntax must be correct. Unknown tags (like Vue components) cannot be self-closing because your browser will interpret those as if you are opening a tag but never closing it.
 :::
 
-Some Quasar components do not need you to include HTML content inside of them. In this case, you can use them as self-closing tags. One example with QIcon below:
+Some Efuzy components do not need you to include HTML content inside of them. In this case, you can use them as self-closing tags. One example with QIcon below:
 
 ```html
 <q-icon name="cloud" />
@@ -202,7 +202,7 @@ Both forms are valid and can be used. It works the same with regular DOM element
 Some eslint-plugin-vue linting rules actually enforce using the self-closing syntax.
 
 ## Handling Vue Properties
-Let's take some examples with a bogus Quasar component (we will call it QBogus) that supports the properties below. We will discuss each of the types of Vue properties in the below sections.
+Let's take some examples with a bogus Efuzy component (we will call it QBogus) that supports the properties below. We will discuss each of the types of Vue properties in the below sections.
 
 | Vue Property | Type | Description |
 | --- | --- | --- |
@@ -353,7 +353,7 @@ export default {
 ```
 
 ## Handling Vue Methods
-You will notice throughout the documentation that some Quasar components have methods that can be called. Example:
+You will notice throughout the documentation that some Efuzy components have methods that can be called. Example:
 
 | Vue Method | Description |
 | --- | --- |
@@ -387,7 +387,7 @@ export default {
 ```
 
 ## Handling Vue Events
-You will notice throughout the documentation that some Quasar components have a section called "Vue Events". **Do not confuse** these Vue events with the [Global Event Bus](/options/global-event-bus) as these two have nothing in common.
+You will notice throughout the documentation that some Efuzy components have a section called "Vue Events". **Do not confuse** these Vue events with the [Global Event Bus](/options/global-event-bus) as these two have nothing in common.
 
 Example of "Vue Events":
 
@@ -419,7 +419,7 @@ export default {
 </script>
 ```
 
-There are times when you need to access native DOM events on a Quasar component too, like the native `@click`. Do not confuse native events with the Vue events emitted by the component. They are different things. Let's take an example: let's say we have a component (QBogus) that emits `@show` and `@hide`, but doesn't emit a `@click` event. `@click` being a native DOM event, we can still catch it with the `.native` modifier:
+There are times when you need to access native DOM events on a Efuzy component too, like the native `@click`. Do not confuse native events with the Vue events emitted by the component. They are different things. Let's take an example: let's say we have a component (QBogus) that emits `@show` and `@hide`, but doesn't emit a `@click` event. `@click` being a native DOM event, we can still catch it with the `.native` modifier:
 
 ```html
 <!-- Notice "@click.native" -->

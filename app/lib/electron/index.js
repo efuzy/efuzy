@@ -18,8 +18,8 @@ class ElectronRunner {
 
   init () {}
 
-  async run (quasarConfig, argv) {
-    const url = quasarConfig.getBuildConfig().build.APP_URL
+  async run (efuzyConfig, argv) {
+    const url = efuzyConfig.getBuildConfig().build.APP_URL
 
     if (this.pid) {
       if (this.url !== url) {
@@ -32,7 +32,7 @@ class ElectronRunner {
 
     this.url = url
 
-    const compiler = webpack(quasarConfig.getWebpackConfig().main)
+    const compiler = webpack(efuzyConfig.getWebpackConfig().main)
 
     return new Promise(resolve => {
       log(`Building main Electron process...`)
@@ -85,8 +85,8 @@ class ElectronRunner {
     })
   }
 
-  build (quasarConfig) {
-    const cfg = quasarConfig.getBuildConfig()
+  build (efuzyConfig) {
+    const cfg = efuzyConfig.getBuildConfig()
 
     return new Promise(resolve => {
       spawn(
@@ -189,7 +189,7 @@ class ElectronRunner {
       getPackage('electron'),
       [
         '--inspect=5858',
-        appPaths.resolve.app('.quasar/electron/electron-main.js')
+        appPaths.resolve.app('.efuzy/electron/electron-main.js')
       ].concat(extraParams),
       { cwd: appPaths.appDir },
       code => {

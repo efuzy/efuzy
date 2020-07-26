@@ -8,7 +8,7 @@
 
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax2.jpg"
+          src="https://cdn.efuzy.dev/img/parallax2.jpg"
         />
       </q-card-section>
     </q-card>
@@ -31,7 +31,7 @@
       <q-card-section horizontal>
         <q-img
           class="col"
-          src="https://cdn.quasar.dev/img/mountains.jpg"
+          src="https://cdn.efuzy.dev/img/mountains.jpg"
         />
 
         <q-card-actions vertical class="justify-around q-px-md">

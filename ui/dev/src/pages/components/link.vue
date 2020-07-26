@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import { matAddBox } from '@quasar/extras/material-icons'
+import { matAddBox } from '@efuzy/extras/material-icons'
 
 export default {
   data () {

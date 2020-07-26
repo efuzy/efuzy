@@ -59,7 +59,7 @@ export default {
   methods: {
     onRejected (rejectedEntries) {
       // Notify plugin needs to be installed
-      // https://quasar.dev/quasar-plugins/notify#Installation
+      // https://efuzy.dev/efuzy-plugins/notify#Installation
       this.$q.notify({
         type: 'negative',
         message: `${rejectedEntries.length} file(s) did not pass validation constraints`

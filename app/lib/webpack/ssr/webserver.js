@@ -29,8 +29,8 @@ module.exports = function (cfg, configName) {
     .path(cfg.build.distDir)
 
   chain.externals([
-    './quasar.server-manifest.json',
-    './quasar.client-manifest.json',
+    './efuzy.server-manifest.json',
+    './efuzy.client-manifest.json',
     'compression',
     'express',
     ...Object.keys(cliDeps),
@@ -43,7 +43,7 @@ module.exports = function (cfg, configName) {
       __filename: false
     })
 
-  const ssrConfigFile = appPaths.resolve.app('.quasar/ssr-config.js')
+  const ssrConfigFile = appPaths.resolve.app('.efuzy/ssr-config.js')
   chain.resolve.alias
     .merge({
       // backward compatibility for
@@ -51,7 +51,7 @@ module.exports = function (cfg, configName) {
       '../ssr': ssrConfigFile,
 
       // new alias instead of "require('../ssr')"
-      'quasar-ssr': ssrConfigFile
+      'efuzy-ssr': ssrConfigFile
     })
 
   chain.module.rule('node')

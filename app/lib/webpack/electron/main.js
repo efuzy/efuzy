@@ -36,7 +36,7 @@ module.exports = function (cfg, configName) {
     .libraryTarget('commonjs2')
     .path(
       cfg.ctx.dev
-        ? appPaths.resolve.app('.quasar/electron')
+        ? appPaths.resolve.app('.efuzy/electron')
         : cfg.build.distDir
     )
 
@@ -84,7 +84,7 @@ module.exports = function (cfg, configName) {
   }
 
   const env = Object.assign({}, cfg.build.env, {
-    QUASAR_NODE_INTEGRATION: cfg.electron.nodeIntegration === true
+    EFUZY_NODE_INTEGRATION: cfg.electron.nodeIntegration === true
   })
 
   chain.plugin('define')

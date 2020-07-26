@@ -45,7 +45,7 @@ module.exports = function (cfg, configName) {
     )
   }
 
-  chain.entry('app').add(appPaths.resolve.app('.quasar/client-entry.js'))
+  chain.entry('app').add(appPaths.resolve.app('.efuzy/client-entry.js'))
   chain.mode(cfg.ctx.dev ? 'development' : 'production')
   chain.devtool(cfg.build.sourceMap ? cfg.build.devtool : false)
 
@@ -87,7 +87,7 @@ module.exports = function (cfg, configName) {
     })
 
   if (cfg.framework.importStrategy === 'all') {
-    chain.resolve.alias.set('quasar$', 'quasar/dist/quasar.esm.js')
+    chain.resolve.alias.set('efuzy$', 'efuzy/dist/efuzy.esm.js')
   }
   if (cfg.build.vueCompiler) {
     chain.resolve.alias.set('vue$', 'vue/dist/vue.esm.js')
@@ -97,14 +97,14 @@ module.exports = function (cfg, configName) {
     .merge(resolveModules)
 
   chain.module.noParse(
-    /^(vue|vue-router|vuex|vuex-router-sync|@quasar[\\/]extras|quasar)$/
+    /^(vue|vue-router|vuex|vuex-router-sync|@efuzy[\\/]extras|efuzy)$/
   )
 
   const vueRule = chain.module.rule('vue')
     .test(/\.vue$/)
 
   if (cfg.framework.importStrategy === 'auto') {
-    vueRule.use('quasar-auto-import')
+    vueRule.use('efuzy-auto-import')
       .loader(path.join(__dirname, `loader.auto-import-${configName === 'Server' ? 'server' : 'client'}.js`))
       .options(cfg.framework.autoImportComponentCase)
   }
@@ -120,16 +120,16 @@ module.exports = function (cfg, configName) {
     })
 
   if (cfg.framework.importStrategy !== 'all' && configName !== 'Server') {
-    chain.module.rule('transform-quasar-imports')
+    chain.module.rule('transform-efuzy-imports')
       .test(/\.(t|j)sx?$/)
-      .use('transform-quasar-imports')
-        .loader(path.join(__dirname, 'loader.transform-quasar-imports.js'))
+      .use('transform-efuzy-imports')
+        .loader(path.join(__dirname, 'loader.transform-efuzy-imports.js'))
   }
 
   if (cfg.build.transpile === true) {
     const nodeModulesRegex = /[\\/]node_modules[\\/]/
     const exceptionsRegex = getDependenciesRegex(
-      [ /\.vue\.js$/, configName === 'Server' ? 'quasar/src' : 'quasar', '@babel/runtime' ]
+      [ /\.vue\.js$/, configName === 'Server' ? 'efuzy/src' : 'efuzy', '@babel/runtime' ]
         .concat(cfg.build.transpileDependencies)
     )
 

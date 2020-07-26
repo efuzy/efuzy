@@ -323,12 +323,12 @@ export default {
         actions: [
           {
             label: 'Fullscreen All',
-            img: 'https://cdn.quasar.dev/img/logo_drive_128px.png',
+            img: 'https://cdn.efuzy.dev/img/logo_drive_128px.png',
             id: 'fullscreen all'
           },
           {
             label: 'Fullscreen None',
-            img: 'https://cdn.quasar.dev/img/logo_keep_128px.png',
+            img: 'https://cdn.efuzy.dev/img/logo_keep_128px.png',
             id: 'fullscreen none'
           }
         ]

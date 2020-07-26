@@ -19,7 +19,7 @@ module.exports = {
   // required to lint *.vue files
   plugins: [
     'vue',
-    'quasar',
+    'efuzy',
   ],
 
   globals: {
@@ -52,7 +52,7 @@ module.exports = {
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
 
-    'quasar/check-valid-props': 'warn',
+    'efuzy/check-valid-props': 'warn',
 
     // allow console.log during development only
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',

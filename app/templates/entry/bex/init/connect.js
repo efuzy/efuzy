@@ -6,7 +6,7 @@
 /* global chrome */
 
 import Bridge from '../bridge'
-import { uid } from 'quasar'
+import { uid } from 'efuzy'
 
 export default function connect () {
   const buildConnection = (id, cb) => {

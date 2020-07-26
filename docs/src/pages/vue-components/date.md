@@ -3,14 +3,14 @@ title: QDate
 desc: The QDate Vue component provides a method to input dates from Gregorian or Persian calendars.
 related:
   - /vue-components/time
-  - /quasar-utils/date-utils
+  - /efuzy-utils/date-utils
   - /vue-components/field
 ---
 
 The QDate component provides a method to input date. Currently it supports Gregorian (default) and Persian calendars.
 
 ::: tip
-For handling date and/or time, also check out [Quasar Date Utils](/quasar-utils/date-utils).
+For handling date and/or time, also check out [Efuzy Date Utils](/efuzy-utils/date-utils).
 :::
 
 ## Installation
@@ -27,7 +27,7 @@ Notice that the model is a String only.
 <doc-example title="Basic" file="QDate/Basic" overflow />
 
 ::: tip
-For landscape mode, you can use it along with `$q.screen` to make QDate responsive. Example: `:landscape="$q.screen.gt.xs"`. More info: [Quasar Screen Plugin](/options/screen-plugin).
+For landscape mode, you can use it along with `$q.screen` to make QDate responsive. Example: `:landscape="$q.screen.gt.xs"`. More info: [Efuzy Screen Plugin](/options/screen-plugin).
 :::
 
 <doc-example title="Landscape" file="QDate/Landscape" overflow />
@@ -50,7 +50,7 @@ The default view can be changed.
 
 <doc-example title="Default view" file="QDate/DefaultView" overflow />
 
-The first day of the week is applied depending on the [Quasar Language Pack](/options/quasar-language-packs) that you've set, but you can also force it, like in the example below.
+The first day of the week is applied depending on the [Efuzy Language Pack](/options/efuzy-language-packs) that you've set, but you can also force it, like in the example below.
 
 <doc-example title="First day of week" file="QDate/FirstDayOfWeek" overflow />
 
@@ -64,7 +64,7 @@ Clicking on the "Today" button sets date to current user date. Requires the head
 
 The default model mask is `YYYY/MM/DD`, however you can use custom ones too.
 
-The `mask` prop tokens can be found at [Quasar Utils > Date utils](/quasar-utils/date-utils#Format-for-display).
+The `mask` prop tokens can be found at [Efuzy Utils > Date utils](/efuzy-utils/date-utils#Format-for-display).
 
 ::: warning Note on SSR
 Using `x` or `X` (timestamps) in the mask may cause hydration errors on the client, because decoding the model String must be done with `new Date()` which takes into account the local timezone. As a result, if the server is in a different timezone than the client, then the rendered output of the server will differ than the one on the client so hydration will fail.
@@ -90,7 +90,7 @@ If you want to programmatically set the value of QDate, you can do so by just re
 
 ### Custom ad-hoc locale
 
-If, for some reason, you need to use a custom ad-hoc locale rather than the current Quasar Language Pack that has been set, you can use the `locale` prop:
+If, for some reason, you need to use a custom ad-hoc locale rather than the current Efuzy Language Pack that has been set, you can use the `locale` prop:
 
 <doc-example title="Custom ad-hoc locale" file="QDate/CustomLocale" overflow />
 
@@ -130,8 +130,8 @@ Connecting a QDate and QTime with same model on a QInput:
 
 The following are **helpers** for QInput `mask` and `rules` props. You can use these for convenience or write the string specifying your [custom needs](/vue-components/input#Mask).
 
-* Property `mask` helpers: [full list](https://github.com/quasarframework/quasar/blob/dev/ui/src/mixins/mask.js#L2).
-* Property `rules` helpers: [full list](https://github.com/quasarframework/quasar/blob/dev/ui/src/utils/patterns.js).
+* Property `mask` helpers: [full list](https://github.com/efuzy/efuzy/blob/dev/ui/src/mixins/mask.js#L2).
+* Property `rules` helpers: [full list](https://github.com/efuzy/efuzy/blob/dev/ui/src/utils/patterns.js).
 
 Examples: "date", "time", "fulltime".
 
@@ -145,7 +145,7 @@ You can use the default slot for adding buttons:
 
 ### Persian calendar
 ::: tip
-You can couple this with a Quasar [language pack](/options/quasar-language-packs) such as Persian (Farsi, `fa-ir`) to have the QDate strings translated too, for the full experience.
+You can couple this with a Efuzy [language pack](/options/efuzy-language-packs) such as Persian (Farsi, `fa-ir`) to have the QDate strings translated too, for the full experience.
 :::
 
 ::: warning
@@ -156,7 +156,7 @@ When using the persian calendar, the mask for QDate is forced to `YYYY/MM/DD`.
 
 ### Native form submit <q-badge align="top" label="v1.9+" />
 
-When dealing with a native form which has an `action` and a `method` (eg. when using Quasar with ASP.NET controllers), you need to specify the `name` property on QDate, otherwise formData will not contain it (if it should):
+When dealing with a native form which has an `action` and a `method` (eg. when using Efuzy with ASP.NET controllers), you need to specify the `name` property on QDate, otherwise formData will not contain it (if it should):
 
 <doc-example title="Native form" file="QDate/NativeForm" />
 

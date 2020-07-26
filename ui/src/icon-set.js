@@ -12,7 +12,7 @@ export default {
 
       if (isSSR === true) {
         if (ssrContext === void 0) {
-          console.error('SSR ERROR: second param required: Quasar.iconSet.set(iconSet, ssrContext)')
+          console.error('SSR ERROR: second param required: Efuzy.iconSet.set(iconSet, ssrContext)')
           return
         }
 

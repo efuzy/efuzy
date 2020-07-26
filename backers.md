@@ -1,4 +1,4 @@
-Quasar Framework is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without some financial backing.
+Efuzy Framework is an MIT licensed open source project and completely free to use. However, the amount of effort needed to maintain and develop new features for the project is not sustainable without some financial backing.
 
 ## Platinum sponsors:
 
@@ -7,12 +7,12 @@ Quasar Framework is an MIT licensed open source project and completely free to u
     <tr>
       <td align="center" valign="middle">
         <a>
-          <img width="200px" src="https://cdn.quasar.dev/sponsors/think-health-data.png">
+          <img width="200px" src="https://cdn.efuzy.dev/sponsors/think-health-data.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="https://truelogic.com" target="_blank">
-          <img width="200px" src="https://cdn.quasar.dev/sponsors/truelogic.png">
+          <img width="200px" src="https://cdn.efuzy.dev/sponsors/truelogic.png">
         </a>
       </td>
     </tr>
@@ -21,7 +21,7 @@ Quasar Framework is an MIT licensed open source project and completely free to u
       <tr>
       <td align="center" valign="middle">
         <a href="https://www.tayloredtechnology.net" target="_blank">
-          <img width="200px" src="https://cdn.quasar.dev/sponsors/taylored-technology-big.jpeg">
+          <img width="200px" src="https://cdn.efuzy.dev/sponsors/taylored-technology-big.jpeg">
         </a>
       </td>
     </tr>
@@ -30,7 +30,7 @@ Quasar Framework is an MIT licensed open source project and completely free to u
 
 # Backers
 
-You can join them in [supporting Quasar](https://donate.quasar.dev) development! Backers in the same pledge level appear in the order of pledge date.
+You can join them in [supporting Efuzy](https://donate.efuzy.dev) development! Backers in the same pledge level appear in the order of pledge date.
 
 ### $500
 
@@ -39,7 +39,7 @@ You can join them in [supporting Quasar](https://donate.quasar.dev) development!
     <tr>
       <td align="center" valign="middle">
         <a href="http://campuscloudservices.com" target="_blank">
-          <img width="222px" src="https://cdn.quasar.dev/sponsors/campus-cloud-services.png">
+          <img width="222px" src="https://cdn.efuzy.dev/sponsors/campus-cloud-services.png">
         </a>
       </td>
     </tr>
@@ -53,12 +53,12 @@ You can join them in [supporting Quasar](https://donate.quasar.dev) development!
     <tr>
       <td align="center" valign="middle">
         <a href="https://www.jugglestreet.com" target="_blank">
-          <img width="222px" src="https://cdn.quasar.dev/sponsors/juggle-street.png">
+          <img width="222px" src="https://cdn.efuzy.dev/sponsors/juggle-street.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="https://debricked.com/" target="_blank">
-          <img width="222px" height="35px" src="https://cdn.quasar.dev/sponsors/debricked.png">
+          <img width="222px" height="35px" src="https://cdn.efuzy.dev/sponsors/debricked.png">
         </a>
       </td>
     </tr>
@@ -72,12 +72,12 @@ You can join them in [supporting Quasar](https://donate.quasar.dev) development!
     <tr>
       <td align="center" valign="middle">
         <a href="http://comcomservices.com" target="_blank">
-          <img width="222px" src="https://cdn.quasar.dev/sponsors/com-com-services.png">
+          <img width="222px" src="https://cdn.efuzy.dev/sponsors/com-com-services.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="http://www.kalisio.com" target="_blank">
-          <img width="222px" src="https://cdn.quasar.dev/sponsors/kalisio.png">
+          <img width="222px" src="https://cdn.efuzy.dev/sponsors/kalisio.png">
         </a>
       </td>
     </tr>
@@ -85,12 +85,12 @@ You can join them in [supporting Quasar](https://donate.quasar.dev) development!
     <tr>
       <td align="center" valign="middle">
         <a href="http://platformpurple.com" target="_blank">
-          <img width="222px" src="https://cdn.quasar.dev/sponsors/platform-purple.png">
+          <img width="222px" src="https://cdn.efuzy.dev/sponsors/platform-purple.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="http://www.bgasoft.com" target="_blank">
-          <img width="222px" src="https://cdn.quasar.dev/sponsors/bgasoft.png">
+          <img width="222px" src="https://cdn.efuzy.dev/sponsors/bgasoft.png">
         </a>
       </td>
     </tr>
@@ -98,12 +98,12 @@ You can join them in [supporting Quasar](https://donate.quasar.dev) development!
     <tr>
       <td align="center" valign="middle">
         <a href="https://www.letsbutterfly.com/" target="_blank">
-          <img width="170px" src="https://cdn.quasar.dev/sponsors/letsbutterfly.png">
+          <img width="170px" src="https://cdn.efuzy.dev/sponsors/letsbutterfly.png">
         </a>
       </td>
       <td align="center" valign="middle">
         <a href="https://www.projectfinance.io/" target="_blank">
-          <img width="222px" height="150px" src="https://cdn.quasar.dev/sponsors/project-finance.png">
+          <img width="222px" height="150px" src="https://cdn.efuzy.dev/sponsors/project-finance.png">
         </a>
       </td>
     </tr>

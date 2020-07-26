@@ -4,10 +4,10 @@
       <q-header elevated>
         <q-toolbar>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
           <q-toolbar-title>
-            <strong>Quasar</strong> Framework
+            <strong>Efuzy</strong> Framework
           </q-toolbar-title>
         </q-toolbar>
       </q-header>

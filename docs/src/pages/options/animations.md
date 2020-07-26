@@ -1,16 +1,16 @@
 ---
 title: Animations
-desc: Helper CSS animations supplied by Animate.css for a Quasar app.
+desc: Helper CSS animations supplied by Animate.css for a Efuzy app.
 ---
 
 CSS Transitions can be handled by the [Vue Transition Component](https://vuejs.org/v2/guide/transitions.html). The transitions are used for entering (appearing) or leaving (disappearing) animations.
 
-However, Quasar can supply a big list of ready to use CSS animations. The animation effects are borrowed from [Animate.css](https://animate.style/). So there are 80+ animation types available for you to use out of the box. Check the list either on Animate.css website or on the demo available for this page.
+However, Efuzy can supply a big list of ready to use CSS animations. The animation effects are borrowed from [Animate.css](https://animate.style/). So there are 80+ animation types available for you to use out of the box. Check the list either on Animate.css website or on the demo available for this page.
 
 > Please refer to [Vue](https://vuejs.org/v2/guide/transitions.html)  documentation for learning on how to use the Vue supplied `<transition>` component.
 
 ## Installation
-Edit `/quasar.conf.js`.
+Edit `/efuzy.conf.js`.
 ```js
 // embedding all animations
 animations: 'all'
@@ -22,7 +22,7 @@ animations: [
 ]
 ```
 
-If you are building a website, you can also skip configuring quasar.conf.js and use a CDN link which points to Animate.css like this (following is just an example, Google for latest link). Remember this will require an Internet connection for your user, as opposed to bundling from within quasar.conf.js.
+If you are building a website, you can also skip configuring efuzy.conf.js and use a CDN link which points to Animate.css like this (following is just an example, Google for latest link). Remember this will require an Internet connection for your user, as opposed to bundling from within efuzy.conf.js.
 
 ```html
 <!-- src/index.template.html -->

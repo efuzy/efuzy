@@ -13,7 +13,7 @@
         >
 
           <template v-slot:append>
-            <img src="https://cdn.quasar.dev/img/layout-gallery/img-github-search-key-slash.svg">
+            <img src="https://cdn.efuzy.dev/img/layout-gallery/img-github-search-key-slash.svg">
           </template>
 
           <template v-slot:no-option>
@@ -100,7 +100,7 @@
 
           <q-btn dense flat no-wrap>
             <q-avatar rounded size="20px">
-              <img src="https://cdn.quasar.dev/img/avatar3.jpg">
+              <img src="https://cdn.efuzy.dev/img/avatar3.jpg">
             </q-avatar>
             <q-icon name="arrow_drop_down" size="16px" />
 
@@ -160,11 +160,11 @@
 </template>
 
 <script>
-import { fabGithub } from '@quasar/extras/fontawesome-v5'
+import { fabGithub } from '@efuzy/extras/fontawesome-v5'
 
 const stringOptions = [
-  'quasarframework/quasar',
-  'quasarframework/quasar-awesome'
+  'efuzy/efuzy',
+  'efuzy/efuzy-awesome'
 ]
 
 export default {

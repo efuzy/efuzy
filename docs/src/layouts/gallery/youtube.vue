@@ -45,7 +45,7 @@
           </q-btn>
           <q-btn round flat>
             <q-avatar size="26px">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
             <q-tooltip>Account</q-tooltip>
           </q-btn>
@@ -145,7 +145,7 @@
 </template>
 
 <script>
-import { fabYoutube } from '@quasar/extras/fontawesome-v5'
+import { fabYoutube } from '@efuzy/extras/fontawesome-v5'
 
 export default {
   name: 'MyLayout',

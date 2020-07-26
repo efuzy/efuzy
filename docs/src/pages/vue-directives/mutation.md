@@ -4,7 +4,7 @@ desc: Vue directive that uses Mutation Observer API to watch for changes being m
 badge: "v1.3+"
 ---
 
-"Mutation" is a Quasar directive that provides the ability to watch for changes being made to the DOM tree and call a method when these are triggered.
+"Mutation" is a Efuzy directive that provides the ability to watch for changes being made to the DOM tree and call a method when these are triggered.
 
 Under the covers, it uses the [Mutation Observer API](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver).
 

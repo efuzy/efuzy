@@ -7,7 +7,7 @@ const format = require('util').format
  * Prefix.
  */
 
-const prefix = '  Quasar CLI'
+const prefix = '  Efuzy CLI'
 const sep = chalk.gray('·')
 
 /**

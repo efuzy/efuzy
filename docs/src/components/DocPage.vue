@@ -51,29 +51,29 @@ q-page.doc-page
       | Caught a mistake? <doc-link :to="editHref">Suggest an edit on GitHub</doc-link>
 
     .doc-page-footer__icons.row.items-center.q-gutter-sm
-      a(href="https://github.quasar.dev", target="_blank", rel="noopener")
+      a(href="https://github.efuzy.dev", target="_blank", rel="noopener")
         q-icon(:name="fabGithub")
 
-      a(href="https://blog.quasar.dev", target="_blank", rel="noopener")
+      a(href="https://blog.efuzy.dev", target="_blank", rel="noopener")
         q-icon(:name="mdiBlogger")
 
-      a(href="https://chat.quasar.dev", rel="noopener", target="_blank")
+      a(href="https://chat.efuzy.dev", rel="noopener", target="_blank")
         q-icon(:name="mdiChat")
 
-      a(href="https://forum.quasar.dev/", rel="noopener", target="_blank")
+      a(href="https://forum.efuzy.dev/", rel="noopener", target="_blank")
         q-icon(:name="mdiForum")
 
-      a(href="https://twitter.quasar.dev", target="_blank", rel="noopener")
+      a(href="https://twitter.efuzy.dev", target="_blank", rel="noopener")
         q-icon(:name="fabTwitter")
 
-      a(href="https://facebook.quasar.dev", target="_blank", rel="noopener")
+      a(href="https://facebook.efuzy.dev", target="_blank", rel="noopener")
         q-icon(:name="fabFacebook")
 
-      a(href="https://donate.quasar.dev", rel="sponsored", target="_blank")
+      a(href="https://donate.efuzy.dev", rel="sponsored", target="_blank")
         q-icon(:name="mdiCharity")
 
     div.q-mt-md
-      | <doc-link to="https://github.com/quasarframework/quasar/blob/dev/LICENSE">MIT LICENSE</doc-link> | <doc-link to="https://www.iubenda.com/privacy-policy/40685560">Privacy Policy</doc-link> | <doc-link to="https://github.com/quasarframework/quasar-art">Quasar Artwork</doc-link>
+      | <doc-link to="https://github.com/efuzy/efuzy/blob/dev/LICENSE">MIT LICENSE</doc-link> | <doc-link to="https://www.iubenda.com/privacy-policy/40685560">Privacy Policy</doc-link> | <doc-link to="https://github.com/efuzy/efuzy-art">Efuzy Artwork</doc-link>
 
     div Copyright © 2015 - {{ year }} PULSARDEV SRL, Razvan Stoenescu
 </template>
@@ -81,13 +81,13 @@ q-page.doc-page
 <script>
 import {
   fabGithub, fabTwitter, fabFacebook
-} from '@quasar/extras/fontawesome-v5'
+} from '@efuzy/extras/fontawesome-v5'
 
 import {
   mdiBlogger, mdiForum, mdiChat, mdiCharity,
   mdiPencil, mdiLaunch,
   mdiChevronLeft, mdiChevronRight
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 import { copyHeading } from 'assets/page-utils'
 
@@ -127,7 +127,7 @@ export default {
 
   computed: {
     editHref () {
-      return `https://github.com/quasarframework/quasar/edit/dev/docs/src/pages${this.$route.path}.md`
+      return `https://github.com/efuzy/efuzy/edit/dev/docs/src/pages${this.$route.path}.md`
     }
   },
 

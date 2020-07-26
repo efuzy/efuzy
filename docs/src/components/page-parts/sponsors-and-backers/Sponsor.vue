@@ -1,13 +1,13 @@
 <template lang="pug">
-  q-card.quasar-sponsor(flat, bordered, @click.native="openWebsite", :style="style")
-    q-card-section.quasar-sponsor__title {{ name }}
+  q-card.efuzy-sponsor(flat, bordered, @click.native="openWebsite", :style="style")
+    q-card-section.efuzy-sponsor__title {{ name }}
     q-separator
-    q-card-section.quasar-sponsor__logo.flex.flex-center
-      q-img(:alt="name" :src="`https://cdn.quasar.dev/sponsors/${img}`")
+    q-card-section.efuzy-sponsor__logo.flex.flex-center
+      q-img(:alt="name" :src="`https://cdn.efuzy.dev/sponsors/${img}`")
 </template>
 
 <script>
-import { openURL } from 'quasar'
+import { openURL } from 'efuzy'
 
 export default {
   name: 'Sponsor',
@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="sass">
-.quasar-sponsor
+.efuzy-sponsor
   width: 100%
   max-width: 14rem
   height: 265px
@@ -45,7 +45,7 @@ export default {
   &__title
     transition: color .28s, background .28s
 
-  &:hover .quasar-sponsor__title
+  &:hover .efuzy-sponsor__title
     background: $primary
     color: #fff
 </style>

@@ -1,20 +1,20 @@
 import { StringDictionary } from "./ts-helpers";
 
 /*
-  `QuasarLanguageCodes` is a discriminated union of available languages iso codes.
+  `EfuzyLanguageCodes` is a discriminated union of available languages iso codes.
   That list is generated at build-time based on `lang/index.json`
     (itself generated at build time, but before TS typings).
   We need its reference to be defined **before** build-time because
     it's used by the framework configuration.
   This empty interface is filled at build-time thanks to interface merging,
-    it allows `QuasarLanguageCodes` to exist (with value `never`) before build
+    it allows `EfuzyLanguageCodes` to exist (with value `never`) before build
     and to have the right value when referenced by the end-user.
 */
-export interface QuasarLanguageCodesHolder {}
+export interface EfuzyLanguageCodesHolder {}
 
-export type QuasarLanguageCodes = keyof QuasarLanguageCodesHolder;
+export type EfuzyLanguageCodes = keyof EfuzyLanguageCodesHolder;
 
-type QuasarLanguageGeneralLabel =
+type EfuzyLanguageGeneralLabel =
   | "clear"
   | "ok"
   | "cancel"
@@ -28,14 +28,14 @@ type QuasarLanguageGeneralLabel =
   | "search"
   | "filter"
   | "refresh";
-type QuasarLanguageTableLabel =
+type EfuzyLanguageTableLabel =
   | "noData"
   | "noResults"
   | "loading"
   | "recordsPerPage"
   | "allRows"
   | "columns";
-type QuasarLanguageEditorLabel =
+type EfuzyLanguageEditorLabel =
   | "url"
   | "bold"
   | "italic"
@@ -80,8 +80,8 @@ type QuasarLanguageEditorLabel =
   | "defaultFont"
   | "viewSource";
 
-type QuasarLanguageTreeLabel = "noNodes" | "noResults";
-type QuasarLanguageDayTuple = [
+type EfuzyLanguageTreeLabel = "noNodes" | "noResults";
+type EfuzyLanguageDayTuple = [
   string,
   string,
   string,
@@ -90,7 +90,7 @@ type QuasarLanguageDayTuple = [
   string,
   string
 ];
-type QuasarLanguageMonthTuple = [
+type EfuzyLanguageMonthTuple = [
   string,
   string,
   string,
@@ -105,16 +105,16 @@ type QuasarLanguageMonthTuple = [
   string
 ];
 
-export interface QuasarLanguage {
+export interface EfuzyLanguage {
   isoName: string;
   nativeName: string;
   rtl?: boolean;
-  label: StringDictionary<QuasarLanguageGeneralLabel>;
+  label: StringDictionary<EfuzyLanguageGeneralLabel>;
   date: {
-    days: QuasarLanguageDayTuple;
-    daysShort: QuasarLanguageDayTuple;
-    months: QuasarLanguageMonthTuple;
-    monthsShort: QuasarLanguageMonthTuple;
+    days: EfuzyLanguageDayTuple;
+    daysShort: EfuzyLanguageDayTuple;
+    months: EfuzyLanguageMonthTuple;
+    monthsShort: EfuzyLanguageMonthTuple;
     firstDayOfWeek: number;
     format24h: boolean;
     headerTitle?: (
@@ -122,10 +122,10 @@ export interface QuasarLanguage {
       model: { year: number; month: number; day: number }
     ) => string;
   };
-  table: StringDictionary<QuasarLanguageTableLabel> & {
+  table: StringDictionary<EfuzyLanguageTableLabel> & {
     selectedRecords: (rows: number) => string;
     pagination: (start: number, end: number, total: number) => string;
   };
-  editor: StringDictionary<QuasarLanguageEditorLabel>;
-  tree: StringDictionary<QuasarLanguageTreeLabel>;
+  editor: StringDictionary<EfuzyLanguageEditorLabel>;
+  tree: StringDictionary<EfuzyLanguageTreeLabel>;
 }

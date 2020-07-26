@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { LocalStorage } from 'quasar'
+import { LocalStorage } from 'efuzy'
 
 export default {
   data () {

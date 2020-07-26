@@ -6,7 +6,7 @@
       <q-item clickable v-ripple>
         <q-item-section avatar>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/avatar2.jpg">
+            <img src="https://cdn.efuzy.dev/img/avatar2.jpg">
           </q-avatar>
         </q-item-section>
 
@@ -29,7 +29,7 @@
       <q-item clickable v-ripple>
         <q-item-section avatar>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/avatar4.jpg">
+            <img src="https://cdn.efuzy.dev/img/avatar4.jpg">
           </q-avatar>
         </q-item-section>
 
@@ -61,7 +61,7 @@
 
         <q-item-section top>
           <q-item-label lines="1">
-            <span class="text-weight-medium">[quasarframework/quasar]</span>
+            <span class="text-weight-medium">[efuzy/efuzy]</span>
             <span class="text-grey-8"> - GitHub repository</span>
           </q-item-label>
           <q-item-label caption lines="1">
@@ -94,7 +94,7 @@
 
         <q-item-section top>
           <q-item-label lines="1">
-            <span class="text-weight-medium">[quasarframework/quasar]</span>
+            <span class="text-weight-medium">[efuzy/efuzy]</span>
             <span class="text-grey-8"> - GitHub repository</span>
           </q-item-label>
           <q-item-label caption lines="1">

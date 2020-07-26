@@ -7,13 +7,13 @@ const { log } = require('./helpers/logger')
 
 let alreadyNotified = false
 module.exports = class DevServer {
-  constructor (quasarConfig) {
-    this.quasarConfig = quasarConfig
+  constructor (efuzyConfig) {
+    this.efuzyConfig = efuzyConfig
   }
 
   async listen () {
-    const webpackConfig = this.quasarConfig.getWebpackConfig()
-    const cfg = this.quasarConfig.getBuildConfig()
+    const webpackConfig = this.efuzyConfig.getWebpackConfig()
+    const cfg = this.efuzyConfig.getBuildConfig()
 
     log(`Booting up...`)
 
@@ -172,7 +172,7 @@ module.exports = class DevServer {
         return
       }
 
-      bundle = JSON.parse(assets['../quasar.server-manifest.json'].source())
+      bundle = JSON.parse(assets['../efuzy.server-manifest.json'].source())
       update()
 
       cb()
@@ -194,7 +194,7 @@ module.exports = class DevServer {
         }
       }
 
-      clientManifest = JSON.parse(assets['../quasar.client-manifest.json'].source())
+      clientManifest = JSON.parse(assets['../efuzy.client-manifest.json'].source())
       update()
 
       cb()

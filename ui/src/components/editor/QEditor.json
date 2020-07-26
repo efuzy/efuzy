@@ -2,7 +2,7 @@
   "mixins": [ "mixins/fullscreen" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/editor"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/editor"
   },
 
   "props": {
@@ -175,19 +175,19 @@
 
     "toolbar-color": {
       "extends": "color",
-      "desc": "Font color (from the Quasar Palette) of buttons and text in the toolbar",
+      "desc": "Font color (from the Efuzy Palette) of buttons and text in the toolbar",
       "category": "toolbar"
     },
 
     "toolbar-text-color": {
       "extends": "text-color",
-      "desc": "Text color (from the Quasar Palette) of toolbar commands",
+      "desc": "Text color (from the Efuzy Palette) of toolbar commands",
       "category": "toolbar"
     },
 
     "toolbar-toggle-color": {
       "type": "String",
-      "desc": "Choose the active color (from the Quasar Palette) of toolbar commands button",
+      "desc": "Choose the active color (from the Efuzy Palette) of toolbar commands button",
       "default": "primary",
       "examples": [ "secondary", "blue-3" ],
       "category": "toolbar"
@@ -195,7 +195,7 @@
 
     "toolbar-bg": {
       "type": "String",
-      "desc": "Toolbar background color (from Quasar Palette)",
+      "desc": "Toolbar background color (from Efuzy Palette)",
       "default": "grey-3",
       "examples": [ "secondary", "blue-3" ],
       "category": "toolbar"

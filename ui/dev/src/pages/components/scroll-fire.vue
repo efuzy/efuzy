@@ -13,7 +13,7 @@
         Scroll Fire below. Reload page to see the bounce effect again.
       </p>
       <p class="text-center">
-        <img v-scroll-fire="computedBounceImage" src="~assets/quasar.jpg" style="width: 200px">
+        <img v-scroll-fire="computedBounceImage" src="~assets/efuzy.jpg" style="width: 200px">
       </p>
 
       <p v-for="n in 15" :key="'b_' + n">

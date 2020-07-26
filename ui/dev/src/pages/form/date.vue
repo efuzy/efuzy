@@ -328,11 +328,11 @@
 </template>
 
 <script>
-import languages from 'quasar/lang/index.json'
+import languages from 'efuzy/lang/index.json'
 
 const localeOptions = languages.map(lang => ({
   label: lang.nativeName,
-  value: require(`quasar/lang/${lang.isoName}.js`).default
+  value: require(`efuzy/lang/${lang.isoName}.js`).default
 }))
 
 export default {

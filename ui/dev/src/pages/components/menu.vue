@@ -178,7 +178,7 @@
 
               <div class="column items-center">
                 <q-avatar size="72px">
-                  <img src="https://cdn.quasar.dev/img/avatar4.jpg">
+                  <img src="https://cdn.efuzy.dev/img/avatar4.jpg">
                 </q-avatar>
 
                 <div class="text-subtitle1 q-mt-md q-mb-xs">John Doe</div>
@@ -317,7 +317,7 @@
               <q-toggle label="context-menu" v-model="contextMenu" />
             </div>
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/material.png" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" style="height: 100px">
             <q-menu :touch-position="touchPosition" :context-menu="contextMenu">
               <q-list>
                 <q-item
@@ -333,7 +333,7 @@
             </q-menu>
           </q-img>
           <div>With model: {{ menuModelTouch }}</div>
-          <q-img src="https://cdn.quasar.dev/img/material.png" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" style="height: 100px">
             <q-menu v-model="menuModelTouch" :touch-position="touchPosition" :context-menu="contextMenu">
               <q-list>
                 <q-item
@@ -354,7 +354,7 @@
           <q-card-section>
             <q-toggle v-model="vIfTest" label="v-if test" />
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/material.png" style="height: 100px" v-if="vIfTest">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" style="height: 100px" v-if="vIfTest">
             <div class="absolute-bottom-right">
               attached to q-img
             </div>
@@ -372,7 +372,7 @@
               </q-list>
             </q-menu>
           </q-img>
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" style="height: 100px">
             <div class="absolute-bottom-right">
               attached to q-menu
             </div>
@@ -405,17 +405,17 @@
               <q-radio v-model="targetEl" val="#bogus" label="#bogus" />
             </div>
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/material.png" id="target-img-1" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" id="target-img-1" style="height: 100px">
             <div class="absolute-bottom-right">
               #target-img-1
             </div>
           </q-img>
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" id="target-img-2" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" id="target-img-2" style="height: 100px">
             <div class="absolute-bottom-right">
               #target-img-2
             </div>
           </q-img>
-          <q-img src="https://cdn.quasar.dev/img/blueish.jpg" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/blueish.jpg" style="height: 100px">
             <div class="absolute-bottom-right">
               Original parent
             </div>
@@ -439,7 +439,7 @@
           <q-card-section>
             Menu in menu
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/parallax1.jpg" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/parallax1.jpg" style="height: 100px">
             <q-menu touch-position>
               <q-list>
                 <q-item
@@ -535,7 +535,7 @@
       <q-btn color="secondary" class="fixed-top-right" icon="directions" style="top: 65px; right: 16px;">
         <q-menu ref="popover3">
           <q-img
-            src="https://cdn.quasar.dev/img/map.png"
+            src="https://cdn.efuzy.dev/img/map.png"
             style="height: 150px; width: 200px;"
             @click.native="showNotify(), $refs.popover3.hide()"
             tabindex="0"

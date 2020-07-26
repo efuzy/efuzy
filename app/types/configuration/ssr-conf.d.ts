@@ -1,6 +1,6 @@
 import { Options as LruCacheOptions } from "lru-cache";
 
-export interface QuasarSsrConfiguration {
+export interface EfuzySsrConfiguration {
   /**
    * If a PWA should take over or just a SPA.
    * When used in object form, you can specify Workbox options
@@ -12,7 +12,7 @@ export interface QuasarSsrConfiguration {
   componentCache?: LruCacheOptions<any, any>;
 
   /**
-   * @version `@quasar/app` 1.9.6+
+   * @version `@efuzy/app` 1.9.6+
    *
    * Add/remove/change properties of production generated package.json
    */

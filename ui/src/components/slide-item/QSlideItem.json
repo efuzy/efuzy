@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/slide-item"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/slide-item"
   },
 
   "behavior": {
@@ -10,26 +10,26 @@
   "props": {
     "left-color": {
       "extends": "color",
-      "desc": "Color name for left-side background from the Quasar Color Palette",
+      "desc": "Color name for left-side background from the Efuzy Color Palette",
       "category": "style"
     },
 
     "right-color": {
       "extends": "color",
-      "desc": "Color name for right-side background from the Quasar Color Palette",
+      "desc": "Color name for right-side background from the Efuzy Color Palette",
       "category": "style"
     },
 
     "top-color": {
       "extends": "color",
-      "desc": "Color name for top-side background from the Quasar Color Palette",
+      "desc": "Color name for top-side background from the Efuzy Color Palette",
       "category": "style",
       "addedIn": "v1.1.3"
     },
 
     "bottom-color": {
       "extends": "color",
-      "desc": "Color name for bottom-side background from the Quasar Color Palette",
+      "desc": "Color name for bottom-side background from the Efuzy Color Palette",
       "category": "style",
       "addedIn": "v1.1.3"
     },

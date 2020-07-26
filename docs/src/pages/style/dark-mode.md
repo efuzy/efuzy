@@ -1,9 +1,9 @@
 ---
 title: Dark Mode
-desc: Handle dark mode with Quasar.
+desc: Handle dark mode with Efuzy.
 badge: v1.3+
 related:
-  - /quasar-plugins/dark
+  - /efuzy-plugins/dark
   - /style/theme-builder
 ---
 
@@ -17,13 +17,13 @@ The advantages of Dark Mode are that:
 ## What it does
 
 1. It sets a default dark background for the pages (that you can easily override through CSS with the `body.body--dark` selector)
-2. All Quasar components with a `dark` property will have it automatically set to `true`. No need to do it manually.
+2. All Efuzy components with a `dark` property will have it automatically set to `true`. No need to do it manually.
 
-The auto-detection works by looking at `prefers-color-scheme: dark` media query and is dynamic. If the client browser/platform switches to/from Dark mode while your app is running, it will also update Quasar's Dark mode (if Dark mode is set to `auto`).
+The auto-detection works by looking at `prefers-color-scheme: dark` media query and is dynamic. If the client browser/platform switches to/from Dark mode while your app is running, it will also update Efuzy's Dark mode (if Dark mode is set to `auto`).
 
 ## How to use it
 
-You can easily switch between Dark mode and light mode (which is default) through the [Dark Plugin](/quasar-plugins/dark).
+You can easily switch between Dark mode and light mode (which is default) through the [Dark Plugin](/efuzy-plugins/dark).
 
 ## How to style your app
 

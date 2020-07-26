@@ -18,7 +18,7 @@ export default {
       simple: [
         {
           label: 'Satisfied customers (with avatar)',
-          avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+          avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
           children: [
             {
               label: 'Good food (with icon)',
@@ -43,7 +43,7 @@ export default {
               children: [
                 {
                   label: 'Happy atmosphere (with image)',
-                  img: 'https://cdn.quasar.dev/img/logo_calendar_128px.png'
+                  img: 'https://cdn.efuzy.dev/img/logo_calendar_128px.png'
                 },
                 { label: 'Good table presentation' },
                 { label: 'Pleasing decor' }

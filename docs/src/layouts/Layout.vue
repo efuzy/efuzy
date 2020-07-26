@@ -4,10 +4,10 @@ q-layout.doc-layout(view="lHh LpR lff", @scroll="onScroll")
     q-toolbar
       q-btn.q-mr-sm(flat, dense, round, @click="toggleLeftDrawer", aria-label="Menu", :icon="mdiMenu")
 
-      q-btn.quasar-logo.text-bold(key="logo", flat, no-caps, no-wrap, stretch, to="/")
+      q-btn.efuzy-logo.text-bold(key="logo", flat, no-caps, no-wrap, stretch, to="/")
         q-avatar.doc-layout-avatar
-          img(src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg")
-        q-toolbar-title(shrink) Quasar
+          img(src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg")
+        q-toolbar-title(shrink) Efuzy
 
       q-space
 
@@ -41,13 +41,13 @@ q-layout.doc-layout(view="lHh LpR lff", @scroll="onScroll")
       .row.justify-center.q-my-lg
         q-btn(
           type="a"
-          href="https://donate.quasar.dev"
+          href="https://donate.efuzy.dev"
           target="_blank"
           rel="noopener"
           size="13px"
           color="primary"
           :icon="mdiHeartOutline"
-          label="Donate to Quasar"
+          label="Donate to Efuzy"
         )
 
       app-menu.q-my-lg
@@ -116,10 +116,10 @@ q-layout.doc-layout(view="lHh LpR lff", @scroll="onScroll")
 </template>
 
 <script>
-import { scroll } from 'quasar'
+import { scroll } from 'efuzy'
 import {
   mdiMenu, mdiClipboardText, mdiHeartOutline, mdiMagnify, mdiChevronUp
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 import AppMenu from 'components/AppMenu'
 import HeaderMenu from 'components/HeaderMenu'
@@ -345,13 +345,13 @@ export default {
       ).then(docsearch => {
         docsearch.default({
           apiKey: '5c15f3938ef24ae49e3a0e69dc4a140f',
-          indexName: 'quasar-framework',
+          indexName: 'efuzy-framework',
           inputSelector: '.doc-algolia input',
           algoliaOptions: {
             hitsPerPage: 7
           },
           handleSelected: (a, b, suggestion, c, context) => {
-            const url = suggestion.url.replace('https://quasar.dev', '')
+            const url = suggestion.url.replace('https://efuzy.dev', '')
 
             this.search = ''
             this.$router.push(url)
@@ -450,7 +450,7 @@ export default {
 .doc-left-drawer
   overflow: inherit !important
 
-.quasar-logo
+.efuzy-logo
   img
     transform: rotate(0deg)
     transition: transform .8s ease-in-out

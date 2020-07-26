@@ -1,0 +1,38 @@
+#!/usr/bin/env node
+
+console.log()
+console.log(
+  require('fs').readFileSync(
+    require('path').join(__dirname, '../assets/logo.art'),
+    'utf8'
+  )
+)
+console.log('  Running @efuzy/cli v' + require('../package.json').version)
+
+const chalk = require('chalk')
+
+console.log(`
+  Example usage
+    $ efuzy <command> <options>
+
+  Help for a command
+    $ efuzy <command> --help
+    $ efuzy <command> -h
+
+  Options
+    --version, -v Print Efuzy CLI version
+
+  Commands
+    create    Create a project folder
+    info      Display info about your machine
+                   (and your App if in a project folder)
+    upgrade   Check (and optionally) upgrade Efuzy packages
+                   from a Efuzy project folder
+    serve     Create an ad-hoc server on App's distributables
+    help, -h  Displays this message
+
+  --------------
+  => IMPORTANT !
+  => ${chalk.italic('Trigger this inside of a Efuzy project (and npm/yarn install) for more commands.')}
+  --------------
+`)

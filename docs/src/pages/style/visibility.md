@@ -1,6 +1,6 @@
 ---
 title: CSS Visibility
-desc: The list of CSS classes supplied by Quasar to manage responsiveness and visibility of components and DOM elements.
+desc: The list of CSS classes supplied by Efuzy to manage responsiveness and visibility of components and DOM elements.
 related:
   - /style/typography
   - /style/positioning

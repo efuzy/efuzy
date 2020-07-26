@@ -3,26 +3,26 @@ export default [
     name: 'Razvan Stoenescu',
     role: 'Creator, Lead Dev & Architect',
     avatar: 'razvan_stoenescu.jpeg',
-    email: 'razvan@quasar.dev',
-    twitter: 'quasarframework',
+    email: 'razvan@efuzy.dev',
+    twitter: 'efuzy',
     github: 'rstoenescu',
-    desc: 'Architecture and development of Quasar on all fronts'
+    desc: 'Architecture and development of Efuzy on all fronts'
   },
 
   {
     name: 'Dan Popescu',
     role: 'Senior Core Developer',
     avatar: 'dan_popescu.jpg',
-    email: 'dan@quasar.dev',
+    email: 'dan@efuzy.dev',
     github: 'pdanpdan',
-    desc: 'Focuses on Quasar UI components, directives and plugins'
+    desc: 'Focuses on Efuzy UI components, directives and plugins'
   },
 
   {
     name: 'Jeff Galbraith',
     role: 'Senior Developer',
     avatar: 'jeff_galbraith.jpg',
-    email: 'jeff@quasar.dev',
+    email: 'jeff@efuzy.dev',
     twitter: 'jgalbraith64',
     github: 'hawkeye64',
     desc: 'UI components, App Extensions and community outreach'
@@ -121,7 +121,7 @@ export default [
     role: 'Community Staff',
     avatar: 'adam_purdy.jpg',
     github: 'adamkpurdy',
-    desc: 'Firebase Support Owner & Maintainer, Quasar support member.'
+    desc: 'Firebase Support Owner & Maintainer, Efuzy support member.'
   },
 
   {
@@ -130,6 +130,6 @@ export default [
     avatar: 'dmitrij_polianin.jpg',
     email: 'dmitrij.polyanin@gmail.com',
     github: 'DmitrijOkeanij',
-    desc: 'Russian Community maintainer and Quasar Trainer.'
+    desc: 'Russian Community maintainer and Efuzy Trainer.'
   }
 ]

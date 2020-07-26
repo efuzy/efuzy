@@ -35,7 +35,7 @@
         <template v-slot:header>
           <q-item-section avatar>
             <q-avatar>
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
           </q-item-section>
 

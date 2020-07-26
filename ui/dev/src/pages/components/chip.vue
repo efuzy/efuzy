@@ -4,7 +4,7 @@
       <div>
         <q-chip size="10px" :selected.sync="selected2">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>
@@ -12,7 +12,7 @@
       <div>
         <q-chip size="50px" :selected.sync="selected2">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>
@@ -32,7 +32,7 @@
       <div>
         <q-chip dense size="10px" :selected.sync="selected2">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>
@@ -40,7 +40,7 @@
       <div>
         <q-chip dense size="50px" :selected.sync="selected2">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>
@@ -114,7 +114,7 @@
         </q-chip>
         <q-chip v-bind="chipProps">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Emails
         </q-chip>
@@ -155,7 +155,7 @@
         </q-chip>
         <q-chip v-bind="chipProps" square>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Emails
         </q-chip>
@@ -188,7 +188,7 @@
         </q-chip>
         <q-chip v-bind="chipProps" dense>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Emails
         </q-chip>
@@ -221,7 +221,7 @@
         </q-chip>
         <q-chip v-bind="chipProps" square dense>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Emails
         </q-chip>
@@ -255,7 +255,7 @@
 
         <q-chip v-bind="chipProps" :selected.sync="selected2">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>
@@ -295,7 +295,7 @@
 
         <q-chip v-bind="chipProps" v-model="close2" removable>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>
@@ -328,7 +328,7 @@
 
         <q-chip v-bind="chipProps" disable :selected.sync="selected2" clickable>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
           Add to calendar
         </q-chip>

@@ -2,7 +2,7 @@
   "mixins": [ "mixins/model-toggle", "mixins/portal", "mixins/anchor" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/menu"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/menu"
   },
 
   "behavior": {
@@ -144,7 +144,7 @@
 
   "methods": {
     "updatePosition": {
-      "desc": "There are some custom scenarios for which Quasar cannot automatically reposition the menu without significant performance drawbacks so the optimal solution is for you to call this method when you need it"
+      "desc": "There are some custom scenarios for which Efuzy cannot automatically reposition the menu without significant performance drawbacks so the optimal solution is for you to call this method when you need it"
     },
 
     "focus": {

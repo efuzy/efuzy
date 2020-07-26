@@ -1,9 +1,9 @@
 ---
 title: App Extension Index API
-desc: The API for the index script of a Quasar App Extension. Provides access to Quasar context, registers new CLI commands, extends Webpack config and more.
+desc: The API for the index script of a Efuzy App Extension. Provides access to Efuzy context, registers new CLI commands, extends Webpack config and more.
 ---
 
-This page refers to `src/index.js` file, which is executed on `quasar dev` and `quasar build`. This is the main process where you can modify the build to suit the needs of your App Extension. For instance, registering a boot file, modifying the webpack process, registering CSS, registering a UI component, registering a Quasar CLI command, etc.
+This page refers to `src/index.js` file, which is executed on `efuzy dev` and `efuzy build`. This is the main process where you can modify the build to suit the needs of your App Extension. For instance, registering a boot file, modifying the webpack process, registering CSS, registering a UI component, registering a Efuzy CLI command, etc.
 
 Example of basic structure of the file:
 
@@ -14,14 +14,14 @@ module.exports = function (api) {
 ```
 
 ## api.ctx
-Same as the `ctx` from `/quasar.conf.js`. Helps you make decisions based on the context in which `quasar dev` or `quasar build` runs.
+Same as the `ctx` from `/efuzy.conf.js`. Helps you make decisions based on the context in which `efuzy dev` or `efuzy build` runs.
 
 Example: You might want to use one of the api methods if running for electron mode only.
 
 ```js
 if (api.ctx.dev === true && api.ctx.mode === 'electron') {
   api.beforeDev((api) => {
-    // do something when running quasar dev and
+    // do something when running efuzy dev and
     // with Electron mode
   })
 }
@@ -63,7 +63,7 @@ Contains the full path (String) to the root of the app on which this App Extensi
 
 Ensure the App Extension is compatible with a package installed in the host app through a semver condition.
 
-If the semver condition is not met, then @quasar/app errors out and halts execution.
+If the semver condition is not met, then @efuzy/app errors out and halts execution.
 
 Example of semver condition: `'1.x || >=2.5.0 || 5.0.0 - 7.2.3'`.
 
@@ -72,7 +72,7 @@ Example of semver condition: `'1.x || >=2.5.0 || 5.0.0 - 7.2.3'`.
  * @param {string} packageName
  * @param {string} semverCondition
  */
-api.compatibleWith('@quasar/app', '1.x')
+api.compatibleWith('@efuzy/app', '1.x')
 ```
 
 ## api.hasPackage
@@ -90,13 +90,13 @@ Example of semver condition: `'1.x || >=2.5.0 || 5.0.0 - 7.2.3'`.
 if (api.hasPackage('vuelidate')) {
   // hey, this app has it (any version of it)
 }
-if (api.hasPackage('quasar', '^1.0.0')) {
+if (api.hasPackage('efuzy', '^1.0.0')) {
   // hey, this app has v1 installed
 }
 ```
 
 ## api.hasExtension
-Check if another app extension is npm installed and Quasar CLI has invoked it.
+Check if another app extension is npm installed and Efuzy CLI has invoked it.
 
 ```js
 /**
@@ -125,16 +125,16 @@ console.log( api.getPackageVersion(packageName) )
 //   undefined (when package not found)
 ```
 
-## api.extendQuasarConf
-Extends quasar.conf.js
+## api.extendEfuzyConf
+Extends efuzy.conf.js
 
 ```js
 /**
  * @param {function} fn
  *   (cfg: Object, ctx: Object) => undefined
  */
-api.extendQuasarConf ((conf, api) => {
-  // do something with quasar.conf.js:
+api.extendEfuzyConf ((conf, api) => {
+  // do something with efuzy.conf.js:
   // add, change anything
 })
 ```
@@ -143,23 +143,23 @@ api.extendQuasarConf ((conf, api) => {
 
 ```js
 module.exports = function (api, ctx) {
-  api.extendQuasarConf((conf, api) => {
+  api.extendEfuzyConf((conf, api) => {
     // make sure my-ext boot file is registered
-    conf.boot.push('~quasar-app-extension-my-ext/src/boot/my-ext-bootfile.js')
+    conf.boot.push('~efuzy-app-extension-my-ext/src/boot/my-ext-bootfile.js')
 
     // make sure boot file transpiles
-    conf.build.transpileDependencies.push(/quasar-app-extension-my-ext[\\/]src[\\/]boot/)
+    conf.build.transpileDependencies.push(/efuzy-app-extension-my-ext[\\/]src[\\/]boot/)
     // if boot file imports anything, make sure that
     // the regex above matches those files too!
 
     // make sure my-ext css goes through webpack
-    conf.css.push('~quasar-app-extension-my-ext/src/component/my-ext.styl')
+    conf.css.push('~efuzy-app-extension-my-ext/src/component/my-ext.styl')
   })
 }
 ```
 
 ::: tip
-Notice the tidle (`~`) in front of the paths. This tells Quasar CLI that the path is a dependency from node_modules instead of a relative path to App Extension index script file.
+Notice the tidle (`~`) in front of the paths. This tells Efuzy CLI that the path is a dependency from node_modules instead of a relative path to App Extension index script file.
 :::
 
 ## api.chainWebpack
@@ -216,7 +216,7 @@ api.extendWebpackMainElectronProcess((cfg, { isClient, isServer }, api) => {
 })
 ```
 
-## api.chainWebpackWebserver <q-badge align="top" label="@quasar/app v1.5+" />
+## api.chainWebpackWebserver <q-badge align="top" label="@efuzy/app v1.5+" />
 
 Chain webpack config of SSR webserver (content of /src-ssr)
 
@@ -230,7 +230,7 @@ api.chainWebpackWebserver ((cfg, { isClient, isServer }, api) => {
 })
 ```
 
-## api.extendWebpackWebserver <q-badge align="top" label="@quasar/app v1.5+" />
+## api.extendWebpackWebserver <q-badge align="top" label="@efuzy/app v1.5+" />
 
 Extend webpack config Object of SSR webserver (content of /src-ssr)
 
@@ -245,7 +245,7 @@ api.extendWebpackWebserver((cfg, { isClient, isServer }, api) => {
 ```
 
 ## api.registerCommand
-Register a command that will become available as `quasar run <ext-id> <cmd> [args]` (or the short form: `quasar <ext-id> <cmd> [args]`).
+Register a command that will become available as `efuzy run <ext-id> <cmd> [args]` (or the short form: `efuzy <ext-id> <cmd> [args]`).
 
 ```js
 /**
@@ -258,12 +258,12 @@ api.registerCommand('start', ({ args, params }) => {
 
   // this registers the "start" command
   // and this handler is executed when running
-  // $ quasar run <ext-id> start
+  // $ efuzy run <ext-id> start
 })
 ```
 
 ## api.registerDescribeApi
-Register an API file for `$ quasar describe` command.
+Register an API file for `$ efuzy describe` command.
 
 ```js
 /**
@@ -277,9 +277,9 @@ api.registerDescribeApi(
 )
 ```
 
-The above will then respond to `$ quasar describe MyComponent`.
+The above will then respond to `$ efuzy describe MyComponent`.
 
-For syntax of such a JSON file, look into `/node_modules/quasar/dist/api` (in your project folder). Be aware that your JSON must contain a `type` property ("component", "directive", "plugin"). For instance:
+For syntax of such a JSON file, look into `/node_modules/efuzy/dist/api` (in your project folder). Be aware that your JSON must contain a `type` property ("component", "directive", "plugin"). For instance:
 
 ```json
 {
@@ -291,7 +291,7 @@ For syntax of such a JSON file, look into `/node_modules/quasar/dist/api` (in yo
 ```
 
 ::: tip
-Always test with the `quasar describe` command to ensure you got the syntax right and there are no errors.
+Always test with the `efuzy describe` command to ensure you got the syntax right and there are no errors.
 :::
 
 ## api.getPersistentConf
@@ -333,71 +333,71 @@ api.mergePersistentConf({
 
 ## api.beforeDev
 
-Prepare external services before `$ quasar dev` command runs, like starting some backend or any other service that the app relies on.
+Prepare external services before `$ efuzy dev` command runs, like starting some backend or any other service that the app relies on.
 
 Can use async/await or directly return a Promise.
 
 ```js
 /**
  * @param {function} fn
- *   (api, { quasarConf }) => ?Promise
+ *   (api, { efuzyConf }) => ?Promise
  */
-api.beforeDev((api, { quasarConf }) => {
+api.beforeDev((api, { efuzyConf }) => {
   // do something
 })
 ```
 
 ## api.afterDev
 
-Run hook after Quasar dev server is started (`$ quasar build`). At this point, the dev server has been started and is available should you wish to do something with it.
+Run hook after Efuzy dev server is started (`$ efuzy build`). At this point, the dev server has been started and is available should you wish to do something with it.
 
 Can use async/await or directly return a Promise.
 
 ```js
 /**
  * @param {function} fn
- *   (api, { quasarConf }) => ?Promise
+ *   (api, { efuzyConf }) => ?Promise
  */
-api.afterDev((api, { quasarConf }) => {
+api.afterDev((api, { efuzyConf }) => {
   // do something
 })
 ```
 
 ## api.beforeBuild
 
-Run hook before Quasar builds app for production (`$ quasar build`). At this point, the distributables folder hasn't been created yet.
+Run hook before Efuzy builds app for production (`$ efuzy build`). At this point, the distributables folder hasn't been created yet.
 
 Can use async/await or directly return a Promise.
 
 ```js
 /**
  * @param {function} fn
- *   (api, { quasarConf }) => ?Promise
+ *   (api, { efuzyConf }) => ?Promise
  */
-api.beforeBuild((api, { quasarConf }) => {
+api.beforeBuild((api, { efuzyConf }) => {
   // do something
 })
 ```
 
 ## api.afterBuild
 
-Run hook after Quasar built app for production (`$ quasar build`). At this point, the distributables folder has been created and is available should you wish to do something with it.
+Run hook after Efuzy built app for production (`$ efuzy build`). At this point, the distributables folder has been created and is available should you wish to do something with it.
 
 Can use async/await or directly return a Promise.
 
 ```js
 /**
  * @param {function} fn
- *   (api, { quasarConf }) => ?Promise
+ *   (api, { efuzyConf }) => ?Promise
  */
-api.afterBuild((api, { quasarConf }) => {
+api.afterBuild((api, { efuzyConf }) => {
   // do something
 })
 ```
 
-## api.onPublish <q-badge align="top" label="@quasar/app v1.0.0-rc.7+" />
+## api.onPublish <q-badge align="top" label="@efuzy/app v1.0.0-rc.7+" />
 
-Run hook if publishing was requested (`$ quasar build -P`), after Quasar built app for production and the afterBuild hook (if specified) was executed.
+Run hook if publishing was requested (`$ efuzy build -P`), after Efuzy built app for production and the afterBuild hook (if specified) was executed.
 
 Can use async/await or directly return a Promise.
 

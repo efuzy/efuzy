@@ -14,7 +14,7 @@
         />
 
         <div class="q-pr-lg" v-if="$q.screen.gt.xs">
-          <img class="GPLAY__logo" src="https://cdn.quasar.dev/img/layout-gallery/logo-google-play.png">
+          <img class="GPLAY__logo" src="https://cdn.efuzy.dev/img/layout-gallery/logo-google-play.png">
         </div>
 
         <q-space />
@@ -40,7 +40,7 @@
 
           <q-btn round flat>
             <q-avatar size="26px">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
             <q-tooltip>Account</q-tooltip>
           </q-btn>

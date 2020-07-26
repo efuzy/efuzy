@@ -11,7 +11,7 @@ export default {
       this.$q.notify({
         message: 'Jim pinged you.',
         color: 'purple',
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png'
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png'
       })
     }
   }

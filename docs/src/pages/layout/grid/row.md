@@ -1,6 +1,6 @@
 ---
 title: Grid Row
-desc: How to use the Quasar grid for rows.
+desc: How to use the Efuzy grid for rows.
 related:
   - /layout/grid/introduction-to-flexbox
   - /layout/grid/column

@@ -3,7 +3,7 @@ const { log, fatal } = require('../helpers/logger')
 const chalk = require('chalk')
 const appPaths = require('../app-paths')
 
-const extensionPath = appPaths.resolve.app('quasar.extensions.json')
+const extensionPath = appPaths.resolve.app('efuzy.extensions.json')
 
 class ExtensionJson {
   constructor () {
@@ -17,14 +17,14 @@ class ExtensionJson {
     }
     catch (e) {
       console.log(e)
-      fatal(`[FAIL] quasar.extensions.json is malformed`)
+      fatal(`[FAIL] efuzy.extensions.json is malformed`)
     }
   }
 
   list () {
     if (Object.keys(this.extensions).length === 0) {
       log(' No App Extensions are installed')
-      log(' You can look for "quasar-app-extension-*" in npm registry.')
+      log(' You can look for "efuzy-app-extension-*" in npm registry.')
       return
     }
 
@@ -43,7 +43,7 @@ class ExtensionJson {
   }
 
   set (extId, opts) {
-    log(`Updating /quasar.extensions.json for "${extId}" extension ...`)
+    log(`Updating /efuzy.extensions.json for "${extId}" extension ...`)
     this.extensions[extId] = opts
     this.__save()
   }
@@ -56,7 +56,7 @@ class ExtensionJson {
 
   remove (extId) {
     if (this.has(extId)) {
-      log(`Removing "${extId}" extension from /quasar.extensions.json ...`)
+      log(`Removing "${extId}" extension from /efuzy.extensions.json ...`)
       delete this.extensions[extId]
       this.__save()
     }

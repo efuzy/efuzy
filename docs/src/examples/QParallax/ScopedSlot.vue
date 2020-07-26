@@ -2,7 +2,7 @@
   <div class="q-pa-md">
     <q-parallax>
       <template v-slot:media>
-        <img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <img src="https://cdn.efuzy.dev/img/parallax2.jpg">
       </template>
 
       <template v-slot:content="scope">
@@ -15,8 +15,8 @@
             right: 0
           }"
         >
-          <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" style="width: 150px; height: 150px">
-          <div class="text-h3 text-white text-center">Quasar Framework</div>
+          <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg" style="width: 150px; height: 150px">
+          <div class="text-h3 text-white text-center">Efuzy Framework</div>
           <div class="text-h6 text-grey-3 text-center">
             v{{ $q.version }}
           </div>

@@ -1,13 +1,13 @@
 <template lang="pug">
-  q-card.quasar-member.column(flat, bordered)
+  q-card.efuzy-member.column(flat, bordered)
     q-card-section
       .text-bold {{ name }}
       div(v-if="github") @{{ github }}
 
     q-img(v-if="avatar", alt="avatar", :src="url.avatar", :ratio="1")
 
-    q-card-section.quasar-member__front.col
-      div.text-grey.text-italic.q-mt-xs.quasar-member__role {{ role }}
+    q-card-section.efuzy-member__front.col
+      div.text-grey.text-italic.q-mt-xs.efuzy-member__role {{ role }}
       div.q-mt-xs {{ desc }}
 
     q-separator(style="height: 1px")
@@ -24,7 +24,7 @@
 <script>
 import {
   fabGithub, fabTwitter
-} from '@quasar/extras/fontawesome-v5'
+} from '@efuzy/extras/fontawesome-v5'
 
 export default {
   name: 'TeamMember',
@@ -42,7 +42,7 @@ export default {
   computed: {
     url () {
       return {
-        avatar: 'https://cdn.quasar.dev/team/' + this.avatar,
+        avatar: 'https://cdn.efuzy.dev/team/' + this.avatar,
         twitter: 'https://twitter.com/' + this.twitter,
         github: 'https://github.com/' + this.github,
         email: 'mailto:' + this.email
@@ -58,7 +58,7 @@ export default {
 </script>
 
 <style lang="sass">
-.quasar-member
+.efuzy-member
   width: 12.2rem
 
   &__role

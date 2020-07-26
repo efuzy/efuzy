@@ -1,4 +1,4 @@
-import { HasStore } from "quasar";
+import { HasStore } from "efuzy";
 import { VueConstructor } from "vue";
 import { Store } from "vuex";
 import { HasSsrParam } from "./ssr";
@@ -8,7 +8,7 @@ import { HasSsrParam } from "./ssr";
 // In that instance, all `TStore` parameters occurrences should be renamed to `TState`
 // and starter kit "router/index.ts" should be updated accordingly to provide
 //  `StateInterface` instead of `Store<StateInterface>`
-// See https://github.com/quasarframework/quasar-starter-kit/issues/109
+// See https://github.com/efuzy/efuzy-starter-kit/issues/109
 export type HasStoreParam<S = any> = HasStore<{ store: S }>;
 
 export type StoreParams = {

@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import { exportFile } from 'quasar'
+import { exportFile } from 'efuzy'
 
 function wrapCsvValue (val, formatFn) {
   let formatted = formatFn !== void 0

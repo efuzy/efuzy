@@ -1,21 +1,21 @@
-![Quasar Framework logo](https://cdn.quasar.dev/logo/svg/quasar-logo-full-inline.svg)
+![Efuzy Framework logo](https://cdn.efuzy.dev/logo/svg/efuzy-logo-full-inline.svg)
 
-# Fastclick for Quasar Framework
-> This is a fork of the original Fastclick and is being used and maintained by Quasar Framework.<br>
+# Fastclick for Efuzy Framework
+> This is a fork of the original Fastclick and is being used and maintained by Efuzy Framework.<br>
 > **This is injected only for iOS platform (PWA or Cordova) and assumes you're already on that platform.**
 
-<img src="https://img.shields.io/npm/v/%40quasar/fastclick.svg?label=@quasar/fastclick">
+<img src="https://img.shields.io/npm/v/%40efuzy/fastclick.svg?label=@efuzy/fastclick">
 
 FastClick is a simple, easy-to-use library for eliminating the 300ms delay between a physical tap and the firing of a `click` event on mobile browsers. The aim is to make your application feel less laggy and more responsive while avoiding any interference with your current logic.
 
 ## Compatibility ##
 
-* iOS 7+ platform, on a Quasar PWA or Quasar Cordova
+* iOS 7+ platform, on a Efuzy PWA or Efuzy Cordova
 
 ## Usage ##
 
 ```js
-import Fastclick from '@quasar/fastclick'
+import Fastclick from '@efuzy/fastclick'
 FastClick()
 ```
 

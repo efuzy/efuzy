@@ -3,7 +3,7 @@ title: Rating
 desc: The QRating Vue component allows the user to rate items. It's usually known as 'star rating'.
 ---
 
-Quasar Rating is a Component which allows users to rate items, usually known as “Star Rating”.
+Efuzy Rating is a Component which allows users to rate items, usually known as “Star Rating”.
 
 ## Installation
 
@@ -59,7 +59,7 @@ Apart from the standard sizes below, you can define your own through the `size` 
 
 ### Native form submit <q-badge align="top" label="v1.9+" />
 
-When dealing with a native form which has an `action` and a `method` (eg. when using Quasar with ASP.NET controllers), you need to specify the `name` property on QRating, otherwise formData will not contain it (if it should):
+When dealing with a native form which has an `action` and a `method` (eg. when using Efuzy with ASP.NET controllers), you need to specify the `name` property on QRating, otherwise formData will not contain it (if it should):
 
 <doc-example title="Native form" file="QRating/NativeForm" />
 

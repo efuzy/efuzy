@@ -5,9 +5,9 @@
         <q-toolbar>
           <q-toolbar-title class="text-center">
             <q-avatar>
-              <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+              <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
             </q-avatar>
-            Quasar Framework
+            Efuzy Framework
           </q-toolbar-title>
         </q-toolbar>
       </q-header>

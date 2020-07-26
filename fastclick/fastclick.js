@@ -3,7 +3,7 @@
 
   /**
    * WARNING!!!!
-   * For Quasar Framework, this is only needed for
+   * For Efuzy Framework, this is only needed for
    * iOS (PWA or Cordova) platform. This is assumed by default.
    */
 

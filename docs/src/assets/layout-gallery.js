@@ -5,13 +5,13 @@ const list = [
   { name: 'Google Photos', path: 'google-photos' },
   { name: 'Google News', path: 'google-news' },
   { name: 'Whatsapp', path: 'whatsapp' },
-  { name: 'Quasar Classic', path: 'quasar-classic' },
-  { name: 'Quasar Classic (Dark)', path: 'quasar-classic-dark' }
+  { name: 'Efuzy Classic', path: 'efuzy-classic' },
+  { name: 'Efuzy Classic (Dark)', path: 'efuzy-classic-dark' }
 ]
 
 export default list.map(layout => ({
   ...layout,
-  screenshot: `https://cdn.quasar.dev/img/layout-gallery/screenshot-${layout.path}.png`,
+  screenshot: `https://cdn.efuzy.dev/img/layout-gallery/screenshot-${layout.path}.png`,
   demoLink: `/layout/gallery/${layout.path}`,
-  sourceLink: `https://github.com/quasarframework/quasar/blob/dev/docs/src/layouts/gallery/${layout.path}.vue`
+  sourceLink: `https://github.com/efuzy/efuzy/blob/dev/docs/src/layouts/gallery/${layout.path}.vue`
 }))

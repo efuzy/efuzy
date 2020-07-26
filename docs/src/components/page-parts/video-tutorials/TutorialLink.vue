@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { openURL } from 'quasar'
+import { openURL } from 'efuzy'
 
 export default {
   name: 'TutorialLink',

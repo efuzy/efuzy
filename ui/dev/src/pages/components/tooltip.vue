@@ -56,7 +56,7 @@
           <q-card-section class="bg-primary text-center">
             <q-btn push color="orange" label="Mouse Hover">
               <q-tooltip :anchor="anchor" :self="self">
-                <div>Quasar is <strong>great</strong>!</div>
+                <div>Efuzy is <strong>great</strong>!</div>
                 <div class="text-center">
                   Try it.
                 </div>
@@ -129,7 +129,7 @@
               <q-toggle label="Hiding Delay (1s)" v-model="hdelay" :true-value="1000" :false-value="0" />
             </div>
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/material.png" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" style="height: 100px">
             <q-tooltip
               :delay="delay"
               :hide-delay="hdelay"
@@ -137,7 +137,7 @@
               self="center middle"
               :content-class="color ? 'bg-red' : null"
             >
-              Quasar Rulz!
+              Efuzy Rulz!
             </q-tooltip>
           </q-img>
         </q-card>
@@ -155,17 +155,17 @@
               <q-radio v-model="targetEl" val="#bogus" label="#bogus" />
             </div>
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/material.png" id="target-img-1" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" id="target-img-1" style="height: 100px">
             <div class="absolute-bottom-right">
               #target-img-1
             </div>
           </q-img>
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" id="target-img-2" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" id="target-img-2" style="height: 100px">
             <div class="absolute-bottom-right">
               #target-img-2
             </div>
           </q-img>
-          <q-img src="https://cdn.quasar.dev/img/blueish.jpg" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/blueish.jpg" style="height: 100px">
             <div class="absolute-bottom-right">
               Original parent
             </div>
@@ -174,7 +174,7 @@
               anchor="center middle"
               self="center middle"
             >
-              Quasar Rulz!
+              Efuzy Rulz!
             </q-tooltip>
           </q-img>
         </q-card>
@@ -183,20 +183,20 @@
           <q-card-section>
             <q-toggle v-model="vIfTest" label="v-if test" />
           </q-card-section>
-          <q-img src="https://cdn.quasar.dev/img/material.png" style="height: 100px" v-if="vIfTest">
+          <q-img src="https://cdn.efuzy.dev/img/material.png" style="height: 100px" v-if="vIfTest">
             <div class="absolute-bottom-right">
               attached to q-img
             </div>
             <q-tooltip anchor="center middle" self="center middle">
-              Quasar Rulz!
+              Efuzy Rulz!
             </q-tooltip>
           </q-img>
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" style="height: 100px">
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" style="height: 100px">
             <div class="absolute-bottom-right">
               attached to q-tooltip
             </div>
             <q-tooltip v-if="vIfTest" anchor="center middle" self="center middle">
-              Quasar Rulz!
+              Efuzy Rulz!
             </q-tooltip>
           </q-img>
         </q-card>

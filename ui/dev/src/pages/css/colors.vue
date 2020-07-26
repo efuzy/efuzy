@@ -46,7 +46,7 @@
 </template>
 
 <script>
-import { clone, colors } from 'quasar'
+import { clone, colors } from 'efuzy'
 
 const mainColors = ['primary', 'secondary', 'accent', 'positive', 'negative', 'info', 'warning', 'black']
 const mainLightColors = ['white']

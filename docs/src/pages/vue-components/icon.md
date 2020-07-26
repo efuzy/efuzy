@@ -3,18 +3,18 @@ title: Icon
 desc: The QIcon Vue component allows you to insert icons within other components or any other area of your pages.
 related:
   - /options/installing-icon-libraries
-  - /options/quasar-icon-sets
+  - /options/efuzy-icon-sets
 ---
 
 The QIcon component allows you to easily insert icons within other components or any other area of your pages.
-Quasar supports out of the box: [Material Icons](https://material.io/icons/), [Font Awesome](http://fontawesome.io/icons/), [Ionicons](https://ionicons.com/), [MDI](https://materialdesignicons.com/), [Eva Icons](https://akveo.github.io/eva-icons), [Themify Icons](https://themify.me/themify-icons) and [Line Awesome](https://icons8.com/line-awesome).
+Efuzy supports out of the box: [Material Icons](https://material.io/icons/), [Font Awesome](http://fontawesome.io/icons/), [Ionicons](https://ionicons.com/), [MDI](https://materialdesignicons.com/), [Eva Icons](https://akveo.github.io/eva-icons), [Themify Icons](https://themify.me/themify-icons) and [Line Awesome](https://icons8.com/line-awesome).
 
 Furthermore you can [add support by yourself](/vue-components/icon#Custom-mapping) for any icon lib.
 
-There are multiple types of icons in Quasar: webfont-based, svg-based (v1.7+) and image-based. You are not bound to using only one type in your website/app.
+There are multiple types of icons in Efuzy: webfont-based, svg-based (v1.7+) and image-based. You are not bound to using only one type in your website/app.
 
 ::: tip
-Related pages: [Installing Icon Libraries](/options/installing-icon-libraries) and [Quasar Icon Sets](/options/quasar-icon-sets).
+Related pages: [Installing Icon Libraries](/options/installing-icon-libraries) and [Efuzy Icon Sets](/options/efuzy-icon-sets).
 :::
 
 ## Installing
@@ -25,7 +25,7 @@ The sizing of a QIcon is manipulated by the `font-size` CSS property. Also, QIco
 
 <doc-example title="Basic" file="QIcon/Basic" />
 
-For `icon` properties on different Quasar components you won't have the means to specify an icon for each platform, but you can achieve the same effect with:
+For `icon` properties on different Efuzy components you won't have the means to specify an icon for each platform, but you can achieve the same effect with:
 
 ```html
 <q-btn
@@ -47,18 +47,18 @@ If you are using webfont-based icons, make sure that you [installed the icon lib
 <q-icon name="..." />
 ```
 
-| Quasar IconSet name | Name prefix | Examples | Notes |
+| Efuzy IconSet name | Name prefix | Examples | Notes |
 | --- | --- | --- | --- |
 | material-icons | *None* | thumb_up | Notice the underline character instead of dash or space |
-| material-icons-outlined | o_ | o_thumb_up | Notice the underline character instead of dash or space; **Quasar 1.0.5+** |
-| material-icons-round | r_ | r_thumb_up | Notice the underline character instead of dash or space; **Quasar 1.0.5+** |
-| material-icons-sharp | s_ | s_thumb_up | Notice the underline character instead of dash or space; **Quasar 1.0.5+** |
+| material-icons-outlined | o_ | o_thumb_up | Notice the underline character instead of dash or space; **Efuzy 1.0.5+** |
+| material-icons-round | r_ | r_thumb_up | Notice the underline character instead of dash or space; **Efuzy 1.0.5+** |
+| material-icons-sharp | s_ | s_thumb_up | Notice the underline character instead of dash or space; **Efuzy 1.0.5+** |
 | ionicons-v4 | ion-, ion-md-, ion-ios-, ion-logo- | ion-heart, ion-logo-npm, ion-md-airplane | Use QIcon instead of `<ion-icon>` component; Logo icons require 'ion-logo-' prefix |
 | fontawesome-v5 | fa[s,r,l,d,b] fa- | "fas fa-ambulance" | QIcon "name" property is same as "class" attribute value in Fontawesome docs examples (where they show `<i>` tags) |
 | mdi-v5/v4/v3 | mdi- | mdi-alert-circle-outline | Notice the use of dash characters; Use only one of mdi-v5, mdi-v4 or mdi-v3 |
 | eva-icons | eva- | eva-shield-outline, eva-activity-outline | Notice the use of dash characters |
 | themify | ti- | ti-hand-point-up | Notice the use of dash characters |
-| line-awesome | la[s,r,l,d,b] la- | "las la-atom" | QIcon "name" property is same as "class" attribute value in Line Awesome docs examples (where they show `<i>` tags); **Quasar 1.8+ & @quasar/extras v1.5+** |
+| line-awesome | la[s,r,l,d,b] la- | "las la-atom" | QIcon "name" property is same as "class" attribute value in Line Awesome docs examples (where they show `<i>` tags); **Efuzy 1.8+ & @efuzy/extras v1.5+** |
 
 ### Naming convention
 
@@ -97,12 +97,12 @@ If you are using webfont-based icons, make sure that you [installed the icon lib
 * Icon names are in hyphen-separated case and always begin with "la" prefix.
 * Go to [Line Awesome](https://icons8.com/line-awesome), look for your desired icon, click on it. A dialog box will appear. You'll see something like `<i class="lab la-behance-square"></i>`. Remember its name (eg. "lab la-behance-square") and use it.
 
-## Svg icons <q-badge align="top" label="Quasar v1.7+" /> <q-badge align="top" class="q-ml-xs" label="@quasar/extras v1.4+" />
+## Svg icons <q-badge align="top" label="Efuzy v1.7+" /> <q-badge align="top" class="q-ml-xs" label="@efuzy/extras v1.4+" />
 
 There are many advantages of using only svg icons in your website/app:
 * Better app footprint -- only used icons will be included in the final build (treeshaking in action)
 * Better quality icons
-* No need for including equivalent webfonts from `@quasar/extras` or CDN.
+* No need for including equivalent webfonts from `@efuzy/extras` or CDN.
 
 The current disadvantage is that it is more tedious to use these icons than their webfont counterpart.
 
@@ -120,9 +120,9 @@ Notice in the example below that we want to avoid Vue observable wrapping, so we
 </template>
 
 <script>
-import { matMenu } from '@quasar/extras/material-icons'
-import { mdiAbTesting } from '@quasar/extras/mdi-v5'
-import { fasFont } from '@quasar/extras/fontawesome-v5'
+import { matMenu } from '@efuzy/extras/material-icons'
+import { mdiAbTesting } from '@efuzy/extras/mdi-v5'
+import { fasFont } from '@efuzy/extras/fontawesome-v5'
 
 export default {
   // ...
@@ -135,87 +135,87 @@ export default {
 ```
 
 ::: tip
-If you are only using svg icons (and have configured a [Quasar Icon Set](/options/quasar-icon-sets)) then you don't need the webfont equivalent in your app at all.
+If you are only using svg icons (and have configured a [Efuzy Icon Set](/options/efuzy-icon-sets)) then you don't need the webfont equivalent in your app at all.
 :::
 
-| Vendor | Quasar IconSet name | Import Icons from | Notes |
+| Vendor | Efuzy IconSet name | Import Icons from | Notes |
 | --- | --- | --- | --- |
-| Material Icons (Google) | svg-material-icons | @quasar/extras/material-icons | |
-| Material Icons Outlined (Google) | svg-material-icons-outlined | @quasar/extras/material-icons-outlined | `@quasar/extras` v1.9+ |
-| Material Icons Sharp (Google) | svg-material-icons-sharp | @quasar/extras/material-icons-sharp | `@quasar/extras` v1.9+ |
-| Material Icons Round (Google) | svg-material-icons-round | @quasar/extras/material-icons-round | `@quasar/extras` v1.9+ |
-| MDI (Material Design Icons) | svg-mdi-v5 | @quasar/extras/mdi-v5 | |
-| Font Awesome | svg-fontawesome-v5 | @quasar/extras/fontawesome-v5 | |
-| Ionicons v5 | svg-ionicons-v5 | @quasar/extras/ionicons-v5 | `@quasar/extras` v1.7+ |
-| Ionicons v4 | svg-ionicons-v4 | @quasar/extras/ionicons-v4 | |
-| Eva Icons | svg-eva-icons | @quasar/extras/eva-icons | |
-| Themify Icons | svg-themify | @quasar/extras/themify | |
-| Line Awesome | svg-line-awesome | @quasar/extras/line-awesome | `@quasar/extras` v1.5+ |
+| Material Icons (Google) | svg-material-icons | @efuzy/extras/material-icons | |
+| Material Icons Outlined (Google) | svg-material-icons-outlined | @efuzy/extras/material-icons-outlined | `@efuzy/extras` v1.9+ |
+| Material Icons Sharp (Google) | svg-material-icons-sharp | @efuzy/extras/material-icons-sharp | `@efuzy/extras` v1.9+ |
+| Material Icons Round (Google) | svg-material-icons-round | @efuzy/extras/material-icons-round | `@efuzy/extras` v1.9+ |
+| MDI (Material Design Icons) | svg-mdi-v5 | @efuzy/extras/mdi-v5 | |
+| Font Awesome | svg-fontawesome-v5 | @efuzy/extras/fontawesome-v5 | |
+| Ionicons v5 | svg-ionicons-v5 | @efuzy/extras/ionicons-v5 | `@efuzy/extras` v1.7+ |
+| Ionicons v4 | svg-ionicons-v4 | @efuzy/extras/ionicons-v4 | |
+| Eva Icons | svg-eva-icons | @efuzy/extras/eva-icons | |
+| Themify Icons | svg-themify | @efuzy/extras/themify | |
+| Line Awesome | svg-line-awesome | @efuzy/extras/line-awesome | `@efuzy/extras` v1.5+ |
 
 ### Import guide
 
-Svg icons are supplied by `@quasar/extras` (although you can supply [your own svg icons](/vue-components/icon#Svg-icon-format) too!). Here's the ins and outs of the import syntax:
+Svg icons are supplied by `@efuzy/extras` (although you can supply [your own svg icons](/vue-components/icon#Svg-icon-format) too!). Here's the ins and outs of the import syntax:
 
 #### SVG Material Icons (Google)
 
 * Icon names are in camel-case and always begin with "mat" prefix.
 * Go to [Material Icons](https://material.io/icons/), look for your desired icon and remember its name (eg. "all_inbox"), prefix it with "mat" and camel-case the result (eg. "matAllInbox").
-* Import statement example: `import { matAllInbox } from '@quasar/extras/material-icons'`.
+* Import statement example: `import { matAllInbox } from '@efuzy/extras/material-icons'`.
 
-#### SVG Material Icons Outlined (Google) <q-badge align="top" label="Quasar v1.12.13+" /> <q-badge align="top" class="q-ml-xs" label="@quasar/extras v1.9+" />
+#### SVG Material Icons Outlined (Google) <q-badge align="top" label="Efuzy v1.12.13+" /> <q-badge align="top" class="q-ml-xs" label="@efuzy/extras v1.9+" />
 
 * Icon names are in camel-case and always begin with "outlined" prefix.
 * Go to [Material Icons](https://material.io/icons/), look for your desired icon and remember its name (eg. "all_inbox"), prefix it with "outlined" and camel-case the result (eg. "outlinedAllInbox").
-* Import statement example: `import { outlinedAllInbox } from '@quasar/extras/material-icons-outlined'`.
+* Import statement example: `import { outlinedAllInbox } from '@efuzy/extras/material-icons-outlined'`.
 
-#### SVG Material Icons Sharp (Google) <q-badge align="top" label="Quasar v1.12.13+" /> <q-badge align="top" class="q-ml-xs" label="@quasar/extras v1.9+" />
+#### SVG Material Icons Sharp (Google) <q-badge align="top" label="Efuzy v1.12.13+" /> <q-badge align="top" class="q-ml-xs" label="@efuzy/extras v1.9+" />
 
 * Icon names are in camel-case and always begin with "sharp" prefix.
 * Go to [Material Icons](https://material.io/icons/), look for your desired icon and remember its name (eg. "all_inbox"), prefix it with "sharp" and camel-case the result (eg. "sharpAllInbox").
-* Import statement example: `import { sharpAllInbox } from '@quasar/extras/material-icons-sharp'`.
+* Import statement example: `import { sharpAllInbox } from '@efuzy/extras/material-icons-sharp'`.
 
-#### SVG Material Icons Round (Google) <q-badge align="top" label="Quasar v1.12.13+" /> <q-badge align="top" class="q-ml-xs" label="@quasar/extras v1.9+" />
+#### SVG Material Icons Round (Google) <q-badge align="top" label="Efuzy v1.12.13+" /> <q-badge align="top" class="q-ml-xs" label="@efuzy/extras v1.9+" />
 
 * Icon names are in camel-case and always begin with "round" prefix.
 * Go to [Material Icons](https://material.io/icons/), look for your desired icon and remember its name (eg. "all_inbox"), prefix it with "round" and camel-case the result (eg. "roundAllInbox").
-* Import statement example: `import { roundAllInbox } from '@quasar/extras/material-icons-round'`.
+* Import statement example: `import { roundAllInbox } from '@efuzy/extras/material-icons-round'`.
 
 #### SVG MDI (Material Design Icons)
 
 * Icon names are in camel-case and always begin with "mdi" prefix.
 * Go to [MDI](https://materialdesignicons.com/), look for your desired icon, click on it. A dialog box will appear. Get the title (eg. "account-key"), prefix it with "mdi" and camel-case the result (eg. "mdiAccountKey").
-* Import statement example: `import { mdiAccountKey } from '@quasar/extras/mdi-v5'`.
+* Import statement example: `import { mdiAccountKey } from '@efuzy/extras/mdi-v5'`.
 
 #### SVG Fontawesome
 
 * Icon names are in camel-case and always begin with "fas", "fab", "fal" or "far" prefixes.
 * Go to [FontAwesome](https://fontawesome.com/icons), look for your desired icon, click on it. You'll get to its page. Below the icon name (as title), you will see something like `<i class="fas fa-air-freshener"></i>`. This would translate to `fasAirFreshner`. The prefix from the tag is important.
 * Note that we cannot supply the "Pro" version of the icons in svg format because of the license.
-* Import statement example: `import { fasAirFreshener } from '@quasar/extras/fontawesome-v5'`.
+* Import statement example: `import { fasAirFreshener } from '@efuzy/extras/fontawesome-v5'`.
 
 #### SVG Ionicons
 
 * Icon names are in camel-case and always begin with "ionMd" or "ionIos" prefixes.
 * Go to [Ionicons v5](https://ionicons.com/) or [Ionicons v4](https://ionicons.com/v4/), look for your desired icon, click on it. At the bottom of the page there will appear a popup. Notice something like `<ion-icon name="square-outline"></ion-icon>`. Remember the name (eg. "square-outline"). Camel-case this name and prefix it with either "ionMd" (for material variant) or "ionIos" (for iOS variant).
-* Import statement example: `import { ionMdSquareOutline } from '@quasar/extras/ionicons-v5'` (or `-v4`).
+* Import statement example: `import { ionMdSquareOutline } from '@efuzy/extras/ionicons-v5'` (or `-v4`).
 
 #### SVG Eva Icons
 
 * Icon names are in camel-case and always begin with "eva" prefix.
 * Go to [Eva Icons](https://akveo.github.io/eva-icons), look for your desired icon, click on it. A dialog box will appear. Get the name from there (eg. "attach-outline"), prefix it with "eva" and camel-case the result (eg. "evaAttachOutline").
-* Import statement example: `import { evaAttachOutline } from '@quasar/extras/eva-icons'`.
+* Import statement example: `import { evaAttachOutline } from '@efuzy/extras/eva-icons'`.
 
 #### SVG Themify
 
 * Icon names are in camel-case and always begin with "ti" prefix.
 * Go to [Themify](https://themify.me/themify-icons), look for your desired icon. Remember its name (eg. "ti-arrow-top-right"), prefix it with "ti" and camel-case the result (eg. "tiArrowTopRight").
-* Import statement example: `import { tiArrowTopRight } from '@quasar/extras/themify'`.
+* Import statement example: `import { tiArrowTopRight } from '@efuzy/extras/themify'`.
 
 #### SVG Line Awesome
 
 * Icon names are in camel-case and always begin with "la" prefix.
 * Go to [Line Awesome](https://icons8.com/line-awesome), look for your desired icon, click on it. A dialog box will appear. You'll see something like `<i class="lab la-behance-square"></i>`. This would translate to: `laBehanceSquare`. There is a special case though (only for solid icons!): if the prefix before "la-" is "las" (eg. `<i class="las la-atom"></i>`), then you need to suffix "la-atom" with "-solid" and camel-case the result (eg. `laAtomSolid`).
-* Import statement example: `import { laBehanceSquare } from '@quasar/extras/line-awesome'`.
+* Import statement example: `import { laBehanceSquare } from '@efuzy/extras/line-awesome'`.
 
 ### Svg icon format <q-badge align="top" label="enhanced on v1.11+" />
 
@@ -352,11 +352,11 @@ Some limitations:
 ## Image icons
 You can also make an icon point to an image URL instead of relying on any webfont, by using the `img:` prefix.
 
-**All icon related props of Quasar components can make use of this.**
+**All icon related props of Efuzy components can make use of this.**
 
 ```html
-<q-icon name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
-<q-btn icon="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" ... />
+<q-icon name="img:https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg" />
+<q-btn icon="img:https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg" ... />
 
 <!-- reference from /public: -->
 <q-icon name="img:my/path/to/some.svg" />
@@ -412,7 +412,7 @@ iconMapFn (String: iconName) => Object / void 0 (undefined)
   2. Acts essentially as a map to another icon
   {
     icon: String // the mapped icon String, which will be handled
-                 // by Quasar as if the original QIcon name was this value
+                 // by Efuzy as if the original QIcon name was this value
   }
 */
 ```
@@ -421,14 +421,14 @@ Let's take both cases now.
 
 #### 1. Support for custom icon library
 
-This is especially useful when you are using a custom icon library (that doesn't come with Quasar and its `@quasar/extras` package).
+This is especially useful when you are using a custom icon library (that doesn't come with Efuzy and its `@efuzy/extras` package).
 
 ```js
 created () {
   // Example of adding support for
   // <q-icon name="app:...." />
   // This includes support for all "icon" props
-  // of Quasar components
+  // of Efuzy components
 
   this.$q.iconMapFn = (iconName) => {
     // iconName is the content of QIcon "name" prop
@@ -445,7 +445,7 @@ created () {
     }
 
     // when we don't return anything from our
-    // iconMapFn, the default Quasar icon mapping
+    // iconMapFn, the default Efuzy icon mapping
     // takes over
   }
 }
@@ -474,7 +474,7 @@ Let's assume we have our own webfont called "My App Icon".
 }
 ```
 
-We should then edit our `quasar.conf.js` (if using Quasar CLI) to add the newly created CSS file into our app:
+We should then edit our `efuzy.conf.js` (if using Efuzy CLI) to add the newly created CSS file into our app:
 
 ```js
 css: [

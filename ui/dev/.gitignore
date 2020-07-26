@@ -2,8 +2,8 @@
 .thumbs.db
 node_modules
 
-# Quasar core related directories
-.quasar
+# Efuzy core related directories
+.efuzy
 /dist
 
 # Cordova related directories and files

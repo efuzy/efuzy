@@ -2,7 +2,7 @@
   "mixins": [ "components/field/__QField", "mixins/virtual-scroll", "mixins/form" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/select"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/select"
   },
 
   "props": {
@@ -264,14 +264,14 @@
 
     "transition-show": {
       "extends": "transition",
-      "desc": "Transition when showing the menu/dialog; One of Quasar's embedded transitions",
+      "desc": "Transition when showing the menu/dialog; One of Efuzy's embedded transitions",
       "default": "fade",
       "category": "behavior"
     },
 
     "transition-hide": {
       "extends": "transition",
-      "desc": "Transition when hiding the menu/dialog; One of Quasar's embedded transitions",
+      "desc": "Transition when hiding the menu/dialog; One of Efuzy's embedded transitions",
       "default": "fade",
       "category": "behavior"
     },

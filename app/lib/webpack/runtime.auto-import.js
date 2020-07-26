@@ -1,5 +1,5 @@
 /**
- * Quasar runtime for auto-importing
+ * Efuzy runtime for auto-importing
  * components or directives.
  *
  * Warning! This file does NOT get transpiled by Babel

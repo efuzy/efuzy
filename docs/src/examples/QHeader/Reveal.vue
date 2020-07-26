@@ -5,10 +5,10 @@
         <q-toolbar>
           <q-btn flat round dense icon="menu" class="q-mr-sm" />
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
 
-          <q-toolbar-title>Quasar Framework</q-toolbar-title>
+          <q-toolbar-title>Efuzy Framework</q-toolbar-title>
 
           <q-btn flat round dense icon="whatshot" />
         </q-toolbar>

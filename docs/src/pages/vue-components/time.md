@@ -3,14 +3,14 @@ title: QTime
 desc: The QTime component provides a method to input time.
 related:
   - /vue-components/date
-  - /quasar-utils/date-utils
+  - /efuzy-utils/date-utils
   - /vue-components/field
 ---
 
 The QTime component provides a method to input time.
 
 ::: tip
-For handling date and/or time, also check out [Quasar Date Utils](/quasar-utils/date-utils).
+For handling date and/or time, also check out [Efuzy Date Utils](/efuzy-utils/date-utils).
 :::
 
 ## Installation
@@ -27,12 +27,12 @@ Notice that the model is a String only.
 <doc-example title="Landscape" file="QTime/Landscape" overflow />
 
 ::: tip
-For landscape mode, you can use it along with `$q.screen` to make QTime responsive. Example: `:landscape="$q.screen.gt.xs"`. More info: [Quasar Screen Plugin](/options/screen-plugin).
+For landscape mode, you can use it along with `$q.screen` to make QTime responsive. Example: `:landscape="$q.screen.gt.xs"`. More info: [Efuzy Screen Plugin](/options/screen-plugin).
 :::
 
 ### Functionality
 
-The 24 hour format is applied depending on the [Quasar Language Pack](/options/quasar-language-packs) that you've set, but you can also force it, like in the example below.
+The 24 hour format is applied depending on the [Efuzy Language Pack](/options/efuzy-language-packs) that you've set, but you can also force it, like in the example below.
 
 <doc-example title="24h format" file="QTime/Format24h" overflow />
 
@@ -46,7 +46,7 @@ Clicking on the "Now" button sets time to current user time:
 
 The default model mask is `HH:mm` (or `HH:mm:ss` when using `with-seconds` prop), however you can use custom masks too.
 
-The `mask` prop tokens can be found at [Quasar Utils > Date utils](/quasar-utils/date-utils#Format-for-display).
+The `mask` prop tokens can be found at [Efuzy Utils > Date utils](/efuzy-utils/date-utils#Format-for-display).
 
 ::: warning Note on SSR
 Using `x` or `X` (timestamps) in the mask may cause hydration errors on the client, because decoding the model String must be done with `new Date()` which takes into account the local timezone. As a result, if the server is in a different timezone than the client, then the rendered output of the server will differ than the one on the client so hydration will fail.
@@ -68,7 +68,7 @@ Using the mask to connect a [QDate](/vue-components/date) and QTime to the same 
 
 ### Custom ad-hoc locale
 
-If, for some reason, you need to use a custom ad-hoc locale rather than the current Quasar Language Pack that has been set, you can use the `locale` prop:
+If, for some reason, you need to use a custom ad-hoc locale rather than the current Efuzy Language Pack that has been set, you can use the `locale` prop:
 
 <doc-example title="Custom ad-hoc locale" file="QTime/CustomLocale" overflow />
 
@@ -94,8 +94,8 @@ Connecting a QDate and QTime with same model on a QInput:
 
 The following are **helpers** for QInput `mask` and `rules` props. You can use these for convenience or write the string specifying your [custom needs](/vue-components/input#Mask).
 
-* Property `mask` helpers: [full list](https://github.com/quasarframework/quasar/blob/dev/ui/src/mixins/mask.js#L2).
-* Property `rules` helpers: [full list](https://github.com/quasarframework/quasar/blob/dev/ui/src/utils/patterns.js).
+* Property `mask` helpers: [full list](https://github.com/efuzy/efuzy/blob/dev/ui/src/mixins/mask.js#L2).
+* Property `rules` helpers: [full list](https://github.com/efuzy/efuzy/blob/dev/ui/src/utils/patterns.js).
 
 Examples: "date", "time", "fulltime".
 
@@ -109,7 +109,7 @@ You can use the default slot for adding buttons:
 
 ### Native form submit <q-badge align="top" label="v1.9+" />
 
-When dealing with a native form which has an `action` and a `method` (eg. when using Quasar with ASP.NET controllers), you need to specify the `name` property on QTime, otherwise formData will not contain it (if it should):
+When dealing with a native form which has an `action` and a `method` (eg. when using Efuzy with ASP.NET controllers), you need to specify the `name` property on QTime, otherwise formData will not contain it (if it should):
 
 <doc-example title="Native form" file="QTime/NativeForm" />
 

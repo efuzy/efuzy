@@ -40,42 +40,42 @@
     </div>
 
     <div class="q-mt-xl">
-      <q-icon name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
-      <q-icon size="100px" name="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
-      <q-input v-model="text" clearable clear-icon="img:https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
+      <q-icon name="img:https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg" />
+      <q-icon size="100px" name="img:https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg" />
+      <q-input v-model="text" clearable clear-icon="img:https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg" />
     </div>
   </div>
 </template>
 
 <script>
-import matSet from 'quasar/icon-set/material-icons.js'
-import matOutlinedSet from 'quasar/icon-set/material-icons-outlined.js'
-import matRoundSet from 'quasar/icon-set/material-icons-round.js'
-import matSharpSet from 'quasar/icon-set/material-icons-sharp.js'
-import mdiSet from 'quasar/icon-set/mdi-v5.js'
-import fontawesomeSet from 'quasar/icon-set/fontawesome-v5.js'
-import ioniconsV4Set from 'quasar/icon-set/ionicons-v4.js'
-import evaSet from 'quasar/icon-set/eva-icons.js'
-import themifySet from 'quasar/icon-set/themify.js'
-import lineawesomeSet from 'quasar/icon-set/line-awesome.js'
+import matSet from 'efuzy/icon-set/material-icons.js'
+import matOutlinedSet from 'efuzy/icon-set/material-icons-outlined.js'
+import matRoundSet from 'efuzy/icon-set/material-icons-round.js'
+import matSharpSet from 'efuzy/icon-set/material-icons-sharp.js'
+import mdiSet from 'efuzy/icon-set/mdi-v5.js'
+import fontawesomeSet from 'efuzy/icon-set/fontawesome-v5.js'
+import ioniconsV4Set from 'efuzy/icon-set/ionicons-v4.js'
+import evaSet from 'efuzy/icon-set/eva-icons.js'
+import themifySet from 'efuzy/icon-set/themify.js'
+import lineawesomeSet from 'efuzy/icon-set/line-awesome.js'
 
-import svgMatSet from 'quasar/icon-set/svg-material-icons.js'
-import svgMdiSet from 'quasar/icon-set/svg-mdi-v5.js'
-import svgIoniconsV4Set from 'quasar/icon-set/svg-ionicons-v4.js'
-import svgIoniconsSet from 'quasar/icon-set/svg-ionicons-v5.js'
-import svgFontawesomeSet from 'quasar/icon-set/svg-fontawesome-v5.js'
-import svgEvaSet from 'quasar/icon-set/svg-eva-icons.js'
-import svgThemifySet from 'quasar/icon-set/svg-themify.js'
-import svgLineawesomeSet from 'quasar/icon-set/svg-line-awesome.js'
+import svgMatSet from 'efuzy/icon-set/svg-material-icons.js'
+import svgMdiSet from 'efuzy/icon-set/svg-mdi-v5.js'
+import svgIoniconsV4Set from 'efuzy/icon-set/svg-ionicons-v4.js'
+import svgIoniconsSet from 'efuzy/icon-set/svg-ionicons-v5.js'
+import svgFontawesomeSet from 'efuzy/icon-set/svg-fontawesome-v5.js'
+import svgEvaSet from 'efuzy/icon-set/svg-eva-icons.js'
+import svgThemifySet from 'efuzy/icon-set/svg-themify.js'
+import svgLineawesomeSet from 'efuzy/icon-set/svg-line-awesome.js'
 
-import { matAddBox } from '@quasar/extras/material-icons'
-import { mdiAirballoon } from '@quasar/extras/mdi-v5'
-import { ionMdAirplane, ionIosAirplane } from '@quasar/extras/ionicons-v4'
-import { ionAirplane } from '@quasar/extras/ionicons-v5'
-import { fabGithub } from '@quasar/extras/fontawesome-v5'
-import { evaPaperPlaneOutline } from '@quasar/extras/eva-icons'
-import { tiFullscreen } from '@quasar/extras/themify'
-import { laAtomSolid } from '@quasar/extras/line-awesome'
+import { matAddBox } from '@efuzy/extras/material-icons'
+import { mdiAirballoon } from '@efuzy/extras/mdi-v5'
+import { ionMdAirplane, ionIosAirplane } from '@efuzy/extras/ionicons-v4'
+import { ionAirplane } from '@efuzy/extras/ionicons-v5'
+import { fabGithub } from '@efuzy/extras/fontawesome-v5'
+import { evaPaperPlaneOutline } from '@efuzy/extras/eva-icons'
+import { tiFullscreen } from '@efuzy/extras/themify'
+import { laAtomSolid } from '@efuzy/extras/line-awesome'
 
 function parseSet (setName, set) {
   const icons = []

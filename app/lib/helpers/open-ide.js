@@ -78,7 +78,7 @@ function runLinux (mode, bin, target) {
   }
 
   warn(`Cannot determine path to IDE executable`)
-  console.log(' Please set quasar.conf.js > bin > linuxAndroidStudio with the escaped path to your studio.sh')
+  console.log(' Please set efuzy.conf.js > bin > linuxAndroidStudio with the escaped path to your studio.sh')
   console.log(` Example: '/usr/local/android-studio/bin/studio.sh'`)
   process.exit(1)
 }
@@ -133,7 +133,7 @@ function runWindows (mode, bin, target) {
   }
 
   warn(`Cannot determine path to IDE executable`)
-  console.log(' Please set quasar.conf.js > bin > windowsAndroidStudio with the escaped path to your studio64.exe')
+  console.log(' Please set efuzy.conf.js > bin > windowsAndroidStudio with the escaped path to your studio64.exe')
   console.log(` Example: 'C:\\\\Program Files\\\\Android\\\\Android Studio\\\\bin\\\\studio64.exe'`)
   process.exit(1)
 }

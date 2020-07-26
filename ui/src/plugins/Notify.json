@@ -1,11 +1,11 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/quasar-plugins/notify"
+    "docsUrl": "https://v1.efuzy.dev/efuzy-plugins/notify"
   },
 
   "injection": "$q.notify",
 
-  "quasarConfOptions": {
+  "efuzyConfOptions": {
     "propName": "notify",
     "definition": {
       "type": {
@@ -77,12 +77,12 @@
 
       "badgeColor": {
         "extends": "color",
-        "desc": "Color name for the badge from the Quasar Color Palette",
+        "desc": "Color name for the badge from the Efuzy Color Palette",
         "addedIn": "v1.9.0"
       },
       "badgeTextColor": {
         "extends": "color",
-        "desc": "Color name for the badge text from the Quasar Color Palette",
+        "desc": "Color name for the badge text from the Efuzy Color Palette",
         "addedIn": "v1.9.0"
       },
       "badgePosition": {
@@ -233,12 +233,12 @@
 
             "badgeColor": {
               "extends": "color",
-              "desc": "Color name for the badge from the Quasar Color Palette",
+              "desc": "Color name for the badge from the Efuzy Color Palette",
               "addedIn": "v1.9.0"
             },
             "badgeTextColor": {
               "extends": "color",
-              "desc": "Color name for the badge text from the Quasar Color Palette",
+              "desc": "Color name for the badge text from the Efuzy Color Palette",
               "addedIn": "v1.9.0"
             },
             "badgePosition": {
@@ -321,7 +321,7 @@
 
             "closeBtn": {
               "type": [ "Boolean", "String" ],
-              "desc": "Convenience way to add a dismiss button with a specific label, without using the 'actions' prop; If set to true, it uses a label accordding to the current Quasar language",
+              "desc": "Convenience way to add a dismiss button with a specific label, without using the 'actions' prop; If set to true, it uses a label accordding to the current Efuzy language",
               "examples": [ "Close me" ]
             },
 
@@ -416,12 +416,12 @@
 
             "badgeColor": {
               "extends": "color",
-              "desc": "Color name for the badge from the Quasar Color Palette",
+              "desc": "Color name for the badge from the Efuzy Color Palette",
               "addedIn": "v1.9.0"
             },
             "badgeTextColor": {
               "extends": "color",
-              "desc": "Color name for the badge text from the Quasar Color Palette",
+              "desc": "Color name for the badge text from the Efuzy Color Palette",
               "addedIn": "v1.9.0"
             },
             "badgePosition": {
@@ -504,7 +504,7 @@
 
             "closeBtn": {
               "type": [ "Boolean", "String" ],
-              "desc": "Convenience way to add a dismiss button with a specific label, without using the 'actions' prop; If set to true, it uses a label accordding to the current Quasar language",
+              "desc": "Convenience way to add a dismiss button with a specific label, without using the 'actions' prop; If set to true, it uses a label accordding to the current Efuzy language",
               "examples": [ "Close me" ]
             },
 
@@ -595,12 +595,12 @@
 
             "badgeColor": {
               "extends": "color",
-              "desc": "Color name for the badge from the Quasar Color Palette",
+              "desc": "Color name for the badge from the Efuzy Color Palette",
               "addedIn": "v1.9.0"
             },
             "badgeTextColor": {
               "extends": "color",
-              "desc": "Color name for the badge text from the Quasar Color Palette",
+              "desc": "Color name for the badge text from the Efuzy Color Palette",
               "addedIn": "v1.9.0"
             },
             "badgePosition": {
@@ -683,7 +683,7 @@
 
             "closeBtn": {
               "type": [ "Boolean", "String" ],
-              "desc": "Convenience way to add a dismiss button with a specific label, without using the 'actions' prop; If set to true, it uses a label accordding to the current Quasar language",
+              "desc": "Convenience way to add a dismiss button with a specific label, without using the 'actions' prop; If set to true, it uses a label accordding to the current Efuzy language",
               "examples": [ "Close me" ]
             },
 

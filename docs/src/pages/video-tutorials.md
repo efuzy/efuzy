@@ -1,9 +1,9 @@
 ---
 title: Video Tutorials
-desc: The list of video tutorials on Quasar created by the community.
+desc: The list of video tutorials on Efuzy created by the community.
 components:
   - video-tutorials/TutorialListing
-  - introduction-to-quasar/IntroductionVideo
+  - introduction-to-efuzy/IntroductionVideo
 ---
 
 <introduction-video />
@@ -14,12 +14,12 @@ The video tutorials below have been created by the community.
 If you want to have your own video tutorial listed here, please email `razvan.stoenescu [at] gmail [dot] com` with the details. Thank you.
 :::
 
-## Quasar video tutorials
+## Efuzy video tutorials
 
-<tutorial-listing which="quasar" />
+<tutorial-listing which="efuzy" />
 
 ## Vue video tutorials
 
-Quasar is based on Vue, so knowledge about it is important too.
+Efuzy is based on Vue, so knowledge about it is important too.
 
 <tutorial-listing which="vue" />

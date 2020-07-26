@@ -29,7 +29,7 @@ module.exports = class SsrProdArtifacts {
       const cliPkg = require(appPaths.resolve.cli('package.json'))
 
       if (appPkg.dependencies !== void 0) {
-        delete appPkg.dependencies['@quasar/extras']
+        delete appPkg.dependencies['@efuzy/extras']
       }
 
       const appDeps = getFixedDeps(appPkg.dependencies || {})
@@ -55,12 +55,12 @@ module.exports = class SsrProdArtifacts {
             'vue-router': cliDeps['vue-router']
           },
           this.cfg.build.transpile === true
-            ? { '@quasar/babel-preset-app': cliDeps['@quasar/babel-preset-app'] }
+            ? { '@efuzy/babel-preset-app': cliDeps['@efuzy/babel-preset-app'] }
             : {}
         ),
         engines: appPkg.engines,
         browserslist: appPkg.browserslist,
-        quasar: { ssr: true }
+        efuzy: { ssr: true }
       }
 
       if (this.cfg.store) {

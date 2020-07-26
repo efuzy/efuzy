@@ -43,7 +43,7 @@
 </template>
 
 <script>
-import { event } from 'quasar'
+import { event } from 'efuzy'
 
 const { stopAndPrevent } = event
 

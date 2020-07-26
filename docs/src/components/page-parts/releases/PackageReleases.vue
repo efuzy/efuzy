@@ -20,7 +20,7 @@ q-splitter.release__splitter(:value="20" :limits="[14, 90]")
 import sanitize from './sanitize'
 import parseMdTable from './md-table-parser'
 
-import { mdiMagnify } from '@quasar/extras/mdi-v5'
+import { mdiMagnify } from '@efuzy/extras/mdi-v5'
 
 export default {
   created () {
@@ -82,7 +82,7 @@ export default {
         .replace(/```([\S]+)/g, '<code class="doc-code__inner doc-code__inner--prerendered release__code">')
         .replace(/```\n/g, '</code>')
         .replace(/`([\w ]+)`/g, '<code class="doc-token">$1</code>')
-        .replace(/#([\d]+)/g, '<a class="doc-link" href="https://github.com/quasarframework/quasar/issues/$1" target="_blank">#$1</a>')
+        .replace(/#([\d]+)/g, '<a class="doc-link" href="https://github.com/efuzy/efuzy/issues/$1" target="_blank">#$1</a>')
         .replace(/^&gt; ([\S ]+)\n/g, '<div class="release__blockquote">$1</div>')
         .replace(/\[([\S ]*?)\]\((\S*?)\)/g, '<a class="doc-link" href="$2" target="_blank">$1</a>')
         .replace(/\* ([\S .]+)\n/g, '<li>$1</li>')

@@ -1,11 +1,11 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/quasar-plugins/loading"
+    "docsUrl": "https://v1.efuzy.dev/efuzy-plugins/loading"
   },
 
   "injection": "$q.loading",
 
-  "quasarConfOptions": {
+  "efuzyConfOptions": {
     "propName": "loading",
     "definition": {
       "delay": {
@@ -29,15 +29,15 @@
       },
       "spinnerColor": {
         "extends": "color",
-        "desc": "Color name for spinner from the Quasar Color Palette"
+        "desc": "Color name for spinner from the Efuzy Color Palette"
       },
       "messageColor": {
         "extends": "color",
-        "desc": "Color name for text from the Quasar Color Palette"
+        "desc": "Color name for text from the Efuzy Color Palette"
       },
       "backgroundColor": {
         "extends": "color",
-        "desc": "Color name for background from the Quasar Color Palette"
+        "desc": "Color name for background from the Efuzy Color Palette"
       },
       "spinner": {
         "type": "Component",
@@ -88,15 +88,15 @@
             },
             "spinnerColor": {
               "extends": "color",
-              "desc": "Color name for spinner from the Quasar Color Palette"
+              "desc": "Color name for spinner from the Efuzy Color Palette"
             },
             "messageColor": {
               "extends": "color",
-              "desc": "Color name for text from the Quasar Color Palette"
+              "desc": "Color name for text from the Efuzy Color Palette"
             },
             "backgroundColor": {
               "extends": "color",
-              "desc": "Color name for background from the Quasar Color Palette"
+              "desc": "Color name for background from the Efuzy Color Palette"
             },
             "spinner": {
               "type": "Component",
@@ -146,15 +146,15 @@
             },
             "spinnerColor": {
               "extends": "color",
-              "desc": "Color name for spinner from the Quasar Color Palette"
+              "desc": "Color name for spinner from the Efuzy Color Palette"
             },
             "messageColor": {
               "extends": "color",
-              "desc": "Color name for text from the Quasar Color Palette"
+              "desc": "Color name for text from the Efuzy Color Palette"
             },
             "backgroundColor": {
               "extends": "color",
-              "desc": "Color name for background from the Quasar Color Palette"
+              "desc": "Color name for background from the Efuzy Color Palette"
             },
             "spinner": {
               "type": "Component",

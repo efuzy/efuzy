@@ -62,7 +62,7 @@ export default {
         update(() => {
           this.options = stringOptions
 
-          // with Quasar v1.7.4+
+          // with Efuzy v1.7.4+
           // here you have access to "ref" which
           // is the Vue reference of the QSelect
         })

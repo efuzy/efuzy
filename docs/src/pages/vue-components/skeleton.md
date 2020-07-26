@@ -6,8 +6,8 @@ related:
   - /vue-components/circular-progress
   - /vue-components/inner-loading
   - /vue-components/spinners
-  - /quasar-plugins/loading
-  - /quasar-plugins/loading-bar
+  - /efuzy-plugins/loading
+  - /efuzy-plugins/loading-bar
 ---
 
 The QSkeleton is a component for displaying a placeholder preview of your content before you load the actual page data. It's a nice way of informing the user of what to expect from the page before it is fully loaded and increases the perceived performance. It can be used to incrementally display information on screen as data is being fetched.
@@ -21,7 +21,7 @@ The QSkeleton is a component for displaying a placeholder preview of your conten
 
 ### Predefined types
 
-Below you can see the predefined types. There are some basic types (text, rect, circle) and also some special convenience types that accurately respect Quasar components size and border radius.
+Below you can see the predefined types. There are some basic types (text, rect, circle) and also some special convenience types that accurately respect Efuzy components size and border radius.
 
 <doc-example title="QSkeleton types" file="QSkeleton/Types" />
 

@@ -341,7 +341,7 @@
 </template>
 
 <script>
-import { extend } from 'quasar'
+import { extend } from 'efuzy'
 
 const data = [
   {

@@ -3,30 +3,30 @@
  * DO NOT EDIT.
  *
  * You are probably looking on adding startup/initialization code.
- * Use "quasar new boot <name>" and add it there.
- * One boot file per concern. Then reference the file(s) in quasar.conf.js > boot:
+ * Use "efuzy new boot <name>" and add it there.
+ * One boot file per concern. Then reference the file(s) in efuzy.conf.js > boot:
  * boot: ['file', ...] // do not add ".js" extension to it.
  *
  * Boot files are your "main.js"
  **/
 <% if (__supportsIE) { %>
-import 'quasar/dist/quasar.ie.polyfills.js'
+import 'efuzy/dist/efuzy.ie.polyfills.js'
 <% } %>
 
 <% extras.length > 0 && extras.filter(asset => asset).forEach(asset => { %>
-import '@quasar/extras/<%= asset %>/<%= asset %>.css'
+import '@efuzy/extras/<%= asset %>/<%= asset %>.css'
 <% }) %>
 
 <% animations.length > 0 && animations.filter(asset => asset).forEach(asset => { %>
-import '@quasar/extras/animate/<%= asset %>.css'
+import '@efuzy/extras/animate/<%= asset %>.css'
 <% }) %>
 
-// We load Quasar stylesheet file
-import 'quasar/dist/quasar.<%= __css.quasarSrcExt %>'
+// We load Efuzy stylesheet file
+import 'efuzy/dist/efuzy.<%= __css.efuzySrcExt %>'
 
 <% if (framework.cssAddon) { %>
-// We add Quasar addons, if they were requested
-import 'quasar/src/css/flex-addon.<%= __css.quasarSrcExt %>'
+// We add Efuzy addons, if they were requested
+import 'efuzy/src/css/flex-addon.<%= __css.efuzySrcExt %>'
 <% } %>
 
 <% css.length > 0 && css.filter(asset => asset.client !== false).forEach(asset => { %>
@@ -72,16 +72,16 @@ Vue.config.productionTip = false
 <% } %>
 
 <% if (ctx.dev) { %>
-console.info('[Quasar] Running <%= ctx.modeName.toUpperCase() + (ctx.mode.ssr && ctx.mode.pwa ? ' + PWA' : '') %>.')
-<% if (ctx.mode.pwa) { %>console.info('[Quasar] PWA: Use devtools > Application > "Bypass for network" to not break Hot Module Replacement while developing.')<% } %>
+console.info('[Efuzy] Running <%= ctx.modeName.toUpperCase() + (ctx.mode.ssr && ctx.mode.pwa ? ' + PWA' : '') %>.')
+<% if (ctx.mode.pwa) { %>console.info('[Efuzy] PWA: Use devtools > Application > "Bypass for network" to not break Hot Module Replacement while developing.')<% } %>
 <% } %>
 
 <% if (ctx.mode.cordova && ctx.target.ios) { %>
-import '@quasar/fastclick'
+import '@efuzy/fastclick'
 <% } else if (ctx.mode.pwa) { %>
 // Needed only for iOS PWAs
 if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream && window.navigator.standalone) {
-  import(/* webpackChunkName: "fastclick"  */ '@quasar/fastclick')
+  import(/* webpackChunkName: "fastclick"  */ '@efuzy/fastclick')
 }
 <% } %>
 
@@ -139,7 +139,7 @@ async function start () {
         return
       }
 
-      console.error('[Quasar] boot error:', err)
+      console.error('[Efuzy] boot error:', err)
       return
     }
   }

@@ -1,5 +1,5 @@
 ---
-title: Quasar JSON API Schema
+title: Efuzy JSON API Schema
 desc: The JSON API used to describe Component App Extensions.
 ---
 
@@ -54,7 +54,7 @@ null:
 null
 ```
 
-## Quasar JSON API
+## Efuzy JSON API
 
 The unfilled schema typically looks like this:
 
@@ -300,7 +300,7 @@ All items are optional, but in the very least you should provide a description.
     },
 
     "validate": {
-      "desc": "Triggers a validation on all applicable inner Quasar components",
+      "desc": "Triggers a validation on all applicable inner Efuzy components",
       "params": {
         "shouldFocus": {
           "type": "Boolean",

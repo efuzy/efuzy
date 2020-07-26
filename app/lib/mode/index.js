@@ -5,6 +5,6 @@ module.exports = function (mode) {
     fatal(`Unknown mode specified: ${mode}`)
   }
 
-  const QuasarMode = require(`./mode-${mode}`)
-  return new QuasarMode()
+  const EfuzyMode = require(`./mode-${mode}`)
+  return new EfuzyMode()
 }

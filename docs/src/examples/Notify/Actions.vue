@@ -11,7 +11,7 @@ export default {
       this.$q.notify({
         message: 'Jim just pinged you.',
         color: 'primary',
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         actions: [
           { label: 'Dismiss', color: 'white', handler: () => { /* ... */ } }
         ]
@@ -20,7 +20,7 @@ export default {
       this.$q.notify({
         message: 'Jim just pinged you.',
         color: 'primary',
-        avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+        avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
         actions: [
           { label: 'Reply', color: 'yellow', handler: () => { /* ... */ } },
           { label: 'Dismiss', color: 'white', handler: () => { /* ... */ } }

@@ -16,7 +16,7 @@ module.exports = function (chain, cfg) {
     const pkg = require(appPaths.resolve.app('package.json'))
 
     defaultOptions = {
-      cacheId: pkg.name || 'quasar-pwa-app'
+      cacheId: pkg.name || 'efuzy-pwa-app'
     }
 
     log('[GenerateSW] Will generate a service-worker file. Ignoring your custom written one.')
@@ -42,7 +42,7 @@ module.exports = function (chain, cfg) {
 
   if (cfg.ctx.mode.ssr) {
     opts.exclude = opts.exclude || []
-    opts.exclude.push('../quasar.client-manifest.json')
+    opts.exclude.push('../efuzy.client-manifest.json')
 
     // if Object form:
     if (cfg.ssr.pwa && cfg.ssr.pwa !== true) {

@@ -2,7 +2,7 @@
   "mixins": [ "mixins/tag" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/skeleton"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/skeleton"
   },
 
   "behavior": {

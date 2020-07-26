@@ -3,7 +3,7 @@
     <div class="q-col-gutter-md row items-start">
       <div class="col-6">
         <q-img
-          src="https://cdn.quasar.dev/img/parallax2.jpg"
+          src="https://cdn.efuzy.dev/img/parallax2.jpg"
           style="width: 100%"
           native-context-menu
         >
@@ -14,7 +14,7 @@
       </div>
 
       <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" native-context-menu>
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" native-context-menu>
           <div class="absolute-top text-center">
             Caption
           </div>
@@ -22,7 +22,7 @@
       </div>
 
       <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" native-context-menu>
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" native-context-menu>
           <div class="absolute-bottom-right text-subtitle2">
             Caption
           </div>
@@ -30,7 +30,7 @@
       </div>
 
       <div class="col-6">
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" native-context-menu>
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" native-context-menu>
           <q-icon class="absolute all-pointer-events" size="32px" name="info" color="white" style="top: 8px; left: 8px">
             <q-tooltip>
               Tooltip

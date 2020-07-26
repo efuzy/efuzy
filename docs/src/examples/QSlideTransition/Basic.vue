@@ -6,7 +6,7 @@
       <div v-show="visible">
         <img
           class="responsive"
-          src="https://cdn.quasar.dev/img/quasar.jpg"
+          src="https://cdn.efuzy.dev/img/efuzy.jpg"
         >
       </div>
     </q-slide-transition>

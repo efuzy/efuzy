@@ -1,12 +1,12 @@
 {
-  "name": "@quasar/fastclick",
+  "name": "@efuzy/fastclick",
   "version": "1.1.4",
-  "description": "Polyfill used by Quasar Framework to remove click delays on browsers with touch UIs",
+  "description": "Polyfill used by Efuzy Framework to remove click delays on browsers with touch UIs",
   "maintainers": [
     {
       "name": "Razvan Stoenescu",
-      "email": "razvan.stoenescu@quasar.dev",
-      "url": "https://quasar.dev"
+      "email": "razvan.stoenescu@efuzy.dev",
+      "url": "https://efuzy.dev"
     }
   ],
   "author": {
@@ -16,7 +16,7 @@
   "contributors": [
     {
       "name": "Razvan Stoenescu",
-      "email": "razvan.stoenescu@quasar.dev"
+      "email": "razvan.stoenescu@efuzy.dev"
     },
     {
       "name": "Rowan Beentje",
@@ -30,11 +30,11 @@
   "main": "fastclick.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasarframework/quasar.git"
+    "url": "git+https://github.com/efuzy/efuzy.git"
   },
   "keywords": [
-    "quasar",
-    "quasarframework",
+    "efuzy",
+    "efuzy",
     "fastclick",
     "mobile",
     "touch",
@@ -44,7 +44,7 @@
   ],
   "funding": {
     "type": "github",
-    "url": "https://donate.quasar.dev"
+    "url": "https://donate.efuzy.dev"
   },
   "licenses": [
     {
@@ -55,7 +55,7 @@
   "implements": [
     "CommonJS/Modules/1.0"
   ],
-  "homepage": "https://quasar.dev",
+  "homepage": "https://efuzy.dev",
   "publishConfig": {
     "access": "public"
   }

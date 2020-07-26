@@ -2,7 +2,7 @@
 title: Material Ripples
 desc: Vue directive for easily adding material ripples to your components and DOM elements.
 ---
-Material Ripple effect can easily be added to any DOM element (or component) through the `v-ripple` Quasar directive.
+Material Ripple effect can easily be added to any DOM element (or component) through the `v-ripple` Efuzy directive.
 
 ::: danger
 Do not use this directive on components that already have material ripples baked in (example: `QBtn`). Rather configure the internal ripples through those component's `ripple` property.
@@ -14,7 +14,7 @@ Do not use this directive on components that already have material ripples baked
 ## Usage
 
 ::: warning
-Make sure that your DOM element or component has CSS `position: relative` or Quasar CSS helper class `relative-position` attached to it.
+Make sure that your DOM element or component has CSS `position: relative` or Efuzy CSS helper class `relative-position` attached to it.
 :::
 
 ### Basic

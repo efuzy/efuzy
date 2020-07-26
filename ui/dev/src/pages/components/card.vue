@@ -3,13 +3,13 @@
     <div class="q-layout-padding card-examples row items-start q-gutter-md">
       <q-card class="bigger">
         <q-card-section horizontal>
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg" class="col-4" />
+          <img src="https://cdn.efuzy.dev/img/parallax2.jpg" class="col-4" />
 
           <q-card-section class="col-5">
             {{ lorem }}
           </q-card-section>
 
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" />
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" />
         </q-card-section>
       </q-card>
 
@@ -19,7 +19,7 @@
             {{ lorem }}
           </q-card-section>
 
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" />
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" />
         </q-card-section>
       </q-card>
 
@@ -107,7 +107,7 @@
 
       <q-card class="bigger" flat bordered>
         <q-card-section horizontal>
-          <img src="https://cdn.quasar.dev/img/parallax2.jpg" class="col-4" />
+          <img src="https://cdn.efuzy.dev/img/parallax2.jpg" class="col-4" />
 
           <q-card-section>
             {{ lorem }}
@@ -139,7 +139,7 @@
             {{ lorem }}
           </q-card-section>
 
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" class="col-4" />
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" class="col-4" />
 
           <q-card-section>
             {{ lorem }}
@@ -169,7 +169,7 @@
         <q-item>
           <q-item-section avatar>
             <q-avatar>
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
           </q-item-section>
 
@@ -184,7 +184,7 @@
         <q-separator />
 
         <q-card-section horizontal>
-          <q-img src="https://cdn.quasar.dev/img/parallax2.jpg" class="col-4" />
+          <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg" class="col-4" />
 
           <q-card-section>
             {{ lorem }}
@@ -568,7 +568,7 @@
 
       <q-card>
         <q-img
-          src="https://cdn.quasar.dev/img/parallax2.jpg"
+          src="https://cdn.efuzy.dev/img/parallax2.jpg"
           basic
         >
           <div class="absolute-bottom text-h6">
@@ -582,7 +582,7 @@
       </q-card>
 
       <q-card>
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg">
           <div class="text-subtitle2 absolute-top text-center">
             Title
           </div>
@@ -590,7 +590,7 @@
       </q-card>
 
       <q-card>
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg">
           <div class="text-h5 absolute-bottom text-right">
             Title
           </div>
@@ -598,7 +598,7 @@
       </q-card>
 
       <q-card>
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg">
           <div class="text-subtitle2 absolute-full text-center">
             Title
           </div>
@@ -606,7 +606,7 @@
       </q-card>
 
       <q-card>
-        <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
+        <q-img src="https://cdn.efuzy.dev/img/parallax2.jpg">
           <div class="absolute-bottom">
             <div class="text-h6">
               Our Changing Planet
@@ -628,7 +628,7 @@
       </q-card>
 
       <q-card>
-        <q-parallax src="https://cdn.quasar.dev/img/parallax1.jpg" :height="150" />
+        <q-parallax src="https://cdn.efuzy.dev/img/parallax1.jpg" :height="150" />
 
         <q-card-section>
           <div class="text-h6">
@@ -655,7 +655,7 @@
         <q-item>
           <q-item-section avatar>
             <q-avatar>
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
           </q-item-section>
 

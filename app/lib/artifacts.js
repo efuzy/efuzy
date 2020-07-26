@@ -3,7 +3,7 @@ const path = require('path')
 const fse = require('fs-extra')
 
 const appPaths = require('./app-paths')
-const filePath = appPaths.resolve.app('.quasar/artifacts.json')
+const filePath = appPaths.resolve.app('.efuzy/artifacts.json')
 const { log } = require('./helpers/logger')
 
 function exists () {
@@ -61,7 +61,7 @@ module.exports.cleanAll = function () {
     log(`Cleaned build artifact: "${folder}"`)
   })
 
-  let folder = appPaths.resolve.app('.quasar')
+  let folder = appPaths.resolve.app('.efuzy')
   fse.removeSync(folder)
   log(`Cleaned build artifact: "${folder}"`)
 

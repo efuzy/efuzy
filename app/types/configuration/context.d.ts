@@ -1,30 +1,30 @@
 import { Configuration as ElectronBuilderConfiguration } from "electron-builder";
 import "../shims";
-import { QuasarCapacitorTargets } from "./capacitor-conf";
+import { EfuzyCapacitorTargets } from "./capacitor-conf";
 import {
-  QuasarElectronBundlers,
+  EfuzyElectronBundlers,
   ElectronBuilderTargets,
   ElectronBuilderArchs,
   ElectronPackagerTargets,
   ElectronPackagerArchs
 } from "./electron-conf";
-import { QuasarCordovaTargets } from "./cordova-conf";
+import { EfuzyCordovaTargets } from "./cordova-conf";
 
-type QuasarModes = "spa" | "ssr" | "pwa" | "cordova" | "capacitor" | "electron";
+type EfuzyModes = "spa" | "ssr" | "pwa" | "cordova" | "capacitor" | "electron";
 
-interface BaseQuasarContext {
+interface BaseEfuzyContext {
   /** True if we are in development mode */
   dev: boolean;
   /** True if we are in production mode */
   prod: boolean;
   /** App mode */
-  mode: { [index in QuasarModes]?: true };
-  modeName: QuasarModes;
+  mode: { [index in EfuzyModes]?: true };
+  modeName: EfuzyModes;
   /** True if debugging is enabled */
   debug: boolean;
 }
 
-interface CapacitorQuasarContext extends BaseQuasarContext {
+interface CapacitorEfuzyContext extends BaseEfuzyContext {
   mode: { capacitor: true };
   modeName: "capacitor";
   /**
@@ -33,13 +33,13 @@ interface CapacitorQuasarContext extends BaseQuasarContext {
    * @default 'none'
    */
   target: {
-    [index in QuasarCapacitorTargets]?: true;
+    [index in EfuzyCapacitorTargets]?: true;
   };
   /** App target name. */
-  targetName: QuasarCapacitorTargets;
+  targetName: EfuzyCapacitorTargets;
 }
 
-interface CordovaQuasarContext extends BaseQuasarContext {
+interface CordovaEfuzyContext extends BaseEfuzyContext {
   mode: { cordova: true };
   modeName: "cordova";
   /**
@@ -48,10 +48,10 @@ interface CordovaQuasarContext extends BaseQuasarContext {
    * @default 'all installed'
    */
   target: {
-    [index in QuasarCordovaTargets]?: true;
+    [index in EfuzyCordovaTargets]?: true;
   };
   /** App target name. */
-  targetName: QuasarCordovaTargets;
+  targetName: EfuzyCordovaTargets;
   /**
    * Emulator name, may be present only for Cordova mode.
    *
@@ -61,14 +61,14 @@ interface CordovaQuasarContext extends BaseQuasarContext {
   emulator: string;
 }
 
-interface BaseElectronQuasarContext extends BaseQuasarContext {
+interface BaseElectronEfuzyContext extends BaseEfuzyContext {
   mode: { electron: true };
   modeName: "electron";
-  bundler: { [index in QuasarElectronBundlers]?: true };
-  bundlerName: QuasarElectronBundlers;
+  bundler: { [index in EfuzyElectronBundlers]?: true };
+  bundlerName: EfuzyElectronBundlers;
 }
 
-interface ElectronBuilderQuasarContext extends BaseElectronQuasarContext {
+interface ElectronBuilderEfuzyContext extends BaseElectronEfuzyContext {
   bundler: { builder: true };
   bundlerName: "builder";
   /**
@@ -99,7 +99,7 @@ interface ElectronBuilderQuasarContext extends BaseElectronQuasarContext {
   builder: ElectronBuilderConfiguration;
 }
 
-interface ElectronPackagerQuasarContext extends BaseElectronQuasarContext {
+interface ElectronPackagerEfuzyContext extends BaseElectronEfuzyContext {
   bundler: { packager: true };
   bundlerName: "packager";
   /**
@@ -118,29 +118,29 @@ interface ElectronPackagerQuasarContext extends BaseElectronQuasarContext {
   archName: ElectronPackagerArchs;
 }
 
-type ElectronQuasarContext =
-  | ElectronBuilderQuasarContext
-  | ElectronPackagerQuasarContext;
+type ElectronEfuzyContext =
+  | ElectronBuilderEfuzyContext
+  | ElectronPackagerEfuzyContext;
 
-interface SpaQuasarContext extends BaseQuasarContext {
+interface SpaEfuzyContext extends BaseEfuzyContext {
   mode: { spa: true };
   modeName: "spa";
 }
 
-interface PwaQuasarContext extends BaseQuasarContext {
+interface PwaEfuzyContext extends BaseEfuzyContext {
   mode: { pwa: true };
   modeName: "pwa";
 }
 
-interface SsrQuasarContext extends BaseQuasarContext {
+interface SsrEfuzyContext extends BaseEfuzyContext {
   mode: { ssr: true };
   modeName: "ssr";
 }
 
-export type QuasarContext =
-  | SpaQuasarContext
-  | PwaQuasarContext
-  | SsrQuasarContext
-  | CapacitorQuasarContext
-  | CordovaQuasarContext
-  | ElectronQuasarContext;
+export type EfuzyContext =
+  | SpaEfuzyContext
+  | PwaEfuzyContext
+  | SsrEfuzyContext
+  | CapacitorEfuzyContext
+  | CordovaEfuzyContext
+  | ElectronEfuzyContext;

@@ -38,7 +38,7 @@ if (argv.help) {
   Usage
     $ icongenie generate [options]
 
-    # generate icons for all installed Quasar modes
+    # generate icons for all installed Efuzy modes
     $ icongenie generate -i /path/to/icon.png
     $ icongenie g -i /path/to/icon.png
 
@@ -65,7 +65,7 @@ if (argv.help) {
                           Image will be trimmed automatically
                             (also see "skip-trim" and "padding" param)
                           Path can be absolute, or relative to the root of the
-                            Quasar project folder
+                            Efuzy project folder
                           Recommended min size: 1024x1024 px
 
     --background, -b      Path to optional background source file (for splashscreens);
@@ -75,10 +75,10 @@ if (argv.help) {
                             - transparency is optional (but recommended if you
                               combine with the splashscreen-color param)
                           Path can be absolute, or relative to the root of the
-                            Quasar project folder
+                            Efuzy project folder
                           Recommended min size: 1024x1024 px
 
-    --mode, -m            For which Quasar mode(s) to generate the assets;
+    --mode, -m            For which Efuzy mode(s) to generate the assets;
                           Default: all
                             [all|${modes}]
                           Multiple can be specified, separated by ",":

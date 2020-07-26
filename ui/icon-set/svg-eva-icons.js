@@ -42,7 +42,7 @@ import {
   evaCloudUpload,
   evaSlash,
   evaDoneAll
-} from '@quasar/extras/eva-icons'
+} from '@efuzy/extras/eva-icons'
 
 // there are some icons that are needed but not available
 // so we import them from MDI as svgs
@@ -87,7 +87,7 @@ import {
   mdiNumeric6Box,
   mdiNumeric7Box,
   mdiFormatFont
-} from '@quasar/extras/mdi-v5'
+} from '@efuzy/extras/mdi-v5'
 
 
 

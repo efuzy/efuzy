@@ -29,10 +29,10 @@
       <q-toolbar class="bg-primary text-white q-my-md">
         <q-btn flat round dense icon="menu" class="q-mr-sm" />
         <q-avatar>
-          <img src="https://cdn.quasar.dev/img/quasar-logo.png">
+          <img src="https://cdn.efuzy.dev/img/efuzy-logo.png">
         </q-avatar>
 
-        <q-toolbar-title>Quasar Framework</q-toolbar-title>
+        <q-toolbar-title>Efuzy Framework</q-toolbar-title>
 
         <q-btn flat round dense icon="whatshot" />
       </q-toolbar>
@@ -54,7 +54,7 @@
           <q-btn flat round dense icon="group_add" />
         </q-toolbar>
         <q-toolbar inset>
-          <q-toolbar-title><strong>Quasar</strong> Framework</q-toolbar-title>
+          <q-toolbar-title><strong>Efuzy</strong> Framework</q-toolbar-title>
         </q-toolbar>
       </div>
 

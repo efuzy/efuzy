@@ -16,7 +16,7 @@
         <div v-show="visibleVShow" style="margin: 0">
           <img
             class="responsive"
-            src="~assets/quasar.jpg"
+            src="~assets/efuzy.jpg"
           >
         </div>
       </q-slide-transition>
@@ -28,7 +28,7 @@
         <div v-if="visibleVIf" style="margin: 0">
           <img
             class="responsive"
-            src="~assets/quasar.jpg"
+            src="~assets/efuzy.jpg"
           >
         </div>
       </q-slide-transition>
@@ -41,7 +41,7 @@
           <q-btn label="Toggle - Button with animation" color="primary" class="q-ma-lg" @click="visibleVShow2 = !visibleVShow2" />
           <img
             class="responsive"
-            src="~assets/quasar.jpg"
+            src="~assets/efuzy.jpg"
           >
         </div>
       </q-slide-transition>
@@ -54,7 +54,7 @@
           <q-btn label="Toggle - Button with animation" color="primary" class="q-ma-lg" @click="visibleVIf2 = !visibleVIf2" />
           <img
             class="responsive"
-            src="~assets/quasar.jpg"
+            src="~assets/efuzy.jpg"
           >
         </div>
       </q-slide-transition>
@@ -72,7 +72,7 @@
             <div v-show="innerCondition">
               <img
                 class="responsive"
-                src="~assets/quasar.jpg"
+                src="~assets/efuzy.jpg"
               >
             </div>
           </q-slide-transition>

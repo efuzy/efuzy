@@ -17,7 +17,7 @@ class Mode {
     }
 
     const pkg = require(appPaths.resolve.app('package.json'))
-    const appName = pkg.productName || pkg.name || 'Quasar App'
+    const appName = pkg.productName || pkg.name || 'Efuzy App'
 
     if (/^[0-9]/.test(appName)) {
       warn(
@@ -34,7 +34,7 @@ class Mode {
       name: 'appId',
       type: 'input',
       message: 'What is the Cordova app id?',
-      default: 'org.cordova.quasar.app',
+      default: 'org.cordova.efuzy.app',
       validate: appId => appId ? true : 'Please fill in a value'
     }])
 
@@ -60,13 +60,13 @@ class Mode {
 
     console.log(` ⚠️  WARNING!`)
     console.log(` ⚠️  If developing for iOS, it is HIGHLY recommended that you install the Ionic Webview Plugin.`)
-    console.log(` ⚠️  Please refer to docs: https://quasar.dev/quasar-cli/developing-cordova-apps/preparation`)
+    console.log(` ⚠️  Please refer to docs: https://efuzy.dev/efuzy-cli/developing-cordova-apps/preparation`)
     console.log(` ⚠️  --------`)
     console.log()
 
     if (!target) {
       console.log()
-      console.log(` No Cordova platform has been added yet as these get installed on demand automatically when running "quasar dev" or "quasar build".`)
+      console.log(` No Cordova platform has been added yet as these get installed on demand automatically when running "efuzy dev" or "efuzy build".`)
       log()
       return
     }

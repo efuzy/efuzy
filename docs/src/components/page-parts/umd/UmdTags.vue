@@ -23,7 +23,7 @@
 
     q-card-section.q-gutter-xs
       q-toggle(v-model="modern" label="Modern (ES6+)")
-      q-toggle(v-model="cfgObject" label="Quasar Configure Object")
+      q-toggle(v-model="cfgObject" label="Efuzy Configure Object")
       q-toggle(v-model="minified" label="Minified files")
       q-toggle(v-model="rtl" label="RTL CSS support")
       q-toggle(v-model="ie" label="IE11 support")
@@ -32,7 +32,7 @@
 
     q-card-section.q-gutter-sm.column
       q-select(
-        label="Quasar Language Pack"
+        label="Efuzy Language Pack"
         dense
         outlined
         :options="langOptions"
@@ -44,7 +44,7 @@
       )
 
       q-select(
-        label="Quasar Icon Set"
+        label="Efuzy Icon Set"
         dense
         outlined
         :options="iconSetOptions"
@@ -61,7 +61,7 @@
 </template>
 
 <script>
-import languages from 'quasar/lang/index.json'
+import languages from 'efuzy/lang/index.json'
 
 const cssMap = {
   'mdi-v5': 'cdn.jsdelivr.net/npm/@mdi/font@^5.0.0/css/materialdesignicons.min.css',
@@ -122,7 +122,7 @@ export default {
       return `<!DOCTYPE html>
 <html>
   <!--
-    WARNING! Make sure that you match all Quasar related
+    WARNING! Make sure that you match all Efuzy related
     tags to the same version! (Below it's "@${this.version}")
   -->
 
@@ -156,7 +156,7 @@ export default {
         .map(key => cssMap[key])
 
       css.unshift(this.googleFonts)
-      css.push(`cdn.jsdelivr.net/npm/quasar@${this.version}/dist/quasar.rtl.min.css`)
+      css.push(`cdn.jsdelivr.net/npm/efuzy@${this.version}/dist/efuzy.rtl.min.css`)
 
       return css.filter(url => url)
         .map(url => this.getCssTag(url))
@@ -171,15 +171,15 @@ export default {
       // funky way otherwise vue-loader will crash
       return `
     <` + `script>
-    window.quasarConfig = {
+    window.efuzyConfig = {
       brand: { // this will NOT work on IE 11
         primary: '#e46262',
         // ... or all other brand colors
       },
-      notify: {...}, // default set of options for Notify Quasar plugin
-      loading: {...}, // default set of options for Loading Quasar plugin
-      loadingBar: { ... }, // settings for LoadingBar Quasar plugin
-      // ..and many more (check Installation card on each Quasar component/directive/plugin)
+      notify: {...}, // default set of options for Notify Efuzy plugin
+      loading: {...}, // default set of options for Loading Efuzy plugin
+      loadingBar: { ... }, // settings for LoadingBar Efuzy plugin
+      // ..and many more (check Installation card on each Efuzy component/directive/plugin)
     }
     <` + `/script>\n`
     },
@@ -191,11 +191,11 @@ export default {
         prepend = '\n'
 
         if (this.lang !== 'en-us') {
-          prepend += `      Quasar.lang.set(Quasar.lang.${camelize(this.lang)})\n`
+          prepend += `      Efuzy.lang.set(Efuzy.lang.${camelize(this.lang)})\n`
         }
 
         if (this.iconSet !== 'material-icons') {
-          prepend += `      Quasar.iconSet.set(Quasar.iconSet.${camelize(this.iconSet)})\n`
+          prepend += `      Efuzy.iconSet.set(Efuzy.iconSet.${camelize(this.iconSet)})\n`
         }
       }
 
@@ -221,19 +221,19 @@ export default {
     body () {
       const js = [
         'cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js',
-        `cdn.jsdelivr.net/npm/quasar@${this.version}/dist/quasar.umd.${this.modern === true ? 'modern.' : ''}min.js`
+        `cdn.jsdelivr.net/npm/efuzy@${this.version}/dist/efuzy.umd.${this.modern === true ? 'modern.' : ''}min.js`
       ]
 
       if (this.ie === true) {
-        js.unshift(`cdn.jsdelivr.net/npm/quasar@${this.version}/dist/quasar.ie.polyfills.umd.min.js`)
+        js.unshift(`cdn.jsdelivr.net/npm/efuzy@${this.version}/dist/efuzy.ie.polyfills.umd.min.js`)
       }
 
       if (this.lang !== 'en-us') {
-        js.push(`cdn.jsdelivr.net/npm/quasar@${this.version}/dist/lang/${this.lang}.umd.min.js`)
+        js.push(`cdn.jsdelivr.net/npm/efuzy@${this.version}/dist/lang/${this.lang}.umd.min.js`)
       }
 
       if (this.iconSet !== 'material-icons') {
-        js.push(`cdn.jsdelivr.net/npm/quasar@${this.version}/dist/icon-set/${this.iconSet}.umd.min.js`)
+        js.push(`cdn.jsdelivr.net/npm/efuzy@${this.version}/dist/icon-set/${this.iconSet}.umd.min.js`)
       }
 
       return js

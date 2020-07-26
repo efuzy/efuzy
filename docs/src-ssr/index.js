@@ -16,7 +16,7 @@ const
   compression = require('compression')
 
 const
-  ssr = require('quasar-ssr'),
+  ssr = require('efuzy-ssr'),
   extension = require('./extension'),
   app = express(),
   port = process.env.PORT || 3000
@@ -40,26 +40,26 @@ app.use('/', serve('.', true))
 extension.extendApp({ app })
 
 const redirects = [
-  { from: '/quasar-cli/supporting-ie', to: '/quasar-cli/browser-compatibility' },
-  { from: '/quasar-cli/modern-build', to: '/quasar-cli/browser-compatibility' },
+  { from: '/efuzy-cli/supporting-ie', to: '/efuzy-cli/browser-compatibility' },
+  { from: '/efuzy-cli/modern-build', to: '/efuzy-cli/browser-compatibility' },
   { from: '/layout/floating-action-button', to: '/vue-components/floating-action-button' },
-  { from: '/quasar-cli/app-icons', to: '/icongenie/introduction' },
-  { from: '/quasar-cli/cli-documentation/supporting-ie', to: '/quasar-cli/supporting-ie' },
-  { from: '/quasar-cli/cli-documentation/supporting-ts', to: '/quasar-cli/supporting-ts' },
-  { from: '/quasar-cli/cli-documentation/directory-structure', to: '/quasar-cli/directory-structure' },
-  { from: '/quasar-cli/cli-documentation/commands-list', to: '/quasar-cli/commands-list' },
-  { from: '/quasar-cli/cli-documentation/css-preprocessors', to: '/quasar-cli/css-preprocessors' },
-  { from: '/quasar-cli/cli-documentation/routing', to: '/quasar-cli/routing' },
-  { from: '/quasar-cli/cli-documentation/lazy-loading', to: '/quasar-cli/lazy-loading' },
-  { from: '/quasar-cli/cli-documentation/handling-assets', to: '/quasar-cli/handling-assets' },
-  { from: '/quasar-cli/cli-documentation/boot-files', to: '/quasar-cli/boot-files' },
-  { from: '/quasar-cli/cli-documentation/prefetch-feature', to: '/quasar-cli/prefetch-feature' },
-  { from: '/quasar-cli/cli-documentation/api-proxying', to: '/quasar-cli/api-proxying' },
-  { from: '/quasar-cli/cli-documentation/boot-files', to: '/quasar-cli/boot-files' },
-  { from: '/quasar-cli/cli-documentation/handling-webpack', to: '/quasar-cli/handling-webpack' },
-  { from: '/quasar-cli/cli-documentation/handling-process-env', to: '/quasar-cli/handling-process-env' },
-  { from: '/quasar-cli/cli-documentation/vuex-store', to: '/quasar-cli/vuex-store' },
-  { from: '/quasar-cli/cli-documentation/linter', to: '/quasar-cli/linter' }
+  { from: '/efuzy-cli/app-icons', to: '/icongenie/introduction' },
+  { from: '/efuzy-cli/cli-documentation/supporting-ie', to: '/efuzy-cli/supporting-ie' },
+  { from: '/efuzy-cli/cli-documentation/supporting-ts', to: '/efuzy-cli/supporting-ts' },
+  { from: '/efuzy-cli/cli-documentation/directory-structure', to: '/efuzy-cli/directory-structure' },
+  { from: '/efuzy-cli/cli-documentation/commands-list', to: '/efuzy-cli/commands-list' },
+  { from: '/efuzy-cli/cli-documentation/css-preprocessors', to: '/efuzy-cli/css-preprocessors' },
+  { from: '/efuzy-cli/cli-documentation/routing', to: '/efuzy-cli/routing' },
+  { from: '/efuzy-cli/cli-documentation/lazy-loading', to: '/efuzy-cli/lazy-loading' },
+  { from: '/efuzy-cli/cli-documentation/handling-assets', to: '/efuzy-cli/handling-assets' },
+  { from: '/efuzy-cli/cli-documentation/boot-files', to: '/efuzy-cli/boot-files' },
+  { from: '/efuzy-cli/cli-documentation/prefetch-feature', to: '/efuzy-cli/prefetch-feature' },
+  { from: '/efuzy-cli/cli-documentation/api-proxying', to: '/efuzy-cli/api-proxying' },
+  { from: '/efuzy-cli/cli-documentation/boot-files', to: '/efuzy-cli/boot-files' },
+  { from: '/efuzy-cli/cli-documentation/handling-webpack', to: '/efuzy-cli/handling-webpack' },
+  { from: '/efuzy-cli/cli-documentation/handling-process-env', to: '/efuzy-cli/handling-process-env' },
+  { from: '/efuzy-cli/cli-documentation/vuex-store', to: '/efuzy-cli/vuex-store' },
+  { from: '/efuzy-cli/cli-documentation/linter', to: '/efuzy-cli/linter' }
 ]
 
 redirects.forEach(entry => {

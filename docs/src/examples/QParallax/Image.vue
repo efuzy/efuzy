@@ -3,7 +3,7 @@
     <div class="row justify-between">
 
     <q-parallax
-      src="https://cdn.quasar.dev/img/parallax2.jpg"
+      src="https://cdn.efuzy.dev/img/parallax2.jpg"
     >
       <h1 class="text-white">Basic</h1>
     </q-parallax>

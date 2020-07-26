@@ -31,10 +31,10 @@
         </q-toolbar>
         <q-toolbar v-if="extraRow" inset>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/quasar-logo.png">
+            <img src="https://cdn.efuzy.dev/img/efuzy-logo.png">
           </q-avatar>
           <q-toolbar-title>
-            <strong>Quasar</strong> Framework
+            <strong>Efuzy</strong> Framework
           </q-toolbar-title>
 
           <q-input value="" dense standout dark>
@@ -119,10 +119,10 @@
           </div>
         </q-scroll-area>
 
-        <q-img class="absolute-top" src="https://cdn.quasar.dev/img/material.png" style="height: 204px">
+        <q-img class="absolute-top" src="https://cdn.efuzy.dev/img/material.png" style="height: 204px">
           <div class="absolute-bottom bg-transparent">
             <q-avatar size="56px" class="q-mb-sm">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+              <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
             </q-avatar>
             <div class="text-weight-bold">
               Razvan Stoenescu
@@ -299,7 +299,7 @@
             <q-item v-for="n in 3" :key="'item.' + n">
               <q-item-section side>
                 <q-avatar>
-                  <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+                  <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
                 </q-avatar>
               </q-item-section>
               <q-item-section>
@@ -470,7 +470,7 @@
 </style>
 
 <script>
-import { colors } from 'quasar'
+import { colors } from 'efuzy'
 
 export default {
   data () {

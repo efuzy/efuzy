@@ -1,9 +1,9 @@
 ---
 title: Platform Detection
-desc: How to detect the platform under which a Quasar app is running.
+desc: How to detect the platform under which a Efuzy app is running.
 ---
 
-Helpers are built into Quasar to detect the Platform (and its capabilities) within the context of which the code is running.
+Helpers are built into Efuzy to detect the Platform (and its capabilities) within the context of which the code is running.
 
 ::: tip
 Based on your needs, you might also want to check the [Style & Identity &gt; Visibility](/style/visibility) page to see how you can achieve the same effect using CSS alone. This latter method will render your DOM elements or components regardless of platform though, so choose wisely on how you want to handle the performance of your app.
@@ -24,7 +24,7 @@ $q.platform.is.cordova
 You must import it when you use it outside of a Vue component :
 
 ```js
-import { Platform } from 'quasar'
+import { Platform } from 'efuzy'
 ```
 
 `Platform.is` by itself returns an object containing details about the current platform. For example when running Chrome on a MacOS desktop machine, `Platform.is` would return something similar to:
@@ -68,10 +68,10 @@ The following properties are available to the Platform object. It's not an exhau
 | ---                    | ---     | ---                                                      |
 | `Platform.is.mobile`     | Boolean | Is the code running on a mobile device?                |
 | `Platform.is.cordova`    | Boolean | Is the code running within Cordova?                    |
-| `Platform.is.capacitor`  | Boolean | Is the code running with Capacitor? (requires @quasar/app v1.2+) |
+| `Platform.is.capacitor`  | Boolean | Is the code running with Capacitor? (requires @efuzy/app v1.2+) |
 | `Platform.is.electron`   | Boolean | Is the code running within Electron?                   |
 | `Platform.is.desktop`    | Boolean | Is the code running on a desktop browser?              |
-| `Platform.is.bex`        | Boolean | Is the code running in a browser extension? (requires @quasar/app v1.2+) |
+| `Platform.is.bex`        | Boolean | Is the code running in a browser extension? (requires @efuzy/app v1.2+) |
 | `Platform.is.android`    | Boolean | Is the app running on an Android device?               |
 | `Platform.is.blackberry` | Boolean | Is the app running on a Blackberry device? |
 | `Platform.is.cros`       | Boolean | Is the app running on device with the Chrome OS operating system? |
@@ -99,10 +99,10 @@ Running on mobile means you can have this code running on a mobile device (phone
 :::
 
 ## Note about SSR
-When building for SSR, use only the `$q.platform` form. If you need to use the `import { Platform } from 'quasar'` (when on server-side), then you'll need to do it like this:
+When building for SSR, use only the `$q.platform` form. If you need to use the `import { Platform } from 'efuzy'` (when on server-side), then you'll need to do it like this:
 
 ```js
-import { Platform } from 'quasar'
+import { Platform } from 'efuzy'
 
 // you need access to `ssrContext`
 function (ssrContext) {
@@ -114,7 +114,7 @@ function (ssrContext) {
 }
 ```
 
-The `ssrContext` is available in [boot files](/quasar-cli/boot-files). And also in the [preFetch](/quasar-cli/prefetch-feature) feature, where it is supplied as a parameter.
+The `ssrContext` is available in [boot files](/efuzy-cli/boot-files). And also in the [preFetch](/efuzy-cli/prefetch-feature) feature, where it is supplied as a parameter.
 
 The reason for all this is that in a client-only app, every user will be using a fresh instance of the app in their browser. For server-side rendering we want the same: each request should have a fresh, isolated app instance so that there is no cross-request state pollution. So Platform needs to be bound to each request separately.
 

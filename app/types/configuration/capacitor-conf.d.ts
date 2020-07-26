@@ -1,6 +1,6 @@
-export type QuasarCapacitorTargets = "android" | "ios";
+export type EfuzyCapacitorTargets = "android" | "ios";
 
-export interface QuasarCapacitorConfiguration {
+export interface EfuzyCapacitorConfiguration {
   /** If not present, will look for `package.json > capacitorId/cordovaId` */
   id?: string;
   /** If not present, will look for `package.json > name` */

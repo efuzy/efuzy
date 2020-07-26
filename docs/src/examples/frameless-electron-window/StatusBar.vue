@@ -114,10 +114,10 @@
 <script>
 // We guard the Electron API calls, but this
 // is only needed if we build same app with other
-// Quasar Modes as well (SPA/PWA/Cordova/SSR...)
+// Efuzy Modes as well (SPA/PWA/Cordova/SSR...)
 
 // The code below requires Node Integration being kept turned "on"
-// More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
+// More info: https://efuzy.dev/efuzy-cli/developing-electron-apps/node-integration
 
 export default {
   methods: {

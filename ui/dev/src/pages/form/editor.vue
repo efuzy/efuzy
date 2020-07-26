@@ -202,8 +202,8 @@ export default {
       outline: false,
       rounded: false,
       modelWithPlaceHolder: '',
-      model: 'Editor in <a href="http://quasar.dev">Quasar</a></div><div>Second line',
-      modelScroll: 'Editor in <a href="http://quasar.dev">Quasar</a></div><div style="height: 500px; background: yellow">Spacer 1</div><div style="height: 500px; background: yellow">Spacer 2</div><div>Second line'
+      model: 'Editor in <a href="http://efuzy.dev">Efuzy</a></div><div>Second line',
+      modelScroll: 'Editor in <a href="http://efuzy.dev">Efuzy</a></div><div style="height: 500px; background: yellow">Spacer 1</div><div style="height: 500px; background: yellow">Spacer 2</div><div>Second line'
     }
   },
   watch: {

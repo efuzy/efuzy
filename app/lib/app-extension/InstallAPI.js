@@ -65,7 +65,7 @@ module.exports = class InstallAPI {
    * semver condition.
    *
    * If the semver condition is not met, then
-   * @quasar/app errors out and halts execution
+   * @efuzy/app errors out and halts execution
    *
    * Example of semver condition:
    *   '1.x || >=2.5.0 || 5.0.0 - 7.2.3'

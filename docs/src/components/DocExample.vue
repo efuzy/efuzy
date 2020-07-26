@@ -55,11 +55,11 @@ q-card.doc-example.q-my-lg(:class="classes", flat, bordered)
 </template>
 
 <script>
-import { openURL } from 'quasar'
+import { openURL } from 'efuzy'
 
 import {
   fabGithub, fabCodepen
-} from '@quasar/extras/fontawesome-v5'
+} from '@efuzy/extras/fontawesome-v5'
 
 import { slugify } from 'assets/page-utils'
 
@@ -166,7 +166,7 @@ export default {
     },
 
     openGitHub () {
-      openURL(`https://github.com/quasarframework/quasar/tree/dev/docs/src/examples/${this.file}.vue`)
+      openURL(`https://github.com/efuzy/efuzy/tree/dev/docs/src/examples/${this.file}.vue`)
     },
 
     openCodepen () {

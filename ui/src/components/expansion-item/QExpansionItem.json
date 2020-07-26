@@ -2,7 +2,7 @@
   "mixins": [ "mixins/model-toggle", "mixins/router-link" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/expansion-item"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/expansion-item"
   },
 
   "props": {
@@ -21,7 +21,7 @@
 
     "expanded-icon": {
       "extends": "icon",
-      "desc": "Expand icon name (following Quasar convention) for when QExpansionItem is expanded; When used, it also disables the rotation animation of the expand icon; Make sure you have the icon library installed unless you are using 'img:' prefix",
+      "desc": "Expand icon name (following Efuzy convention) for when QExpansionItem is expanded; When used, it also disables the rotation animation of the expand icon; Make sure you have the icon library installed unless you are using 'img:' prefix",
       "addedIn": "v1.4.5"
     },
 

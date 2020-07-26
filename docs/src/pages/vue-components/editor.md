@@ -155,7 +155,7 @@ If the paste event content type is text and depending on the source of text, the
 If you don't set a font (or the user doesn't choose one), the print dialogue will default to the system font, which can vary depending on browser and underlying operating system. Make sure to take this into consideration.
 
 ### Internationalization
-The tooltips content of QEditor are translated by the [Quasar Language Pack](/options/quasar-language-packs), so merely changing the language will also change the interface. If your desired language pack is missing - or you find an error, please consider providing the update as PR.
+The tooltips content of QEditor are translated by the [Efuzy Language Pack](/options/efuzy-language-packs), so merely changing the language will also change the interface. If your desired language pack is missing - or you find an error, please consider providing the update as PR.
 
 ## QEditor API
 <doc-api file="QEditor" />

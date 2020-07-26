@@ -5,7 +5,7 @@ import {
   QIcon,
   QBadge,
   QList
-} from 'quasar'
+} from 'efuzy'
 
 import Menu from 'assets/menu.js'
 import './AppMenu.sass'

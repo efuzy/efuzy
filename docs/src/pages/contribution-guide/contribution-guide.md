@@ -1,11 +1,11 @@
 ---
 title: Contribution Guide
-desc: How to contribute to Quasar Framework.
+desc: How to contribute to Efuzy Framework.
 ---
 
-This guide covers ways in which you can become a part of the ongoing development of Quasar.
+This guide covers ways in which you can become a part of the ongoing development of Efuzy.
 
-But, before we begin, a first important note. Everyone interacting in Quasar is expected to follow the [Quasar code of conduct](https://github.com/quasarframework/quasar/blob/dev/.github/CODE_OF_CONDUCT.md).
+But, before we begin, a first important note. Everyone interacting in Efuzy is expected to follow the [Efuzy code of conduct](https://github.com/efuzy/efuzy/blob/dev/.github/CODE_OF_CONDUCT.md).
 
 Now that we've got that covered, let's go!
 
@@ -14,46 +14,46 @@ After reading this guide, you will know:
 * How to use GitHub to report issues.
 * How to clone master and run the test suite.
 * How to help resolve existing issues.
-* How to contribute to the Quasar documentation.
-* How to create a Quasar App Extension.
-* How to contribute to the Quasar code.
+* How to contribute to the Efuzy documentation.
+* How to create a Efuzy App Extension.
+* How to contribute to the Efuzy code.
 
-Quasar is not "someone else's framework". Many people have contributed to Quasar ranging from a single character to massive architectural changes or significant documentation - all with the goal of making Quasar better for everyone. Even if you don't feel up to writing code or documentation yet, there are a variety of other ways that you can contribute, from reporting issues to testing patches.
+Efuzy is not "someone else's framework". Many people have contributed to Efuzy ranging from a single character to massive architectural changes or significant documentation - all with the goal of making Efuzy better for everyone. Even if you don't feel up to writing code or documentation yet, there are a variety of other ways that you can contribute, from reporting issues to testing patches.
 
 ## Help with Support
 
-One of the easiest ways to contribute is to answer questions in the different Q&A systems we have. Be a supportive and positive member of the Quasar community by answering questions you know answers to, or even by adding your best guess. Being a part of such discussions can also be a good learning experience. It's a win-win!
+One of the easiest ways to contribute is to answer questions in the different Q&A systems we have. Be a supportive and positive member of the Efuzy community by answering questions you know answers to, or even by adding your best guess. Being a part of such discussions can also be a good learning experience. It's a win-win!
 
 Here are our discussion/Q&A venues:
 
-* [Forum](https://forum.quasar.dev/): The best place to ask questions and get answers about Quasar and its ecosystem.
-* [Chat](https://chat.quasar.dev/): A place for Quasar devs to meet and chat in real time.
+* [Forum](https://forum.efuzy.dev/): The best place to ask questions and get answers about Efuzy and its ecosystem.
+* [Chat](https://chat.efuzy.dev/): A place for Efuzy devs to meet and chat in real time.
 
 ## Share (and Build) Your Experience
 
 Apart from answering questions and sharing resources in the forum and chat, there are a few other less obvious ways to share and expand what you know:
 
-* **Develop learning materials**. It’s often said that the best way to learn is to teach. If there’s something interesting you’re doing with Quasar, strengthen your expertise by writing a blog post, developing a workshop, or even publishing a gist that you share on social media.
-* **Share your tech stack**. Show others which technologies are well tested and can be integrated with Quasar. Promote your project and [fill out your favorite Quasar-based stack](https://stackshare.io/tool/quasar-framework/decisions). Make sure to mention @Quasarframework and all other relevant technologies.
+* **Develop learning materials**. It’s often said that the best way to learn is to teach. If there’s something interesting you’re doing with Efuzy, strengthen your expertise by writing a blog post, developing a workshop, or even publishing a gist that you share on social media.
+* **Share your tech stack**. Show others which technologies are well tested and can be integrated with Efuzy. Promote your project and [fill out your favorite Efuzy-based stack](https://stackshare.io/tool/efuzy-framework/decisions). Make sure to mention @efuzy and all other relevant technologies.
 * **Watch a repo you care about**. This will send you notifications whenever there’s activity in that repository, giving you insider knowledge about ongoing discussions and upcoming features. It’s a fantastic way to build expertise so that you’re eventually able to help address issues and pull requests.
 
 ## Reporting an Issue
 
-* [GitHub](https://github.com/quasarframework/quasar/issues): If you have a bug to report or feature to request, that’s what the GitHub issues are for.
+* [GitHub](https://github.com/efuzy/efuzy/issues): If you have a bug to report or feature to request, that’s what the GitHub issues are for.
 
 ::: danger Reporting a vulnerability
 Please do not report security vulnerabilities with public GitHub issue reports. Follow the [Report a vulnerability](/security/report-a-vulnerability) steps for security issues.
 :::
 
-If you've found a problem in Quasar which is not a security risk, do a search on GitHub under [Issues](https://github.com/quasarframework/quasar/issues) to check if it is already answered or even fixed in the development branch (`dev`).
+If you've found a problem in Efuzy which is not a security risk, do a search on GitHub under [Issues](https://github.com/efuzy/efuzy/issues) to check if it is already answered or even fixed in the development branch (`dev`).
 
-- The issue list of the [main repo](https://github.com/quasarframework/quasar) is **exclusively** for bug reports and feature requests. Non-conforming issues will be closed immediately.
+- The issue list of the [main repo](https://github.com/efuzy/efuzy) is **exclusively** for bug reports and feature requests. Non-conforming issues will be closed immediately.
 
-  - For simple beginner questions, you can get quick answers from the [Quasar Discord chat](https://chat.quasar.dev).
+  - For simple beginner questions, you can get quick answers from the [Efuzy Discord chat](https://chat.efuzy.dev).
 
-  - For more complicated questions, you can use [the official forum](https://forum.quasar-framework.org/category/11/help). Make sure to provide enough information when asking your questions - this makes it easier for others to help you!
+  - For more complicated questions, you can use [the official forum](https://forum.efuzy-framework.org/category/11/help). Make sure to provide enough information when asking your questions - this makes it easier for others to help you!
 
-- Check if the issue is reproducible with the latest stable version of Quasar. If you are using a pre-release, please indicate the specific version you are using.
+- Check if the issue is reproducible with the latest stable version of Efuzy. If you are using a pre-release, please indicate the specific version you are using.
 
 - It is **required** that you clearly describe the steps necessary to reproduce the issue you are running into. Although we would love to help our users as much as possible, diagnosing issues without clear reproduction steps is extremely time-consuming and simply not sustainable.
 
@@ -67,9 +67,9 @@ If you've found a problem in Quasar which is not a security risk, do a search on
 
 ## Helping to Resolve Existing Issues
 
-As a next step beyond reporting issues, you can help the Quasar Team resolve existing ones by providing feedback about them. If you are new to Quasar development, that might be a great way to walk your first steps, you'll get familiar with the code base and the processes.
+As a next step beyond reporting issues, you can help the Efuzy Team resolve existing ones by providing feedback about them. If you are new to Efuzy development, that might be a great way to walk your first steps, you'll get familiar with the code base and the processes.
 
-If you check the issues list in [GitHub Issues](https://github.com/quasarframework/quasar/issues), you'll find lots of issues already requiring attention. What can you do for these? Quite a bit, actually:
+If you check the issues list in [GitHub Issues](https://github.com/efuzy/efuzy/issues), you'll find lots of issues already requiring attention. What can you do for these? Quite a bit, actually:
 
 #### Verifying Bug Reports
 
@@ -81,14 +81,14 @@ Anything you can do to make bug reports more succinct or easier to reproduce hel
 
 #### Testing Patches
 
-You can also help out by examining pull requests that have been submitted to Quasar via GitHub. In order to apply someone's changes, you need to first create a dedicated branch:
+You can also help out by examining pull requests that have been submitted to Efuzy via GitHub. In order to apply someone's changes, you need to first create a dedicated branch:
 ```bash
 $ git checkout -b testing_branch
 ```
 
-Then, you can use their remote branch to update your codebase. For example, let's say the GitHub user JohnSmith has forked and pushed to a topic branch "orange" located at https://github.com/JohnSmith/quasar.
+Then, you can use their remote branch to update your codebase. For example, let's say the GitHub user JohnSmith has forked and pushed to a topic branch "orange" located at https://github.com/JohnSmith/efuzy.
 ```bash
-$ git remote add JohnSmith https://github.com/JohnSmith/quasar.git
+$ git remote add JohnSmith https://github.com/JohnSmith/efuzy.git
 $ git pull JohnSmith orange
 ```
 
@@ -106,15 +106,15 @@ I like the way you've restructured the code in card.vue - much nicer. Documentat
 
 If your comment simply reads "+1", then odds are that other reviewers aren't going to take it too seriously. Show that you took the time to review the pull request.
 
-## Contributing to the Quasar Documentation
+## Contributing to the Efuzy Documentation
 
-You can help improve the Quasar documentation by making it more coherent, consistent, or readable, adding missing information, correcting factual errors, fixing typos, or bringing them up to date with the latest edge Quasar.
+You can help improve the Efuzy documentation by making it more coherent, consistent, or readable, adding missing information, correcting factual errors, fixing typos, or bringing them up to date with the latest edge Efuzy.
 
 ::: tip Typos or small changes can be fixed directly from the documentation
 Use a pencil icon in the top right corner of every documentation page. Edit the source file, preview the changes, add a description of your change and hit `Propose a file change` and on the next screen `Create pull request`.
 :::
 
-For larger edits change the Quasar source files (located [here](https://github.com/quasarframework/quasar/tree/dev/docs/src/pages) on GitHub).
+For larger edits change the Efuzy source files (located [here](https://github.com/efuzy/efuzy/tree/dev/docs/src/pages) on GitHub).
 
 ### Documentation Best Practices
 
@@ -124,13 +124,13 @@ Over time we consolidated a set of rules which we follow and following them will
 - Be concise, avoid text / code duplication.
 - Link to the external sources which are used as master information sources and are usually updated more frequently, like [Mozilla MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript), [Vue.js API](https://vuejs.org/v2/api/) rather than compiled tutorials which tend to be outdated soon.
 - Do the proofreading before opening a PR
-- Do not repeat texts from other sources, but keep only things which are relevant and shows in a context Quasar specific features
+- Do not repeat texts from other sources, but keep only things which are relevant and shows in a context Efuzy specific features
 - Use official names. For example use `Firebase` instead of `firebase`
 - Exclude from PR all drafts and unfinished pages
 
 #### Fork
 
-Navigate to the Quasar [GitHub repository](https://github.com/quasarframework/quasar) and press "Fork" in the upper right-hand corner.
+Navigate to the Efuzy [GitHub repository](https://github.com/efuzy/efuzy) and press "Fork" in the upper right-hand corner.
 
 ::: warning Select dev branch
 Make sure you have `dev` branch selected and this is where all the work is done.
@@ -140,21 +140,21 @@ Make sure you have `dev` branch selected and this is where all the work is done.
 To be able to change the documentation, you need to clone forked repository:
 
 ```bash
-$ git clone https://github.com/your-user-name/quasar.git
+$ git clone https://github.com/your-user-name/efuzy.git
 ```
 
 #### Install dependencies
 
 Install the required dependencies.
 ```bash
-$ cd quasar/docs
+$ cd efuzy/docs
 $ yarn # or npm install
 ```
 
 #### Running documentation against your local repository
 
 ```bash
-$ quasar dev # or quasar dev -m ssr
+$ efuzy dev # or efuzy dev -m ssr
 ```
 
 The documentation runs against your local cloned repository.
@@ -175,10 +175,10 @@ This should fire up your editor to write a commit message. When you have finishe
 
 It's pretty likely that other changes to master have happened while you were working. Go get them.
 
-1. Add a remote Quasar repository as an upstream
+1. Add a remote Efuzy repository as an upstream
 
 ```bash
-$ git remote add upstream https://github.com/quasarframework/quasar.git
+$ git remote add upstream https://github.com/efuzy/efuzy.git
 ```
 
 2. Check out your fork's local `dev` branch.
@@ -194,29 +194,29 @@ $ git checkout dev
 $ git merge upstream/dev
 ```
 
-No conflicts? Tests still pass? Change still seems reasonable to you? Then move on and open a pull request to apply your changes to the dev branch in main Quasar repository.
+No conflicts? Tests still pass? Change still seems reasonable to you? Then move on and open a pull request to apply your changes to the dev branch in main Efuzy repository.
 
 #### Issue a pull request
 
-Navigate to your repository you just pushed to (e.g. https://github.com/your-user-name/quasar) and click on "New Pull Request" seen in the left top panel.
+Navigate to your repository you just pushed to (e.g. https://github.com/your-user-name/efuzy) and click on "New Pull Request" seen in the left top panel.
 
-Ensure the change sets you introduced are included. Fill in some details about your potential patch including a meaningful title. When finished, press Click on "Create pull request". The Quasar core team will be notified about your submission.
+Ensure the change sets you introduced are included. Fill in some details about your potential patch including a meaningful title. When finished, press Click on "Create pull request". The Efuzy core team will be notified about your submission.
 
 ## Write your Story
 
-We're always looking for great write-ups on how you are using Quasar or the great experiences you've had with Quasar. If you write an article, we will publish it on our Medium publication channel and we'll also make sure your article gets the attention it deserves with our social media presence. If you are interested, please contact blog(at)quasar.dev. We'd love to hear from you!
+We're always looking for great write-ups on how you are using Efuzy or the great experiences you've had with Efuzy. If you write an article, we will publish it on our Medium publication channel and we'll also make sure your article gets the attention it deserves with our social media presence. If you are interested, please contact blog(at)efuzy.dev. We'd love to hear from you!
 
-## Create new Quasar App Extension
+## Create new Efuzy App Extension
 
-An easy way to start to contribute to Quasar is to generalize the code you have created on your project and publish it as a Quasar App Extension. Follow this guide on how to [create a new extension](/app-extensions/development-guide/introduction).
+An easy way to start to contribute to Efuzy is to generalize the code you have created on your project and publish it as a Efuzy App Extension. Follow this guide on how to [create a new extension](/app-extensions/development-guide/introduction).
 
-When done, submit a PR on [Quasar Awesome](https://github.com/quasarframework/quasar-awesome/blob/master/README.md#community-app-extensions), share your achievement via [Quasar Forum](https://forum.quasar-framework.org/category/15/v1-app-extensions).
+When done, submit a PR on [Efuzy Awesome](https://github.com/efuzy/efuzy-awesome/blob/master/README.md#community-app-extensions), share your achievement via [Efuzy Forum](https://forum.efuzy-framework.org/category/15/v1-app-extensions).
 
-## Contributing to the Quasar UI Source Code
+## Contributing to the Efuzy UI Source Code
 
-As with any project, there are rules to contributing. Ours are written here, please read them carefully. After that, read the [Quasar code of conduct](https://github.com/quasarframework/quasar/blob/dev/.github/CODE_OF_CONDUCT.md) and you’ll be ready to contribute to Quasar’s core repositories.
+As with any project, there are rules to contributing. Ours are written here, please read them carefully. After that, read the [Efuzy code of conduct](https://github.com/efuzy/efuzy/blob/dev/.github/CODE_OF_CONDUCT.md) and you’ll be ready to contribute to Efuzy’s core repositories.
 
-An article [Look at the source code](https://medium.com/quasar-framework/wip-look-at-the-source-code-please-1b905ea4906) will help you to get familiar with a Quasar code base.
+An article [Look at the source code](https://medium.com/efuzy-framework/wip-look-at-the-source-code-please-1b905ea4906) will help you to get familiar with a Efuzy code base.
 
 #### Pull Request Guidelines
 
@@ -249,7 +249,7 @@ $ yarn # or: npm install
 #### Commonly used NPM scripts
 
 ``` bash
-# Start dev server with a demo app. This app has Quasar source code linked directly so any change will trigger HMR (Hot Module Reload) on the dev server.
+# Start dev server with a demo app. This app has Efuzy source code linked directly so any change will trigger HMR (Hot Module Reload) on the dev server.
 # There's a section for each feature where tests are made.
 $ yarn dev # or: npm run dev
 
@@ -270,31 +270,31 @@ $ yarn lint # or: npm run lint
 
 - `src` - contains the source code, obviously. The codebase is written in ES2015.
 
-  - `components` - JS, Stylus and JSON (API) files for Quasar Vue components
+  - `components` - JS, Stylus and JSON (API) files for Efuzy Vue components
 
-  - `directives` - Vue directives supplied by Quasar
+  - `directives` - Vue directives supplied by Efuzy
 
-  - `plugins` - Quasar plugins
+  - `plugins` - Efuzy plugins
 
-  - `css` - Stylus definitions and core code for Quasar themes
+  - `css` - Stylus definitions and core code for Efuzy themes
 
-  - `mixins` - code for global mixins that are internal to Quasar
+  - `mixins` - code for global mixins that are internal to Efuzy
 
   - `utils` - utilities used by the framework and exported to the public API
 
   - `ie-compat` - code for IE11 compatibility
 
-- `lang` - Quasar language packs
+- `lang` - Efuzy language packs
 
-- `icon-set` - Quasar icon sets
+- `icon-set` - Efuzy icon sets
 
 - `dist` - contains built files for distribution (only after a build). Note this directory is only updated when a release happens; they do not reflect the latest changes in development branches.
 
-- `dev` - app with Quasar sources linked directly used for testing purposes. Each feature/component has its own `*.vue` file. Adding a new file automatically creates a route for it and adds it to the "homepage" list (based on the file name).
+- `dev` - app with Efuzy sources linked directly used for testing purposes. Each feature/component has its own `*.vue` file. Adding a new file automatically creates a route for it and adds it to the "homepage" list (based on the file name).
 
-#### Dev Server for Quasar (/ui)
-Running `yarn dev` (or `npm run dev`) starts up a dev server which uses HMR (Hot Module Reload) for Quasar source code. You can easily test your changes by making necessary changes to `/dev` `*.vue` files.
+#### Dev Server for Efuzy (/ui)
+Running `yarn dev` (or `npm run dev`) starts up a dev server which uses HMR (Hot Module Reload) for Efuzy source code. You can easily test your changes by making necessary changes to `/dev` `*.vue` files.
 
-## Quasar Contributors
+## Efuzy Contributors
 
-Thank you to all the people who already [contributed to Quasar](https://github.com/quasarframework/quasar/graphs/contributors)!
+Thank you to all the people who already [contributed to Efuzy](https://github.com/efuzy/efuzy/graphs/contributors)!

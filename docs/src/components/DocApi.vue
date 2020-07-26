@@ -78,8 +78,8 @@ q-card.doc-api.q-my-lg(flat bordered)
 </template>
 
 <script>
-import { mdiClose, mdiMagnify } from '@quasar/extras/mdi-v5'
-import { format } from 'quasar'
+import { mdiClose, mdiMagnify } from '@efuzy/extras/mdi-v5'
+import { format } from 'efuzy'
 
 import ApiRows from './ApiRows.js'
 import CardTitle from './CardTitle.vue'
@@ -225,7 +225,7 @@ export default {
       this.apiType = type
 
       this.name = name
-      this.type = `${type === 'plugin' ? 'Quasar' : 'Vue'} ${type.charAt(0).toUpperCase()}${type.substring(1)}`
+      this.type = `${type === 'plugin' ? 'Efuzy' : 'Vue'} ${type.charAt(0).toUpperCase()}${type.substring(1)}`
       this.tabs = Object.keys(api)
 
       if (
@@ -267,7 +267,7 @@ export default {
         return total
       }
 
-      if ([ 'value', 'arg', 'quasarConfOptions', 'injection' ].includes(tab)) {
+      if ([ 'value', 'arg', 'efuzyConfOptions', 'injection' ].includes(tab)) {
         return 1
       }
 
@@ -306,9 +306,9 @@ export default {
 
   mounted () {
     import(
-      /* webpackChunkName: "quasar-api" */
+      /* webpackChunkName: "efuzy-api" */
       /* webpackMode: "lazy-once" */
-      'quasar/dist/api/' + this.file + '.json'
+      'efuzy/dist/api/' + this.file + '.json'
     ).then(json => {
       this.parseJson(this.file, json.default)
       this.loading = false

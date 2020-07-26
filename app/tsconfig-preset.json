@@ -5,13 +5,13 @@
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
-    // Needed to address https://github.com/quasarframework/app-extension-typescript/issues/36
+    // Needed to address https://github.com/efuzy/app-extension-typescript/issues/36
     "noEmit": true,
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
     "target": "es6",
-    // Quasar-defined webpack aliases
+    // Efuzy-defined webpack aliases
     "paths": {
       "src/*": ["src/*"],
       "app/*": ["*"],
@@ -21,13 +21,13 @@
       "assets/*": ["src/assets/*"],
       "boot/*": ["src/boot/*"]
     },
-    // Forces quasar typings to be included, even if they aren't referenced directly
-    // Removing this would break `quasar/wrappers` imports if `quasar`
+    // Forces efuzy typings to be included, even if they aren't referenced directly
+    // Removing this would break `efuzy/wrappers` imports if `efuzy`
     //  isn't referenced anywhere, because those typings are declared
-    //  into `@quasar/app` which is imported by `quasar` typings
-    "types": ["quasar"]
+    //  into `@efuzy/app` which is imported by `efuzy` typings
+    "types": ["efuzy"]
   },
   // Needed to avoid files copied into 'dist' folder (eg. a `.d.ts` file inside `src-ssr` folder)
   // to be evaluated by TS when their original files has been updated
-  "exclude": ["/dist", ".quasar", "node_modules"]
+  "exclude": ["/dist", ".efuzy", "node_modules"]
 }

@@ -6,9 +6,9 @@ const appPaths = require('../../app-paths')
 module.exports = function (chain, cfg) {
   chain.entry('app')
     .clear()
-    .add(appPaths.resolve.app('.quasar/server-entry.js'))
+    .add(appPaths.resolve.app('.efuzy/server-entry.js'))
 
-  chain.resolve.alias.set('quasar$', 'quasar/dist/quasar.common.js')
+  chain.resolve.alias.set('efuzy$', 'efuzy/dist/efuzy.common.js')
 
   chain.target('node')
   chain.devtool('#source-map')
@@ -30,19 +30,19 @@ module.exports = function (chain, cfg) {
     // do not externalize:
     //  1. vue files
     //  2. CSS files
-    //  3. when importing directly from Quasar's src folder
-    //  4. Quasar language files
-    //  5. Quasar icon sets files
-    //  6. Quasar extras
+    //  3. when importing directly from Efuzy's src folder
+    //  4. Efuzy language files
+    //  5. Efuzy icon sets files
+    //  6. Efuzy extras
     whitelist: [
-      /(\.(vue|css|styl|scss|sass|less)$|\?vue&type=style|^quasar[\\/]src[\\/]|^quasar[\\/]lang[\\/]|^quasar[\\/]icon-set[\\/]|^@quasar[\\/]extras[\\/])/,
+      /(\.(vue|css|styl|scss|sass|less)$|\?vue&type=style|^efuzy[\\/]src[\\/]|^efuzy[\\/]lang[\\/]|^efuzy[\\/]icon-set[\\/]|^@efuzy[\\/]extras[\\/])/,
       ...cfg.build.transpileDependencies
     ]
   }))
 
   chain.plugin('vue-ssr-client')
     .use(VueSSRServerPlugin, [{
-      filename: '../quasar.server-manifest.json'
+      filename: '../efuzy.server-manifest.json'
     }])
 
   if (cfg.ctx.prod) {

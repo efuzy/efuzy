@@ -1,4 +1,4 @@
-import { Cookies, Notify, openURL } from 'quasar'
+import { Cookies, Notify, openURL } from 'efuzy'
 
 if (Cookies.has('gdpr') !== true) {
   Notify.create({

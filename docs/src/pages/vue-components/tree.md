@@ -2,7 +2,7 @@
 title: Tree
 desc: The QTree is a highly configurable Vue component which displays hierarchical data, such as a table of contents in a tree structure.
 ---
-Quasar Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure.
+Efuzy Tree represents a highly configurable component that displays hierarchical data, such as a table of contents in a tree structure.
 
 ## Installation
 <doc-installation components="QTree" />
@@ -94,7 +94,7 @@ The following describes a node's properties that are taken into account by QTree
 | \<nodeKey\> | String, Number | An error is generated | Node's key. The key is picked from the key specified in `nodeKey` property. |
 | label | String | The item has no label | Node's label. When `labelKey` prop is set the label is picked from that key. |
 | icon | String | The default icon is used | Node's icon. |
-| iconColor | String | The inherited color is used | Node's icon color. One from Quasar Color Palette. |
+| iconColor | String | The inherited color is used | Node's icon color. One from Efuzy Color Palette. |
 | img | String | No image is displayed | Node's image. Use /public folder. Example: 'mountains.png' |
 | avatar | String | No avatar is displayed | Node's avatar. Use /public folder. Example: 'boy-avatar.png' |
 | children | Array | This node has no sub-nodes | Array of nodes as children. |

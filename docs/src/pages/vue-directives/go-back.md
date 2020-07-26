@@ -1,6 +1,6 @@
 ---
 title: Handling Back Button
-desc: How to manage the back button in a Quasar app.
+desc: How to manage the back button in a Efuzy app.
 ---
 When writing reusable code for building a mobile App and a website, it's important to know how to handle the "Back" button. More specifically, how to manage buttons on your layout/page that should make your App's "go back" to the previous page.
 
@@ -9,9 +9,9 @@ If you have no knowledge of [Vue Router](http://router.vuejs.org/), we highly re
 :::
 
 ## Cordova/Capacitor
-Quasar handles the back button for you by default, so it can hide any opened Dialogs **instead of the default behavior** which is to return to the previous page (which is not a nice user experience).
+Efuzy handles the back button for you by default, so it can hide any opened Dialogs **instead of the default behavior** which is to return to the previous page (which is not a nice user experience).
 
-Also, when on the home route (`/`) and user presses the back button on the phone/tablet, Quasar will make your app exit. Should you wish to disable or configure this behavior, then you can do so via quasar.conf.js options:
+Also, when on the home route (`/`) and user presses the back button on the phone/tablet, Efuzy will make your app exit. Should you wish to disable or configure this behavior, then you can do so via efuzy.conf.js options:
 - `false` will disable the feature;
 - `'*'` will make your app exit on any page, if the history length is 0;
 - an array of strings (eg. `['login', 'home', 'my-page']`) will make your app exit when current path is included in that array (or on default `/`). The array automatically filters out non-strings or empty values and normalizes paths to match `#/<your-path>` format.
@@ -22,8 +22,8 @@ return {
   framework: {
     config: {
       cordova: {
-        // Quasar handles app exit on mobile phone back button
-        // Requires Quasar v1.9.3+ for true/false, v1.12.6+ for '*' wildcard and array values
+        // Efuzy handles app exit on mobile phone back button
+        // Requires Efuzy v1.9.3+ for true/false, v1.12.6+ for '*' wildcard and array values
         backButtonExit: true/false/'*'/['/login', '/home', '/my-page']
       }
     }
@@ -35,8 +35,8 @@ return {
   framework: {
     config: {
       capacitor: {
-        // Quasar handles app exit on mobile phone back button
-        // Requires Quasar v1.9.3+ for true/false, v1.12.6+ for '*' wildcard and array values
+        // Efuzy handles app exit on mobile phone back button
+        // Requires Efuzy v1.9.3+ for true/false, v1.12.6+ for '*' wildcard and array values
         backButtonExit: true/false/'*'/['/login', '/home', '/my-page']
       }
     }
@@ -69,7 +69,7 @@ Now you build your App and install it on a phone. You open up the App, hit login
 --> window.history.length is 3!
 ```
 
-What you'd like instead, is when you hit the Logout button, the `window.history.length` to be 1 again. Quasar can handle this automatically for you. Read about the `v-go-back` Vue directive.
+What you'd like instead, is when you hit the Logout button, the `window.history.length` to be 1 again. Efuzy can handle this automatically for you. Read about the `v-go-back` Vue directive.
 
 ## Directive v-go-back
 Let's rewrite the Logout button to act as we would actually want it to work, which is to make `window.history.length` be 1 again. We're going to install the directive:

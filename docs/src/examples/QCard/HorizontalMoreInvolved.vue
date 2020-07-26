@@ -13,7 +13,7 @@
         <q-card-section class="col-5 flex flex-center">
           <q-img
             class="rounded-borders"
-            src="https://cdn.quasar.dev/img/parallax2.jpg"
+            src="https://cdn.efuzy.dev/img/parallax2.jpg"
           />
         </q-card-section>
       </q-card-section>
@@ -35,7 +35,7 @@
       <q-item>
         <q-item-section avatar>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/img/boy-avatar.png">
+            <img src="https://cdn.efuzy.dev/img/boy-avatar.png">
           </q-avatar>
         </q-item-section>
 
@@ -66,7 +66,7 @@
       <q-card-section horizontal>
         <q-img
           class="col-5"
-          src="https://cdn.quasar.dev/img/parallax1.jpg"
+          src="https://cdn.efuzy.dev/img/parallax1.jpg"
         />
 
         <q-card-section>
@@ -94,7 +94,7 @@
       <q-card-section horizontal>
         <q-img
           class="col"
-          src="https://cdn.quasar.dev/img/parallax2.jpg"
+          src="https://cdn.efuzy.dev/img/parallax2.jpg"
         />
 
         <q-card-actions vertical class="justify-around">

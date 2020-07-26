@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-btn flat round dense icon="assignment_ind" />
 
-        <q-toolbar-title>Quasar</q-toolbar-title>
+        <q-toolbar-title>Efuzy</q-toolbar-title>
 
         <q-btn flat round dense icon="sim_card" class="q-mr-xs" />
         <q-btn flat round dense icon="gamepad" />

@@ -1,12 +1,12 @@
 ---
 title: Security DO's and DON'Ts
-desc: The list of Quasar security recommendations.
+desc: The list of Efuzy security recommendations.
 ---
 **DO** periodically review the security of your application, because any lapse may be putting yourself, your team, your users and even your server at risk of serious exploitation. **DON'T** ignore this page because you think you know everything.
 
 We have collected some best practices for those of you new to the security theater and a few insights for security professionals new to the Vue ecosystem. We will be revising and adding to this document as we become aware of risks through our own research and the publications of the amazing security community.
 
-![Quasar Audited - Gold](https://cdn.quasar.dev/img/secure-gold-hero.jpg "Quasar Audited - Gold")
+![Efuzy Audited - Gold](https://cdn.efuzy.dev/img/secure-gold-hero.jpg "Efuzy Audited - Gold")
 
 ## Vue Security Risks
 
@@ -27,10 +27,10 @@ The quasi-official internationali(s/z)ation package for Vue allows you to store 
 ### eval()
 Although you may be tempted to use `eval()`, even if you know what you are doing, just **DON'T**.
 
-![Don't be eval()](https://cdn.quasar.dev/img/dont-be-eval.png "Don't be eval()")
+![Don't be eval()](https://cdn.efuzy.dev/img/dont-be-eval.png "Don't be eval()")
 
-## Quasar Components
-Two Quasar components and two Plugins can be empowered to prevent the rendering of "insecure content". This is an opt-in feature that is performed by adding a `sanitize` type of boolean prop to the component. These components are discussed below.
+## Efuzy Components
+Two Efuzy components and two Plugins can be empowered to prevent the rendering of "insecure content". This is an opt-in feature that is performed by adding a `sanitize` type of boolean prop to the component. These components are discussed below.
 
 ### QSelect
 If you are not customizing menu-related scoped-slots (i.e. `option` scoped slot), **DO** prevent the component from rendering HTML in the labels and sublabels with one or more of the `sanitize` properties. Generally speaking, this is not user-supplied data. If you are customizing this slot, it is your responsibility to do sanitization yourself.
@@ -112,7 +112,7 @@ The [Cordova Docs Page](https://cordova.apache.org/docs/en/latest/guide/appdev/s
 Electron is a very special case, because XSS and remote code injection can actually lead to complete compromise of the end-user's (or even developer's) device.
 - **DON'T** disable `websecurity`
 - **DON'T** enable remote code execution
-- **DO** read our guidelines for enhanced [Electron Safety](/quasar-cli/developing-electron-apps/electron-security-concerns).
+- **DO** read our guidelines for enhanced [Electron Safety](/efuzy-cli/developing-electron-apps/electron-security-concerns).
 
 ### SSR
 When you generate your project with the SSR mode, you are provided with a minimal Express server. It is your responsibility to harden your environment to protect your server and your users. To this end, we have provided a collection of important HEADERS that you can consider and should selectively activate before your project enters the production phase (see `src-ssr/index.js`). It is important to remember, that HEADERS are not bulletproof, because it is up to Browser vendors to respect them - and for example [Chrome will break PDF viewing](https://bugs.chromium.org/p/chromium/issues/detail?id=413851) if your Content Security Policy uses the `sandbox` value.
@@ -123,7 +123,7 @@ When you generate your project with the SSR mode, you are provided with a minima
 ## Environmental Safety
 Being more safe means taking many things into consideration, and the more of the following guidelines you respect, the smaller the attack footprint will be.
 
-![Valid SSL certificate](https://cdn.quasar.dev/img/lets-encrypt.jpg "Valid SSL certificate")
+![Valid SSL certificate](https://cdn.efuzy.dev/img/lets-encrypt.jpg "Valid SSL certificate")
 
 ### Operational Security
 Audit how your development systems work:

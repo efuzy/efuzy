@@ -1,4 +1,4 @@
-export type QuasarGeneralAnimations =
+export type EfuzyGeneralAnimations =
   | "bounce"
   | "flash"
   | "flip"
@@ -12,7 +12,7 @@ export type QuasarGeneralAnimations =
   | "tada"
   | "wobble";
 
-export type QuasarInAnimations =
+export type EfuzyInAnimations =
   | "bounceIn"
   | "bounceInDown"
   | "bounceInLeft"
@@ -46,7 +46,7 @@ export type QuasarInAnimations =
   | "zoomInRight"
   | "zoomInUp";
 
-export type QuasarOutAnimations =
+export type EfuzyOutAnimations =
   | "bounceOut"
   | "bounceOutDown"
   | "bounceOutLeft"
@@ -81,7 +81,7 @@ export type QuasarOutAnimations =
   | "zoomOutRight"
   | "zoomOutUp";
 
-export type QuasarAnimations =
-  | QuasarGeneralAnimations
-  | QuasarInAnimations
-  | QuasarOutAnimations;
+export type EfuzyAnimations =
+  | EfuzyGeneralAnimations
+  | EfuzyInAnimations
+  | EfuzyOutAnimations;

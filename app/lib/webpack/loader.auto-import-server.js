@@ -1,7 +1,7 @@
 const stringifyRequest = require('loader-utils/lib/stringifyRequest')
 const getDevlandFile = require('../helpers/get-devland-file')
 
-const data = getDevlandFile('quasar/dist/babel-transforms/auto-import.json')
+const data = getDevlandFile('efuzy/dist/babel-transforms/auto-import.json')
 const runtimePath = require.resolve('./runtime.auto-import.js')
 
 const compRegex = {
@@ -58,7 +58,7 @@ function extract (content, ctx) {
   // stringifyRequest needed so it doesn't
   // messes up consistency of hashes between builds
   return `
-import {${importNames.join(',')}} from 'quasar';
+import {${importNames.join(',')}} from 'efuzy';
 import qInstall from ${stringifyRequest(ctx, runtimePath)};
 ${installStatements}
 `

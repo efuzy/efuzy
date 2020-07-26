@@ -26,8 +26,8 @@ class CordovaRunner {
     }
   }
 
-  async run (quasarConfig, argv) {
-    const cfg = quasarConfig.getBuildConfig()
+  async run (efuzyConfig, argv) {
+    const cfg = efuzyConfig.getBuildConfig()
     const url = cfg.build.APP_URL
 
     if (this.url === url) {
@@ -62,8 +62,8 @@ class CordovaRunner {
     )
   }
 
-  async build (quasarConfig, argv) {
-    const cfg = quasarConfig.getBuildConfig()
+  async build (efuzyConfig, argv) {
+    const cfg = efuzyConfig.getBuildConfig()
     const buildPath = appPaths.resolve.cordova(
       this.target === 'android'
         ? 'platforms/android/app/build/outputs'

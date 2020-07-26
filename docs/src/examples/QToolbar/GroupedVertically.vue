@@ -8,7 +8,7 @@
         <q-btn flat round dense icon="group_add" />
       </q-toolbar>
       <q-toolbar inset>
-        <q-toolbar-title><strong>Quasar</strong> Framework</q-toolbar-title>
+        <q-toolbar-title><strong>Efuzy</strong> Framework</q-toolbar-title>
       </q-toolbar>
     </div>
 

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { mdiCodeTags } from '@quasar/extras/mdi-v5'
+import { mdiCodeTags } from '@efuzy/extras/mdi-v5'
 
 import getMeta from 'assets/get-meta.js'
 
@@ -29,8 +29,8 @@ export default {
       title,
 
       meta: getMeta(
-        title + ' | Quasar Framework',
-        `Example of a Quasar layout that looks like ${this.$route.meta.title}`
+        title + ' | Efuzy Framework',
+        `Example of a Efuzy layout that looks like ${this.$route.meta.title}`
       )
     }
   },

@@ -65,10 +65,10 @@
 </template>
 
 <script>
-import '@quasar/extras/animate/fadeIn.css'
-import '@quasar/extras/animate/fadeOut.css'
-import '@quasar/extras/animate/bounceInLeft.css'
-import '@quasar/extras/animate/bounceOutRight.css'
+import '@efuzy/extras/animate/fadeIn.css'
+import '@efuzy/extras/animate/fadeOut.css'
+import '@efuzy/extras/animate/bounceInLeft.css'
+import '@efuzy/extras/animate/bounceOutRight.css'
 
 function generateOptions (name) {
   return {

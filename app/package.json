@@ -1,9 +1,9 @@
 {
-  "name": "@quasar/app",
+  "name": "@efuzy/app",
   "version": "2.0.6",
-  "description": "Quasar Framework local CLI",
+  "description": "Efuzy Framework local CLI",
   "bin": {
-    "quasar": "./bin/quasar"
+    "efuzy": "./bin/efuzy"
   },
   "typings": "types/index.d.ts",
   "files": [
@@ -15,7 +15,7 @@
     "tsconfig-preset.json"
   ],
   "keywords": [
-    "quasar",
+    "efuzy",
     "cli",
     "web",
     "spa",
@@ -28,22 +28,22 @@
   "author": {
     "name": "Razvan Stoenescu",
     "email": "razvan.stoenescu@gmail.com",
-    "url": "https://github.com/quasarframework"
+    "url": "https://github.com/efuzy"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/quasarframework/quasar"
+    "url": "https://github.com/efuzy/efuzy"
   },
   "license": "MIT",
-  "bugs": "https://github.com/quasarframework/quasar/issues",
-  "homepage": "https://quasar.dev",
+  "bugs": "https://github.com/efuzy/efuzy/issues",
+  "homepage": "https://efuzy.dev",
   "funding": {
     "type": "github",
-    "url": "https://donate.quasar.dev"
+    "url": "https://donate.efuzy.dev"
   },
   "dependencies": {
-    "@quasar/babel-preset-app": "2.0.1",
-    "@quasar/fastclick": "1.1.4",
+    "@efuzy/babel-preset-app": "2.0.1",
+    "@efuzy/fastclick": "1.1.4",
     "@types/cordova": "0.0.34",
     "@types/electron-packager": "14.0.0",
     "@types/express": "4.17.6",

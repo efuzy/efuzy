@@ -73,9 +73,9 @@
 </template>
 
 <script>
-import { copyToClipboard } from 'quasar'
-import { fabCodepen } from '@quasar/extras/fontawesome-v5'
-import { mdiPlus, mdiShareVariant } from '@quasar/extras/mdi-v5'
+import { copyToClipboard } from 'efuzy'
+import { fabCodepen } from '@efuzy/extras/fontawesome-v5'
+import { mdiPlus, mdiShareVariant } from '@efuzy/extras/mdi-v5'
 
 import Child from './FlexChild'
 import Codepen from '../../../Codepen'

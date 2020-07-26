@@ -1,6 +1,6 @@
 ---
 title: Layout Header and Footer
-desc: How to use the QHeader and QFooter components. The top and bottom bars of your Quasar app.
+desc: How to use the QHeader and QFooter components. The top and bottom bars of your Efuzy app.
 related:
   - /layout/layout
   - /layout/page

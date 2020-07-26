@@ -1,6 +1,6 @@
 ---
 title: Chain Webpack
-desc: Tips and tricks on how to use a Quasar App Extension to configure the host app to use a Webpack loader.
+desc: Tips and tricks on how to use a Efuzy App Extension to configure the host app to use a Webpack loader.
 ---
 
 This guide is for when you want to ensure that a [Webpack Loader](https://webpack.js.org/loaders/) is chained into the hosting app, because you depend on it for your own App Extension to work.
@@ -10,10 +10,10 @@ In order for creating an App Extension project folder, please first read the [De
 :::
 
 ::: tip Full Example
-To see an example of what we will build, head over to [full example](https://github.com/quasarframework/app-extension-examples/tree/master/chain-webpack), which is a github repo with this App Extension.
+To see an example of what we will build, head over to [full example](https://github.com/efuzy/app-extension-examples/tree/master/chain-webpack), which is a github repo with this App Extension.
 :::
 
-We will only need the /index.js script for this, because we can use the [Index API](/app-extensions/development-guide/index-api) to configure quasar.conf.js from the host app to include our Webpack chaining.
+We will only need the /index.js script for this, because we can use the [Index API](/app-extensions/development-guide/index-api) to configure efuzy.conf.js from the host app to include our Webpack chaining.
 
 ```bash
 .
@@ -28,11 +28,11 @@ And /index.js would look like this:
 // file: /index.js
 module.exports = function (api) {
   // (Optional!)
-  // Quasar compatibility check; you may need
-  // hard dependencies, as in a minimum version of the "quasar"
-  // package or a minimum version of "@quasar/app" CLI
-  api.compatibleWith('quasar', '^1.0.0')
-  api.compatibleWith('@quasar/app', '^1.0.0')
+  // Efuzy compatibility check; you may need
+  // hard dependencies, as in a minimum version of the "efuzy"
+  // package or a minimum version of "@efuzy/app" CLI
+  api.compatibleWith('efuzy', '^1.0.0')
+  api.compatibleWith('@efuzy/app', '^1.0.0')
 
   // chain webpack
   api.chainWebpack((chain) => chainWebpack(api.ctx, chain))

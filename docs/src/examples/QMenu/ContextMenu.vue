@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-img
-      src="https://cdn.quasar.dev/img/parallax1.jpg"
+      src="https://cdn.efuzy.dev/img/parallax1.jpg"
       style="height: 100px"
     >
       <q-menu

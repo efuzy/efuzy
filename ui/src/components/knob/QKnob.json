@@ -2,7 +2,7 @@
   "mixins": [ "mixins/size", "mixins/form" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/knob"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/knob"
   },
 
   "props": {
@@ -48,12 +48,12 @@
 
     "center-color": {
       "extends": "color",
-      "desc": "Color name for the center part of the component from the Quasar Color Palette"
+      "desc": "Color name for the center part of the component from the Efuzy Color Palette"
     },
 
     "track-color": {
       "extends": "color",
-      "desc": "Color name for the track of the component from the Quasar Color Palette"
+      "desc": "Color name for the track of the component from the Efuzy Color Palette"
     },
 
     "font-size": {

@@ -4,11 +4,11 @@
       <q-header elevated>
         <q-toolbar>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
 
           <q-toolbar-title>
-            Quasar Framework
+            Efuzy Framework
           </q-toolbar-title>
 
           <q-btn flat round dense icon="whatshot" />

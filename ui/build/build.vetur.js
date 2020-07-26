@@ -45,12 +45,12 @@ module.exports.generate = function ({ components }) {
 
   try {
     writeFile(
-      resolve('quasar-tags.json'),
+      resolve('efuzy-tags.json'),
       JSON.stringify(getTags(data), null, 2)
     )
 
     writeFile(
-      resolve('quasar-attributes.json'),
+      resolve('efuzy-attributes.json'),
       JSON.stringify(getAttributes(data), null, 2)
     )
   }

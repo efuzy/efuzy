@@ -1,6 +1,6 @@
 ---
 title: Grid Gutter
-desc: How to use the Quasar grid for gutter spaces.
+desc: How to use the Efuzy grid for gutter spaces.
 related:
   - /layout/grid/introduction-to-flexbox
   - /layout/grid/row
@@ -10,7 +10,7 @@ related:
 
 In the hope that you've previously read the [Introduction to Flexbox](/layout/grid/introduction-to-flexbox) theory, let's get deeper into Gutters.
 
-Gutter Quasar CSS classes offer an easy way to space out elements (especially in a [Grid Row](/layout/grid/row)) one from each other at equal distance.
+Gutter Efuzy CSS classes offer an easy way to space out elements (especially in a [Grid Row](/layout/grid/row)) one from each other at equal distance.
 
 ## Types
 There are two main types of gutters depending on your use-case: `q-gutter-{size}` and `q-col-gutter-{size}`. The first is to be used when the elements that you want to distance one from each other don't use `col-*` or `offset-*` classes that specify a width, and the latter is to be used when they do have `col-*` or `offset-*` classes specifying a width.

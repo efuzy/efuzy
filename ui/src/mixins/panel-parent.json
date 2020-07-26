@@ -39,14 +39,14 @@
 
     "transition-prev": {
       "extends": "transition",
-      "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+      "desc": "One of Efuzy's embedded transitions (has effect only if 'animated' prop is set)",
       "default": "slide-right/slide-down",
       "category": "behavior"
     },
 
     "transition-next": {
       "extends": "transition",
-      "desc": "One of Quasar's embedded transitions (has effect only if 'animated' prop is set)",
+      "desc": "One of Efuzy's embedded transitions (has effect only if 'animated' prop is set)",
       "default": "slide-left/slide-up",
       "category": "behavior"
     }

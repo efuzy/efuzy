@@ -1,20 +1,20 @@
 {
-  "name": "@quasar/icongenie",
+  "name": "@efuzy/icongenie",
   "version": "2.3.1",
-  "description": "A Quasar tool for generating all your Quasar App's icons and splashscreens",
+  "description": "A Efuzy tool for generating all your Efuzy App's icons and splashscreens",
   "bin": {
     "icongenie": "./bin/icongenie"
   },
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quasarframework/quasar.git"
+    "url": "git+https://github.com/efuzy/efuzy.git"
   },
   "keywords": [
     "vuejs",
     "vue",
     "icons",
-    "quasar",
+    "efuzy",
     "js",
     "phone",
     "tablet",
@@ -32,9 +32,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/quasarframework/quasar/issues"
+    "url": "https://github.com/efuzy/efuzy/issues"
   },
-  "homepage": "https://quasar.dev/icongenie/introduction",
+  "homepage": "https://efuzy.dev/icongenie/introduction",
   "dependencies": {
     "@hapi/joi": "^17.1.1",
     "chalk": "^4.0.0",

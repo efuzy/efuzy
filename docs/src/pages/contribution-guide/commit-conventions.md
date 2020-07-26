@@ -1,6 +1,6 @@
 ---
 title: Commit Conventions
-desc: Quasar commit conventions
+desc: Efuzy commit conventions
 ---
 
 ## Goals
@@ -8,7 +8,7 @@ desc: Quasar commit conventions
 - Provide better information when browsing the history
 
 :::warning
-This rule applies to ALL [Quasar repositories](https://github.com/quasarframework).
+This rule applies to ALL [Efuzy repositories](https://github.com/efuzy).
 :::
 
 Well-cared log is a beautiful and useful thing. `git blame`, `revert`, `rebase`, `log`, `shortlog` and other subcommands come to life. Reviewing others’ commits and pull requests becomes something worth doing, and suddenly can be done independently. Understanding why something happened months or years ago becomes not only possible but efficient.

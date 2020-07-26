@@ -66,7 +66,7 @@ import {
   Loading,
   QSpinnerFacebook,
   QSpinnerGears
-} from 'quasar'
+} from 'efuzy'
 
 function show (options, timeout = 3000) {
   Loading.show(options)

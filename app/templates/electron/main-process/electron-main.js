@@ -25,12 +25,12 @@ function createWindow () {
     height: 600,
     useContentSize: true,
     webPreferences: {
-      // Change from /quasar.conf.js > electron > nodeIntegration;
-      // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
-      nodeIntegration: process.env.QUASAR_NODE_INTEGRATION,
-      nodeIntegrationInWorker: process.env.QUASAR_NODE_INTEGRATION,
+      // Change from /efuzy.conf.js > electron > nodeIntegration;
+      // More info: https://efuzy.dev/efuzy-cli/developing-electron-apps/node-integration
+      nodeIntegration: process.env.EFUZY_NODE_INTEGRATION,
+      nodeIntegrationInWorker: process.env.EFUZY_NODE_INTEGRATION,
 
-      // More info: /quasar-cli/developing-electron-apps/electron-preload-script
+      // More info: /efuzy-cli/developing-electron-apps/electron-preload-script
       // preload: path.resolve(__dirname, 'electron-preload.js')
     }
   })

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { QSpinnerGears } from 'quasar'
+import { QSpinnerGears } from 'efuzy'
 
 export default {
   methods: {

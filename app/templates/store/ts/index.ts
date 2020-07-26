@@ -1,4 +1,4 @@
-import { store } from 'quasar/wrappers';
+import { store } from 'efuzy/wrappers';
 import Vuex from 'vuex';
 
 // import example from './module-example';

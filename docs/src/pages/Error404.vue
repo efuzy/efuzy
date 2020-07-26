@@ -7,7 +7,7 @@ q-layout.err404-container
       div
         .err404__hero.flex.flex-center.no-wrap.q-gutter-sm
           div 4
-          img(src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg")
+          img(src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg")
           div 4
         .err404__punch-line You're not intentionally heading for a black hole, are you?
         q-btn.q-mt-md(no-caps color="white" text-color="primary" to="/" label="Take me home" push)

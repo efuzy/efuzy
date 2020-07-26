@@ -20,7 +20,7 @@ class Mode {
 
     const pkgPath = appPaths.resolve.app('package.json')
     const pkg = require(pkgPath)
-    const appName = pkg.productName || pkg.name || 'Quasar App'
+    const appName = pkg.productName || pkg.name || 'Efuzy App'
 
     if (/^[0-9]/.test(appName)) {
       warn(
@@ -37,7 +37,7 @@ class Mode {
       name: 'appId',
       type: 'input',
       message: 'What is the Capacitor app id?',
-      default: 'org.capacitor.quasar.app',
+      default: 'org.capacitor.efuzy.app',
       validate: appId => appId ? true : 'Please fill in a value'
     }])
 
@@ -85,7 +85,7 @@ class Mode {
 
     if (!target) {
       console.log()
-      console.log(` No Capacitor platform has been added yet as these get installed on demand automatically when running "quasar dev" or "quasar build".`)
+      console.log(` No Capacitor platform has been added yet as these get installed on demand automatically when running "efuzy dev" or "efuzy build".`)
       log()
       return
     }

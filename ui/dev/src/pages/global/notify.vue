@@ -85,8 +85,8 @@ const alerts = [
   { color: 'negative', message: 'Woah! Danger! You are getting good at this!', icon: 'report_problem' },
   { message: 'You need to know about this!', icon: 'warning' },
   { message: 'Wow! Nice job!', icon: 'thumb_up' },
-  { color: 'teal', message: 'Quasar is cool! Right?', icon: 'tag_faces' },
-  { color: 'purple', message: 'Jim just pinged you', avatar: 'https://cdn.quasar.dev/img/boy-avatar.png' },
+  { color: 'teal', message: 'Efuzy is cool! Right?', icon: 'tag_faces' },
+  { color: 'purple', message: 'Jim just pinged you', avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png' },
   { multiLine: true, message: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic quisquam non ad sit assumenda consequuntur esse inventore officia. Corrupti reiciendis impedit vel, fugit odit quisquam quae porro exercitationem eveniet quasi.' }
 ]
 
@@ -250,7 +250,7 @@ export default {
       message: 'You need to know about this!',
       caption: 'This is a caption',
       timeout: 0,
-      avatar: 'https://cdn.quasar.dev/img/boy-avatar.png'
+      avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png'
     })
     this.$q.notify({
       message: 'You need to know about this!',
@@ -259,13 +259,13 @@ export default {
       color: 'yellow',
       textColor: 'black',
       multiLine: true,
-      avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+      avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
       actions: [ { label: 'Reply', handler: () => console.log('wooow') } ]
     })
     this.$q.notify({
       html: true,
       icon: 'map',
-      avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+      avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
       message: 'HTML; You need to know about this!',
       caption: 'This is a caption',
       timeout: 0
@@ -279,7 +279,7 @@ export default {
       color: 'yellow',
       textColor: 'black',
       multiLine: true,
-      avatar: 'https://cdn.quasar.dev/img/boy-avatar.png',
+      avatar: 'https://cdn.efuzy.dev/img/boy-avatar.png',
       actions: [ { label: 'Reply', handler: () => console.log('wooow') } ]
     })
   }

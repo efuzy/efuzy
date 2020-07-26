@@ -1,6 +1,6 @@
 ---
 title: Layout Page
-desc: How to use QPageContainer and QPage components. They define the contents of your Quasar app pages.
+desc: How to use QPageContainer and QPage components. They define the contents of your Efuzy app pages.
 related:
   - /layout/layout
 ---
@@ -77,7 +77,7 @@ export default {
       // height of header + footer that occupies on screen,
       // based on the QLayout "view" prop configuration
 
-      // this is actually what the default style-fn does in Quasar
+      // this is actually what the default style-fn does in Efuzy
       return { minHeight: offset ? `calc(100vh - ${offset}px)` : '100vh' }
     }
   }

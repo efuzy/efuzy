@@ -1,17 +1,17 @@
-import { QuasarAnimations, QuasarIconSets, QuasarFonts } from "quasar";
+import { EfuzyAnimations, EfuzyIconSets, EfuzyFonts } from "efuzy";
 import { WebpackConfiguration } from "../ts-helpers";
-import { QuasarBootConfiguration } from "./boot";
-import { QuasarBuildConfiguration } from "./build";
-import { QuasarPwaConfiguration } from "./pwa-conf";
-import { QuasarSsrConfiguration } from "./ssr-conf";
-import { QuasarCapacitorConfiguration } from "./capacitor-conf";
-import { QuasarElectronConfiguration } from "./electron-conf";
-import { QuasarFrameworkConfiguration } from "./framework-conf";
-import { QuasarCordovaConfiguration } from "./cordova-conf";
+import { EfuzyBootConfiguration } from "./boot";
+import { EfuzyBuildConfiguration } from "./build";
+import { EfuzyPwaConfiguration } from "./pwa-conf";
+import { EfuzySsrConfiguration } from "./ssr-conf";
+import { EfuzyCapacitorConfiguration } from "./capacitor-conf";
+import { EfuzyElectronConfiguration } from "./electron-conf";
+import { efuzyConfiguration } from "./framework-conf";
+import { EfuzyCordovaConfiguration } from "./cordova-conf";
 
-type QuasarAnimationsConfiguration = "all" | QuasarAnimations[];
+type EfuzyAnimationsConfiguration = "all" | EfuzyAnimations[];
 
-interface QuasarDevServerConfiguration
+interface EfuzyDevServerConfiguration
   extends Omit<WebpackConfiguration["devServer"], "open"> {
   /**
    * Behind the scenes, webpack devServer `open` property is always set to false
@@ -43,7 +43,7 @@ interface QuasarDevServerConfiguration
  * }
  * ```
  */
-type QuasarSourceFilesConfiguration = Partial<{
+type EfuzySourceFilesConfiguration = Partial<{
   rootComponent: string;
   router: string;
   store: string;
@@ -54,21 +54,21 @@ type QuasarSourceFilesConfiguration = Partial<{
   electronMainProd: string;
 }>;
 
-interface BaseQuasarConfiguration {
+interface BaseEfuzyConfiguration {
   /** Boot files to load. Order is important. */
-  boot?: QuasarBootConfiguration;
+  boot?: EfuzyBootConfiguration;
   /**
    * Global CSS/Stylus/SCSS/SASS/... files from `/src/css/`,
    * except for theme files, which are included by default.
    */
   css?: string[];
-  /** Enable [PreFetch Feature](/quasar-cli/cli-documentation/prefetch-feature). */
+  /** Enable [PreFetch Feature](/efuzy-cli/cli-documentation/prefetch-feature). */
   preFetch?: boolean;
   /**
-   * What to import from [@quasar/extras](https://github.com/quasarframework/quasar/tree/dev/extras) package.
+   * What to import from [@efuzy/extras](https://github.com/efuzy/efuzy/tree/dev/extras) package.
    * @example ['material-icons', 'roboto-font', 'ionicons-v4']
    */
-  extras?: (QuasarIconSets | QuasarFonts)[];
+  extras?: (EfuzyIconSets | EfuzyFonts)[];
   /** Add/remove files/3rd party libraries to/from vendor chunk. */
   vendor?: {
     add: string[];
@@ -83,50 +83,50 @@ interface BaseQuasarConfiguration {
   /** Add variables that you can use in index.template.html. */
   htmlVariables?: { [index: string]: string };
   /**
-   * What is the import strategy for Quasar,
-   * what Quasar language pack to use, what Quasar icon
-   * set to use for Quasar components.
+   * What is the import strategy for Efuzy,
+   * what Efuzy language pack to use, what Efuzy icon
+   * set to use for Efuzy components.
    *
    * When not specified it's treated as `{ importStrategy: 'auto' }`
    * When equal to `all` it's treated as `{ importStrategy: 'all' }`
    */
-  framework?: QuasarFrameworkConfiguration;
+  framework?: efuzyConfiguration;
   /**
    * What [CSS animations](/options/animations) to import.
    * Example: _['bounceInLeft', 'bounceOutRight']_
    * */
-  animations?: QuasarAnimationsConfiguration;
+  animations?: EfuzyAnimationsConfiguration;
   /**
    * Webpack dev server [options](https://webpack.js.org/configuration/dev-server/).
-   * Some properties are overwritten based on the Quasar mode you're using in order
+   * Some properties are overwritten based on the Efuzy mode you're using in order
    * to ensure a correct config.
    * Note: if you're proxying the development server (i.e. using a cloud IDE),
    * set the `public` setting to your public application URL.
    */
-  devServer?: QuasarDevServerConfiguration;
+  devServer?: EfuzyDevServerConfiguration;
   /** Build configuration options. */
-  build?: QuasarBuildConfiguration;
+  build?: EfuzyBuildConfiguration;
   /** Change the default name of parts of your app. */
-  sourceFiles?: QuasarSourceFilesConfiguration;
+  sourceFiles?: EfuzySourceFilesConfiguration;
 }
 
-export interface QuasarHookParams {
-  quasarConf: QuasarConf;
+export interface EfuzyHookParams {
+  efuzyConf: EfuzyConf;
 }
 
-export type QuasarConf = BaseQuasarConfiguration & {
-  /** PWA specific [config](/quasar-cli/developing-pwa/configuring-pwa). */
-  pwa?: QuasarPwaConfiguration;
+export type EfuzyConf = BaseEfuzyConfiguration & {
+  /** PWA specific [config](/efuzy-cli/developing-pwa/configuring-pwa). */
+  pwa?: EfuzyPwaConfiguration;
 } & {
-  /** SSR specific [config](/quasar-cli/developing-ssr/configuring-ssr). */
-  ssr?: QuasarSsrConfiguration;
+  /** SSR specific [config](/efuzy-cli/developing-ssr/configuring-ssr). */
+  ssr?: EfuzySsrConfiguration;
 } & {
-  /** Capacitor specific [config](/quasar-cli/developing-capacitor-apps/configuring-capacitor). */
-  capacitor?: QuasarCapacitorConfiguration;
+  /** Capacitor specific [config](/efuzy-cli/developing-capacitor-apps/configuring-capacitor). */
+  capacitor?: EfuzyCapacitorConfiguration;
 } & {
-  /** Cordova specific [config](/quasar-cli/developing-cordova-apps/configuring-cordova). */
-  cordova?: QuasarCordovaConfiguration;
+  /** Cordova specific [config](/efuzy-cli/developing-cordova-apps/configuring-cordova). */
+  cordova?: EfuzyCordovaConfiguration;
 } & {
-  /** Electron specific [config](/quasar-cli/developing-electron-apps/configuring-electron). */
-  electron?: QuasarElectronConfiguration;
+  /** Electron specific [config](/efuzy-cli/developing-electron-apps/configuring-electron). */
+  electron?: EfuzyElectronConfiguration;
 };

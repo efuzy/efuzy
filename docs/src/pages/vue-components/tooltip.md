@@ -12,7 +12,7 @@ The QTooltip component is to be used when you want to offer the user more inform
 <doc-installation components="QTooltip" />
 
 ## Usage
-The idea with QTooltip is to place it inside your DOM element / component that you want to be the trigger as direct child. Don’t worry about QTooltip content inheriting CSS from the container as the QTooltip will be injected as a direct child of `<body>` through a Quasar Portal.
+The idea with QTooltip is to place it inside your DOM element / component that you want to be the trigger as direct child. Don’t worry about QTooltip content inheriting CSS from the container as the QTooltip will be injected as a direct child of `<body>` through a Efuzy Portal.
 
 <doc-example title="Basic" file="QTooltip/Basic" />
 

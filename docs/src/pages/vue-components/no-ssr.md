@@ -2,7 +2,7 @@
 title: QNoSsr
 desc: The QNoSsr Vue component makes it easy to differentiate content between server-side and client-side.
 related:
-  - /quasar-cli/developing-ssr/introduction
+  - /efuzy-cli/developing-ssr/introduction
 ---
 The QNoSsr component makes sense only if you are creating a SSR website/app.
 

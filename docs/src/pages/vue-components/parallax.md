@@ -17,7 +17,7 @@ QParallax takes care of a lot of quirks, including image/video size which can ac
 <doc-example title="Image background" file="QParallax/Image" />
 
 ::: warning
-On some iOS platforms there may be problems regarding the autoplay feature of the native `<video>` tag. [Reference](https://webkit.org/blog/6784/new-video-policies-for-ios/). QParallax and Quasar are not interfering in any way with the client browser's ability/restrictions on the `<video>` tag.
+On some iOS platforms there may be problems regarding the autoplay feature of the native `<video>` tag. [Reference](https://webkit.org/blog/6784/new-video-policies-for-ios/). QParallax and Efuzy are not interfering in any way with the client browser's ability/restrictions on the `<video>` tag.
 :::
 
 ::: warning

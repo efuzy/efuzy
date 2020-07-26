@@ -16,7 +16,7 @@ function getModulePath (mod, useAbsolutePath) {
 // add polyfill imports to the first file encountered.
 module.exports = ({}, { polyfills, useAbsolutePath }) => {
   return {
-    name: 'quasar-cli-inject-polyfills',
+    name: 'efuzy-cli-inject-polyfills',
     visitor: {
       Program (path) {
         // imports are injected in reverse order

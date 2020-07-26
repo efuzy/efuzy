@@ -14,7 +14,7 @@
 
 <script>
 /* eslint-disable */
-import { uid } from 'quasar'
+import { uid } from 'efuzy'
 
 export default {
   data () {

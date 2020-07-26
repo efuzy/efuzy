@@ -2,7 +2,7 @@
   "mixins": [ "mixins/form" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/slider"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/slider"
   },
 
   "props": {

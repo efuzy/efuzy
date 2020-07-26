@@ -6,7 +6,7 @@
       style="height: 65px; width: 250px;"
       no-caps
       type="a"
-      href="https://donate.quasar.dev"
+      href="https://donate.efuzy.dev"
       target="_blank"
       rel="sponsored"
     >
@@ -46,7 +46,7 @@
 <script>
 import {
   fabGithub, fabPaypal
-} from '@quasar/extras/fontawesome-v5'
+} from '@efuzy/extras/fontawesome-v5'
 
 export default {
   name: 'DonatingButtons',

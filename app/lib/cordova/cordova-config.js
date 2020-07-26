@@ -124,7 +124,7 @@ class CordovaConfig {
       warn()
       warn(`AppDelegate.m not found. Your App will revoke the devserver's SSL certificate.`)
       warn(`Please report the cordova CLI version and cordova-ios package that you are using.`)
-      warn(`Also, disable HTTPS from quasar.conf.js > devServer > https`)
+      warn(`Also, disable HTTPS from efuzy.conf.js > devServer > https`)
       warn()
       warn()
       warn()

@@ -676,7 +676,7 @@
 </template>
 
 <script>
-import { extend } from 'quasar'
+import { extend } from 'efuzy'
 
 export default {
   data () {

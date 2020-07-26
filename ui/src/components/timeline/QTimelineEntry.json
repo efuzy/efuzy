@@ -2,7 +2,7 @@
   "mixins": [ "mixins/tag" ],
 
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/vue-components/timeline"
+    "docsUrl": "https://v1.efuzy.dev/vue-components/timeline"
   },
 
   "behavior": {

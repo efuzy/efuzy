@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { QSpinnerFacebook } from 'quasar'
+import { QSpinnerFacebook } from 'efuzy'
 
 export default {
   methods: {

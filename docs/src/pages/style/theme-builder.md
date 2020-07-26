@@ -1,6 +1,6 @@
 ---
 title: Theming
-desc: Theme builder for a Quasar app with which you can play with the brand colors.
+desc: Theme builder for a Efuzy app with which you can play with the brand colors.
 components:
   - theming/ThemeBuilder
 related:
@@ -16,6 +16,6 @@ Click on the colored buttons besides the layout below and when you are ready, hi
 <theme-builder class="q-py-lg" />
 
 ::: tip TIPS
-* Sass/SCSS is only available if you have Quasar v1.1.1+ and your project is managed by Quasar CLI through @quasar/app v1.1+.
-* `dark` was added in Quasar v1.3.
+* Sass/SCSS is only available if you have Efuzy v1.1.1+ and your project is managed by Efuzy CLI through @efuzy/app v1.1+.
+* `dark` was added in Efuzy v1.3.
 :::

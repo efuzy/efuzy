@@ -1,6 +1,6 @@
 {
   "meta": {
-    "docsUrl": "https://v1.quasar.dev/quasar-plugins/app-visibility"
+    "docsUrl": "https://v1.efuzy.dev/efuzy-plugins/app-visibility"
   },
 
   "injection": "$q.appVisible",

@@ -1,13 +1,13 @@
 ---
 title: How-to Start a New Project
-desc: How to start a new project for Quasar.
+desc: How to start a new project for Efuzy.
 ---
 
-You have a great new idea which is in line with the [Quasar vision](/introduction-to-quasar). Great, here is how to make it happen!
+You have a great new idea which is in line with the [Efuzy vision](/introduction-to-efuzy). Great, here is how to make it happen!
 
 1. Email to Razvan (`razvan.stoenescu [at] gmail [dot] com`) the following:
 
-   a. **The need** you are fulfilling with the new Quasar Project
+   a. **The need** you are fulfilling with the new Efuzy Project
 
    b. **Name of the owner**/maintainer the project?
 
@@ -17,10 +17,10 @@ You have a great new idea which is in line with the [Quasar vision](/introductio
 
    e. **Milestones** with estimated dates
 
-   f. How much **time you need from the Quasar team**
+   f. How much **time you need from the Efuzy team**
 
-   g. Document the **changes** which are needed **in the Quasar core / extensions**
+   g. Document the **changes** which are needed **in the Efuzy core / extensions**
 
-   h. Sustainability plan - any project creates more work and pressure on the existing Quasar team - what is **your long-term maintenance plan**
+   h. Sustainability plan - any project creates more work and pressure on the existing Efuzy team - what is **your long-term maintenance plan**
 
 2. Set up a meeting with Razvan to discuss it and invite all engaged in the project

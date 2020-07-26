@@ -1,14 +1,14 @@
 import { StringDictionary } from "../ts-helpers";
 
-type QuasarIconSetType = "positive" | "negative" | "info" | "warning";
-type QuasarIconSetArrow = "up" | "right" | "down" | "left" | "dropdown";
-type QuasarIconSetChevron = "left" | "right";
-type QuasarIconSetColorPicker = "spectrum" | "tune" | "palette";
-type QuasarIconSetPullToRefresh = "icon";
-type QuasarIconSetCarousel = "left" | "right" | "navigationIcon" | "thumbnails";
-type QuasarIconSetChip = "remove" | "selected";
-type QuasarIconSetDatetime = "arrowLeft" | "arrowRight" | "now" | "today";
-type QuasarIconSetEditor =
+type EfuzyIconSetType = "positive" | "negative" | "info" | "warning";
+type EfuzyIconSetArrow = "up" | "right" | "down" | "left" | "dropdown";
+type EfuzyIconSetChevron = "left" | "right";
+type EfuzyIconSetColorPicker = "spectrum" | "tune" | "palette";
+type EfuzyIconSetPullToRefresh = "icon";
+type EfuzyIconSetCarousel = "left" | "right" | "navigationIcon" | "thumbnails";
+type EfuzyIconSetChip = "remove" | "selected";
+type EfuzyIconSetDatetime = "arrowLeft" | "arrowRight" | "now" | "today";
+type EfuzyIconSetEditor =
   | "bold"
   | "italic"
   | "strikethrough"
@@ -52,16 +52,16 @@ type QuasarIconSetEditor =
   | "size7"
   | "font"
   | "viewSource";
-type QuasarIconSetExpansionItem = "icon" | "denseIcon";
-type QuasarIconSetFab = "icon" | "activeIcon";
-type QuasarIconSetField = "clear" | "error";
-type QuasarIconSetPagination = "first" | "prev" | "next" | "last";
-type QuasarIconSetRating = "icon";
-type QuasarIconSetStepper = "done" | "active" | "error";
-type QuasarIconSetTabs = "left" | "right" | "up" | "down";
-type QuasarIconSetTable = "arrowUp" | "warning" | "prevPage" | "nextPage";
-type QuasarIconSetTree = "icon";
-type QuasarIconSetUploader =
+type EfuzyIconSetExpansionItem = "icon" | "denseIcon";
+type EfuzyIconSetFab = "icon" | "activeIcon";
+type EfuzyIconSetField = "clear" | "error";
+type EfuzyIconSetPagination = "first" | "prev" | "next" | "last";
+type EfuzyIconSetRating = "icon";
+type EfuzyIconSetStepper = "done" | "active" | "error";
+type EfuzyIconSetTabs = "left" | "right" | "up" | "down";
+type EfuzyIconSetTable = "arrowUp" | "warning" | "prevPage" | "nextPage";
+type EfuzyIconSetTree = "icon";
+type EfuzyIconSetUploader =
   | "done"
   | "clear"
   | "add"
@@ -69,30 +69,30 @@ type QuasarIconSetUploader =
   | "removeQueue"
   | "removeUploaded";
 
-export interface QuasarIconSet {
+export interface EfuzyIconSet {
   name: string;
-  type: StringDictionary<QuasarIconSetType>;
-  arrow: StringDictionary<QuasarIconSetArrow>;
-  chevron: StringDictionary<QuasarIconSetChevron>;
-  colorPicker: StringDictionary<QuasarIconSetColorPicker>;
-  pullToRefresh: StringDictionary<QuasarIconSetPullToRefresh>;
-  carousel: StringDictionary<QuasarIconSetCarousel>;
-  chip: StringDictionary<QuasarIconSetChip>;
-  datetime: StringDictionary<QuasarIconSetDatetime>;
-  editor: StringDictionary<QuasarIconSetEditor>;
-  expansionItem: StringDictionary<QuasarIconSetExpansionItem>;
-  fab: StringDictionary<QuasarIconSetFab>;
-  field: StringDictionary<QuasarIconSetField>;
-  pagination: StringDictionary<QuasarIconSetPagination>;
-  rating: StringDictionary<QuasarIconSetRating>;
-  stepper: StringDictionary<QuasarIconSetStepper>;
-  tabs: StringDictionary<QuasarIconSetTabs>;
-  table: StringDictionary<QuasarIconSetTable>;
-  tree: StringDictionary<QuasarIconSetTree>;
-  uploader: StringDictionary<QuasarIconSetUploader>;
+  type: StringDictionary<EfuzyIconSetType>;
+  arrow: StringDictionary<EfuzyIconSetArrow>;
+  chevron: StringDictionary<EfuzyIconSetChevron>;
+  colorPicker: StringDictionary<EfuzyIconSetColorPicker>;
+  pullToRefresh: StringDictionary<EfuzyIconSetPullToRefresh>;
+  carousel: StringDictionary<EfuzyIconSetCarousel>;
+  chip: StringDictionary<EfuzyIconSetChip>;
+  datetime: StringDictionary<EfuzyIconSetDatetime>;
+  editor: StringDictionary<EfuzyIconSetEditor>;
+  expansionItem: StringDictionary<EfuzyIconSetExpansionItem>;
+  fab: StringDictionary<EfuzyIconSetFab>;
+  field: StringDictionary<EfuzyIconSetField>;
+  pagination: StringDictionary<EfuzyIconSetPagination>;
+  rating: StringDictionary<EfuzyIconSetRating>;
+  stepper: StringDictionary<EfuzyIconSetStepper>;
+  tabs: StringDictionary<EfuzyIconSetTabs>;
+  table: StringDictionary<EfuzyIconSetTable>;
+  tree: StringDictionary<EfuzyIconSetTree>;
+  uploader: StringDictionary<EfuzyIconSetUploader>;
 }
 
-export type QuasarIconSets =
+export type EfuzyIconSets =
   | "material-icons"
   | "material-icons-outlined"
   | "material-icons-round"

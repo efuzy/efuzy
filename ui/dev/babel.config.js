@@ -1,6 +1,6 @@
 module.exports = {
   presets: [
-    '@quasar/babel-preset-app'
+    '@efuzy/babel-preset-app'
   ],
   sourceType: 'unambiguous'
 }

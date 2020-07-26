@@ -14,7 +14,7 @@
 
         <q-btn dense flat size="sm" :icon="lang === 'he' ? 'navigate_before' : 'navigate_next'" @click="lang = lang === 'en-us' ? 'he' : 'en-us'" class="absolute-bottom-right z-top" />
         <q-select
-          label="Quasar Language"
+          label="Efuzy Language"
           dense
           outlined
           :options="langOptions"
@@ -42,9 +42,9 @@
 
 <script>
 // eslint-disable-next-line no-unused-vars
-import Quasar, { Dark } from 'quasar'
+import Efuzy, { Dark } from 'efuzy'
 import Vue from 'vue'
-import languages from 'quasar/lang/index.json'
+import languages from 'efuzy/lang/index.json'
 
 if (process.env.SERVER !== true) {
   window.Vue = Vue
@@ -52,7 +52,7 @@ if (process.env.SERVER !== true) {
 
 export default {
   meta: {
-    title: 'Quasar Development'
+    title: 'Efuzy Development'
   },
   data () {
     return {
@@ -63,12 +63,12 @@ export default {
   },
   watch: {
     lang (lang) {
-      import('quasar/lang/' + lang).then(lang => {
+      import('efuzy/lang/' + lang).then(lang => {
         this.$q.lang.set(lang.default)
       })
     },
     iconSet (set) {
-      import('quasar/icon-set/' + set).then(iconSet => {
+      import('efuzy/icon-set/' + set).then(iconSet => {
         this.$q.iconSet.set(iconSet.default)
       })
     }
@@ -107,7 +107,7 @@ export default {
   },
   mounted () {
     window.$q = this.$q
-    window.Quasar = Quasar
+    window.Efuzy = Efuzy
     /*
     this.$nextTick(() => {
       Dark.set(false)

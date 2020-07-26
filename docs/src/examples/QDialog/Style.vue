@@ -73,10 +73,10 @@
       <q-card>
         <q-toolbar>
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg">
+            <img src="https://cdn.efuzy.dev/logo/svg/efuzy-logo.svg">
           </q-avatar>
 
-          <q-toolbar-title><span class="text-weight-bold">Quasar</span> Framework</q-toolbar-title>
+          <q-toolbar-title><span class="text-weight-bold">Efuzy</span> Framework</q-toolbar-title>
 
           <q-btn flat round dense icon="close" v-close-popup />
         </q-toolbar>

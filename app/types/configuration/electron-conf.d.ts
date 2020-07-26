@@ -7,11 +7,11 @@ import {
 import * as WebpackChain from "webpack-chain";
 import { WebpackConfiguration } from "../ts-helpers";
 
-export type QuasarElectronBundlersInternal = "builder" | "packager";
+export type EfuzyElectronBundlersInternal = "builder" | "packager";
 
-interface QuasarBaseElectronConfiguration {
+interface EfuzyBaseElectronConfiguration {
   /**
-   * @version `@quasar/app` 1.9.6+
+   * @version `@efuzy/app` 1.9.6+
    *
    * Add/remove/change properties of production generated package.json
    */
@@ -36,29 +36,29 @@ interface QuasarBaseElectronConfiguration {
    *  or we haven’t found the recipe yet.
    */
   // This property definition is here merely to avoid duplicating the TSDoc
-  bundler: QuasarElectronBundlersInternal;
+  bundler: EfuzyElectronBundlersInternal;
 }
 
-interface QuasarElectronPackagerConfiguration
-  extends QuasarBaseElectronConfiguration {
+interface EfuzyElectronPackagerConfiguration
+  extends EfuzyBaseElectronConfiguration {
   bundler: "packager";
 
   /**
    * Electron-packager options.
-   * `dir` and `out` properties are overwritten by Quasar CLI to ensure the best results.
+   * `dir` and `out` properties are overwritten by Efuzy CLI to ensure the best results.
    */
   packager?: Omit<ElectronPackagerOptions, "dir" | "out">;
 }
 
-interface QuasarElectronBuilderConfiguration
-  extends QuasarBaseElectronConfiguration {
+interface EfuzyElectronBuilderConfiguration
+  extends EfuzyBaseElectronConfiguration {
   bundler: "builder";
 
   /** Electron-builder options */
   builder?: ElectronBuilderConfiguration;
 }
 
-export type QuasarElectronBundlers = QuasarElectronBundlersInternal;
+export type EfuzyElectronBundlers = EfuzyElectronBundlersInternal;
 
 export type ElectronBuilderArchs = "ia32" | "x64" | "armv7l" | "arm64" | "all";
 
@@ -73,6 +73,6 @@ export type ElectronBuilderTargets =
 export type ElectronPackagerArchs = arch;
 export type ElectronPackagerTargets = platform;
 
-export type QuasarElectronConfiguration =
-  | QuasarElectronPackagerConfiguration
-  | QuasarElectronBuilderConfiguration;
+export type EfuzyElectronConfiguration =
+  | EfuzyElectronPackagerConfiguration
+  | EfuzyElectronBuilderConfiguration;

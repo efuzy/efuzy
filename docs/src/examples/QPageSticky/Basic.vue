@@ -6,7 +6,7 @@
           <q-btn flat round dense icon="menu" @click="drawerLeft = !drawerLeft" />
 
           <q-toolbar-title>
-            <strong>Quasar</strong> Framework
+            <strong>Efuzy</strong> Framework
           </q-toolbar-title>
 
           <q-btn flat round dense icon="menu" @click="drawerRight = !drawerRight" />
@@ -18,7 +18,7 @@
           <q-btn flat round dense icon="menu" @click="drawerLeft = !drawerLeft" />
 
           <q-toolbar-title>
-            <strong>Quasar</strong> Framework
+            <strong>Efuzy</strong> Framework
           </q-toolbar-title>
 
           <q-btn flat round dense icon="menu" @click="drawerRight = !drawerRight" />

@@ -1,6 +1,6 @@
 ---
 title: Layout
-desc: How to use the QLayout component. Manages the whole window of your Quasar app.
+desc: How to use the QLayout component. Manages the whole window of your Efuzy app.
 related:
   - /layout/header-and-footer
   - /layout/drawer
@@ -17,7 +17,7 @@ The QLayout is a component designed to manage the entire window and wrap page co
 **QLayout is NOT mandatory**, but it does help you to better structure your website/app. It has a number of features which offer you major benefits in simplifying your website/app's layout design, right out of the box.
 
 ## Installation
-In the card below we're installing all Quasar components related to a QLayout, but **you should cherry-pick** only what you are using from this list. Only QLayout is required.
+In the card below we're installing all Efuzy components related to a QLayout, but **you should cherry-pick** only what you are using from this list. Only QLayout is required.
 
 <doc-installation :components="[ 'QLayout', 'QPageContainer', 'QPage', 'QHeader', 'QFooter',    'QDrawer', 'QPageSticky', 'QPageScroller' ]" />
 
@@ -25,13 +25,13 @@ In the card below we're installing all Quasar components related to a QLayout, b
 Scaffold your layout(s) by clicking on the button below.
 
 ::: warning
-The Layout Builder might use components not already inserted into quasar.conf.js.
+The Layout Builder might use components not already inserted into efuzy.conf.js.
 
 You are likely going to need the following components - QLayout, QHeader, QToolbar, QToolbarTitle, QBtn, QAvatar, QTabs, QRouteTab, QDrawer, QPageContainer, QFooter.
 :::
 
 ::: tip
-Keep an eye on your developer console for handy helpers on which components are being used but not declared in your quasar.conf.js file.
+Keep an eye on your developer console for handy helpers on which components are being used but not declared in your efuzy.conf.js file.
 :::
 
 <q-btn push color="primary" icon-right="launch" label="Layout Builder" type="a" href="layout-builder" target="_blank" rel="noopener noreferrer" />
@@ -47,7 +47,7 @@ If your layout uses Vue Router sub-routes (recommended), then it makes sense to 
 :::
 
 ### Understanding the "view" prop
-Quasar introduces a unique and excellent layout concept, which allows you to easily structure layouts to work in certain ways, by simply changing a short string notation.
+Efuzy introduces a unique and excellent layout concept, which allows you to easily structure layouts to work in certain ways, by simply changing a short string notation.
 
 To explain how this works, imagine your Layout is a 3x3 matrix of containers (depicted in blue below). The first row of containers would be the header and the last row would be the footer. The first column of containers would be the "left" and last column would be the "right". The center of the matrix, below the header and above the footer, would be the page or main content container.
 

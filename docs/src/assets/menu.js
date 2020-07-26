@@ -1,15 +1,15 @@
 const gettingStarted = [
   {
-    name: 'Pick Quasar Flavour',
-    path: 'pick-quasar-flavour'
+    name: 'Pick Efuzy Flavour',
+    path: 'pick-efuzy-flavour'
   },
   {
-    name: 'Quasar Flavours',
+    name: 'Efuzy Flavours',
     opened: true,
     children: [
       {
-        name: 'Quasar CLI',
-        path: 'quasar-cli'
+        name: 'Efuzy CLI',
+        path: 'efuzy-cli'
       },
       {
         name: 'UMD / Standalone',
@@ -84,8 +84,8 @@ const options = [
     path: 'seo'
   },
   {
-    name: 'Quasar Language Packs',
-    path: 'quasar-language-packs'
+    name: 'Efuzy Language Packs',
+    path: 'efuzy-language-packs'
   },
   {
     name: 'App Internationalization',
@@ -100,8 +100,8 @@ const options = [
     path: 'installing-icon-libraries'
   },
   {
-    name: 'Quasar Icon Sets',
-    path: 'quasar-icon-sets'
+    name: 'Efuzy Icon Sets',
+    path: 'efuzy-icon-sets'
   },
   {
     name: 'Platform Detection',
@@ -151,8 +151,8 @@ const cli = [
     path: 'app-upgrade-guide'
   },
   {
-    name: 'quasar.conf.js',
-    path: 'quasar-conf-js'
+    name: 'efuzy.conf.js',
+    path: 'efuzy-conf-js'
   },
   {
     name: 'Browser Compatibility',
@@ -1147,8 +1147,8 @@ const appExtensions = [
         path: 'provide-a-directive'
       },
       {
-        name: 'Inject Quasar Plugin',
-        path: 'inject-quasar-plugin'
+        name: 'Inject Efuzy Plugin',
+        path: 'inject-efuzy-plugin'
       },
       {
         name: 'Starter kit equivalent',
@@ -1191,9 +1191,9 @@ const utils = [
 
 module.exports = [
   {
-    name: 'Why Quasar?',
+    name: 'Why Efuzy?',
     icon: 'room',
-    path: 'introduction-to-quasar'
+    path: 'introduction-to-efuzy'
   },
   {
     name: 'Sponsors and Backers',
@@ -1228,7 +1228,7 @@ module.exports = [
     children: contributionGuide
   },
   {
-    name: 'Quasar Options & Helpers',
+    name: 'Efuzy Options & Helpers',
     icon: 'tune',
     path: 'options',
     children: options
@@ -1240,9 +1240,9 @@ module.exports = [
     children: security
   },
   {
-    name: 'Quasar CLI',
+    name: 'Efuzy CLI',
     icon: 'build',
-    path: 'quasar-cli',
+    path: 'efuzy-cli',
     children: cli
   },
   {
@@ -1276,9 +1276,9 @@ module.exports = [
     children: directives
   },
   {
-    name: 'Quasar Plugins',
+    name: 'Efuzy Plugins',
     icon: 'extension',
-    path: 'quasar-plugins',
+    path: 'efuzy-plugins',
     children: plugins
   },
   {
@@ -1288,9 +1288,9 @@ module.exports = [
     children: appExtensions
   },
   {
-    name: 'Quasar Utils',
+    name: 'Efuzy Utils',
     icon: 'healing',
-    path: 'quasar-utils',
+    path: 'efuzy-utils',
     children: utils
   }
 ]

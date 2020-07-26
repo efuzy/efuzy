@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import { AppFullscreen } from 'quasar'
+import { AppFullscreen } from 'efuzy'
 
 export default {
   watch: {
